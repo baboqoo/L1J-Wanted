@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- css -->
+	<link rel="stylesheet" type="text/css" href="/css/guide.css" />
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-guide">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Guide</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div class="guide_area">
+					<div class="guide_content">
+						<div class="wrap-section-beginner class-0">
+							<div class="quickmenu off">
+								<button class="button-toggle"></button>
+								<nav>
+									<a class="item" href="">Basic Information</a>
+									<a class="hunt" href="">Recommended Hunting Grounds</a>
+									<a class="boss" href="">Bosses</a>
+								</nav>
+							</div>
+							<div class="wrap-section-top"><section class="section-top"><header><!--<p><a href="\cash\complete">cash</a></p>--><p class="copy__subtitle">A must-read guide for beginners</p><span class="copy__x"></span><h1 class="copy__title">{SERVER_NAME} - Warrior Guide</h1><p class="copy__menulist">Currency Types ㆍ Hunting Grounds ㆍ Boss ㆍ Recommended Hunting Grounds</p></header></section></div>
+							<div class="wrap-section-item">
+								<section class="section-item">
+									{GUIDE_LIST}
+									{GUIDE_BUTTON}
+								</section>
+							</div>
+							<div class="wrap-section-hunt">
+								<section class="section-hunt">
+									<header><h2>Recommended Hunting Grounds by Level</h2></header>
+									<article>
+										<div class="article-tab"><ul class="tab"><li class="on"><a href="" data-lv="1">1~55</a></li><li class=""><a href="" data-lv="2">55~75</a></li><li class=""><a href="" data-lv="3">75~80</a></li><li class=""><a href="" data-lv="4">80 or higher</a></li></ul></div>
+										<div class="article-hunt">
+											<div class="table-bundle">
+												<div class="table-bundle-row">
+													<table class="table table-size-3" id="hunt-1" style="display: table;">
+														<thead>
+															<tr>
+																<th class="name thead"><span>Hunting Ground</span></th>
+																<th class="name">Talking Island Field</th>
+																<th class="name">Talking Island Dungeon</th>
+																<th class="name">Black Battleship</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="limit thead"><span>Entry Restrictions</span></td>
+																<td class="name">-</td>
+																<td class="name">30~69 (2 hours per day)</td>
+																<td class="name">50~69 (2 hours per day)</td>
+															</tr>
+															<tr>
+																<td class="feature thead"><span>Characteristics</span></td>
+																<td class="feature">Combat Zone<br>Relatively low difficult<br>Beginner's Quest Area</td>
+																<td class="feature">Combat Zone<br>More challenging area<br>Many undead monsters</td>
+																<td class="feature">Combat Zone<br>More challenging area<br>Beginner Skills. Abundance of drops</td>
+															</tr>
+															<tr>
+																<td class="consume thead"><span>Templar's<br> expendables</span></td>
+																<td class="consume">Available</td>
+																<td class="consume">Available</td>
+																<td class="consume">Available</td>
+															</tr>
+															<tr>
+																<td class="drop thead"><span>Mainr Drop<br> items</span></td>
+																<td class="drop">Templar Coins<br>Knight's Consumables</td>
+																<td class="drop">Templar Coins<br>Halfas' Tenacity<br>Knight's Consumables</td>
+																<td class="drop">Templar Coins<br>Halfas' Tenacity<br>Technical and magic books</td>
+															</tr>
+														</tbody>
+													</table>
+													
+													<table class="table table-size-3" id="hunt-2" style="display: none;">
+														<thead>
+															<tr>
+																<th class="name thead"><span>Hunting Ground</span></th>
+																<th class="name">Training Dungeon</th>
+																<th class="name">Talking Island Dungeon</th>
+																<th class="name">Black Battleship</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="limit thead"><span>Entry Restrictions</span></td>
+																<td class="name">55~74</td>
+																<td class="name">30~69 (2 hours per day)</td>
+																<td class="name">50~69 (2 hours per day)</td>
+															</tr>
+															<tr>
+																<td class="feature thead"><span>Characteristics</span></td>
+																<td class="feature">Combat Zone<br>More challenging area<br>High drop rate of Templar Coins</td>
+																<td class="feature">Combat Zone<br>More challenging area<br>Many undead monsters</td>
+																<td class="feature">Combat Zone<br>More challenging area<br>Beginner Skills. Abundance of drops</td>
+															</tr>
+															<tr>
+																<td class="consume thead"><span>Templar's<br> expendables</span></td>
+																<td class="consume">Available</td>
+																<td class="consume">Available</td>
+																<td class="consume">Available</td>
+															</tr>
+															<tr>
+																<td class="drop thead"><span>Main Drop<br> Items</span></td>
+																<td class="drop">Templar Coins</td>
+																<td class="drop">Templar Coins<br>Will of Halpas</td>
+																<td class="drop">Templar Coins<br>Will of Halpas<br>Various Skill and Magic Books</td>																
+															</tr>
+														</tbody>
+													</table>
+													
+													<table class="table table-size-2" id="hunt-3" style="display: none;">
+														<thead>
+															<tr>
+																<th class="name thead"><span>Hunting Ground</span></th>
+																<th class="name">Land of the Abandoned</th>
+																<th class="name">Gludio Dungeon</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="limit thead"><span>Entry Restrictions</span></td>
+																<td class="name">75 or more (2 hours per day)</td>
+																<td class="name">-</td>
+															</tr>
+															<tr>
+																<td class="feature thead"><span>Characteristics</span></td>
+																<td class="feature">Combat Zone<br>More challenging area<br>High experience</td>
+																<td class="feature">Normal Zone<br>Many undead monsters<br>Boss Caspa group - Boss Death Knight</td>
+															</tr>
+															<tr>
+																<td class="consume thead"><span>Templar's<br> expendables</span></td>
+																<td class="consume">Available up to level 79</td>
+																<td class="consume">Not usable</td>
+															</tr>
+															<tr>
+																<td class="drop thead"><span>Main Drop<br> Items</span></td>
+																<td class="drop">Templar Coins<br>Broken Weapons</td>
+																<td class="drop">Halpas's Zeal<br>Various Skill and Magic Books<br>Adena</td>
+															</tr>
+														</tbody>
+													</table>
+													
+													<table class="table table-size-4" id="hunt-4" style="display: none;">
+														<thead>
+															<tr>
+																<th class="name thead"><span>Hunting Ground</span></th>
+																<th class="name">Oren Ivory Tower</th>
+																<th class="name">Wind Dragon's Nest</th>
+																<th class="name">Oren Cliff</th>
+																<th class="name">Dragon Valley Field</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="limit thead"><span>Entry Restrictions</span></td>
+																<td class="name">80 or more (2 hours per day)</td>
+																<td class="name">-</td>
+																<td class="name">-</td>
+																<td class="name">-</td>
+															</tr>
+															<tr>
+																<td class="feature thead"><span>Characteristics</span></td>
+																<td class="feature">Normal Zone<br>More challenging area<br>Drops demonic energy</td>
+																<td class="feature">Normal Zone<br>Relatively low difficulty<br>Requires Ring of Teleportation Control for random teleportation</td>
+																<td class="feature">Normal Zone<br>Advantageous for long-range classes<br>Requires Ring of Teleportation Control for random teleportation</td>
+																<td class="feature">Normal Zone<br>Very fast monster respawn<br>Requires Ring of Teleportation Control for random teleportation</td>
+															</tr>
+															<tr>
+																<td class="consume thead"><span>Templar's<br> expendables</span></td>
+																<td class="consume">Not usable</td>
+																<td class="consume">Not usable</td>
+																<td class="consume">Not usable</td>
+																<td class="consume">Not usable</td>
+															</tr>
+															<tr>
+																<td class="drop thead"><span>Main Drop<br> Items</span></td>
+																<td class="drop">Demonic Energy<br>Adena</td>
+																<td class="drop">Halpas's Zeal<br>Rebirth Gem<br>Shining Saha Necklace<br>Adena</td>
+																<td class="drop">Halpas's Zeal<br>Rebirth Gem<br>Surein's Earring<br>Adena</td>
+																<td class="drop">Halpas's Zeal<br>Rebirth Gem<br>Jireong's Earring<br>Sacred Magic Defense Helmet<br>Adena</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</article>
+									<footer>
+										<p>※ The challenging hunting grounds may have different entry areas for each character, even if they are on the same map.</p><p>※ The perceived difficulty of hunting grounds may vary depending on the equipment owned.</p>
+										<div class="wrap-button-bundle">
+											<p class="copy">Try to participate in Kiran Infinite Battle and dungeon instances every day,<br> great rewards are waiting for you!</p>
+											<div class="wrap-button">
+												<a class="button primary btn-powerbook" href="/powerbook/search?searchType=4&query=infinite war">Infinite War</a>
+					 							<a class="button primary btn-powerbook" href="/powerbook/search?searchType=4&query=ice temple">Ice Temple</a>
+												<a class="button primary btn-powerbook" href="/powerbook/search?searchType=4&query=unicorn temple">Unicorn Temple</a>
+												<a class="button primary btn-powerbook" href="/powerbook/search?searchType=4&query=gludio lab">Gludio Lab</a>
+											</div>
+										</div>
+									</footer>
+								</section>
+							</div>
+							
+							<div class="wrap-section-boss" id="boss">
+								<section class="section-boss">
+									<header><h2>Regional Boss Monsters</h2></header>
+									<article>
+										<div class="article-tab">
+											<div class="tab" id="bossTab">
+											{GUIDE_BOSS}
+											</div>
+										</div>
+										<div class="article-boss"><div class="table-bundle"><div class="table-bundle-row"></div></div></div>
+									</article>
+								</section>
+
+								<section class="section-boss-time">
+									<header><h2>Boss Spawn Time</h2></header>
+									<article>
+										<div class="article-boss-time">
+											<div class="table-bundle">
+												<div class="table-bundle-row">
+													{GUIDE_BOSS_TIME}
+												</div>
+											</div>
+										</div>
+									</article>
+								</section>
+							</div>
+
+							<div class="wrap-section-recommend">
+								<section class="section-recommend">
+									<header><h2>Recommended Contents</h2></header>
+									<article>
+										<p class="copy">Don't miss out on useful content that will aid your gameplay. Check it out now.</p>
+										<div class="article-recommend">
+											{GUIDE_RECOMMEND}
+										</div>
+									</article>
+								</section>
+							</div>
+							<div class="footer-padding" style="padding-top: 70px;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/slick.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+ 	
+<script type="text/javascript">
+function bossChage(number){
+	$('.wrap-section-boss .article-tab #bossTab .tab-item').removeClass('on');
+	$('.wrap-section-boss .article-tab #bossTab .tab-item').eq(number).addClass('on');
+	if(!$('.article-boss #boss-' + number).hasClass('on')){
+		$('.article-boss .table').removeClass('on');
+		$('.article-boss #boss-' + number).addClass('on');
+	}
+	bossSelector(number);
+}
+(function($){
+	var quickmenu	= $('.quickmenu');
+	var huntOption = $('.wrap-section-hunt .article-tab > ul > li');
+	var huntBundle = $('.wrap-section-hunt .article-hunt .table-bundle-row > table');
+	quickmenu.find('button').on('click', function(e){
+		quickmenu.toggleClass('off');
+	});
+	quickmenu.find('a').on('click', function(e){
+		var section = $(this).attr('class');
+		$('html, body').stop().animate({
+			scrollTop: ($('.wrap-section-' + section).offset().top - 74)
+		}, 600);
+		e.preventDefault();
+	});
+	huntOption.on('click', function(e){
+		if(!$(this).hasClass('on')){
+			huntOption.removeClass('on');
+			$(this).addClass('on');
+			var pagelevel = $(this).children('a').attr('data-lv');
+			huntBundle.css('display', 'none');
+			$('.wrap-section-hunt .article-hunt .table-bundle-row > #hunt-' + pagelevel).css('display', 'table');
+		}
+		eventStop(e);
+	});
+	
+	// slick Update
+	$bossSlick = $('.wrap-section-boss .article-tab #bossTab').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 13,
+        slidesToScroll: 13,
+        responsive: [
+          {
+            breakpoint: 960,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+            }
+          }
+        ]
+	});
+	
+	$bossSlick.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		chageBossInfo(nextSlide);
+		eventStop(event);
+	});
+	
+	function chageBossInfo(num){
+		if(!$('.article-boss #boss-' + num).hasClass('on')){
+			$('.article-boss .table').removeClass('on');
+			$('.article-boss #boss-' + num).addClass('on');
+		}
+		bossSelector(num);
+	}
+	
+	var bossSlickWork = true;
+	if(window.outerWidth > 960){
+		$bossSlick.slick('unslick');
+		bossSlickWork = false;
+	}
+	$( window ).resize( function() {
+		var reWidth = window.outerWidth;
+		if(reWidth > 960 && bossSlickWork == true){
+			$bossSlick.slick('destroy');
+			bossSlickWork = false;
+		}else if(reWidth <= 960 && bossSlickWork == false){
+			$bossSlick.slick('refresh');
+			bossSlickWork = true;
+		}
+	});
+	
+	// slick Update
+	$('.wrap-section-recommend .article-recommend').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        responsive: [
+          {
+            breakpoint: 960,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          }
+        ]
+	});
+})(jQuery);
+
+jQuery(document).ready(function(){
+	bossSelector($('.article-tab #bossTab .tab-item.on').attr('data-id'));
+});
+
+let bossContainer = [];
+function get_bossContainer(bossId) {
+	bossContainer.map((item, index) => {
+		if (item.key == bossId) {
+			return item;
+		}
+	});
+	return null;
+}
+
+function bossSelector(bossId){
+	var bossContent = get_bossContainer(bossId);
+	if (bossContent != undefined && bossContent != null) {
+		$(".article-boss .table-bundle .table-bundle-row").html(bossContent.value);
+		return;
+	}
+
+	$.ajax ({
+		type:"post",
+		datatype:"json",
+		url:"/define/guide/boss",
+		data:{loc:bossId},// 전송
+		success:function(data){
+			var dataLength = data.length;
+			var addhtml='';
+			addhtml += '<table class="table table-size-' + dataLength + ' on" id="boss-' + data[0].loc + '"><thead><tr><th class="name thead"><span>Monster Name<br> (Level)</span></th>';
+			for (var i=0; i<dataLength; i++) {
+				addhtml += '<th class="name"><a href="/powerbook/search?searchType=2&amp;query=' + data[i].bossName + '">' + data[i].bossName + '</a></th>';
+			}
+			addhtml += '</tr></thead><tbody><tr><td class="thumbnail thead"><span>Image</span></td>';
+			for (var i=0; i<dataLength; i++) {
+				addhtml += '<td class="thumbnail"><a href="/powerbook/search?searchType=2&amp;query=' + data[i].bossName + '"><img src="' + data[i].bossImg + '" class="thumb"></a></td>';
+			}
+			addhtml += '</tr><tr><td class="zone thead"><span>Spawn Area</span></td>';
+			for (var i=0; i<dataLength; i++) {
+				addhtml += '<td class="zone">' + data[i].spawnLoc + '</td>';
+			}
+			addhtml += '</tr><tr><td class="spawn thead"><span>Spawn Time</span></td>';
+			for (var i=0; i<dataLength; i++) {
+				addhtml += '<td class="spawn">' + data[i].spawnTime + '</td>';
+			}
+			addhtml += '</tr><tr><td class="drop thead"><span>Main Drop<br> Items</span></td>';
+			for (var i=0; i<dataLength; i++) {
+				addhtml += '<td class="drop">' + data[i].dropName + '</td>';
+			}
+			addhtml += '</tr></tbody></table>';
+			
+			var pushItem = {key: bossId, value: addhtml};
+			bossContainer.push(pushItem);// 컨테이너 등록
+			$(".article-boss .table-bundle .table-bundle-row").html(addhtml);
+		}, error: function(request, status, error){
+			console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		}
+	});
+}
+</script>
+</body>
+</html>

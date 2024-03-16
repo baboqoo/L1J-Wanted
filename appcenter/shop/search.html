@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<link rel="stylesheet" href="/css/l1.world.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+body .section-contents {padding-top: 24px;}
+body.ingame .wrap-header {background-color: #192950; min-height: 56px;}
+#itemSearchrank #itemSearchrankNav .nav-item a, #itemSearchrank #itemSearchrankNavFooter .nav-item a {cursor: pointer;}
+.pagination-container {margin: 0 auto; display: table;}
+.paginationjs .paginationjs-pages li, .paginationjs .paginationjs-pages li:last-child {border: none;}
+.paginationjs .paginationjs-pages li>a {color: #b5b5b5;}
+.paginationjs .paginationjs-pages li.active>a {background: #fff;color: #1f1f1f;line-height: 28px;}
+.search-article__nodata .nodata::before {margin-top: -52px !important; width: 86px !important; height: 132px !important; background-image: url(/img/shop/img-nodata.png) !important; background-size: 86px 132px !important; background-position: center center !important; background-repeat: no-repeat !important;}
+@media (min-width: 960px){
+	.search-article__nodata .nodata::before {width: 107px !important; height: 165px !important;background-size: 107px 165px !important;}
+}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-world">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Lineage World</h1></header></div>
+		<div class="section-contents">
+			<section class="section-item-searchform">
+				<div class="inner">
+					<header class="header"><div class="ui-dropdown ui-dropdown-server"><div><span>{SERVER_NAME}</span></div></div></header>
+					<section class="section-keyword"><label>Real Time</label><span class="btn-toggle"></span><div class="keyword__rolling"><ol class="keyword"></ol></div><div class="keyword__list" style="display: none;"><ol class="keyword"></ol></div></section>
+					<div class="wrap-section-search-form">
+						<section class="section-searchform">
+							<div class="searchWrap">
+								<form name="itemSearchForm" id="suggestForm" method="get" action="/my/item-search" onsubmit="return itemSearchCheck();">
+									<input type="text" value="{KEYWORD}" autocomplete="off" class="suggest_input" data-name="suggest_input" id="suggestInput" name="keyword" placeholder="Search" onKeyup="sub_searchInputKeyup(this, event);">
+									<input type="button" value="X" title="Delete" class="suggest_delete" data-name="suggest_delete" style="display: none;">
+									<input type="submit" value="GO" title="Search" data-name="suggest_submit" id="suggestSubmit">
+									<div data-name="suggest_wrap" class="suggest_wrap" style="display: none;"><div data-name="suggest_list" class="suggest_list"><div data-name="suggest_scroll"><ul></ul></div></div></div>
+								</form>
+							</div>
+						</section>
+					</div>	
+				</div>
+			</section>
+			
+			<div class="wrap-contents-search">
+				<div class="section-search" style="display: block;">
+					<div class="search-util" style="padding-bottom: 20px;">
+						<div class="search-util__result">
+							<strong class="query">{KEYWORD}</strong> Search Results <span>(<em class="count">0</em>Results)</span>
+							<i class="icon"></i>
+							<div class="search-help">
+								<p>- The price range of shops that do not disclose pricing information is not included in the selling price.</p>
+								<p>- If shops with undisclosed prices are included in the current number of open shops, the shop count will be highlighted in <em>red</em>.</p>
+								<span class="icon-close"></span>
+							</div>
+						</div>
+					</div>
+					<section>
+						<header class="search-title"><h2>Market Price</h2></header>
+						<article class="search-article search-article--item"></article>
+					</section>
+					<div class="pagination-container"></div>
+					<div class="section-search-help">
+						<h2>Info</h2>
+						<p>The Item Price Service is provided for individual shop transaction records only. There may be differences from the prices perceived in the game, and price information may not be available. In such cases, you can use Buy/Sell to ask for help from fellow players on the server.</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+<script>
+    $(function () {
+        let container = $('.pagination-container');
+        container.pagination({
+        	dataSource: function(done) {
+        	    $.ajax({
+        	        type: 'POST',
+        	        url: '/define/item-search/list',
+        	        data: { keyword: '{KEYWORD}' },
+        	        success: function(response) {
+        	            if (response.length > 0) {
+        	            	$('.search-util__result .count').html(commaAdd(response.length));
+        	            } else {
+        	            	$('.search-util').css('display', 'none');
+        	            	$('.section-search-help').css('display', 'none');
+        	            }
+        	            done(response);
+        	        }
+        	    });
+        	},
+        	pageSize: 10,// 한 화면에 보여질 개수
+        	showPrevious: false,// 처음버튼 삭제
+            showNext: false,// 마지막버튼 삭제
+            showPageNumbers: true,// 페이지 번호표시
+            callback: function (data, pagination) {// 화면 출력
+                var dataHtml = '';
+                if (data.length > 0) {
+                	dataHtml += '<ul>';
+                	$.each(data, function (index, item) {
+                		dataHtml +=
+	                   '<li>' +
+	                   '<div class="item-name">' +
+	   						'<div class="server">' + serverName + '</div>' +
+	   						'<a href="/my/item-search/view?itemId=' + encodeURIComponent(item.name) + '&enchant=' + item.enchant + '">' +
+	   							'<div class="thumbnail"><img src="/img/item/' + item.gfxId + '.png" onerror="this.onerror=null; this.src=\'/img/shop/noimg.gif\' class="thumb" alt="' + item.name + '"></div>' +
+	   							'<h2 class="name">' + (item.enchant > 0 ? '+' + item.enchant + ' ': '') + item.name + '</h2>' +
+	   						'</a>' +
+	   					'</div>' +
+	   					'<div class="item-price item-price--sell">' +
+	   						'<h3>Selling Price</h3>' +
+	   						'<ul>' +
+	   							(item.sellTotalCount > 0 ? '<li><a href="/my/item-search/view?itemId=' + encodeURIComponent(item.name) + '&enchant=' + item.enchant + '&tradeType=SELL&bless=ALL"><span class="category">All</span><span class="price">' + item.sellTotalPriceInfo + '</span> <span class="count">(' + commaAdd(item.sellTotalCount) + ')</span></a></li>' : '') +
+	   							(item.sellNormalCount > 0 ? '<li><a href="/my/item-search/view?itemId=' + encodeURIComponent(item.name) + '&enchant=' + item.enchant + '&tradeType=SELL&bless=NORMAL"><span class="category">Normal</span><span class="price">' + item.sellNormalPriceInfo + '</span> <span class="count">(' + commaAdd(item.sellNormalCount) + ')</span></a></li>' : '') +
+	   							(item.sellBlessCount > 0 ? '<li><a href="/my/item-search/view?itemId=' + encodeURIComponent(item.name) + '&enchant=' + item.enchant + '&tradeType=SELL&bless=BLESS"><span class="category">Blessed</span><span class="price">' + item.sellBlessPriceInfo + '</span> <span class="count">(' + commaAdd(item.sellBlessCount) + ')</span></a></li>' : '') +
+	   							(item.sellCurseCount > 0 ? '<li><a href="/my/item-search/view?itemId=' + encodeURIComponent(item.name) + '&enchant=' + item.enchant + '&tradeType=SELL&bless=CURSE"><span class="category">Cursed</span><span class="price">' + item.sellCursePriceInfo + '</span> <span class="count">(' + commaAdd(item.sellCurseCount) + ')</span></a></li>' : '') +
+	   							((item.sellTotalCount <= 0 || item.sellNormalCount <= 0 || item.sellBlessCount <= 0 || item.sellCurseCount <= 0) ? '<li class="nodata">' + (item.sellTotalCount <= 0 ? '<span class="category">All</span>' : '') + (item.sellNormalCount <= 0 ? '<span class="category">Normal</span>' : '') + (item.sellBlessCount <= 0 ? '<span class="category">Blessed</span>' : '') + (item.sellCurseCount <= 0 ? '<span class="category">Cursed</span>' : '') + ' No Information</li>' : '') +
+	   						'</ul>' +
+	   					'</div>' +
+	   					'<div class="item-price item-price--buy">' +
+	   						'<h3>Purchase Price</h3>' +
+	   						'<ul>' +
+	   							(item.buyTotalCount > 0 ? '<li><a href="/my/item-search/view?itemId=' + encodeURIComponent(item.name) + '&enchant=' + item.enchant + '&tradeType=BUY&bless=ALL"><span class="category">All</span><span class="price">' + item.buyTotalPriceInfo + '</span> <span class="count">(' + commaAdd(item.buyTotalCount) + ')</span></a></li>' : '') +
+	   							(item.buyNormalCount > 0 ? '<li><a href="/my/item-search/view?itemId=' + encodeURIComponent(item.name) + '&enchant=' + item.enchant + '&tradeType=BUY&bless=NORMAL"><span class="category">Normal</span><span class="price">' + item.buyNormalPriceInfo + '</span> <span class="count">(' + commaAdd(item.buyNormalCount) + ')</span></a></li>' : '') +
+	   							(item.buyBlessCount > 0 ? '<li><a href="/my/item-search/view?itemId=' + encodeURIComponent(item.name) + '&enchant=' + item.enchant + '&tradeType=BUY&bless=BLESS"><span class="category">Blessed</span><span class="price">' + item.buyBlessPriceInfo + '</span> <span class="count">(' + commaAdd(item.buyBlessCount) + ')</span></a></li>' : '') +
+	   							(item.buyCurseCount > 0 ? '<li><a href="/my/item-search/view?itemId=' + encodeURIComponent(item.name) + '&enchant=' + item.enchant + '&tradeType=BUY&bless=CURSE"><span class="category">Cursed</span><span class="price">' + item.buyCursePriceInfo + '</span> <span class="count">(' + commaAdd(item.buyCurseCount) + ')</span></a></li>' : '') +
+	   							((item.buyTotalCount <= 0 || item.buyNormalCount <= 0 || item.buyBlessCount <= 0 || item.buyCurseCount <= 0) ? '<li class="nodata">' + (item.buyTotalCount <= 0 ? '<span class="category">All</span>' : '') + (item.buyNormalCount <= 0 ? '<span class="category">Normal</span>' : '') + (item.buyBlessCount <= 0 ? '<span class="category">Blessed</span>' : '') + (item.buyCurseCount <= 0 ? '<span class="category">Cursed</span>' : '') + ' No Information</li>' : '') +
+	   						'</ul>' +
+	   					'</div>' +
+	   					'</li>';
+                    });
+                	dataHtml += '</ul>';
+                } else {
+                	dataHtml += '<div class="search-article__nodata"><div class="nodata"><strong>No results were found for your search.</strong><ol><li>Please check the spelling of the search term.</li><li>If the search term consists of two or more words, please check the spacing.</li></ol></div></div>';
+                }
+                $(".search-article--item").html(dataHtml);// 렌더링
+            }
+        });
+        var search_icon = $('.search-util__result .icon');
+        var search_help = $('.search-help');
+        var search_close = $('.icon-close');
+        search_icon.on('click', function(event) {// 출현
+        	search_help.css({'display': 'block'});
+    	});
+        search_close.on('click', function(event) {// 출현
+        	search_help.css({'display': 'none'});
+    	});
+        
+     	// 영역밖 클릭
+    	$('body').mouseup(function (f){
+    		if (search_help.has(f.target).length === 0) {
+    			search_help.css({'display': 'none'});
+    		}
+    	});
+    })
+</script>
+
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/slick.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+	<script src="/js/shop.js"></script>
+	<script src="/js/popularkeyword.js?{NOW}"></script>
+	<script src="/js/popularkeyword_shop.js"></script>
+
+</body>
+</html>

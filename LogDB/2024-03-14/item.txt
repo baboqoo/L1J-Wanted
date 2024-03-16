@@ -1,0 +1,38 @@
+2024-03-14 03:04:03	Delete	[Elfita]	[332671155] Snapper Enchant Scroll (1)
+2024-03-14 03:04:11	Delete	[Elfita]	[332693471] Insignia Enchant Scroll (4)
+2024-03-14 03:04:15	Delete	[Elfita]	[332719276] Hero Relic Bag (255)
+2024-03-14 03:04:19	Delete	[Elfita]	[332649528] Hard Leather (3)
+2024-03-14 03:04:33	Delete	[Elfita]	[332038524] Bone Fragment (1)
+2024-03-14 03:04:36	Delete	[Elfita]	[332038512] Mana Potion (1)
+2024-03-14 03:04:39	Delete	[Elfita]	[332038511] Wisdom Potion (1)
+2024-03-14 03:04:41	Delete	[Elfita]	[332038508] Brave Potion (1)
+2024-03-14 03:04:52	Delete	[Elfita]	[332038539] Herbs (1)
+2024-03-14 03:05:00	Delete	[Elfita]	[332038538] Wand of Call Lightning (15)
+2024-03-14 03:05:17	Delete	[Elfita]	[332038525] Elemental Stone (1)
+2024-03-14 03:05:20	Delete	[Elfita]	[332038523] Obsidian (1)
+2024-03-14 03:05:22	Delete	[Elfita]	[332038522] Spirit Gem (1)
+2024-03-14 03:05:26	Delete	[Elfita]	[332038515] Potion of Blindness (1)
+2024-03-14 03:05:28	Delete	[Elfita]	[332038514] Bless of Eva (1)
+2024-03-14 03:05:31	Delete	[Elfita]	[332038513] Cure Poison (1)
+2024-03-14 03:05:33	Delete	[Elfita]	[332038510] Yggdra Fruit (1)
+2024-03-14 03:05:35	Delete	[Elfita]	[332038507] Haste Potion (1)
+2024-03-14 03:05:39	Delete	[Elfita]	[332038521] Magic Gem (1)
+2024-03-14 03:05:44	Delete	[Elfita]	[332038537] Heavy Throwing Knife (10)
+2024-03-14 03:05:48	Delete	[Elfita]	[332038493] Aden Condensed Red Potion (1)
+2024-03-14 03:05:51	Delete	[Elfita]	[332038494] Aden's Concentrated Powerful Health Potion (11)
+2024-03-14 03:05:53	Delete	[Elfita]	[332038495] Aden Rapid Red Potion (1)
+2024-03-14 03:05:55	Delete	[Elfita]	[332038496] Aden's Quick Powerful Health Potion (1)
+2024-03-14 03:05:58	Delete	[Elfita]	[332038497] Aden's Powerful Health Potion (1)
+2024-03-14 03:07:27	Delete	[Elfita]	[332105864] +5 Salcheon's Bow
+2024-03-14 03:07:34	Delete	[Elfita]	[332038536] Elemental Battle Arrows (99693)
+2024-03-14 03:07:53	Delete	[Elfita]	[332038526] Solvent (10)
+2024-03-14 03:38:43	Delete	[Elfita]	[332740958] null
+2024-03-14 03:38:45	Delete	[Elfita]	[332740955] Shop Summon Wand
+2024-03-14 03:38:46	Delete	[Elfita]	[332740954] Warehouse Summon Wand
+2024-03-14 03:38:47	Delete	[Elfita]	[332740945] Storm Walk (10/0)
+2024-03-14 03:38:49	Delete	[Elfita]	[332740948] NPC Confirm
+2024-03-14 03:38:50	Delete	[Elfita]	[332740946] NPC Remove
+2024-03-14 03:38:51	Delete	[Elfita]	[332740951] NPC Position
+2024-03-14 03:38:52	Delete	[Elfita]	[332740952] NPC Reposition
+2024-03-14 03:38:56	Delete	[Elfita]	[268457045] Giran Town Amulet
+2024-03-14 03:39:20	Delete	[Elfita]	[268457051] NPC Drop Check (1)

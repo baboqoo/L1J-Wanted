@@ -1,0 +1,1 @@
+ mysqldump -uroot -p l1j_remastered > C:\Lineage\L1J-Wanted\db\l1j_remastered_03_15_2014.sql

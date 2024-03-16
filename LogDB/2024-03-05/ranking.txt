@@ -1,0 +1,12 @@
+2024-03-05 03:00:00	Rank list
+1	????	Dragoncillo	Old rank: 1
+2	????	Maga	Old rank: 2
+2024-03-05 09:00:00	Rank list
+1	????	Dragoncillo	Old rank: 1
+2	????	Maga	Old rank: 2
+2024-03-05 15:00:00	Rank list
+1	????	Dragoncillo	Old rank: 1
+2	????	Maga	Old rank: 2
+2024-03-05 21:00:00	Rank list
+1	????	Dragoncillo	Old rank: 1
+2	????	Maga	Old rank: 2

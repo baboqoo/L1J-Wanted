@@ -1,0 +1,82 @@
+accounts_pcmaster, accounts_pcmaster_golden	PC room buff related
+accounts_shop_limit			Store Purchase Restriction Information (Account)
+app_alim_log				App center log history (store purchase)
+app_auth_extension			File extensions used in App Center
+app_board_content, app_board_content_comment	Content Contest
+app_board_free, app_board_free_comment		Free Board
+app_board_notice					News
+app_board_pitch, app_board_pitch_comment		bulletin board
+app_coupon					coupon
+app_customer					customer service center
+app_customer_normal			Customer Center Frequently Asked Questions
+app_engine_log				Engine detection details
+app_guide, app_guide_boss, app_guide_recommend		warrior guide
+app_item_search				Item search abbreviation
+app_nshop					N shop
+app_page_info				Integration of page information
+app_powerbook				Powerbook (content type)
+app_powerbook_guide			power book bottom table
+app_promotion				Image information at the top of the main page
+app_report					App center report details
+app_shop_rank				Price page item ranking
+app_support					Data to settle sponsorship
+app_support_message			Support page description
+app_support_request			Sponsored Account Request Data
+app_trade					exchange
+app_uri_block				request to block
+app_uri_pass				request to allow
+auth_ip						VPN or foreign IP force permission data
+ban_account					account ban information
+ban_board					board ban Information
+ban_hdd						hard number ban info
+ban_ip						IP ban Information
+
+bin_ 		Live empty data information
+
+catalyst			Additional information on target-click creation items such as Resuscitation Scroll / Eternal Light (Empty Data Additional Settings)
+catalyst_custom		Target designation creation item setting random setting
+character_arca		Tour reservation information
+character_death_exp, character_death_item 	Death penalty recovery information
+character_einhasadfaith		Information of God Einhasad
+character_einhasadstat		Einhasd Point Stat Information
+character_equipset			Wear item set information
+character_eventpush			System letter (push) information
+character_favorbook			relic information
+character_revenge			Multiple system information
+character_shop_limit		Shop Purchase Restriction (Character)
+character_skills_active, character_skills_passive	acquisition skill
+character_timecollection		Exhibition
+clan_contribution_buff		Clan Contribution Buff
+clan_joinning			Clan membership waiting information
+
+connect_reward			access reward
+craft_block			blocking crafting
+craft_info				production information
+craft_success_count_user		Limited number of successful productions
+dungeon_timer			Timed Dungeon
+dungeon_timer_account, dungeon_timer_character		Timed Dungeon User Information
+dungeon_timer_item		Timed dungeon charging item
+event				Event setting (transformation event drop rate increase NPC spawn)
+favorbook			relic
+free_pvp_region			Reaper server free PVP function
+item_box				Treasure Box 
+item_buff				buff items
+item_collection			Item Inventory Possession Stat Criteria (Relic)
+item_enchant_ablity		Item stats per enchantment
+item_selector, item_selector_warehouse	Item selection box function
+item_terms			Set item duration
+magicdoll_info			doll information
+magicdoll_potential		doll potential information
+
+map_balance			Balancing each map
+
+notification, notification_event_npc	Right alarm UI setting
+npc_info				NPC additional settings (compensation/transformation/spawn image, etc.)
+npc_night			Monsters that transform at night (Forgotten Island)
+npcaction_teleport			NPC click to teleport information
+
+shop_info				Set store currency
+shop_limit		Set store purchase limit
+
+tj_coupon			TJ Coupon
+town_npc				Tax NPC settings

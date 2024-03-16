@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TownTeleportConfiguration>
+<!-- aden -->
+	<TownTeleport group="1" map="4" safetyZoneOnly="1">
+		<Territory>
+			<Point x="33857" y="33078"/>
+			<Point x="34173" y="33435"/>
+		</Territory>
+		<TeleportTarget index="0">
+			<Point x="34081" y="33143"/>
+		</TeleportTarget>
+		<TeleportTarget index="1">
+			<Point x="33974" y="33248"/>
+		</TeleportTarget>
+		<TeleportTarget index="2">
+			<Point x="33932" y="33356"/>
+		</TeleportTarget>			
+	</TownTeleport>
+<!-- guludio -->
+	<TownTeleport group="2" map="4" safetyZoneOnly="1">
+		<Territory>
+			<Point x="32583" y="32707"/>
+			<Point x="32647" y="32831"/>
+		</Territory>
+		<TeleportTarget index="0">
+			<Point x="32623" y="32720"/>
+		</TeleportTarget>
+		<TeleportTarget index="1">
+			<Point x="32625" y="32796"/>
+		</TeleportTarget>
+	</TownTeleport>
+<!-- kiran -->
+	<TownTeleport group="3" map="4" safetyZoneOnly="1">
+		<Territory>
+			<Point x="33334" y="32640"/>
+			<Point x="33547" y="32900"/>
+		</Territory>
+		<TeleportTarget index="0">
+			<Point x="33503" y="32768"/>
+		</TeleportTarget>
+		<TeleportTarget index="1">
+			<Point x="33443" y="32798"/>
+		</TeleportTarget>	
+	</TownTeleport>
+<!-- market -->
+	<TownTeleport group="4" map="800" safetyZoneOnly="1">
+		<Territory>
+			<Point x="32704" y="32832"/>
+			<Point x="32895" y="33023"/>
+		</Territory>
+		<TeleportTarget index="0">
+			<Point x="32846" y="32881"/>
+		</TeleportTarget>
+		<TeleportTarget index="1">
+			<Point x="32801" y="32867"/>
+		</TeleportTarget>	
+		<TeleportTarget index="2">
+			<Point x="32755" y="32867"/>
+		</TeleportTarget>	
+		<TeleportTarget index="3">
+			<Point x="32755" y="32926"/>
+		</TeleportTarget>	
+		<TeleportTarget index="4">
+			<Point x="32755" y="32972"/>
+		</TeleportTarget>	
+		<TeleportTarget index="5">
+			<Point x="32800" y="32972"/>
+		</TeleportTarget>	
+		<TeleportTarget index="6">
+			<Point x="32860" y="32972"/>
+		</TeleportTarget>	
+		<TeleportTarget index="7">
+			<Point x="32846" y="32924"/>
+		</TeleportTarget>	
+		<TeleportTarget index="8">
+			<Point x="32801" y="32910"/>
+		</TeleportTarget>	
+	</TownTeleport>
+<!-- talking island -->
+	<TownTeleport group="5" map="0" safetyZoneOnly="1">
+		<Territory>
+			<Point x="32256" y="32768"/>
+			<Point x="32767" y="33279"/>
+		</Territory>
+		<TeleportTarget index="0">
+			<Point x="32580" y="32932"/>
+		</TeleportTarget>
+		<TeleportTarget index="1">
+			<Point x="32634" y="32959"/>
+		</TeleportTarget>	
+	</TownTeleport>
+<!-- occupy heine -->
+	<TownTeleport group="7" map="15490" safetyZoneOnly="0">
+		<Territory>
+			<Point x="32640" y="32704"/>
+			<Point x="32831" y="32959"/>
+		</Territory>
+		<TeleportTarget index="0">
+			<Point x="32722" y="32836"/>
+		</TeleportTarget>
+		<TeleportTarget index="1">
+			<Point x="32751" y="32807"/>
+		</TeleportTarget>	
+		<TeleportTarget index="2">
+			<Point x="32722" y="32807"/>
+		</TeleportTarget>	
+		<TeleportTarget index="3">
+			<Point x="32751" y="32836"/>
+		</TeleportTarget>	
+		<TeleportTarget index="4">
+			<Point x="32709" y="32809"/>
+		</TeleportTarget>	
+		<TeleportTarget index="5">
+			<Point x="32709" y="32834"/>
+		</TeleportTarget>	
+		<TeleportTarget index="6">
+			<Point x="32724" y="32849"/>
+		</TeleportTarget>	
+		<TeleportTarget index="7">
+			<Point x="32749" y="32849"/>
+		</TeleportTarget>	
+		<TeleportTarget index="8">
+			<Point x="32764" y="32834"/>
+		</TeleportTarget>	
+		<TeleportTarget index="9">
+			<Point x="32764" y="32809"/>
+		</TeleportTarget>	
+		<TeleportTarget index="10">
+			<Point x="32749" y="32795"/>
+		</TeleportTarget>	
+		<TeleportTarget index="11">
+			<Point x="32724" y="32795"/>
+		</TeleportTarget>	
+		<TeleportTarget index="12">
+			<Point x="32736" y="32797"/>
+		</TeleportTarget>	
+	</TownTeleport>
+</TownTeleportConfiguration>
+

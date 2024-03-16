@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<link rel="stylesheet" type="text/css" href="/css/layout_v2.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/css/myinfo.css" media="screen" />
+	<link rel="stylesheet" href="/css/custom.css"/>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+table.table_list td {cursor: auto;}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-customer">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="svg-container" style="display: none;"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Technical Support</h1></header></div>
+		<div id="custmContainer" style="display: block; padding-top: 35px;">
+			<header id="header">
+				<div id="top_area">
+					<div class="welcome">
+						<div class="cs_info ng-scope">
+							<span class="grade"><a class="" href=""></a></span>
+							{HELLOW_MENT}
+						</div>
+					</div>
+				</div>
+			</header>
+			<section id="content">
+				<div class="wrap_contents_support">
+					<div class="support_agree">
+						<strong class="support_title">{SERVER_NAME}&nbsp;Support</strong>
+						<div class="support_container">{SUPPORT_CONTENT}</div>
+					</div>
+				</div>
+			</section>
+			<div class="footerWrap"></div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div id="send_delay" style="display:none; z-index:10000001; position: fixed; width: 100%; top: 40%;"><div style="text-align: center;background: #fff;padding: 30px; width: 400px; margin: auto;"><div><img src="/img/loading.gif"></div><div style="font-weight: 600; color: #444; padding-top: 10px;">Please wait a moment.</div></div></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+ 	<script src="/js/support.js"></script>
+
+</body>
+</html>

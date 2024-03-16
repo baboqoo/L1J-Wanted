@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- css -->
+	<link rel="stylesheet" href="/css/community.css">
+	<link rel="stylesheet" type="text/css" href="/css/nccommunity-theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/l1.board.css">
+	<link rel="stylesheet" type="text/css" href="/css/trade.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+#layer_alert .btn_modal span.type2 .close {font-size: 12px;float: none;opacity: 1;text-shadow: none;}
+.notice-button {padding-right: 20px;font-size: 16px;}
+.notice-button > input {margin-right: 5px;}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+window.history.forward();function noBack() {window.history.forward();}
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-board">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Community</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div id="ncCommunityWrite" class="nc-community-write l1-community-free uikit-nccommunity-node">
+					<div class="board-write">
+						<form id="tradeWriteForm" name="tradeWriteForm" action="/trade/insert" method="post" autocomplete="off" onsubmit="return tradeWriteFormCheck();">
+							<p class="caption">Register for Sale</p>
+							<span class="subtit">- Please fill in the correct information for a smooth trade.</span>
+							<div class="trade-write-title"><input type="text" name="title" id="title" maxlength="100" placeholder="Title" /></div>
+							<div class="trade-write-content"><textarea id="content" name="content" placeholder="Items for sale"></textarea></div>
+							<div class="trade-write-bank">
+								<label>※ For secure transactions, banking information and personal details will only be disclosed to the buyer.</label>
+								<input type="text" name="bank" id="bank" maxlength="10" placeholder="Bank" />
+								<input type="text" name="bankNumber" id="bankNumber" maxlength="50" placeholder="Please enter the account number without dashes." onkeyup="javascript:inputNumber(this);" />
+								<input type="text" name="sellerName" id="sellerName" maxlength="10" placeholder="Account Holder" />
+								<input type="text" name="sellerPhone" id="sellerPhone" maxlength="13" placeholder="Contact Information" onkeyup="javascript:OnCheckPhone(this);" onkeydown="javascript:OnCheckPhone(this);" />
+							</div>
+							<div class="co-btn-wrap">
+								<div class="left"><button type="button" class="boardWriteCancel co-btn co-btn-round co-btn-write-cancel" onClick="javascript:history.back();"><span>Cancel</span></button></div>
+								<div class="right"><button type="submit" class="boardWriteSubmit co-btn co-btn-round co-btn-write-submit"><i class="fe-icon-confirm"></i>Insert</button></div>
+							</div>
+						</form>
+		    		</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+	<script src="/js/trade.js"></script>
+	
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+</body>
+</html>

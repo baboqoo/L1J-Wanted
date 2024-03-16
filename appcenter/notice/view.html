@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- css -->
+	<link rel="stylesheet" href="/css/community.css">
+	<link rel="stylesheet" type="text/css" href="/css/nccommunity-theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/l1.board.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-board">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="svg-container" style="display: none;"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">News</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<!-- 탭메뉴 -->
+				<div class="ui-slidetab percentage">
+					<div class="handle">
+						<ul class="btns" style="display: flex;">
+							<li class="noti_0" style="width: 33.3333%;"><a href="javascript:urlTypeform('0', null, 'post', '/notice');" class="">Announcements</a></li>
+							<li class="noti_1" style="width: 33.3333%;"><a href="javascript:urlTypeform('1', null, 'post', '/notice');" class="">Updates</a></li>
+							<li class="noti_2" style="width: 33.3333%;"><a href="javascript:urlTypeform('2', null, 'post', '/notice');" class="">Events</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="ncCommunityView" class="nc-community-view uikit-nccommunity-node">
+			        <section class="board-view">
+			        	<div class="view-header">
+			        		<h2 class="view-title">{TITLE}</h2>
+			        		<div class="view-info">
+			        			<span class="writer"><img src="/img/lineage_writer.png" alt=""></span>
+			        			<span class="date">{DATE}</span>
+			        			<span class="hit">Views<em>{READ_COUNT}</em></span>
+			        		</div>
+			        	</div>
+			        	<div class="view-body">
+			        		<div data-contents-type="text"><strong>Welcome to {SERVER_NAME}</strong></div>
+			        		<div data-contents-type="text"><br></div>
+			        		<div data-contents-type="text">{CONTENT}</div>
+			        	</div>
+					</section>
+				</div>
+			    <div id="ncCommunityComment" class="nc-community-comment uikit-nccommunity-node">
+					<div class="board-prev-next-article">
+						<div class="board-nav">
+							{PRE}
+							{NEXT}
+						</div>
+					</div>
+					<div class="view-bottom" style="">
+						<div class="left">
+							<button class="co-btn co-btn-round co-btn-list" onClick="javascript:urlTypeform('{NOTICE_TYPE}', null, 'post', '/notice');"><i class="fe-icon-arrow_left"></i><span>Return to list</span></button>
+						</div>
+						<div class="right">
+							<div class="wrap-util">
+								{UTIL_BUTTON}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+<script src="/js/notice.js"></script>
+<script type="text/javascript">
+var noticeType		= '{NOTICE_TYPE}';
+$('.ui-slidetab.percentage .btns .noti_' + noticeType + ' a').addClass('on');
+// 최초 페이지 로드 후 렌더링
+$(document).ready(function(){
+	if (account != undefined && account.gm) {
+		$('.right .wrap-util').after('<button class="co-btn co-btn-round co-btn-write" onClick="javascript:location.href=\'/notice/write\';"><svg class="fe-svg fe-svg-write"><use xlink:href="#fe-svg-write"></use></svg><span>Write</span></button>');
+	}
+});
+</script>
+	
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+</body>
+</html>

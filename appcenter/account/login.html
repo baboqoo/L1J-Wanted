@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meata -->
+		<title>{SERVER_NAME}</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<!-- Mobile -->
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+	    <!-- css -->
+	    <link rel="stylesheet" href="/css/my_style.css">
+	    <link rel="stylesheet" href="/css/login.css">
+	    <style type="text/css">
+	    html.dark-mode {background-color: #171717;}
+	    html.dark-mode body.nc-signin, html.dark-mode body.nc-signin #container .wrap-contents {background-color: hsla(0,0%,100%,.04);}
+	  	html.dark-mode .account-form input {background: #474747;border: 1px solid hsla(0,0%,100%,0);color: hsla(0,0%,100%,.83);}
+	  	html.dark-mode .account-form input:-webkit-autofill, html.dark-mode .account-form input:-webkit-autofill:focus, html.dark-mode .account-form input:-webkit-autofill:hover {-webkit-text-fill-color: hsla(0,0%,100%,.83);-webkit-box-shadow: inset 0 0 0 9999px #464646!important;}
+	    /* html.dark-mode .header .logo span {background-image: url(/img/bi-plaync_dark.svg);} */
+	    @media (min-width: 960px){
+			html.dark-mode {background-color: #171717;}
+			html.dark-mode body.nc-signin, html.dark-mode body.nc-signin #container .wrap-contents {background-color: #171717;}
+			html.dark-mode .inner-box {background-color: hsla(0,0%,100%,.04); border: 1px solid #333;}
+			html.dark-mode .account-form input:-webkit-autofill, html.dark-mode .account-form input:-webkit-autofill:focus, html.dark-mode .account-form input:-webkit-autofill:hover {-webkit-text-fill-color: hsla(0,0%,100%,.83);-webkit-box-shadow: inset 0 0 0 9999px #3b3b3b!important;}
+    	}
+	    </style>
+	    <style type="text/css" id="mode_toggle_button">.btn-fixed-wrap{position:fixed;left:16px;bottom:16px;z-index:100000;}.btn-fixed-wrap .btn-theme{position:relative;display:block;height:40px;opacity:0.95;border-radius:22px;-webkit-box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.25);box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.25);border:solid 1px #585858;background-color:#434343;}.btn-fixed-wrap .btn-theme > button{cursor:pointer;height:100%;margin:0px;padding:0 11px;background:#0000;outline:none;border:0px;font-weight:bold;font-family:"Noto Sans KR", -apple-system, BlinkMacSystemFont, Roboto, "맑은 고딕", "Malgun Gothic";}.btn-fixed-wrap .btn-theme > button span:nth-child(2){display:none;}.btn-fixed-wrap .btn-theme > button .icon{display:inline-block;width:26px;height:26px;background-repeat:no-repeat;background-position:50%;background-size:cover;vertical-align:middle;overflow:hidden;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48ZGVmcz48c3R5bGU+LmNscy0xe29wYWNpdHk6MC42O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48dGl0bGU+4YSP4YWl4YSG4YWy4YSC4YW14YSQ4YW1X+GEi+GFoeGEi+GFteGEj+GFqeGGq19kYXJrX3YxLjBf4YSA4YW14YSM4YWp4Yar4YSA4YWm4YSJ4YW14YSR4YWh4YarPC90aXRsZT48ZyBpZD0ic3dpdGNoX2xpZ2h0Ij48ZyBjbGFzcz0iY2xzLTEiPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEwLDUuNWExMC4zOSwxMC4zOSwwLDAsMSwuMjEtMi4xQTEwLDEwLDAsMSwwLDIyLjYsMTUuNzlhMTAuMzksMTAuMzksMCwwLDEtMi4xLjIxQTEwLjUsMTAuNSwwLDAsMSwxMCw1LjVaTTEzLDIyQTksOSwwLDAsMSw5LDQuOTRjMCwuMTksMCwuMzcsMCwuNTZBMTEuNTEsMTEuNTEsMCwwLDAsMjAuNSwxN2guNTZBOSw5LDAsMCwxLDEzLDIyWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIyMCA2IDIwIDMgMTkgMyAxOSA2IDE2IDYgMTYgNyAxOSA3IDE5IDEwIDIwIDEwIDIwIDcgMjMgNyAyMyA2IDIwIDYiLz48L2c+PC9nPjwvc3ZnPg==");}html.dark-mode .btn-fixed-wrap .btn-theme > button .icon{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48ZGVmcz48c3R5bGU+LmNscy0xLC5jbHMtMntvcGFjaXR5OjAuMjU7fS5jbHMtM3tmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT7hhI/hhaXhhIbhhbLhhILhhbXhhJDhhbVf4YSL4YWh4YSL4YW14YSP4YWp4YarX2RhcmtfdjEuMF/hhIDhhbXhhIzhhanhhqvhhIDhhabhhInhhbXhhJHhhaHhhqs8L3RpdGxlPjxnIGlkPSJzd2l0Y2hfZGFyayI+PGcgY2xhc3M9ImNscy0xIj48cGF0aCBkPSJNMTIsNy41YTEwLjM5LDEwLjM5LDAsMCwxLC4yMS0yLjFBMTAsMTAsMCwxLDAsMjQuNiwxNy43OWExMC4zOSwxMC4zOSwwLDAsMS0yLjEuMjFBMTAuNSwxMC41LDAsMCwxLDEyLDcuNVoiLz48L2c+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjI1IDggMjIgOCAyMiA1IDIxIDUgMjEgOCAxOCA4IDE4IDkgMjEgOSAyMSAxMiAyMiAxMiAyMiA5IDI1IDkgMjUgOCIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTEwLDUuNWExMC4zOSwxMC4zOSwwLDAsMSwuMjEtMi4xQTEwLDEwLDAsMSwwLDIyLjYsMTUuNzlhMTAuMzksMTAuMzksMCwwLDEtMi4xLjIxQTEwLjUsMTAuNSwwLDAsMSwxMCw1LjVaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjIzIDYgMjAgNiAyMCAzIDE5IDMgMTkgNiAxNiA2IDE2IDcgMTkgNyAxOSAxMCAyMCAxMCAyMCA3IDIzIDcgMjMgNiIvPjwvZz48L3N2Zz4=");}.btn-fixed-wrap .btn-theme > button .text{font-size:14px;letter-spacing:-0.7px;vertical-align:middle;color:#B8B8B8;}html.dark-mode .btn-fixed-wrap .btn-theme > button .text{color:#ffffff;}.btn-fixed-wrap .btn-theme > button .text.state{display:inline-block;}html.dark-mode .btn-fixed-wrap .btn-theme > button .text.state{color:#ff8940;}@media (min-width: 960px){.btn-fixed-wrap .btn-theme > button span:nth-child(2){display:inline-block;}}</style>
+	 	<!-- js -->
+	 	<script src="/js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body class="pc nc-signin">
+		<div id="container" class="wrapper">
+			<div class="toast-wrap"><div class="keypad">Keypad</div></div>
+			<div class="contents">
+			    <div class="inner-box">
+			        <header class="header"><h1 class="logo"><a href="/index"><span>{SERVER_NAME}</span></a></h1></header>
+			        <section class="login-wrap">
+			            <form id="loginForm" name="loginForm" method="post" class="account-form" onsubmit="return loginCheck('{CALLBACK_URL}');")>
+		                    <fieldset>
+		                        <legend>{SERVER_NAME} Login</legend>
+	                            <div class="input-account-wrap"><div class="input-email"><label for="login_name">Account email</label><input type="text" id="login_name" name="login_name" maxlength="64" autocomplete="username" autocapitalize="off" placeholder="Account email"  tabindex="1" value="" onKeyup="loginWriteCheck(this);" style="padding: 15px 16px 17px 16px !important;"/><span class="btn-delete">Delete</span><span class="msg"></span></div></div>
+		                        <div class="input-pwd"><label for="password">Password</label><input type="password" id="password" name="password" maxlength="16" autocomplete="current-password" autocapitalize="off" placeholder="Password"  tabindex="2" onKeyup="loginWriteCheck(this);"><span class="btn-delete">Delete</span><span class="msg"></span></div>
+		                        <div class="login-util"><div class="keypad-btn"><span>View PC keyboard</span></div></div>
+		                        <div class="btn-wrap"><button class="btn-login" id="btnPlayncLogin" type="submit"><span>Login</span></button></div>
+		                    </fieldset>
+			            </form>
+			        </section>
+			        <style>
+			        .text_info {max-width: 365px; margin: 20px auto;}
+			        .text_info ul li {list-style: none; padding-bottom: 10px; color: #666;}
+			        </style>
+			        <div class="text_info"><ul><li>Enter your account email and password.</li><li>Accounts can be created on the connector.</li><li>If you don't remember your password, use the connector to recover it.</li></ul></div>
+			    </div>
+			</div>
+			<div class="footer"><p>Copyright &copy; {SERVER_NAME}. All Rights Reserved.</p></div>
+		</div>
+		<div class="mode_toggle_button_div"><div class="btn-fixed-wrap"><div class="btn-theme"><button class="btn-theme__toggle"><span class="icon"></span><!--<span class="text">다크모드</span>--><span class="text state">OFF</span></button></div></div></div>
+		<script type="text/javascript">$(function(){if(getLocal('darkMode') == 'dark'){$('html').addClass('dark-mode');$(this).find('.state').html('ON');}$('.btn-theme__toggle').on('click', function(e){if(!$('html').hasClass('dark-mode')){$('html').addClass('dark-mode');$(this).find('.state').html('ON');setLocal('darkMode', 'dark');}else{$('html').removeClass('dark-mode');$(this).find('.state').html('OFF');setLocal('darkMode', 'light');}})});</script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<script src="/js/jquery.number.min.js"></script>
+		<script src="/js/slick.min.js"></script>
+	 	<script src="/js/util.js"></script>
+	 	<script src="/js/account.js"></script>
+	 	<script src="/js/storage.js"></script>
+	</body>
+</html>

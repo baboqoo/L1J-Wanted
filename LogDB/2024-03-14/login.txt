@@ -1,0 +1,3 @@
+2024-03-14 03:02:52	Connection char=Elfita account=cckiss IP=127.0.0.1
+2024-03-14 03:09:56	End character=Elfita account=cckiss IP=127.0.0.1
+2024-03-14 03:37:02	Connection char=Elfita account=cckiss IP=127.0.0.1

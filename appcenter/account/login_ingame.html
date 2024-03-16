@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meata -->
+		<title>{SERVER_NAME}</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<!-- Mobile -->
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+		<!-- css -->
+	    <link rel="stylesheet" href="/css/my_style.css">
+	    <link rel="stylesheet" href="/css/login.css">
+	    <style type="text/css">
+		.account-form .input-character label {display: none;}
+		.account-form .input-character {position: relative; margin-top: 8px; margin-bottom: 8px;}
+		.account-form .input-character input {width: 100%; font-size: 1.5rem; color: #334571; padding: 15px 16px 17px 16px; border: 1px solid #d5d9e2; border-radius: 0; background: #ffffff; -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; vertical-align: middle; ime-mode: disabled !important;}
+		.account-form .input-character input:focus {outline: none; border: 1px solid #7985a2;}
+		.account-form .input-character input:disabled {background-color: #efeff4; border: solid 1px #d5d9e2;}
+		.account-form .input-character input::-webkit-input-placeholder {font-size: 1.5rem; color: #9398aa;}
+		.account-form .input-character input::-moz-placeholder {font-size: 1.5rem; color: #9398aa;}
+		.account-form .input-character input::-ms-input-placeholder {font-size: 1.5rem; color: #9398aa;}
+		.account-form .input-character input::placeholder {font-size: 1.5rem; color: #9398aa;}
+		.account-form .input-character input:-ms-input-placeholder {font-size: 1.5rem; color: #9398aa}
+		.account-form .input-character input:-webkit-autofill, 
+		.account-form .input-character input:-webkit-autofill:hover, 
+		.account-form .input-character input:-webkit-autofill:focus input:-webkit-autofill, 
+		.account-form .input-character textarea:-webkit-autofill, 
+		.account-form .input-character textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus, 
+		.account-form .input-character select:-webkit-autofill, 
+		.account-form .input-character select:-webkit-autofill:hover, 
+		.account-form .input-character select:-webkit-autofill:focus {-webkit-text-fill-color: #9398aa; -webkit-box-shadow: inset 0 0 0px 9999px #ffffff;}
+		.account-form .input-character input[type='text'] {padding-right: 40px;height: 56px;}
+		.dimmed {position: fixed; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.4); display: none; z-index: 10000000; text-indent: -10000em;}
+
+	    html.dark-mode {background-color: #171717;}
+	    html.dark-mode body.nc-signin, html.dark-mode body.nc-signin #container .wrap-contents {background-color: hsla(0,0%,100%,.04);}
+	  	html.dark-mode .account-form input {background: #474747;border: 1px solid hsla(0,0%,100%,0);color: hsla(0,0%,100%,.83);}
+	  	html.dark-mode .account-form input:-webkit-autofill, html.dark-mode .account-form input:-webkit-autofill:focus, html.dark-mode .account-form input:-webkit-autofill:hover {-webkit-text-fill-color: hsla(0,0%,100%,.83);-webkit-box-shadow: inset 0 0 0 9999px #464646!important;}
+	    @media (min-width: 960px){
+			html.dark-mode {background-color: #171717;}
+			html.dark-mode body.nc-signin, html.dark-mode body.nc-signin #container .wrap-contents {background-color: #171717;}
+			html.dark-mode .inner-box {background-color: hsla(0,0%,100%,.04); border: 1px solid #333;}
+			html.dark-mode .account-form input:-webkit-autofill, html.dark-mode .account-form input:-webkit-autofill:focus, html.dark-mode .account-form input:-webkit-autofill:hover {-webkit-text-fill-color: hsla(0,0%,100%,.83);-webkit-box-shadow: inset 0 0 0 9999px #3b3b3b!important;}
+    	}
+	    </style>
+	    <style type="text/css" id="mode_toggle_button">.btn-fixed-wrap{position:fixed;left:16px;bottom:16px;z-index:100000;}.btn-fixed-wrap .btn-theme{position:relative;display:block;height:40px;opacity:0.95;border-radius:22px;-webkit-box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.25);box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.25);border:solid 1px #585858;background-color:#434343;}.btn-fixed-wrap .btn-theme > button{cursor:pointer;height:100%;margin:0px;padding:0 11px;background:#0000;outline:none;border:0px;font-weight:bold;font-family:"Noto Sans KR", -apple-system, BlinkMacSystemFont, Roboto, "맑은 고딕", "Malgun Gothic";}.btn-fixed-wrap .btn-theme > button span:nth-child(2){display:none;}.btn-fixed-wrap .btn-theme > button .icon{display:inline-block;width:26px;height:26px;background-repeat:no-repeat;background-position:50%;background-size:cover;vertical-align:middle;overflow:hidden;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48ZGVmcz48c3R5bGU+LmNscy0xe29wYWNpdHk6MC42O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48dGl0bGU+4YSP4YWl4YSG4YWy4YSC4YW14YSQ4YW1X+GEi+GFoeGEi+GFteGEj+GFqeGGq19kYXJrX3YxLjBf4YSA4YW14YSM4YWp4Yar4YSA4YWm4YSJ4YW14YSR4YWh4YarPC90aXRsZT48ZyBpZD0ic3dpdGNoX2xpZ2h0Ij48ZyBjbGFzcz0iY2xzLTEiPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEwLDUuNWExMC4zOSwxMC4zOSwwLDAsMSwuMjEtMi4xQTEwLDEwLDAsMSwwLDIyLjYsMTUuNzlhMTAuMzksMTAuMzksMCwwLDEtMi4xLjIxQTEwLjUsMTAuNSwwLDAsMSwxMCw1LjVaTTEzLDIyQTksOSwwLDAsMSw5LDQuOTRjMCwuMTksMCwuMzcsMCwuNTZBMTEuNTEsMTEuNTEsMCwwLDAsMjAuNSwxN2guNTZBOSw5LDAsMCwxLDEzLDIyWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIyMCA2IDIwIDMgMTkgMyAxOSA2IDE2IDYgMTYgNyAxOSA3IDE5IDEwIDIwIDEwIDIwIDcgMjMgNyAyMyA2IDIwIDYiLz48L2c+PC9nPjwvc3ZnPg==");}html.dark-mode .btn-fixed-wrap .btn-theme > button .icon{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48ZGVmcz48c3R5bGU+LmNscy0xLC5jbHMtMntvcGFjaXR5OjAuMjU7fS5jbHMtM3tmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT7hhI/hhaXhhIbhhbLhhILhhbXhhJDhhbVf4YSL4YWh4YSL4YW14YSP4YWp4YarX2RhcmtfdjEuMF/hhIDhhbXhhIzhhanhhqvhhIDhhabhhInhhbXhhJHhhaHhhqs8L3RpdGxlPjxnIGlkPSJzd2l0Y2hfZGFyayI+PGcgY2xhc3M9ImNscy0xIj48cGF0aCBkPSJNMTIsNy41YTEwLjM5LDEwLjM5LDAsMCwxLC4yMS0yLjFBMTAsMTAsMCwxLDAsMjQuNiwxNy43OWExMC4zOSwxMC4zOSwwLDAsMS0yLjEuMjFBMTAuNSwxMC41LDAsMCwxLDEyLDcuNVoiLz48L2c+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjI1IDggMjIgOCAyMiA1IDIxIDUgMjEgOCAxOCA4IDE4IDkgMjEgOSAyMSAxMiAyMiAxMiAyMiA5IDI1IDkgMjUgOCIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTEwLDUuNWExMC4zOSwxMC4zOSwwLDAsMSwuMjEtMi4xQTEwLDEwLDAsMSwwLDIyLjYsMTUuNzlhMTAuMzksMTAuMzksMCwwLDEtMi4xLjIxQTEwLjUsMTAuNSwwLDAsMSwxMCw1LjVaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjIzIDYgMjAgNiAyMCAzIDE5IDMgMTkgNiAxNiA2IDE2IDcgMTkgNyAxOSAxMCAyMCAxMCAyMCA3IDIzIDcgMjMgNiIvPjwvZz48L3N2Zz4=");}.btn-fixed-wrap .btn-theme > button .text{font-size:14px;letter-spacing:-0.7px;vertical-align:middle;color:#B8B8B8;}html.dark-mode .btn-fixed-wrap .btn-theme > button .text{color:#ffffff;}.btn-fixed-wrap .btn-theme > button .text.state{display:inline-block;}html.dark-mode .btn-fixed-wrap .btn-theme > button .text.state{color:#ff8940;}@media (min-width: 960px){.btn-fixed-wrap .btn-theme > button span:nth-child(2){display:inline-block;}}</style>
+	 	<!-- js -->
+	 	<script src="/js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body class="pc nc-signin">
+		<div id="container" class="wrapper">
+			<div class="toast-wrap"><div class="keypad">Keypad</div></div>
+			<div class="contents">
+			    <div class="inner-box">
+			        <header class="header"><h1 class="logo"><a href="/index"><span>{SERVER_NAME}</span></a></h1></header>
+			        <section class="login-wrap">
+			            <form id="loginForm" name="loginForm" method="post" class="account-form" onsubmit="return loginIngame();")>
+		                    <fieldset>
+		                        <legend>{SERVER_NAME} Ingame Login</legend>
+	                            <div class="input-account-wrap"><div class="input-email"><label for="login_name">Account email</label><input type="text" id="login_name" name="login_name" maxlength="64" autocomplete="username" autocapitalize="off" placeholder="Account"  tabindex="1" value="" onKeyup="loginWriteCheck(this);" style="padding: 15px 16px 17px 16px !important;"/><span class="btn-delete">Delete</span><span class="msg"></span></div></div>
+		                        <div class="input-pwd"><label for="password">Password</label><input type="password" id="password" name="password" maxlength="16" autocomplete="current-password" autocapitalize="off" placeholder="Password"  tabindex="2" onKeyup="loginWriteCheck(this);"><span class="btn-delete">Delete</span><span class="msg"></span></div>
+				<div class="input-character"><label for="character">Character Name</label><input type="text" id="character_name" name="character_name" maxlength="64" autocomplete="current-charactername" autocapitalize="off" placeholder="Character Name"  tabindex="2" onKeyup="loginWriteCheck(this);"><span class="btn-delete">Delete</span><span class="msg"></span></div>
+		                        <div class="btn-wrap"><button class="btn-login" id="btnPlayncLogin" type="submit"><span>Login</span></button></div>
+		                    </fieldset>
+			            </form>
+			        </section>
+			        <style>
+			        .text_info {max-width: 365px; margin: 20px auto;}
+			        .text_info ul li {list-style: none; padding-bottom: 10px; color: #666;}
+			        </style>
+			        <div class="text_info"><ul><li>Enter your account email and password.</li><li>Enter the name of the character you are currently playing.</li><li>We are not responsible for the loss or theft of your access data.</li></ul></div>
+			    </div>
+			</div>
+			<div class="footer"><p>Copyright &copy; {SERVER_NAME}. All Rights Reserved.</p></div>
+			
+			<div id="send_delay" style="display:none; z-index:10000001; position: fixed; width: 100%; top: 40%;"><div style="text-align: center;background: #fff;padding: 30px; width: 400px; margin: auto;"><div><img src="/img/loading.gif"></div><div style="font-weight: 600; color: #444; padding-top: 10px;">Please decide whether to approve in-game.</div></div></div>
+			<div class="dimmed" style="display:none;">dimmed</div>
+		</div>
+		<div class="mode_toggle_button_div"><div class="btn-fixed-wrap"><div class="btn-theme"><button class="btn-theme__toggle"><span class="icon"></span><!--<span class="text">다크모드</span>--><span class="text state">OFF</span></button></div></div></div>
+		<script type="text/javascript">$(function(){if(getLocal('darkMode') == 'dark'){$('html').addClass('dark-mode');$(this).find('.state').html('ON');}$('.btn-theme__toggle').on('click', function(e){if(!$('html').hasClass('dark-mode')){$('html').addClass('dark-mode');$(this).find('.state').html('ON');setLocal('darkMode', 'dark');}else{$('html').removeClass('dark-mode');$(this).find('.state').html('OFF');setLocal('darkMode', 'light');}})});</script>
+		<script src="/js/jquery.number.min.js"></script>
+	 	<script src="/js/util.js"></script>
+	 	<script src="/js/storage.js"></script>
+
+		<script type="text/javascript">
+		const call_back = '{CALLBACK_URL}';
+		const login_auth_cnt = {LOGIN_AUTH_COUNT};
+
+		let login_delay_flag = false;// 딜레이 검증
+		let auth_interval;// 주기적 검증 타이머
+		let auth_cnt = 0;// 승인 검증 횟수
+		let user_auth_process = false;// 서버의 부담을 줄이기 위해 유저의 브라우저에서 딜레이 검증을 실시한다.
+
+		$('.btn-delete').on('click', function(event) {
+			var del = $(this).closest('div').find('input');
+			del.val('');
+			$(this).css('display', 'none');
+		});
+		function loginWriteCheck(o){
+			if ($(o).focus()) {
+				var write = $(o).val();
+				if (!write) {
+					$(o).closest('div').find('.btn-delete').css('display', 'none');
+				} else {
+					$(o).closest('div').find('.btn-delete').css('display', 'inline');
+					$(o).closest('div').find('.msg').html('');
+				}
+			}
+	
+			$(o).focus(function(){
+				var write = $(o).val();
+				$(o).closest('div').find('.btn-delete').css('display', !write ? 'none' : 'inline');
+			});
+		}
+
+		function dispose_timer() {
+			if (auth_interval !== undefined) {
+				clearInterval(auth_interval);
+			}
+			$('.dimmed').css('display', 'none');
+			$('#send_delay').css('display', 'none');
+			login_delay_flag = false;
+		}		
+
+		function login_auth() {
+			if (++auth_cnt > login_auth_cnt) {
+				dispose_timer();
+				$('.input-character').find('.msg').html('Approval decision timed out.');
+				return;
+			}
+			$.ajax ({
+				type:		'post',
+				datatype:	'json',
+				url:		'/define/account/loginIngameauth',
+				data:		{"charname":loginForm.character_name.value, "auth_cnt":auth_cnt},
+				success:function(data){
+					if (data !== 6) {// 결과가 대기중이 아니면 타이머를 종료한다.
+						dispose_timer();
+					}
+					switch (data) {
+					case 1:// 승인 완료
+						location.href = !call_back ? '/index' : call_back;
+						break;
+					case 2:// 인게임이 아니다.
+						$('.input-character').find('.msg').html('You can proceed in-game.');
+						break;
+					case 3:// 캐릭터명 누락
+						$('.input-character').find('.msg').html('A parameter is missing. Please try again in a while.');
+						break;
+					case 4:// 인게임 캐릭터 누락
+						$('.input-character').find('.msg').html('The indicated character cannot be found in the game.');
+						break;
+					case 5:// 횟수 초과
+						$('.input-character').find('.msg').html('Approval decision timed out.');
+						break;
+					case 6:// 대기중
+						break;
+					case 7:// 승인거절
+						$('.input-character').find('.msg').html('Approval denied in-game.');
+						break;
+					default:
+						$('.input-email').find('.msg').html('An unknown error has occurred. Please try again in a while.');
+						break;
+					}
+				}, error: function(request, status, error){
+					console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+					dispose_timer();
+					$('.input-character').find('.msg').html('An unknown error has occurred. Please try again in a while.');
+				}
+			});
+		}
+
+		function loginIngame() {
+			if (login_delay_flag) {
+				return false;
+			}
+			if (!loginForm.login_name.value) {
+				$('.input-email').find('.msg').html('Please enter your account email.');
+				loginForm.login_name.focus();
+				return false;
+			}
+			if (!loginForm.password.value) {
+				$('.input-pwd').find('.msg').html('Please enter a password.');
+				loginForm.password.focus();
+				return false;
+			}
+			if (!loginForm.character_name.value) {
+				$('.input-character').find('.msg').html('Please enter a character name.');
+				loginForm.character_name.focus();
+				return false;
+			}
+			if (user_auth_process) {
+				$('.input-character').find('.msg').html('Try again in 10 seconds.');
+				return false;
+			}
+
+			login_delay_flag = true;
+			var senddata = {
+				"loginname":loginForm.login_name.value, 
+				"password":loginForm.password.value,
+				"charname":loginForm.character_name.value
+			};
+			$.ajax ({
+				type:		'post',
+				datatype:	'json',
+				url:		'/define/account/loginIngame',
+				data:		senddata,
+				success:function(data){
+					if (data !== 1) {
+						login_delay_flag = false;
+					}
+					switch (data) {
+					case 1:// 인게임 승인 검증 시작
+						$('.dimmed').css('display', 'block');
+						$('#send_delay').css('display', 'block');
+						auth_cnt = 0;
+						if (auth_interval !== undefined) {
+							clearInterval(auth_interval);
+						}
+						auth_interval = setInterval(login_auth, 1000);// 1초 주기로 확인한다.
+						user_auth_process = true;// 연속 검증 제한
+						setTimeout(function() {
+							user_auth_process = false;
+						}, (login_auth_cnt + 5) * 1000);// 연속 검증 제한 초기화(+5초)
+						break;
+					case 2:
+						$('.input-character').find('.msg').html('You can proceed in-game.');
+						break;
+					case 3:
+						$('.input-character').find('.msg').html('A parameter is missing. Please try again in a while.');
+						break;
+					case 4:
+						$('.input-character').find('.msg').html('Your client is not active right now.');
+						break;
+					case 5:
+						$('.input-email').find('.msg').html('The account entered does not exist or the password is incorrect.');
+						break;
+					case 6:
+						$('.input-character').find('.msg').html('The indicated character cannot be found in the game.');
+						break;
+					case 7:// 연속 검증 방지
+						$('.input-character').find('.msg').html('Try again in 10 seconds.');
+						break;
+					default:
+						$('.input-email').find('.msg').html('An unknown error has occurred. Please try again in a while.');
+						break;
+					}
+				}, error: function(request, status, error){
+					console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+					login_delay_flag = false;
+				}
+			});
+			return false;
+		}
+
+		$(function () {
+			// 최초 승인 페이지 로드시 인게임과의 통신을 통해 승인을 진행한다.
+			// 승인에 실패 시 직접 입력하여 인게임에서 승인을 결정한다.
+			// 승인에 사용될 10자리 유저 고유 아이디
+			let randomStr = Math.random().toString(36).substring(2, 12);
+			const UID = 'U_' + randomStr;
+			function auth_id() {
+				$.ajax ({
+					type:		'post',
+					datatype:	'json',
+					url:		'/define/account/loginIngameInit',
+					data:		{'UID': UID},
+					success:function(data){
+						switch (data) {
+						case 1:// 인게임 승인
+							location.href = !call_back ? '/index' : call_back;
+							break;
+						default:
+							$('.dimmed').css('display', 'none');
+							$('#send_delay').css('display', 'none');
+							break;
+						}
+					}, error: function(request, status, error){
+						console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+						$('.dimmed').css('display', 'none');
+						$('#send_delay').css('display', 'none');
+					}
+				});
+			}
+			
+			// 인게임 유저 아이디 설정
+			function set_ingame_uid() {
+				L1.FindMerchant(UID);
+				// 설정 완료 후 0.1초후 검증
+				setTimeout(function() {
+					auth_id();
+				}, 100);
+			}
+
+			$(document).ready(function(){
+				$('.dimmed').css('display', 'block');
+				$('#send_delay').css('display', 'block');
+				// 인게임 유저 아이디 0.1초후 설정(인게임 브라우저 최초 생성시 2번 호출 방지)
+				setTimeout(function() {
+					set_ingame_uid();
+				}, 100);
+			});
+
+		});
+		</script>
+	</body>
+</html>

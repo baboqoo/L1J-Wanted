@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>To Pay</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
+<script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+</head>
+<script type="text/javascript">
+	window.history.forward();
+	function noBack() {
+		window.history.forward();
+	}
+	const cashPrice = '{PRICE}';
+	const cashCount = '{COUNT}';
+</script>
+<body onload="noBack();" onpageshow="if(event.persisted) noBack();" onunload="">
+	<form name="authCompleteform">
+		<input type="hidden" name="price" id="price">
+		<input type="hidden" name="count" id="count">
+	</form>
+	<script type="text/javascript" src="/js/cash.js"></script>
+</body>
+</html>

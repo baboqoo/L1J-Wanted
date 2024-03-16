@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+.trade_top_tit {border: 1px solid #ddd; height: 69px; text-align: center; line-height: 67px; font-size: 14px; color: red; max-width: 1260px; margin: 0 auto;}
+.board-top-utils{padding: 10px 0px;}
+.trade-select {position: relative; display: initial; padding-left: 10px;}
+.ui-dropdown {position: relative; height: 36px; font-size: 14px; line-height: 150%; letter-spacing: -1px; text-align: left; color: #1f1f1f; display: inline-block;}
+.ui-dropdown .select {padding: 7px 17px; color: #929292fa; font-weight: 500; font-size: 15px; cursor: pointer; width: 120px; border: 1px solid #ddd;}
+.ui-dropdown .select::after {content: ''; position: absolute; margin-top: 7px; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 6px solid #c7c7cc; right: 20px;}
+.ui-dropdown.is-active .select::after {border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 6px solid #c7c7cc; border-top: 0;}
+.ui-dropdown .option {display: none; position: absolute; z-index: 10; left: 0; right: 0; margin: 0; padding: 0; list-style: none; border: 1px solid #ddd; background-color: #fff;}
+.ui-dropdown.is-active .option {display: block;}
+.ui-dropdown .option li {padding: 6px 16px; cursor: pointer;}
+.ui-dropdown .option li:hover {background-color: #f9fafb;}
+
+.board-top-utils .caption {float: left; line-height: 26px; padding-top: 10px;}
+.board-items .board-type-list.subject {width: 100px; background-color: #eaecef; opacity: 0.6; text-align: center; padding: 0;}
+.board-items .board-type-list.subject span {vertical-align: middle; font-weight: 600; color: #313131;}
+.board-items .no-data {width: 100%!important; margin: 0; padding: 30px 0!important; text-align: center!important; display: inline-block;}
+.board-items .no-data::before {content: ''; display: block; width: 44px; height: 44px; margin: 0 auto; background-image: url(/img/icon-warning-my.png); background-position: center center; background-repeat: no-repeat; background-size: 44px 44px;}
+.board-items .no-data p {padding-top: 10px; color: #888; font-size: 13px;}
+.board-write-btn {float: left; margin-top: 12px;}
+
+.pagination-container {margin: 0 auto; display: table; padding-top: 20px !important;}
+.paginationjs .paginationjs-pages li, .paginationjs .paginationjs-pages li:last-child {border: none;}
+.paginationjs .paginationjs-pages li>a {color: #b5b5b5;}
+.paginationjs .paginationjs-pages li.active>a {background: #fff;color: #1f1f1f;line-height: 28px;}
+
+.board-write {padding: 5px;}
+.board-write .caption {float: left;}
+.board-write .subtit {float: right; font-size: 13px; line-height: 28px; color: #888; padding-top: 18px;}
+.trade-write-title input {width: 100%; height: 40px; padding: 10px; border: 1px solid;}
+.trade-write-content textarea {margin-top: 10px; min-height: 160px; width: 100%; padding: 10px; border-color: #eaecef!important; background: #fff!important;}
+.trade-write-bank input {height: 40px; padding: 10px; border: 1px solid;}
+.trade-write-bank {padding-top: 10px; padding-bottom: 20px; display: block;}
+.trade-write-bank label {display: block; height: 32px; vertical-align: middle; color: red; font-size: 13px;}
+.trade-write-bank #bank {width: 18.5%;}
+.trade-write-bank #bankNumber {width: 30%;}
+.trade-write-bank #sellerName {width: 18.5%;}
+.trade-write-bank #sellerPhone {width: 30%; float: right;}
+.board-write input:focus, .board-write textarea:focus {border-color: #c69c7c !important;}
+
+@media (max-width: 960px){
+	.board-write-btn {margin-left:12px;}
+	.board-top-utils .caption {padding: 16px 20px 12px;}
+	.board-items .board-type-list.subject {float: left; text-align: center; height: 50px; margin-right: 15px; padding: 12px;}
+    .ui-dropdown {margin-top: 8px;}
+}
+
+
+/* trade view */
+.comment-form {position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; border: 1px solid rgba(34,34,34,.08);}
+.comment-form .comment-form-textarea {height: 69px !important; padding: 0 0 0 16px !important; border: none !important;}
+.comment-form .comment-form-textarea textarea {height: 69px; padding: 12px 0;}
+.comment-form .comment-toolbar {height: 40px; border-width: 1px 0 0; border-style: solid; border-color: rgba(34,34,34,.08); background-color: #fff; bottom: 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative;}
+.comment-form.is-active .comment-toolbar {display: -webkit-box; display: -ms-flexbox; display: flex;}
+.comment-form .comment-toolbar .right {height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: auto;}
+.view-body {min-height: 260px;}
+
+.trade-status {border: 1px solid #ddd; padding: 23px;}
+.trade-status .caption {display: block; text-align: center;font-size: 16px; color: #b8b8b8;}
+.trade-status .trade-util {padding-top: 20px; text-align: center;}
+.trade-status .trade-util .status_txt {display: block; font-size: 14px; font-weight: 600; color: #861616; padding-bottom: 10px;}
+.trade-status .trade-util a {padding: 9px; width: 142px; display: inline-block; line-height: 20px;}
+.trade-info {display: table-cell; border: 1px solid #ddd; border-top: none; padding: 16px; margin-bottom: 20px; vertical-align: middle; text-align: center; width: 50%;}
+.buyer-info {border-left: none;}
+.trade-info .caption {height: 36px; font-size: 15px; font-weight: 600; color: #29292955;}
+.trade-info .seller-info-con, .trade-info .buyer-info-con {border: 1px solid #ddd; padding: 10px; display: inline-block; width: 260px; height: 44px; margin-bottom: 8px;font-size: 14px;}
+.fl {float: left;}
+.fr {float: right;}
+.trade-info .buyerEmpty {border: none;}
+
+.trade-buy-pop {position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 10000000; display: none;}
+.trade-buy-div {max-width: 500px; margin: 0 auto; position: relative; top: 30%; border: 1px solid #ddd; background: #fff; padding: 37px 0px;}
+.trade-buy-div .input-area {max-width: 460px; margin: 0 auto;}
+.trade-buy-area {text-align: center;}
+.trade-buy-area input {border: 1px solid #ddd; height: 37px; background-color: transparent;  margin-top: 22px;  padding-left: 10px;}
+
+.trade-buy-pop .btn_area {clear: both; text-align: center; padding-top: 40px;}
+.trade-buy-pop .btn_area button {padding: 10px; width: 100px; color: #fff; border: none;}
+.trade-buy-pop .btn_create {background-color: #368db0;}
+.trade-buy-pop .btn_create:hover {background-color: #2b6f8a;}
+.trade-buy-pop .btn_close {background: #003569;}
+.trade-buy-pop .btn_close:hover {background: #012040;}
+.trade-buy-pop-back {display: none; height: 100%; width: 100%; position: fixed; top: 0; left: 0; z-index: 9999999; background: #000; opacity: 0.4;}

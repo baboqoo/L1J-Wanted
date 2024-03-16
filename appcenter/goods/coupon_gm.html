@@ -1,0 +1,392 @@
+<div class="goods_sub coupon-container">
+	<div class="cell" style="border-right:none;">
+		<div class="box">
+			<div class="coupon_list">
+				<div class="coupon_tab_top">
+					<span class="caption">Coupon History</span>
+					<div class="coupon-select">
+						<div class="ui-dropdown">
+							<div class="select">
+	        					<span>All</span>
+	        					<input type="hidden" name="couponType" id="data_val" value="-1"/>
+	        				</div>
+       						<ul class="option">
+       							<li class="ui-dropdown-custom_items coupon-select-items" data-textvalue="All" data-value="-1">All</li>
+       							<li class="ui-dropdown-custom_items coupon-select-items" data-textvalue="Not used" data-value="0">Not used</li>
+       							<li class="ui-dropdown-custom_items coupon-select-items" data-textvalue="Used" data-value="1">Used</li>
+       						</ul>
+	        				</div>
+	        			</div>
+       				<div class="coupon-search-area">
+       					<input type="text" name="couponSearch" class="coupon-search-input" placeholder="16 digit coupon number" />
+						<button class="btn_search" onClick="javascript:couponSearch();">Search</button>
+						<button class="co-btn btn-reload" aria-label="Refresh" title="Refresh" onClick="javascript:couponListReload();"><svg class="fe-svg fe-svg-reload"><use xlink:href="#fe-svg-reload"></use></svg></button>
+       				</div>
+	        		<button class="coupon-pop-open" onClick="javascript:couponPopOpen();">Make a Coupon</button>
+	        	</div>
+       			<table class="table_list ng-scope">
+       				<tbody><tr><th width="30%">Coupon Nº</th><th width="30%">Coupon Information</th><th width="10%">Date</th><th width="10%">State</th><th width="10%">Date of use</th><th width="10%">Account used</th></tr></tbody>
+       				<tbody class="couponList"></tbody>
+       			</table>
+	        </div>
+	        <div class="pagination-container"></div>
+	    </div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+function getLocaleDateString() {
+  const formats = {
+    "af-ZA": "YYYY/MM/DD",
+    "aM-ET": "D/M/YYYY",
+    "ar-AE": "DD/MM/YYYY",
+    "ar-BH": "DD/MM/YYYY",
+    "ar-DZ": "DD-MM-YYYY",
+    "ar-EG": "DD/MM/YYYY",
+    "ar-IQ": "DD/MM/YYYY",
+    "ar-JO": "DD/MM/YYYY",
+    "ar-KW": "DD/MM/YYYY",
+    "ar-LB": "DD/MM/YYYY",
+    "ar-LY": "DD/MM/YYYY",
+    "ar-MA": "DD-MM-YYYY",
+    "ar-OM": "DD/MM/YYYY",
+    "ar-QA": "DD/MM/YYYY",
+    "ar-SA": "DD/MM/YY",
+    "ar-SY": "DD/MM/YYYY",
+    "ar-TN": "DD-MM-YYYY",
+    "ar-YE": "DD/MM/YYYY",
+    "arn-CL": "DD-MM-YYYY",
+    "as-IN": "DD-MM-YYYY",
+    "az-CYrl-AZ": "DD.MM.YYYY",
+    "az-Latn-AZ": "DD.MM.YYYY",
+    "ba-RU": "DD.MM.YY",
+    "be-BY": "DD.MM.YYYY",
+    "bg-BG": "DD.M.YYYY",
+    "bn-BD": "DD-MM-YY",
+    "bn-IN": "DD-MM-YY",
+    "bo-CN": "YYYY/M/D",
+    "br-FR": "DD/MM/YYYY",
+    "bs-CYrl-BA": "D.M.YYYY",
+    "bs-Latn-BA": "D.M.YYYY",
+    "ca-ES": "DD/MM/YYYY",
+    "co-FR": "DD/MM/YYYY",
+    "cs-CZ": "D.M.YYYY",
+    "cY-GB": "DD/MM/YYYY",
+    "Da-DK": "DD-MM-YYYY",
+    "De-AT": "DD.MM.YYYY",
+    "De-CH": "DD.MM.YYYY",
+    "De-DE": "DD.MM.YYYY",
+    "De-LI": "DD.MM.YYYY",
+    "De-LU": "DD.MM.YYYY",
+    "Dsb-DE": "D. M. YYYY",
+    "Dv-MV": "DD/MM/YY",
+    "el-GR": "D/M/YYYY",
+    "en-029": "MM/DD/YYYY",
+    "en-AU": "D/MM/YYYY",
+    "en-BZ": "DD/MM/YYYY",
+    "en-CA": "DD/MM/YYYY",
+    "en-GB": "DD/MM/YYYY",
+    "en-IE": "DD/MM/YYYY",
+    "en-IN": "DD-MM-YYYY",
+    "en-JM": "DD/MM/YYYY",
+    "en-MY": "D/M/YYYY",
+    "en-NZ": "D/MM/YYYY",
+    "en-PH": "M/D/YYYY",
+    "en-SG": "D/M/YYYY",
+    "en-TT": "DD/MM/YYYY",
+    "en-US": "M/D/YYYY",
+    "en-ZA": "YYYY/MM/DD",
+    "en-ZW": "M/D/YYYY",
+    "es-AR": "DD/MM/YYYY",
+    "es-BO": "DD/MM/YYYY",
+    "es-CL": "DD-MM-YYYY",
+    "es-CO": "DD/MM/YYYY",
+    "es-CR": "DD/MM/YYYY",
+    "es-DO": "DD/MM/YYYY",
+    "es-EC": "DD/MM/YYYY",
+    "es-ES": "DD/MM/YYYY",
+    "es-GT": "DD/MM/YYYY",
+    "es-HN": "DD/MM/YYYY",
+    "es-MX": "DD/MM/YYYY",
+    "es-NI": "DD/MM/YYYY",
+    "es-PA": "MM/DD/YYYY",
+    "es-PE": "DD/MM/YYYY",
+    "es-PR": "DD/MM/YYYY",
+    "es-PY": "DD/MM/YYYY",
+    "es-SV": "DD/MM/YYYY",
+    "es-US": "M/D/YYYY",
+    "es-UY": "DD/MM/YYYY",
+    "es-VE": "DD/MM/YYYY",
+    "et-EE": "D.MM.YYYY",
+    "eu-ES": "YYYY/MM/DD",
+    "fa-IR": "MM/DD/YYYY",
+    "fi-FI": "D.M.YYYY",
+    "fil-PH": "M/D/YYYY",
+    "fo-FO": "DD-MM-YYYY",
+    "fr-BE": "D/MM/YYYY",
+    "fr-CA": "YYYY-MM-DD",
+    "fr-CH": "DD.MM.YYYY",
+    "fr-FR": "DD/MM/YYYY",
+    "fr-LU": "DD/MM/YYYY",
+    "fr-MC": "DD/MM/YYYY",
+    "fY-NL": "D-M-YYYY",
+    "ga-IE": "DD/MM/YYYY",
+    "gD-GB": "DD/MM/YYYY",
+    "gl-ES": "DD/MM/YY",
+    "gsw-FR": "DD/MM/YYYY",
+    "gu-IN": "DD-MM-YY",
+    "ha-Latn-NG": "D/M/YYYY",
+    "he-IL": "DD/MM/YYYY",
+    "hi-IN": "DD-MM-YYYY",
+    "hr-BA": "D.M.YYYY.",
+    "hr-HR": "D.M.YYYY",
+    "hsb-DE": "D. M. YYYY",
+    "hu-HU": "YYYY. MM. DD.",
+    "hY-AM": "DD.MM.YYYY",
+    "iD-ID": "DD/MM/YYYY",
+    "ig-NG": "D/M/YYYY",
+    "ii-CN": "YYYY/M/D",
+    "is-IS": "D.M.YYYY",
+    "it-CH": "DD.MM.YYYY",
+    "it-IT": "DD/MM/YYYY",
+    "iu-Cans-CA": "D/M/YYYY",
+    "iu-Latn-CA": "D/MM/YYYY",
+    "ja-JP": "YYYY/MM/DD",
+    "ka-GE": "DD.MM.YYYY",
+    "kk-KZ": "DD.MM.YYYY",
+    "kl-GL": "DD-MM-YYYY",
+    "kM-KH": "YYYY-MM-DD",
+    "kn-IN": "DD-MM-YY",
+    "ko-KR": "YYYY. MM. DD",
+    "kok-IN": "DD-MM-YYYY",
+    "kY-KG": "DD.MM.YY",
+    "lb-LU": "DD/MM/YYYY",
+    "lo-LA": "DD/MM/YYYY",
+    "lt-LT": "YYYY.MM.DD",
+    "lv-LV": "YYYY.MM.DD.",
+    "Mi-NZ": "DD/MM/YYYY",
+    "Mk-MK": "DD.MM.YYYY",
+    "Ml-IN": "DD-MM-YY",
+    "Mn-MN": "YY.MM.DD",
+    "Mn-Mong-CN": "YYYY/M/D",
+    "Moh-CA": "M/D/YYYY",
+    "Mr-IN": "DD-MM-YYYY",
+    "Ms-BN": "DD/MM/YYYY",
+    "Ms-MY": "DD/MM/YYYY",
+    "Mt-MT": "DD/MM/YYYY",
+    "nb-NO": "DD.MM.YYYY",
+    "ne-NP": "M/D/YYYY",
+    "nl-BE": "D/MM/YYYY",
+    "nl-NL": "D-M-YYYY",
+    "nn-NO": "DD.MM.YYYY",
+    "nso-ZA": "YYYY/MM/DD",
+    "oc-FR": "DD/MM/YYYY",
+    "or-IN": "DD-MM-YY",
+    "pa-IN": "DD-MM-YY",
+    "pl-PL": "DD.MM.YYYY",
+    "prs-AF": "DD/MM/YY",
+    "ps-AF": "DD/MM/YY",
+    "pt-BR": "D/M/YYYY",
+    "pt-PT": "DD-MM-YYYY",
+    "qut-GT": "DD/MM/YYYY",
+    "quz-BO": "DD/MM/YYYY",
+    "quz-EC": "DD/MM/YYYY",
+    "quz-PE": "DD/MM/YYYY",
+    "rM-CH": "DD/MM/YYYY",
+    "ro-RO": "DD.MM.YYYY",
+    "ru-RU": "DD.MM.YYYY",
+    "rw-RW": "M/D/YYYY",
+    "sa-IN": "DD-MM-YYYY",
+    "sah-RU": "MM.DD.YYYY",
+    "se-FI": "D.M.YYYY",
+    "se-NO": "DD.MM.YYYY",
+    "se-SE": "YYYY-MM-DD",
+    "si-LK": "YYYY-MM-DD",
+    "sk-SK": "D. M. YYYY",
+    "sl-SI": "D.M.YYYY",
+    "sMa-NO": "DD.MM.YYYY",
+    "sMa-SE": "YYYY-MM-DD",
+    "sMj-NO": "DD.MM.YYYY",
+    "sMj-SE": "YYYY-MM-DD",
+    "sMn-FI": "D.M.YYYY",
+    "sMs-FI": "D.M.YYYY",
+    "sq-AL": "YYYY-MM-DD",
+    "sr-CYrl-BA": "D.M.YYYY",
+    "sr-CYrl-CS": "D.M.YYYY",
+    "sr-CYrl-ME": "D.M.YYYY",
+    "sr-CYrl-RS": "D.M.YYYY",
+    "sr-Latn-BA": "D.M.YYYY",
+    "sr-Latn-CS": "D.M.YYYY",
+    "sr-Latn-ME": "D.M.YYYY",
+    "sr-Latn-RS": "D.M.YYYY",
+    "sv-FI": "D.M.YYYY",
+    "sv-SE": "YYYY-MM-DD",
+    "sw-KE": "M/D/YYYY",
+    "sYr-SY": "DD/MM/YYYY",
+    "ta-IN": "DD-MM-YYYY",
+    "te-IN": "DD-MM-YY",
+    "tg-CYrl-TJ": "DD.MM.YY",
+    "th-TH": "D/M/YYYY",
+    "tk-TM": "DD.MM.YY",
+    "tn-ZA": "YYYY/MM/DD",
+    "tr-TR": "DD.MM.YYYY",
+    "tt-RU": "DD.MM.YYYY",
+    "tzM-Latn-DZ": "DD-MM-YYYY",
+    "ug-CN": "YYYY-M-D",
+    "uk-UA": "DD.MM.YYYY",
+    "ur-PK": "DD/MM/YYYY",
+    "uz-CYrl-UZ": "DD.MM.YYYY",
+    "uz-Latn-UZ": "DD/MM YYYY",
+    "vi-VN": "DD/MM/YYYY",
+    "wo-SN": "DD/MM/YYYY",
+    "xh-ZA": "YYYY/MM/DD",
+    "Yo-NG": "D/M/YYYY",
+    "zh-CN": "YYYY/M/D",
+    "zh-HK": "D/M/YYYY",
+    "zh-MO": "D/M/YYYY",
+    "zh-SG": "D/M/YYYY",
+    "zh-TW": "YYYY/M/D",
+    "zu-ZA": "YYYY/MM/DD",
+  };
+
+  return formats[navigator.language] || "DD/MM/YYYY";
+}
+
+var parameter = { status: -1 };
+var paginationRender = function(param){
+	let container = $('.pagination-container');
+    container.pagination({
+    	dataSource: function(done) {
+    	    $.ajax({
+    	        type: 'POST',
+    	        url: '/define/coupon',
+    	        data: param,
+    	        success: function(response) {
+    	        	if (response != null && response != undefined) {
+    	        		done(response);
+    	        	}
+    	        }
+    	    });
+    	},
+    	pageSize: 10,// 한 화면에 보여질 개수
+    	showPrevious: false,// 처음버튼 삭제
+        showNext: false,// 마지막버튼 삭제
+        showPageNumbers: true,// 페이지 번호표시
+        callback: function (data, pagination) {// 화면 출력
+            var dataHtml = '';
+            if (data.length > 0) {
+            	$.each(data, function (index, item) {
+           			dataHtml +=
+           			'<tr>' +
+           				'<td>' + item.number + '</td>' +
+           				'<td class="subject">' + (item.type === 'VOUCHER' ? '100 million adena coupon' : item.type) + '&nbsp;' + commaAdd(item.value) + (item.type === 'NCOIN' ? ' COIN' : item.type === 'NPOINT' ? ' POINT' : ' unit') + '</td>' +
+           				'<td>' + moment(item.createTime).format(getLocaleDateString()) + '</td>' +
+           				'<td>' + (item.status ? 'Used' : 'Not used') + '</td>' +
+           				'<td>' + (item.useTime != null && item.useTime != undefined ? moment(item.useTime).format(getLocaleDateString()) : '-') + '</td>' +
+	                		'<td>' + (item.useAccount != null && item.useAccount != undefined ? item.useAccount : '-') + '</td>' +
+	                	'</tr>';
+                });
+            } else {
+            	dataHtml += '<tr class="nodata"><td colspan="6">No coupon information.</td></tr>';
+            }
+
+            $(".couponList").html(dataHtml);// 렌더링
+        }
+    })
+}
+
+function couponPopOpen(){
+	$('.coupon-create-pop').css('display', 'block');
+	$('.coupon-create-pop-back').css('display', 'block');
+}
+
+function couponPopClose(){
+	$('.coupon-create-pop').css('display', 'none');
+	$('.coupon-create-pop-back').css('display', 'none');
+}
+
+function couponCreate(){
+	if (!couponCreateForm.couponType.value) {
+		popupShow('Please set the coupon type.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+		return false;
+	}
+	if (!couponCreateForm.couponPrice.value) {
+		popupShow('Please enter the quantity.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+		return false;
+	}
+	const senddata = {"type" : couponCreateForm.couponType.value, "price" : couponCreateForm.couponPrice.value};
+	$.ajax ({
+		type:		"post",
+		datatype:	"json",
+		url:		"/define/coupon/create",
+		data:		senddata,
+		success:function(data){
+			popupShow((data === null || data === undefined) ? 'Coupon creation failed.' : 'Coupon successfully created', '<span class="type2"><a href="javascript:popupCloseReload();" class="close">Ok</a></span>', null);
+		}, error: function(request, status, error){
+			console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		}
+	});
+	return false;
+}
+
+function priceCheck(obj){
+	let priceValue	= checkDigit(obj.value);
+	if(priceValue > 1000000)	obj.value	= 1000000;
+	else if(priceValue < 1)	obj.value	= 1;
+	else					obj.value	= priceValue;
+}
+
+function couponSearch(){
+	let searchInput = $('.coupon-search-input');
+	if (!searchInput.val()) {
+		return false;
+	}
+	if (searchInput.val().length != 10) {
+		popupShow('This is not a valid coupon number.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+		return false;
+	}
+	parameter.status = searchInput.val().toUpperCase();
+	$('.pagination-container').destory;
+	paginationRender(parameter);
+	return false;
+}
+
+function couponListReload(){
+	$('.coupon_tab_top .ui-dropdown .select span').html('All');
+	$('.coupon_tab_top .ui-dropdown .select input').val(-1);
+	$('.coupon-search-input').val('');
+	parameter.status = -1;
+	$('.pagination-container').destory;
+	paginationRender(parameter);
+	return false;
+}
+
+$(function() {
+	var create_pop = 
+	'<div class="coupon-create-div">' +
+		'<form name="couponCreateForm" action="#" onsubmit="return couponCreate();" autocomplete="off">' +
+			'<div class="input-area">' +
+				'<div class="coupon-create-area">' +
+					'<label>Coupon Type</label>' +
+					'<div class="coupon-select">' +
+						'<div class="ui-dropdown">' +
+							'<div class="select"><span>Select</span><input type="hidden" name="couponType" id="data_val"></div>' +
+							'<ul class="option">' +
+								'<li class="ui-dropdown-custom_items" data-textvalue="Select" data-value="">Select</li>' +
+								'<li class="ui-dropdown-custom_items" data-textvalue="VOUCHER" data-value="VOUCHER">Voucher</li>' +
+								'<li class="ui-dropdown-custom_items" data-textvalue="NCOIN" data-value="NCOIN">NCOIN</li>' +
+								'<li class="ui-dropdown-custom_items" data-textvalue="NPOINT" data-value="NPOINT">NPOINT</li>' +
+							'</ul>' +
+						'</div>' +
+					'</div>' +
+				'</div>' +
+				'<div class="coupon-create-area price"><label>Quantity</label><input type=text name="couponPrice" placeholder="Please enter quantity." onChange="javascript:priceCheck(this);" /></div>' +
+			'</div>' +
+		'</form>' +
+		'<div class="btn_area"><button class="btn_create" onClick="javascript:couponCreate();">Create</button><button class="btn_close" onClick="javascript:couponPopClose();">Close</button></div>' +
+	'</div>';
+	$('.coupon-create-pop').html(create_pop);
+	paginationRender(parameter);
+});
+</script>

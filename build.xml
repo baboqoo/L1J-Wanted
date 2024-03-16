@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="L1J" default="all" basedir=".">
+    <description>
+        This script will build the L1J server.
+
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2, or (at your option)
+        any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+        02111-1307, USA.
+
+        http://www.gnu.org/copyleft/gpl.html
+
+    </description>
+
+
+    <!-- Set Property -->
+    <property name="src.dir" value="src" />
+    <property name="lib.dir" value="lib" />
+    <property name="build.dir" value="build" />
+    <property name="jarfile" value="l1jserver.jar" />
+
+    <path id="classpath">
+        <fileset dir="${lib.dir}">
+            <include name="c3p0-0.9.1.2.jar" />
+            <include name="javolution.jar" />
+        	<include name="commons-lang-2.6.jar" />
+        	<include name="gson-2.8.4-sources.jar" />
+        	<include name="gson-2.8.4.jar" />
+        	<include name="json-20180813.jar" />
+        	<include name="json-simple-1.1.1.jar" />
+	     	<include name="mina-core-2.0.9.jar" />
+        	<include name="netty-all-4.1.31.Final.jar" />
+        	<include name="mysql-connector-java-5.1.7-bin.jar" />
+        	<include name="JTattoo-1.6.10.jar" />
+        	<include name="org.eclipse.swt.win32.win32.x86_64_3.100.1.v4234e.jar" />
+        	<include name="xercesImpl-2.9.1.jar" />
+        </fileset>
+    </path>
+
+
+    <!-- Set DefaultTarget -->
+    <target name="all" depends="clean,compile,jar,clean2" />
+
+
+    <!-- clean Target -->
+    <target name="clean">
+        <delete dir="${build.dir}" />
+    </target>
+
+    <!-- Compile Target -->
+	<target name="compile">
+		<mkdir dir="${build.dir}" />
+		<javac destdir="${build.dir}"
+			optimize="on" includeantruntime="false"
+			encoding="UTF-8" debug="yes">
+			<src path="${src.dir}" />
+			<classpath refid="classpath" />
+		</javac>
+	</target>
+
+    <!-- jar Target -->
+	<target name="jar">
+		<jar manifest="${src.dir}/META-INF/MANIFEST.MF" basedir="${build.dir}" jarfile="${jarfile}" />
+	</target>
+
+    <!-- clean Target -->
+    <target name="clean2">
+        <delete dir="${build.dir}" />
+    </target>
+
+</project>

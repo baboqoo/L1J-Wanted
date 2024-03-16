@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<link rel="stylesheet" href="/css/l1.world.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+body .section-contents {padding-top: 24px;}
+body.ingame .wrap-header {background-color: #192950; min-height: 56px;}
+.ui-dropdown .option {display: none;}
+.ui-dropdown.is-active .option {display: block;}
+.pagination-container {margin: 0 auto; display: table; padding-top: 20px !important;}
+.paginationjs .paginationjs-pages li, .paginationjs .paginationjs-pages li:last-child {border: none;}
+.paginationjs .paginationjs-pages li>a {color: #b5b5b5;}
+.paginationjs .paginationjs-pages li.active>a {background: #fff;color: #1f1f1f;line-height: 28px;}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-world">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Lineage World</h1></header></div>
+		<div class="section-contents">
+			<section class="section-item-searchform">
+				<div class="inner">
+					<header class="header"><div class="ui-dropdown ui-dropdown-server"><div><span>{SERVER_NAME}</span></div></div></header>
+					<section class="section-keyword"><label>Real Time</label><span class="btn-toggle"></span><div class="keyword__rolling"><ol class="keyword"></ol></div><div class="keyword__list" style="display: none;"><ol class="keyword"></ol></div></section>
+					<div class="wrap-section-search-form">
+						<section class="section-searchform">
+							<div class="searchWrap">
+								<form name="itemSearchForm" id="suggestForm" method="get" action="/my/item-search" onsubmit="return itemSearchCheck();">
+									<input type="text" value="{SEARCH_ITEM_ID}" autocomplete="off" class="suggest_input" data-name="suggest_input" id="suggestInput" name="keyword" placeholder="Search" onKeyup="sub_searchInputKeyup(this, event);">
+									<input type="button" value="X" title="Delete" class="suggest_delete" data-name="suggest_delete" style="display: none;">
+									<input type="submit" value="GO" title="Search" data-name="suggest_submit" id="suggestSubmit">
+									<div data-name="suggest_wrap" class="suggest_wrap" style="display: none;"><div data-name="suggest_list" class="suggest_list"><div data-name="suggest_scroll"><ul></ul></div></div></div>
+								</form>
+							</div>
+						</section>
+					</div>	
+				</div>
+			</section>
+			
+			<div class="wrap-item-detail">
+				<section class="section-item-detail">
+					<div class="item-name">
+						<a href="/powerbook/search?searchType=1&query={SEARCH_ITEM_ID}" class="powerbook"><div class="thumbnail"></div></a>
+						<div class="ui-dropdown dropdown-enchant">
+						    <div class="select"><span>+0</span></div>
+						    <ul class="option">
+						        <li data-value="-1" class="">All</li>
+						        <li data-value="0" class="selected">+0</li>
+						        <li data-value="1">+1</li>
+						        <li data-value="2">+2</li>
+						        <li data-value="3">+3</li>
+						        <li data-value="4">+4</li>
+						        <li data-value="5">+5</li>
+						        <li data-value="6">+6</li>
+						        <li data-value="7">+7</li>
+						        <li data-value="8">+8</li>
+						        <li data-value="9">+9</li>
+						        <li data-value="10">+10</li>
+						        <li data-value="11">+11</li>
+						        <li data-value="12">+12</li>
+						        <li data-value="13">+13</li>
+						        <li data-value="14">+14</li>
+						        <li data-value="15">+15</li>
+						    </ul>
+						</div>
+						<h2 class="name">{SEARCH_ITEM_ID}</h2>
+						<div class="info">
+						    <div class="ui-dropdown dropdown-status">
+						        <div class="select"><span>All status</span></div>
+						        <ul class="option">
+						            <li data-value="ALL" class="selected">All status</li>
+						            <li data-value="NORMAL">Normal</li>
+						            <li data-value="BLESS">Blessed</li>
+						            <li data-value="CURSE">Cursed</li>
+						        </ul>
+						    </div>
+						    <div class="ui-dropdown dropdown-attribute">
+						        <div class="select"><span>All Attributes</span></div>
+						        <ul class="option">
+						            <li data-value="ALL" class="selected">All Attributes</li>
+						            <li data-value="FIRE">Fire</li>
+						            <li data-value="WATER">Water</li>
+						            <li data-value="EARTH">Earth</li>
+						            <li data-value="WIND">Wind</li>
+						            <li data-value="NONE">None</li>
+						        </ul>
+						    </div>
+						</div>
+					</div>
+					<div class="item-price">
+						<ul class="tab">
+						    <li data-type="SELL" id="tab_sell"><a href="/my/item-search/view?itemId={SEARCH_ITEM_ID}&tradeType=SELL">Sell</a></li>
+						    <li data-type="BUY" id="tab_buy"><a href="/my/item-search/view?itemId={SEARCH_ITEM_ID}&tradeType=BUY">Buy</a></li>
+						</ul>
+						<div class="price">
+						    <div class="price-now">
+						        <h3>Current Selling Price</h3>
+						        <ul>
+						        	<li class="price-min"><dfn>Minimum</dfn><strong><em>0</em></strong></li>
+						        	<li class="price-max"><dfn>Maximum</dfn><strong><em>0</em></strong></li>
+						        	<li class="price-store"><dfn>Open Shops :</dfn><em>0</em></li>
+						        	<li class="price-qty"><dfn>Total Quantity Sold :</dfn><em>0</em></li>
+						        </ul>
+						    </div>
+						</div>
+					</div>
+				</section>
+				<section class="section-history">
+					<article class="article">
+					    <div class="table table-multi">
+					    	<div class="thead">
+					    		<div class="tr">
+					    			<div class="th-row">
+					    				<span class="th-enchant">Enchant</span>
+					    				<span class="th-qty">Quantity</span>
+					    				<span class="th-price">Price</span>
+					    			</div>
+					    			<div class="th-row">
+										<span class="th-status">Status</span>
+										<span class="th-attribute">Attribute</span>
+										<span class="th-store">Shop</span>
+									</div>
+					    		</div>
+					    	</div>
+					    	<div class="tbody"></div>
+					    </div>
+						<div class="pagination-container"></div>
+					</article>
+				</section>
+			</div>
+			
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/slick.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+	<script src="/js/shop.js"></script>
+	<script src="/js/popularkeyword.js?{NOW}"></script>
+	<script src="/js/popularkeyword_shop.js"></script>
+	
+<script>
+	const TRADE_TYPE = '{TRADE_TYPE}';
+	var tradeType = TRADE_TYPE;
+	if (tradeType === 'SELL') {
+		$('#tab_sell').addClass('active');
+		$('.item-price > .price').addClass('price-sell');
+	} else if (tradeType === 'BUY') {
+		$('#tab_buy').addClass('active');
+		$('.item-price > .price').addClass('price-buy');
+	}
+    $(function() {
+    	const uAgent		= navigator.userAgent.toLowerCase();
+    	const ingameCheck	= account !== undefined && account.ingame;
+    	var parameter = {
+        	itemId:		'-1',
+        	enchant:	-1,
+        	bless:		'ALL',
+        	attr:		'ALL',
+        	tradeType:	'SELL'
+        };
+    	var paginationRender = function(param){
+    		let container = $('.pagination-container');
+            container.pagination({
+            	dataSource: function(done) {
+            	    $.ajax({
+            	        type: 'POST',
+            	        url: '/define/item-search/view-list',
+            	        data: param,
+            	        success: function(response) {
+            	            if (response !== null) {
+            	            	$('.search-util__result .count').html(response.length);
+                	            $('.thumbnail').html('<img src="/img/item/' + response.gfxId + '.png" onerror="this.src=\'/img/shop/noimg.gif\'" class="thumb" alt="">');
+                	            var itemList = [];
+                	            if (TRADE_TYPE === 'SELL') {
+                	            	if (response.sellList != null) {
+                	            		var sellcount = 0;
+                	            		for (var i=0; i<response.sellList.length; i++) {
+            								sellcount += response.sellList[i].itemObjList.length;
+            							}
+            							$('.price-now > h3').html('Current Selling Price');
+            							$('.price').find('.price-store').find('em').html(commaAdd(sellcount));
+            							$('.price').find('.price-qty').find('dfn').html('Total Quantity Sold :');
+            							$('.price').find('.price-qty').find('em').html(commaAdd(response.sellTotalCount));
+            							if (response.sellTotalPriceArray !== null && response.sellTotalPriceArray.length > 0) {
+            								$('.price').find('.price-min').find('em').html(response.sellTotalPriceArray[0]);
+                							$('.price').find('.price-max').find('em').html(response.sellTotalPriceArray.length === 2 ? response.sellTotalPriceArray[1] : response.sellTotalPriceArray[0]);
+            							} else {
+            								$('.price').find('.price-min').find('em').html(0);
+            								$('.price').find('.price-max').find('em').html(0);
+            							}
+            							var itemObj;
+            							for (var i=0; i<response.sellList.length; i++) {
+                        	            	for (var j=0; j<response.sellList[i].itemObjList.length; j++) {
+                        	            		itemObj = response.sellList[i].itemObjList[j];
+                        	            		itemList.push([{bless : response.sellList[i].bless}, itemObj]);
+                        	            	}
+                        	            }
+                	            	}
+                	            } else {
+                	            	if (response.buyList !== null) {
+                	            		var buycount = 0;
+                	            		for (var i=0; i<response.buyList.length; i++) {
+            								buycount += response.buyList[i].itemObjList.length;
+            							}
+            							$('.price-now > h3').html('Current Purchase Price');
+            							$('.price').find('.price-store').find('em').html(commaAdd(buycount));
+            							$('.price').find('.price-qty').find('dfn').html('Total Purchase Quantity:');
+            							$('.price').find('.price-qty').find('em').html(commaAdd(response.buyTotalCount));
+            							if (response.buyTotalPriceArray !== null && response.buyTotalPriceArray.length > 0) {
+            								$('.price').find('.price-min').find('em').html(response.buyTotalPriceArray[0]);
+                							$('.price').find('.price-max').find('em').html(response.buyTotalPriceArray.length === 2 ? response.buyTotalPriceArray[1] : response.buyTotalPriceArray[0]);
+            							} else {
+            								$('.price').find('.price-min').find('em').html(0);
+            								$('.price').find('.price-max').find('em').html(0);
+            							}
+            							var itemObj;
+            							for (var i=0; i<response.buyList.length; i++) {
+                        	            	for (var j=0; j<response.buyList[i].itemObjList.length; j++) {
+                        	            		itemObj = response.buyList[i].itemObjList[j];
+                        	            		itemList.push([{bless : response.buyList[i].bless}, itemObj]);
+                        	            	}
+                        	            }
+                	            	}
+                	            }
+                	            // 가격대로 정렬
+                	            itemList.sort(function(a, b)  {
+                	            	return a[1].price - b[1].price;
+    							});
+                	            done(itemList);
+            	            }
+            	        }
+            	    });
+            	},
+            	pageSize: 10,// 한 화면에 보여질 개수
+            	showPrevious: false,// 처음버튼 삭제
+                showNext: false,// 마지막버튼 삭제
+                showPageNumbers: true,// 페이지 번호표시
+                callback: function (data, pagination) {// 화면 출력
+                    var dataHtml = '';
+                    if (data.length > 0) {
+                    	$.each(data, function (index, item) {
+                   			dataHtml +=
+                               	'<div class="tr">' +
+       					    		'<div class="td-row">' +
+       					        		'<span class="td-enchant">' + (item[1].enchant > 0 ? '+' + item[1].enchant : '-') + '</span>' +
+       					        		'<span class="td-qty">' + item[1].count + '</span>' +
+       					        		'<span class="td-price">' + getPriceName(item[1].price) + '</span>' +
+       					    		'</div>' +
+       					    		'<div class="td-row">' +
+       					        		'<span class="td-status">' + (item[0].bless == 1 ? 'Normal' : (item[0].bless == 2 ? 'Cursed' : 'Blessed')) + '</span>' +
+       					        		'<span class="td-attribute">' + getAttrName(item[1].attr) + '</span>' +
+       					        		'<span class="td-store">' +
+       					        			(ingameCheck ? '<a href="javascript:L1.FindMerchant(\'' + item[1].charName + '\');">' + item[1].charName + ' (' + item[1].loc + ')</a>' : item[1].charName + ' (' + item[1].loc + ')') +
+       					        		'</span>' +	
+       					    		'</div>' +
+       							'</div>';
+                        });
+                    } else {
+                    	dataHtml += '<div class="nodata"><p>There are no shops currently open in the game.</p></div>';
+                    }
+
+                    $(".tbody").html(dataHtml);// 렌더링
+                }
+            })
+    	}
+
+	const ATTR_NAME = [
+		'None',
+		'Fire 1st Stage', 'Fire 2nd Stage', 'Fire 3rd Stage', 'Fire 4th Stage', 'Fire 5th Stage',
+		'Water 1st Stage', 'Water 2nd Stage', 'Water 3rd Stage', 'Water 4th Stage', 'Water 5th Stage',
+		'Wind 1st Stage', 'Wind 2nd Stage', 'Wind 3rd Stage', 'Wind 4th Stage', 'Wind 5th Stage',
+		'Earth 1st Stage', 'Earth 2nd Stage', 'Earth 3rd Stage', 'Earth 4th Stage', 'Earth 5th Stage'
+	];
+        
+        var getAttrName = function(attr){
+	return ATTR_NAME[attr];
+        }
+        
+        var getPriceName = function(value){
+        	if (value <= 0) return "0";
+    		var price = '';
+    		if (value > 100000000) {
+    			var aa = parseInt(value / 100000000);
+    			value -= aa * 100000000;
+    			price += (commaAdd(aa) + "Billion");
+    		}
+    		if (value > 10000) {
+    			var aa = parseInt(value / 10000);
+    			value -= aa * 10000;
+    			price += (" " + commaAdd(aa) + "Ten Thousand");
+    		}
+    		if (value > 0) {
+    			price += (" " + commaAdd(value));
+    		}
+    		return price;
+        }
+        
+        var select		= $('.select');
+        var dropdown	= $('.ui-dropdown');
+        select.click(function() {// 출현
+        	var drop = $(this).closest('.ui-dropdown');
+        	if (drop.hasClass('is-active')) {
+        		dropdown.removeClass('is-active');
+        	} else {
+        		dropdown.removeClass('is-active');
+            	drop.addClass('is-active');
+        	}
+    	});
+        
+     	// 영역밖 클릭
+    	$('body').mouseup(function (e){
+    		if (select.has(e.target).length === 0 && dropdown.has(e.target).length === 0 && dropdown.hasClass('is-active')) {
+    			dropdown.removeClass('is-active');
+    		}
+    		eventStop(e);
+    	});
+     	
+     	// 옵션 선택
+     	var option = $('.option > li');
+     	option.click(function() {// 출현
+     		var drop = $(this).closest('.ui-dropdown');
+     		if (!$(this).hasClass('selected')) {
+     			var optionHtml = $(this).html();
+     			if (optionHtml !== drop.find('span').html()) {
+     				var optionValue = $(this).attr('data-value');
+             		drop.find('span').html(optionHtml);
+             		
+         			$(this).closest('.option').children('li').removeClass('selected');
+             		$(this).addClass('selected');
+             		
+             		if (drop.hasClass('dropdown-enchant')) {
+             			parameter.enchant = optionValue;
+             		} else if (drop.hasClass('dropdown-status')) {
+             			parameter.bless = optionValue;
+             		} else if (drop.hasClass('dropdown-attribute')) {
+             			parameter.attr = optionValue;
+             		}
+             		$('.pagination-container').destory;
+             		paginationRender(parameter);
+     			}
+     		}
+     		drop.removeClass('is-active');
+    	});
+     	
+     	// 최초 렌더링
+     	$(document).ready(function(){
+     		var enchant = Number('{ENCHANT}');
+     		if (enchant > 0) {
+     			$('.dropdown-enchant').find('span').html('+' + enchant);
+     			var enchantOption = $('.dropdown-enchant').find('.option').children('li');
+     			enchantOption.removeClass('selected');
+     			enchantOption.eq(enchant + 1).addClass('selected');
+     		}
+     		var bless = '{BLESS}';
+     		if (bless !== 'ALL') {
+     			$('.dropdown-status').find('span').html(bless === 'NORMAL' ? 'Normal' : (bless === 'BLESS' ? 'Blessed' : 'Cursed'));
+     			var blessOption = $('.dropdown-status').find('.option').children('li');
+     			blessOption.removeClass('selected');
+     			blessOption.eq(bless === 'NORMAL' ? 1 : (bless === 'BLESS' ? 2 : 3)).addClass('selected');
+     		}
+     		parameter.itemId	= '{SEARCH_ITEM_ID}';
+     		parameter.enchant	= enchant;
+     		parameter.bless		= bless;
+     		parameter.attr		= '{ATTR}';
+     		parameter.tradeType	= TRADE_TYPE;
+     		paginationRender(parameter);
+     	});
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CNBList>
+	<!--
+	LINOFFICE APPCENTER MENU SETTING
+	====== Menu depth to be used on screen ======
+	CNB: 1 depth
+	SUB: 2 depth
+	========== Property information ==========
+	Id: sequential number
+	Desc: output name
+	Href: A tag click event
+	HideMobile: Hide on mobile
+	HideIngame: Hide in-game
+	HideLauncher: Hide from launcher
+	ShowGm: show admin only
+	Download: whether or not there is a download button
+
+	Set the ID so that it is not duplicated, and check the movement path mapping processing when processing the HREF event (app_page_info)
+	Order is guaranteed with LinkedHashmap.
+	-->
+
+	<!-- News -->
+	<CNB Id="1" Desc="News" Href="javascript:urlTypeform('0', null, 'post', '/notice');" >
+		<SUB Id="1" Desc="Announcements" Href="javascript:urlTypeform('0', null, 'post', '/notice');" />
+		<SUB Id="2" Desc="Updates" Href="javascript:urlTypeform('1', null, 'post', '/notice');" />
+		<SUB Id="3" Desc="Events" Href="javascript:urlTypeform('2', null, 'post', '/notice');" />
+	</CNB>
+
+	<!-- Guide -->
+	<CNB Id="2" Desc="Guide" Href="/powerbook" >
+		<SUB Id="1" Desc="Powerbook" Href="/powerbook" />
+		<SUB Id="2" Desc="The Warrior's Guide" Href="/guide" />
+	</CNB>
+
+	<!-- Lineage World -->
+	<CNB Id="3" Desc="Lineage World" Href="/my/item-search" >
+		<SUB Id="1" Desc="Market Rates" Href="/my/item-search" />
+		<SUB Id="2" Desc="Player Ranking" Href="/world/rank" />
+		<SUB Id="3" Desc="Blood Pledge" Href="/world/pledge" />
+	</CNB>
+
+	<!-- Community -->
+	<CNB Id="4" Desc="Forum" Href="/board" >
+		<SUB Id="1" Desc="General" Href="/board" />
+		<SUB Id="2" Desc="Trades" Href="/trade" />
+		<SUB Id="3" Desc="Suggestions" Href="/contents" />
+		<SUB Id="4" Desc="Technical Support" Href="/pitch" />
+	</CNB>
+
+	<!-- Resources -->
+	<CNB Id="5" Desc="Resources" Href="/download" HideIngame="true" HideMobile="true" HideLauncher="true">
+		<SUB Id="1" Desc="Download" Href="/download" Download="true" />
+		<SUB Id="2" Desc="Blood Pledge Emblems" Href="/download/emblem" />
+	</CNB>
+
+	<!-- Lineage N Shop -->
+	<CNB Id="6" Desc="Lineage N Shop" Href="/goods" >
+		<SUB Id="1" Desc="Shop" Href="/goods" />
+		<SUB Id="2" Desc="Coupons" Href="/goods/coupon" />
+	</CNB>
+
+	<!-- Service Center -->
+	<CNB Id="7" Desc="Help Center" Href="javascript:urlTypeform('1', '0', 'post', '/customer');" >
+		<SUB Id="1" Desc="Tikets" Href="javascript:urlTypeform('1', '1', 'post', '/customer');" />
+		<SUB Id="2" Desc="Reports" Href="javascript:urlTypeform('2', '2', 'post', '/customer');" />
+		<SUB Id="3" Desc="Sponsor" Href="/customer/support" /> 
+	</CNB>
+
+	<!-- Manager -->
+	<CNB Id="8" Desc="Manager" Href="/gm" ShowGm="true" >
+		<SUB Id="1" Desc="Manager" Href="/gm" />
+	</CNB>
+	
+</CNBList>

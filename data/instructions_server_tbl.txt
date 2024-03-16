@@ -1,0 +1,2 @@
+Is necesary to include the lines of the files desc-server-e.tbl and desc-server-k.tbl in the client files desc-e.tbl and desc-k.tbl (at the end).
+After that, the servver messages will be used as references ($111) and will be possible to have them in both languages, korean and english with only 1 server running.

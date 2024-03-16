@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- css -->
+	<link rel="stylesheet" href="/css/community.css">
+	<link rel="stylesheet" type="text/css" href="/css/nccommunity-theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/l1.board.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/trade.css">
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+.fe-svg-arrow_down_s, .fe-svg-arrow_left_s, .fe-svg-arrow_right_s, .fe-svg-arrow_up_s, .fe-svg-close_circle, .fe-svg-comment, .fe-svg-comment_reply, .fe-svg-comments, .fe-svg-like_s, .fe-svg-picture, .fe-svg-reload, .fe-svg-top, .fe-svg-vote {fill: rgba(0,0,0,.45)!important; color: rgba(0,0,0,.45)!important;}
+[class*=" board-list-"] .title .count, [class^=board-list-] .title .count {font-size: 13px; line-height: 1; color: rgba(0,0,0,.68);}
+.board-list-card .comment {display:none;}
+.board-write-btn {float: left; margin-top: 12px;}
+@media (max-width: 960px){
+	.board-write-btn {margin-left:12px;}
+}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-board">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="svg-container" style="display: none;"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Community</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div id="ncCommunityList" class="nc-community-list l1-community-free uikit-nccommunity-node">
+					<div class="trade_top_tit"><span>※ The Lineage Warrior team is not responsible for any type of problem that may arise during a trade.</span></div>
+					<div class="board-top-utils">
+						<span class="caption">Trade</span>
+						<div class="trade-select">
+							<div class="ui-dropdown">
+								<div class="select"><span>All</span><input type="hidden" name="status" id="data_val" value="-1"/></div>
+								<ul class="option">
+									<li class="ui-dropdown-custom_items trade-select-items" data-textvalue="All" data-value="-1">All</li>
+									<li class="ui-dropdown-custom_items trade-select-items" data-textvalue="Board" data-value="0">Board</li>
+									<li class="ui-dropdown-custom_items trade-select-items" data-textvalue="Trading" data-value="1">Trading</li>
+									<li class="ui-dropdown-custom_items trade-select-items" data-textvalue="Completed" data-value="2">Completed</li>
+									<li class="ui-dropdown-custom_items trade-select-items" data-textvalue="Canceled" data-value="3">Canceled</li>
+								</ul>
+							</div>
+						</div>
+			        </div>
+			        {TOP_NOTICE}
+			        <ul class="ncCommunityBoardList board-list-default trade-list"></ul>
+					<div class="pagination-container"></div>
+					{WRITE_BUTTON}
+			    	<div class="wrap-btn-top" style="float: right;">Back to Top<button class="co-btn-top_list" aria-label="Back to Top"></button></div>
+			    </div>
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+<script src="/js/storage.js"></script>
+<script src="/js/contents.js"></script>
+<script type="text/javascript">
+var parameter = { status: -1 };
+let container = $('.pagination-container');
+var paginationRender = function(param){
+    container.pagination({
+    	dataSource: function(done) {
+    	    $.ajax({
+    	        type: 'POST',
+    	        url: '/define/trade',
+    	        data: param,
+    	        success: function(response) {
+    	        	if(response != null && response != undefined){
+    	        		done(response);
+    	        	}
+    	        }
+    	    });
+    	},
+    	pageSize: 10,// 한 화면에 보여질 개수
+    	showPrevious: false,// 처음버튼 삭제
+        showNext: false,// 마지막버튼 삭제
+        showPageNumbers: true,// 페이지 번호표시
+        afterInit: function (e) {// 새 페이지 매김 인스턴스를 초기화한 후 호출됩니다.
+
+        },
+        callback: function (data, pagination) {// 화면 출력
+            var dataHtml = '';
+            if(data.length > 0){
+            	$.each(data, function (index, item) {
+            		if(item.id != 1){
+            			dataHtml +=
+                   			'<li class="board-items" onClick="urlform(\'' + item.rownum + '\', \'post\', \'/trade/view\');">' +
+                   				'<div class="title board-type-list subject"><span>' + item.status + '</span></div>' +
+                   				'<div class="title board-type-list">' +
+                   					'<a href="javascript:urlform(\'' + item.rownum + '\', \'post\', \'/trade/view\');">' + item.title + '</a>' +
+                   				'</div>' +
+                   				'<div class="info board-type-list">' +
+                   					'<span class="writer">' + item.sellerCharacter + '<span class="server">{SERVER_NAME}</span></span>' +
+                   					'<span class="date">' + getNowDayTimeToFormat(item.writeTime) + '</span>' +
+                   				'</div>' +
+                   			'</li>';
+            		}
+                });
+            }else{
+            	dataHtml += '<li class="board-items"><span class="no-data"><p>No data found!</p></span></li>';
+            }
+            $(".trade-list").html(dataHtml);// 렌더링
+        }
+    });
+}
+
+$(document).ready(function(){
+	paginationRender(parameter);
+})
+</script>
+	<script src="/js/trade.js"></script>
+	
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+App Center folder
+cnb.xml		App Center top menu settings
+
+
+data folder
+alchemy		Live Doll Production / Smelting Stone Information File
+Contents		live bin file
+ssl		web ssl certificate file
+xml\Item	Fishing.xml set fishing information
+
+koread_ip.csv	한국 인터넷 진흥원에서 고지된 아이피(VPN 해외아이피 검출용)
+
+
+
+
+tool folder
+decryptor	Decrypt connector log file
+descStringReader	desc, string file reader
+encryptor	Connector setting Encrypt the call url to be registered on the blog
+spritor		sprite (image) information tool

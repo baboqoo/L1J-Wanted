@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+legend {border-bottom: none;}
+.container {width: 100%;padding-right: 0px; padding-left: 0px;}
+.note-editor {border-right: none !important; border-left: none !important;}
+.panel-default>.panel-heading {background-color: transparent; border-color: #eaecef; height: 48px;}
+
+.note-editor.note-airframe, .note-editor.note-frame {border: 1px solid #eaecef;border-bottom: none;}
+
+.btn-default {border-color: transparent;}
+.btn-default:hover {border-color: transparent;background-color: transparent;}
+.note-editor .note-editing-area {padding: 25px 18px;}
+.note-placeholder {padding: 0px !important;font-size: 16px !important; line-height: normal !important; margin-top: 0px !important; margin-left: 0px !important; margin-right: 0px !important; text-align: left !important;}
+.note-editor.note-airframe .note-statusbar, .note-editor.note-frame .note-statusbar {background-color: transparent;border-top: 1px solid #eaecef;}
+.note-editor .note-editing-area .note-editable {padding: 0px !important;}
+.note-resizebar {display: none;}
+
+.btn-sm i {font-size: 15px;}
+
+.modal.note-modal.in {z-index: 11111111;}
+.modal.in .modal-dialog {margin: 0 auto; position: absolute;top: 30%;left: 33%;}
+.modal-footer .note-btn-primary {color: #fff;background: #905353 !important;}

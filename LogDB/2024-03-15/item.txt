@@ -1,0 +1,15 @@
+2024-03-15 03:23:32	Delete	[LadyBabo]	[268500003] Teleport Scroll (100)
+2024-03-15 03:23:46	Delete	[LadyBabo]	[268500000] Seal Release Scroll (50)
+2024-03-15 03:23:48	Delete	[LadyBabo]	[268499999] Sealed Scroll (500)
+2024-03-15 03:23:51	Delete	[LadyBabo]	[268499994] Scroll of Identify (500)
+2024-03-15 03:23:53	Delete	[LadyBabo]	[268500005] Summon (Shop)
+2024-03-15 03:23:54	Delete	[LadyBabo]	[268499997] NPC Drop Check (1)
+2024-03-15 03:23:56	Delete	[LadyBabo]	[268499998] NPC Confirm
+2024-03-15 03:23:57	Delete	[LadyBabo]	[268500001] NPC Position
+2024-03-15 03:23:58	Delete	[LadyBabo]	[268500002] NPC Reposition
+2024-03-15 03:23:59	Delete	[LadyBabo]	[268500004] Summon (Warehouse)
+2024-03-15 03:23:59	Delete	[LadyBabo]	[268499995] Storm Walk (10/0)
+2024-03-15 03:24:00	Delete	[LadyBabo]	[268500006] GM Protection (1)
+2024-03-15 03:24:01	Delete	[LadyBabo]	[268500007] Clean Monsters (1)
+2024-03-15 03:24:06	Delete	[LadyBabo]	[268500008] null
+2024-03-15 03:24:07	Delete	[LadyBabo]	[268499996] NPC Remove

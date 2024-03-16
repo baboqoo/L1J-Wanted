@@ -1,0 +1,1952 @@
+Update Log By LINOFFICE
+
+================================================== ================================
+2019/04/19
+================================================== ================================
+→ Remaster hunting ground renewal
+→ MAP addition and replacement according to remaster
+→ Modify HTML according to remaster
+→ Added the coin system of the knights
+→ Add Play Support system
+→ Remastered item renewal
+→ Remaster Einhasad's Blessing Renewal
+→ Modify the number of remastered elixirs
+
+================================================== ================================
+2019/04/23
+================================================== ================================
+→ Zou's movement memory book modified
+→ Modify the integrated packet skill output client recognition part
+→ Modify the range of NPC action processing according to the remaster screen
+→ Teleport UI Atubaok hideout added
+
+================================================== ================================
+2019/05/01
+================================================== ================================
+→ Add and deploy World Siege teleporters
+→ Set World Siege map coordinates
+→ World siege item added
+
+================================================== ================================
+2019/05/03
+================================================== ================================
+→ Einhasad daily bonus added
+→ Shining Shield icon output change
+→ PC room buff renewal
+→ Add hero's protection (integrate N buff)
+→ Addition of order of battle and addition of production
+
+================================================== ================================
+2019/05/06
+================================================== ================================
+→ Atubaok Hideout 2nd floor/Dragon Valley Dungeon 1st floor random teleport fix
+→ Modified so that it can be used as a coin of the Buff Knights of the Talking Island Village
+→ Added imprinted skill item (Simon)
+
+================================================== ================================
+2019/05/07
+================================================== ================================
+→ Clan crest packet modified
+
+================================================== ================================
+2019/05/08
+================================================== ================================
+→ Jin Death Knight's transformation ring SPR change (running motion)
+→ Add graphic message output packet (enchantment, production, doll synthesis, etc.)
+
+================================================== ================================
+2019/05/10
+================================================== ================================
+→ Einhasad's protection system added
+1. Activates on Einhasad 0
+2. EXP +100
+3. Item Acquisition Rate 100%
+4. Buff remaining time displayed on the Einhasad icon
+5. Even if the character is offline, the remaining buff time is reduced
+→ Einhasad's protection (PC) system added
+1. Einhasad's Blessing buff, activation condition, and effect are the same
+2. Does not overlap with Einhasad's Blessing buff and Einhasad's Blessing (PC) buff is applied
+3. Remaining time of Einhasad's Blessing buff decreased
+
+================================================== ================================
+2019/05/11
+================================================== ================================
+→ Modify the auction clock packet
+→ Modified the Gludin Auction Clock Board to operate normally
+
+================================================== ================================
+2019/05/13
+================================================== ================================
+→ Added additional EXP notation packets
+→ Modify alarm transmission when logging in
+→ Add event alarm packet (Arden Shop, General Store)
+
+================================================== ================================
+2019/05/14
+================================================== ================================
+→ Added party assist system
+
+================================================== ================================
+2019/05/15
+================================================== ================================
+→ Added Tower of Insolence summit hunting ground
+→ Changed the Tower of Insolence Normal Scroll to be usable
+
+================================================== ================================
+2019/05/16
+================================================== ================================
+→ When level 80 is reached, the knight's magic doll is added to be deleted.
+
+================================================== ================================
+2019/05/18
+================================================== ================================
+→ World Siege Update
+1. Giran Castle/Oak Fortress/Heine Castle
+2. Boss monsters and water monsters spawn at the start of a siege
+3. Take the castle from the clan that defeated the boss of Awakening during the first siege
+4. At the end of the siege, the castle lord is treated as NULL after compensation is paid
+5. If there is no blood alliance, guard tower / boss damage return processing
+6. Return of guard tower damage when boss exists
+7. Siege exclusive items can only be used on the map
+8. Siege start command is the same (you can enter the map from the time you enter the command)
+9. The dimension closes 30 minutes after the end of the siege
+10. Red Knights' Advance deleted
+
+================================================== ================================
+2019/05/22
+================================================== ================================
+→ Added teleport packet for MAPUI celebration
+→ Added to drop Tears of a Frozen Woman at Orange Snow Wall
+
+================================================== ================================
+2019/05/27
+================================================== ================================
+→ 622 YN message packet Ting Kim Su-jeong
+
+================================================== ================================
+2019/05/29
+================================================== ================================
+→ Modify Inbusy object handling
+
+================================================== ================================
+2019/05/31
+================================================== ================================
+→ Add multiple systems
+1. Applied only between characters of level 75 or higher
+2. Result for Winning Character: Victory / Result for Loser: Defeat
+3. When revenge is successful, defeat -> victory / victory -> defeat is replaced
+4. When tracking, track the other party's location for 10 minutes (updated when the UI window is displayed)
+5. Existing tracking ends when tracking another target in the tracking state
+6. Mark the skull on the map to be tracked
+7. Tracking ends when you log out or the tracking target is NULL.
+8. Not applicable in Siege Zone
+9. Initialization of used functions in case of victory/defeat against the same target (increased cumulative counting)
+10. Unable to track if the character is not logged in
+11. Lists older than 24 hours are not printed.
+12. Full message output when provoking
+
+================================================== ================================
+2019/06/01
+================================================== ================================
+→ Automatic hunting system deleted (old version)
+→ Added village name displayed on inn key
+
+================================================== ================================
+2019/06/03
+================================================== ================================
+→ Add entry to Tower of Domination (can be used together during live server event)
+→ Opening hours of the Tower of Domination changed from 19:00 to 24:00 every day
+→ Changed the tower of dominance to allow random teleportation
+→ Change tower boss spawn time
+1. 1st - 5th floor boss daily 19:00 - 19:30
+2. 6th - 10th floor boss daily 22:00 - 22:30
+3. Normal boss every day from 22:00 to 23:00
+
+================================================== ================================
+2019/06/05
+================================================== ================================
+→ Crest / Insignia Protection Order added
+→ Crest / Insignia crafting added
+→ +3 / +4 composite sentence / composite badge option added
+→ Deletion of fishing spot usage hours
+→ Decrease fishing rod fishing time
+→ Armor wear class added
+→ Add Atkins reward html action
+
+================================================== ================================
+2019/06/06
+================================================== ================================
+→ Fixed object movement error when teleporting
+
+================================================== ================================
+2019/06/08
+================================================== ================================
+→ Ivory Tower admission time changed to 2 hours
+
+================================================== ================================
+2019/06/09
+================================================== ================================
+→ Modify the remastered letter packet
+
+================================================== ================================
+2019/06/12
+================================================== ================================
+→ Magic Doll Sports Festival alarm packet added (moved to Beogyeongjang)
+→ Added Ekins reward action (Growth Bead)
+→ Ekins reward level 82 limit
+→ Changed to Einhasad account sharing
+
+================================================== ================================
+2019/06/15
+================================================== ================================
+→ Add Pandora's assistant Elara (Pandora's Jewel)
+→ Server stores are added to be available as event alarms
+
+================================================== ================================
+2019/06/16
+================================================== ================================
+→ Remastered character deletion packet processing modified
+→ Added Einhasad's protection so that it cannot be deleted
+→ Added to disable tracking of the same target when tracking
+
+================================================== ================================
+2019/06/19
+================================================== ================================
+→ +7 or higher room teeth earrings, snapper rings changed to storage
+→ Loomtice earrings and snapper rings are not allowed: warehouse (available for +7 or higher) notation added
+→ Encounter's movement memory book new movement area added
+→ Black Crystal Gludio Dungeon 1-7 floor movement list added
+→ Dragon's Valley Modification Dragon's Valley Dungeon 1-6 floor movement list added
+→ Changed the teleport NPC to move to the front of the Dragon's Valley Crystal when moving to the Valley of the Dragon dungeon
+→ Added dragon's boots (3-speed acceleration)
+
+================================================== ================================
+2019/06/22
+================================================== ================================
+→ Portal movement processing method modified to S_PORTAL packet (Fairy Forest Dungeon PSS)
+→ Party UI window party member buff status packet added
+
+================================================== ================================
+2019/06/26
+================================================== ================================
+→ added pendant slot
+→ Lumtis' pendant item added and production added
+→ Modify item packet
+→ DG, max HP%, max MP% notation added
+→ Modify skill packet
+
+================================================== ================================
+2019/06/27
+================================================== ================================
+→ Modify the overall ranking UI
+→ Tulip ranking UI notation added
+
+================================================== ================================
+2019/07/10
+================================================== ================================
+→ Added number of Eva kingdoms
+1. Level 80 or higher to enter
+2. Dungeon usage time 2 hours
+→ Elixir (EXP) added
+1. Can be crafted with Pure Elixir (EXP)
+2. Experience 540% based on level 52
+2. Level 80 or higher available
+
+================================================== ================================
+2019/07/18
+================================================== ================================
+→ Update inspection class
+→ Legendary skill added
+1. Prime
+2. Force Stun
+3. Eternity
+4. Glory Earth
+5. The Avengers
+6. Halfas
+7. Potential
+8. Demolition
+→ Legendary and mythical weapons added and production added
+1. Death Sword (Weapon Attack)
+2. Einhasad's Flash (Individual processing of magic activation between targets)
+3. Judgment of Gran Cain (Individual processing of magic activation between targets)
+→ Modify range skill packet
+→ Modify slot expansion discount coupon
+→ Dragon Valley Entrance Renewal
+
+================================================== ================================
+2019/07/20
+================================================== ================================
+→ Add skill delay packet
+1. Classification of fixed delay skills
+2. Individual processing of skill delay by group
+3. Skill delay processing according to transformation and buff
+→ Added secret merchant Somri (limited number of purchases per account)
+→ SPR update
+
+================================================== ================================
+2019/07/24
+================================================== ================================
+→ Added settings to disable transparency in the siege area (disable transparency and decrease HP at outer and middle gates)
+→ Snapper/Lumtis/Dragon T-shirt/Synthetic Crest/Synthetic Insignia can be stored in the warehouse starting from 6
+
+================================================== ================================
+2019/07/27
+================================================== ================================
+→ Add Hero's Death Knight Transformation Ring
+1. Level 80 transformation possible
+2. PSS registration available
+
+================================================== ================================
+2019/07/31
+================================================== ================================
+→ Enter from level 75 with Eva Kingdom Tree
+→ Eva Kingdom 3rd floor difficulty change
+→ Lizardman Swordsman/Lizardman Warrior Swordsman Drop List added
+→ Add production of Oman summit order form
+
+================================================== ================================
+2019/08/01
+================================================== ================================
+→ Modify character stat initialization packet for taking elixir
+
+================================================== ================================
+2019/08/14
+================================================== ================================
+→ Einhasad's Blessing/Einhasad's Protection (Normal/PC) Renewal
+1. Maximum charge 8000%
+2. Daily free charge (1000%) deleted
+3. Changed the dragon's diamond charge
+4. Dragon's Blessing and Dragon's Protection PC overlapping application
+5. Einhasad's Blessing bonus added and packet modified during attendance check/content
+→ Ivory Tower 6th and 7th floors added and renewed
+
+================================================== ================================
+2019/08/16
+================================================== ================================
+→ Add new message packet (operator notice $ setting)
+
+================================================== ================================
+2019/08/21
+================================================== ================================
+→ Add identical appearance transformation (level 80)
+→ Change the belt option of Cronus
+→ Add hero growth potion (PSS registration available)
+
+================================================== ================================
+2019/08/24
+================================================== ================================
+→ Boss spawn rate increases in proportion to the number of users on the map (1% per 10 people)
+→ Change the boss spawn message to be sent to the map user
+→ Eternity 2nd damage changed to 80%
+
+================================================== ================================
+2019/08/26
+================================================== ================================
+→ Modify the packet so that the fishing UI reel mounting count is displayed
+→ Modify the packet so that the doll synthesis UI does not display the summoned doll
+
+================================================== ================================
+2019/08/31
+================================================== ================================
+→ Implementation of Gludio Lab
+1. Level 80 or higher can participate
+2. Two types of difficulty can be selected
+3. It can start with a minimum of 4 people
+4. Restrictions on the number of plays per day per account (reset at 6:00 AM)
+5. Information change, invitation, and withdrawal are possible in the indungeon UI (host authority)
+6. Reward for all characters who dealt damage to the boss (box, Einhasad 200%)
+7. Buy a key box from Yurie on Talking Island
+8. The key box can be used every 22 hours (when there is no key)
+9. Move to the waiting room when opening and entering the room
+10. Flame wall extinction progress at mid-level (base suppression)
+11. Monsters no longer appear in the passage when the base is conquered.
+12. Simultaneous progress is possible up to 10 per type
+13. User automatic party formation on the screen at startup
+14. Destroy the crystal ball within the time limit of 15 minutes and fail if all members die.
+
+================================================== ================================
+2019/09/04
+================================================== ================================
+→ Subdivision of play support
+1. Addition of packet processing method for all, peripheral and auxiliary functions
+2. Modification to enable use of auxiliary functions in some unavailable areas
+→ Fixed to the 7th floor of the Ivory Tower in the Demon Spawn area
+
+================================================== ================================
+2019/09/06
+================================================== ================================
+→ When the item production material is the same, it is modified so that the corresponding number is added
+1. Ring of teleportation domination
+2. High Warlord's Necklace
+→ Apply up to 50 stats for characters over level 90 (including stat reset)
+→ Implementation of beginner quests
+1. Automatically equip weapons during attack training
+2. Added level 30 and 75 quests
+3. Upon completion of the level 55 quest, a new equipment package is provided.
+4. Addition of attack success and damage handling method for beginner map monsters
+
+================================================== ================================
+2019/09/09
+================================================== ================================
+→ Delete NPCs in unused maps (prevent memory)
+→ Changed so that the doll list is re-displayed after doll synthesis is completed
+
+================================================== ================================
+2019/09/12
+================================================== ================================
+→ Add Shuken Magic Doll (Acquire a strange orb every 15 minutes)
+→ Add ranker transformation beads for each class (made with strange beads)
+
+================================================== ================================
+2019/09/16
+================================================== ================================
+→ Modified so that the NPC name is output normally when outputting the inn html
+→ Kent castle guard html change
+
+================================================== ================================
+2019/09/17
+================================================== ================================
+→ Added so that it can be activated by magic doll attack magic (Black Elder, Death Knight)
+→ Add item packets marked with shops and special warehouses (DB can be set)
+→ Death penalty skill extinction added
+→ Modify so that the monarch class unattended subscription opens to work
+1. Available when instant subscription is set
+2. Can be opened in front of Giran Inn
+3. General chatting, general chatting recruitment text output every minute
+4. Transforms into a sprite horse when opening, direction fixed at 4 o'clock
+
+================================================== ================================
+2019/09/20
+================================================== ================================
+→ Added Interserver Kind designation
+1. Tower of Domination, Indungeon, World Siege, Doll Race
+2. Fixed server port 2000
+
+================================================== ================================
+2019/09/24
+================================================== ================================
+→ When entering the Tower of Domination and World Siege, an interserver blood mark is added according to the clan.
+→ When one's clan is participating in a siege, a monarch display packet is added (a red mark above the head)
+
+================================================== ================================
+2019/10/10
+================================================== ================================
+→ Multiple system tracking, mock usage time changed to 2 hours
+→ Central temple reward item change
+
+================================================== ================================
+2019/10/16
+================================================== ================================
+→ Added so that the obtainable value is displayed in the Einhasad bonus content
+
+================================================== ================================
+2019/10/23
+================================================== ================================
+→ Timed dungeon reorganization
+1. Giran prison 2nd floor dungeon time abolished
+2. Dungeon time integration (Forsaken Land, Ivory Tower, Atuba, Eva Kingdom Waterway)
+3. Add 30 minutes above level 90
+→ Modified so that Adena does not drop in the Chosun Preservation
+
+================================================== ================================
+2019/10/30
+================================================== ================================
+→ Class care (knight, dragon knight, fairy) skill update
+→ Change the maximum stat value (additional bonus when achieving each section)
+→ Elixir system reorganization
+→ Devil King's Sword, Axe, Chainsword, Key Link added
+→ Enforcement, Titan, red option change
+→ Attendance check reward Einhasad's blessing change (Normal: 50, Defense: 100)
+→ Added dragon's weapon and added crafting
+→ Addition of halfas armor and production (granted to cooldown item)
+→ Dragon raid update
+→ Added 21st anniversary legendary transformation ring, growth potion, and legendary doll
+
+================================================== ================================
+2019/11/06
+================================================== ================================
+→ Automatic soul reuse delay changed to 5 seconds
+→ Modified so that automatic soul skill delay and action processing are not performed
+→ modify the alarm packet
+
+================================================== ================================
+2019/11/13
+================================================== ================================
+→ World Instance Dungeon - Secret update of Crocodile Island
+1. 1 to 3 people, level 80 or higher available
+2. Added by type of construction bar
+3. Progress through a total of 3 stages
+4. When the boss is defeated, a bonus stage occurs with a certain probability (Bereth)
+5. Possible if you have the key to open the room and enter the building
+→ Class Care (Wizard, Dark Elf, Warrior) skill update
+→ Modify the character information packet
+→ Einhasad point system added
+1. Acquiring points when consuming Einhasad (maximum holding of 100 million points)
+2. Artisan Orders can be purchased through Keplicia in Giran Village (limited to 1 week)
+3. Card draw mini-game added (bonus stats acquired if successful)
+4. Required points increase by 10 acquired stats
+5. When successful, a bonus stage occurs with a certain probability (acquisition up to 3 times)
+6. New stat-specific options added
+7. Initialization processing when using the candle of remembrance
+
+================================================== ================================
+2019/11/20
+================================================== ================================
+→ Dark Dragon's dungeon added
+1. Admission fee 30000 Adena
+2. Entry level 80 or higher
+3. Admission hours 9:00~1:00
+→ Added hidden dimension (Hourglass of hidden dimension: 1 hour charge, maximum number of times 21)
+→ Paul's reel 100 times deleted
+→ Battle Colosseum added
+1. Level limit 85
+2. Admission time 22:30 (entry allowed 5 minutes before start time)
+3. Maximum admission 64 people
+4. PSS assist mode available
+5. Automatic composition of 4 teams
+6. No re-entry after entering once
+7. Tournament format by team
+
+================================================== ================================
+2019/11/27
+================================================== ================================
+→ Class care (lord, illusionist, swordsman) skill update
+→ Patience buff icon integrated packet change
+→ Enchant directing update
+1. Classification of effects according to enchantment success or failure
+2. Classified according to item enchantment value and advanced item
+→ Changed to select 2 types of indungeons
+1. Orim's laboratory (low and middle combined), secret of Crocodile Island can be selected
+2. When the final boss is defeated, an event stage occurs with a certain probability
+3. Depending on the initial number of players, whether or not an event occurs increases
+4. Monster spawning process according to the number of Orim's initial members
+5. Add quick entry
+
+================================================== ================================
+2019/12/04
+================================================== ================================
+→ Queen Ant's Lair (Class World Dungeon) update
+1. Open every day (externalization of open hours, operator open)
+2. Keep for 1 hour after opening
+3. Move to dedicated portal and teleporter
+4. Map management by class
+5. After opening the boss room, only the final 20 people who have secured seats in the magic circle can proceed with the boss raid.
+6. Individual processing of acquired items for each class room
+7. Alarm UI operation when open
+8. Erzabe's necklace and Erzabe's crown added
+→ Added hidden hunting grounds (Hidden Eva Kingdom Waterway, Hidden Atuba Orc Hideout)
+→ PSS hunting ground restrictions relaxed (Oman Summit, Ivory Tower, Tower of Domination)
+
+================================================== ================================
+2019/12/11
+================================================== ================================
+→ Update World Instance Dungeon Dream Island
+1. Time limit 15 minutes
+2. Unicorn stage occurs when 4 great spirits are defeated within 3 minutes
+3. Acquire numbers when defeating the Great Spirit, Unicorn, and Nightmare
+4. When the sum of the numbers exceeds a certain level, the dreamy succubus stage occurs.
+5. Obtain loot boxes when defeating Nightmare and Dreamy Succubus
+→ Integrated production system update
+→ Halfas raid update
+→ Save the cry of survival cooldown DB
+→ Impossible to gather in the fairy forest
+→ New pauldrons/gaiters/mystic eyes items and production added
+
+================================================== ================================
+2020/01/10
+================================================== ================================
+→ Magic doll potential enhancement update
+1. Can be strengthened starting with level 3 dolls
+2. Subdivision of potential ratings that can be obtained by stage
+3. Potential Acquisition Probability Live Probability Table
+4. Current potential lower grades are not acquired
+5. Depending on the potential level, the required number of elixirs is applied differently
+6. Additional optional DB storage processing according to potential
+7. Handling icon changes according to doll summons
+8. Add doll object potential effect expression
+9. When it is a 5th-level doll, there is a certain probability of a jackpot.
+→ Add enchantment for attribute order book
+
+================================================== ================================
+2020/01/14
+================================================== ================================
+→ Exchange packets are changed to unified packets
+
+================================================== ================================
+2020/01/29
+================================================== ================================
+→ Added dragon's t-shirt protection order (available for +4 to +8 t-shirts)
+
+================================================== ================================
+2020/02/05
+================================================== ================================
+→ Revenge (revenge) system function added
+1. Add record deletion function
+2. Changed the number of saved lists to 30
+
+================================================== ================================
+2020/02/16
+================================================== ================================
+→ Add character save orb system
+1. Display a list of characters to save when clicking save marbles
+2. Bead inquiry through .bead command
+3. Only characters over level 70 can be included
+4. Available only in Safe Zone
+
+================================================== ================================
+2020/02/28
+================================================== ================================
+→ Add item ability controller (simplified logic)
+1. Set stats for each enchantment/item
+2. Display and process the ability value with the value returned from the method by the interface
+→ Add proto packet controller (simplified logic)
+1. Integration of separate proto packets
+2. Method call by interface
+
+================================================== ================================
+2020/03/04
+================================================== ================================
+→ Blessed pendant update
+→ Modification of Cooking Buff Icon Packet
+→ Character UI packet modification (propensity, satiety, time)
+
+================================================== ================================
+2020/03/18
+================================================== ================================
+→ Changed the appearance of Grim Reaper (forcibly teleported to the starting point when appearing)
+→ Added Tower of Insolence Summit Watcher monster
+
+================================================== ================================
+2020/04/01
+================================================== ================================
+→ Changed the maximum cumulative time for using the 2-step Acceleration Potion/Wisdom Potion item to 120 minutes
+
+================================================== ================================
+2020/04/08
+================================================== ================================
+→ Dragon's Topaz update
+1. Einhasad Blessing 150%
+2. Maximum cumulative time 10 hours
+3. Arrangement of shops in each village
+→ Maximum cumulative time of mana recovery potion is 10 hours
+→ Update transparency status
+1. Summons Magic Doll
+2. Displayed in a translucent state to clan members (same as dolls)
+→ Survival Cry updated
+1. Changed the basic cooldown to 180 minutes
+2. Differential application of cool time by level
+3. Differential application of activated HP recovery amount by level
+
+================================================== ================================
+2020/04/22
+================================================== ================================
+→ Class rebalancing 1st adjustment
+1. Demolition maximum duration up to 4 seconds / cooldown increase / range 5 squares
+2. Halfas reflection rate increased
+3. Pantera Shock range increase +1 / cooldown increase
+4. Avenger Cooldown Increase / Individual Cooltime Application
+5. Effect of inability to act according to the distance from the Eternity target
+6. Glorious pvp damage reduction rate +30 (5%) added / triple arrow effect changed
+→ Changed to have up to 10 keys of time and space
+
+================================================== ================================
+2020/04/29
+================================================== ================================
+→ Class rebalancing secondary adjustment
+1. Empire cooldown 6 seconds / MP consumption 20
+2. Change options for each level of Grace
+3. Added PVP damage reduction by prime level (Clan members apply only to Siege Zone)
+4. Mapre name changed to Magic Shield / common series
+5. Invisi, Hiding cooldown increased / Cannot be used when unable to return
+6. Berserker's Penalty Mitigation
+7. Immunity: Saint, Lucifer: Destiny PVP damage reduction by level
+8. Dragon skin passive type change
+9. Period tick duration change
+10. Triple damage when Fury is activated
+→ When depositing items in the warehouse, the available quantity is added
+→ Added global message ONOFF function
+1. Processing only in case of the person himself/herself
+2. Always ON when restarting or re-executing the client
+→ Add item enchantment graphic ONOFF command
+→ Add Hero's Gaiters
+
+================================================== ================================
+2020/05/08
+================================================== ================================
+→ Added so that the mark list for inter-server movement server is output (L1Clan)
+→ When creating a clan object, interserver mark is randomly applied
+
+================================================== ================================
+2020/05/21
+================================================== ================================
+→ Clan update
+1. Guardian class clan members cannot be granted ranks
+2. Limit the number of people set for each rank
+
+================================================== ================================
+2020/05/27
+================================================== ================================
+→ Clan update
+1. Contribution system added (Einhasad's Blessing / Obtained when obtaining protection status experience, MAX value: 10000000)
+2. Addition of Clan Shops (Purchasing with Contribution Road / Depending on rank / Restricted raid key period)
+3. Clan UI added (changed to proto packet / all management of clan)
+4. Clan membership list app center changes to be processed as proto packets
+5. Clan db update according to clan packet change
+6. Clan contribution db storage controller added (save the contribution of all clans every 10 minutes)
+7. Contribution buff added (management db added: managed with map object)
+8. Added Oath Elixir (Instant charge of Survival Cry / Up to 3 can be purchased per day)
+9. Buffs disappear when clan is withdrawn / Buffs disappear and db is deleted when clan is disbanded
+10. Clan Daily/Weekly Dungeon added (Can be opened in the inner castle or underground hideout / Only the same clan can enter)
+→ Slot expansion process change
+1. Expandable only in Safe Zone
+2. Changed to be processed in item slot UI (proto packet)
+3. Added related items to be paid upon completion of expansion
+4. Free extension with discount coupon
+→ Added beginner quest list
+1. Add QuestExplan packet
+2. Complete when you listen to the explanation and take the corresponding action
+→ Ranking UI overall ranking packet update (possibility of adding new classes)
+→ Update the item class notation (possibility of adding a new class)
+→ store packet update
+→ Dark Dragon's dungeon use time change (09:00-24:00)
+
+================================================== ================================
+2020/06/02
+================================================== ================================
+→ Add time acquisition method (CommonUtill.java)
+1. Acquisition of time until the next day and time (e.g. next Wednesday 6:00 am / Wednesday regular inspection initialization item)
+2. Acquiring the time of the next designated time (e.g., next 6:00 am / daily initialization item)
+3. A method to check whether the acquired time has exceeded the specified time (attendance check / dungeon reset / 1 day, weekly limited item)
+4. Change to disable the use of individual threads for items that expire at a fixed time (using the endtime column of the character_item table)
+→ World Siege Orc Fortress Update
+1. Kind Type No. 12
+2. Siege Warfare Talisman added
+→ Added interserver-only class transformation
+1. Total Accuracy +5, PVP Damage +3
+2. Transformation control ring cannot be transformed except for exclusive transformation (applied as interserver transformation when exclusive transformation is canceled)
+
+================================================== ================================
+2020/06/03
+================================================== ================================
+→ Updated armor item replacement method
+1. Same as weapon replacement method
+2. Excluding rings, earrings and cloaks
+→ Daily clan dungeon clear experience reward change
+→ 10 Armor option update
+→ Item tooltip safety enchantment value notation added
+→ Daily (every day)/weekly (weekly) clan dungeon portal maintenance time changed to 3 minutes after creation
+→ Received about 3 minutes after entering the 'Mark of the Oath' dungeon
+
+================================================== ================================
+2020/06/10
+================================================== ================================
+→ Ranking update
+1. Provision of protection for the 1st place in each class (can be used once every 3,600 seconds)
+2. Added 1st place display in chat (output by class)
+→ Clan raid portal duration changed to 1 minute
+→ Added level 91/92 Elixir runes
+
+================================================== ================================
+2020/06/17
+================================================== ================================
+→ Fissure Tower of Insolence Update
+1. Random start between 19:15 and 23:50
+2. Duration 40 minutes (once a day)
+3. Transforms into a traitor monster with a certain probability when hunting the selected layer
+4. Selected layer map change packet added
+5. There is no change in chaotic propensity when PKing the selected layer
+→ Update the breach in the Rift of the Tower of Domination
+1. Teleporter spawns when attacking Grim Reaper
+2. Only clans with the greatest contribution to the attack can enter (live servers are limited)
+3. 1 hour hunting per account
+4. Transform into a ruler with a certain probability when hunting
+→ Mythic weapon update
+1. Einhasad's Flash PVP damage ignoring 10 added
+2. Gran Cain's Judgment stun duration +1 added
+3. 10Legendary weapon -> Mythical weapon production added
+4. Added crafting of ancient heritage (made with the thoughts of the ancient gods / obtaining mythical weapons with a low probability)
+5. Addition of special ability notation packet
+
+================================================== ================================
+2020/07/30
+================================================== ================================
+→ July opcode update
+→ Modified packet change (changed to integrated packet/integrated processing of name change packet)
+→ Teleport packet change (existing delay teleport packet disappears and is integrated into S_PORTAL)
+
+================================================== ================================
+2020/08/04
+================================================== ================================
+→ Class Care update
+1. Lord skill update (Cole Clan Advance, Majesty, Shining Armor)
+2. Knight skill update (Blow Attack, Solid Carriage, Pride)
+3. Fairy Skill Update (Liberation, Elven Strike)
+4. Mage skill update (Meditation: Beyond, Mass Immunity)
+5. Dark Elf skill update (Moving Acceleration: Maximum, Shadow Armor: Destiny)
+6. Dragon Knight Skill Update (Solid Note, Rampage, Thunder Grab, Awakening Skill, Pouslayer, Mortal Body / 1st, 2nd Step Acquisition, Wear Magic Helmet)
+8. Illusionist skill update (Bonebreak: Last, Illusion: Rich, Illusion: Golem, Illusion: Avatar)
+9. Warrior skill update (Tomahawk, Berserk)
+
+================================================== ================================
+2020/08/12
+================================================== ================================
+→ Window knight update
+→ Added actions according to the spear knight's long-range form (automatically included when included in the spear attack action map / needs to be modified later)
+→ Transformation update
+→ Added spearman items and crafting
+→ 93/94/95 Elixir Runes added
+
+================================================== ================================
+2020/08/19
+================================================== ================================
+→ Cold Temple Renewal
+1. Divided into normal and hard modes
+2. Classification of reward and difficulty by mode
+→ Added vanguard status to disappear when the window knight form is changed (to prevent object errors)
+
+================================================== ================================
+2020/08/22
+================================================== ================================
+→ Add Life Protection
+→ Stun/Hold status icon changed to integrated packet
+
+================================================== ================================
+2020/08/24
+================================================== ================================
+→ Multiple system packet modification
+→ Update only when multiple DB characters log out (prevent indiscriminate DB access, manage real-time result with MODEL)
+
+================================================== ================================
+2020/08/26
+================================================== ================================
+→ Einhasad stat update
+1. Modify related packets and add responsible logic
+2. When all 75 stats in the 1st stage are distributed, the 2nd stage stats are opened and the 2nd stage shop at Einhasad Point 'Keplisha' is opened.
+3. Added new Keplicia items
+4. New stats INVOKE, RESTORE, POTION added
+5. Apply options according to new stats (apply random values)
+6. Reset stats with the lantern of reminiscence
+→ Battle for the Coliseum is suspended
+→ Clan gathering place raid added
+
+================================================== ================================
+2020/08/30
+================================================== ================================
+→ Updated hunting grounds
+1. Monster Encyclopedia / Weekly Quest Deleted
+2. Can register and delete hunting grounds from the hunting ground list (reset hunting count when deleted)
+3. Indication of availability (hours of use)
+4. Local teleport support
+5. Information on inhabitant monsters can be checked (drop item)
+6. Search function support
+7. You can select and proceed with up to 3 types of quests, and additional rewards are added
+8. Reset every Wednesday during regular maintenance
+9. Saving information in db when logging out
+
+================================================== ================================
+2020/09/09
+================================================== ================================
+→ Antharas magic doll all resistance +8 added
+→ Decreased cooldown time of 'Vanguard'
+
+================================================== ================================
+2020/09/12
+================================================== ================================
+→ Changed the communication framework to netty
+
+================================================== ================================
+2020/09/16
+================================================== ================================
+→ Mass Immunity posting range change
+→ Immunity damage reduction process change
+
+================================================== ================================
+2020/10/14
+================================================== ================================
+→ Update equipment swap slots
+1. Change the number of swap slots to 4
+2. Color, name editing function added
+
+================================================== ================================
+2020/10/21
+================================================== ================================
+→ Hunting Field Encyclopedia General Reward Adena materials added
+→ Remove Curse Update
+→ Updating Mythical Weapons
+
+================================================== ================================
+2021/03/15
+================================================== ================================
+→ Opcode change in October 2020
+→ Add new map
+1. Added map related to Ruunseong
+2. Added coordinates for returning to Luunseong
+3. Added Luunseong teleport
+→ Change shop packet (add desk ID)
+
+================================================== ================================
+2021/03/20
+================================================== ================================
+→ Add Ruunseong Village NPC
+→ Added cursed mine monsters
+→ Added 2 mythological weapons, earrings of bloodletting, necklace of madness, mantle of ghosts, boots of Luun III, and belt of lich
+→ Updating wizard items
+→ Added production of mythical weapons and ancient heritage (equipment)
+
+================================================== ================================
+2021/03/22
+================================================== ================================
+→ Add death penalty system
+1. Loss of experience points, recoverable after item evaporation (maximum of 20 can be stored, limited to 24 hours)
+2. Evaporation items limited to weapons, armor, and accessories
+3. Possible to set the price of a specific item (table registration)
+
+================================================== ================================
+2021/03/23
+================================================== ================================
+→ Wizard Reboot Update
+1. Added attack skill stack system during PVP (damage amplification when attacking a single target, up to 5 times)
+2. Changed to be affected by heal skill recovery amount INT and SP
+3. Skill Addition and Rebalancing
+4. Mage item renewal
+→ Move Memory Book Rununseong Plaza, Cursed Mine added
+
+================================================== ================================
+2021/03/24
+================================================== ================================
+→ Market update
+1. Personal store packet change
+2. Add purchase registration function through search function even if you do not possess the item
+→ Character slot expansion update
+1. Expandable up to 10 slots
+2. If you have 'Princess Seal' in your character inventory or warehouse, you can unlock it by clicking on the locked slot in the character selection window.
+→ Summon renewal
+1. Summon packet addition and change
+2. Addition and rebalancing of new Summon monsters
+3. Individual cooldown change
+4. Ability to adjust according to summoner's level and SP
+5. Summon by summoner's level regardless of CHA value
+6. Summoner Lissi Thurman deleted
+7. Distribution of Summon's Hunting EXP to Summoners
+
+================================================== ================================
+2021/03/25
+================================================== ================================
+→ Mage basic appearance and ranker transformation appearance renewal
+→ Recovery cooldown change 2 minutes -> 3 minutes
+→ Pressure range and damage calculation change
+→ Halfas God's Buff ON/OFF function added
+
+================================================== ================================
+2021/03/26
+================================================== ================================
+→ AlchemyInfo.dat (doll synthesis) recognition process modified
+1. Place alchemyInfo.dat in data folder (call path: data/alchemyInfo.dat)
+2. In the case of an unrecognized user when calling the doll synthesis UI, data is acquired and packet output
+
+================================================== ================================
+2021/03/27
+================================================== ================================
+→ Doll synthesis system update
+1. Change synthetic packets (normal, special, advanced)
+2. Transfer of the potential of the main material doll during advanced synthesis
+3. Acquire a main material doll if the advanced synthesis fails
+4. Added 6-step doll replacement system
+→ Added to the integrated production of magic spells
+→ New swordsman skill Phantom: Requiem added
+→ Addition of clan sublord expulsion function
+→ Added the spirit crystal 'Return to Nature' to the Simon sales list
+
+================================================== ================================
+2021/03/30
+================================================== ================================
+→ System mail function added
+1. Add packets and tables
+2. .System letter [character name/all] [item] [quantity] [enchant] Send with command
+3. Register in the received user's message box
+4. Retained for 2 hours and then deleted
+5. Can store up to 30
+→ Ruunseong Village inn map modified
+
+================================================== ================================
+2021/03/31
+================================================== ================================
+→ Ruun Castle Dungeon Update
+1. Ruun Square, Areas 1-4
+2. When the opening condition is completed, the door will open for 1 minute and you can move to the next area.
+3. The door closes 1 minute after the door opens, and the monster respawns.
+4. Forced movement of all personnel to Run Square every 2 hours from 00:00
+5. A 10-minute time limit is given when proceeding to Region 4
+6. Inviter's buff granted when holding an invitation ticket (10% increase in experience and item acquisition when hunting in Ruunseong)
+
+================================================== ================================
+2021/04/04
+================================================== ================================
+→ Update attendance check
+1. Add Premium and Special
+2. Add open function
+3. Possible to designate open material in config
+
+================================================== ================================
+2021/04/09
+================================================== ================================
+→ Infinity War retouch update
+1. A total of 5 rounds and additional hidden stages added
+2. Endless Hero's Token is given when boss is defeated in rounds 3-5
+3. A hidden boss appears at random when the gatekeeper clears rounds 1-5
+4. Einhasad's Blessing 200% instantly charged when defeating a hidden boss
+5. Added foreboding when switching rounds and spawning bosses
+
+================================================== ================================
+2021/04/10
+================================================== ================================
+→ Changed to additional item warehouse packet
+→ added oak bar
+1. When using, select and acquire the desired item
+2. Can be specified in the item_selector table (.reload item select)
+3. UI is set as the desk ID of the item
+
+================================================== ================================
+2021/04/12
+================================================== ================================
+→ Updated Dragon's Habitat
+1. Selling Druga Veil Dragon's Legacy (Double-click creates a habitat portal)
+2. The portal is deleted within 3 minutes or when 16 people enter
+3. Transforms into a dragon with a certain probability when hunting monsters
+4. Upon defeating the transforming dragon, you will obtain the dragon hunter's mark and the loot of the target dragon hit more than once.
+5. You cannot enter the habitat while holding the Dragon Hunter's Token.
+6. Hunting available for 40 minutes (Wednesday time reset, Mark, Dragon's Legacy deleted)
+
+================================================== ================================
+2021/04/14
+================================================== ================================
+→ Class care update
+1. Monarch, Dark Elf basic stat changes
+2. Lord, Fairy, Dark Elf, Dragon Knight, and Illusionist Level Up Increase Max HP
+3. Skill update
+4. Add new monarch skill Empire: Overlord
+→ Adjustment of the equipment options of the knights
+→ Added a class that can wear the Ring of the Reaper
+
+================================================== ================================
+2021/04/19
+================================================== ================================
+→ Clan UI additional packet update (contribution level, online status)
+→ Change to communication network mina (RST packet communication problem, rollback due to speed problem in some PCs)
+→ Changed the magic defense to a maximum of 300
+→ Change the stat initialization packet (10 level increase button below level 40 / logic simplification, prevent time difference with proto packet)
+
+================================================== ================================
+2021/04/27
+================================================== ================================
+→ Add inventory item acquisition information packet
+
+================================================== ================================
+2021/05/06
+================================================== ================================
+→ Class Reboot Update (Knight/Fairy)
+1. Knight Skills Shock Stun, Bounce Attack, Reduction Armor: Veteran, Raging Force Renewal
+2. New knight skills added (Shock Attack, Counter Barrier: Master, Raging Weapon)
+3. Elven Strike -> Changed to Striker Gale: Shot (Passive)
+4. Fairy Skill Protection from Element, Triple Arrow, Elemental Falldown, Magic Shield, Glorious Renewal
+5. New fairy skills added (Soul Barrier: Armor, Burning Shot)
+6. Item option renewal
+→ Added 2 mythological weapons (Silen's Resolve, Saiha's Tenacity)
+→ Added Mythical Weapons and Ancient Heritage Crafting
+→ 100 level era update
+1. Ring opening added when reaching level 95 and 100
+2. When reaching level 100, stat distribution up to 60
+3. Stat 60 bonus option added
+4. Update the number of elixir doses per level
+5. Transformation control ring 100 level 2 types of transformations added (Doppelganger King, Moon Knight Gillian)
+6. Level 90 Buff Bronze Changed to level 95
+→ Added level 96-100 Elixir Runes
+→ Attendance check random reward function added
+→ Add Potion of Enhanced Growth
+→ Changed so that options are applied when possessing an artifact inventory (armor -> general item)
+→ Aden's protection event added (production of protection, option applied when in possession of inventory)
+
+================================================== ================================
+2021/05/12
+================================================== ================================
+→ Add new transformation spr frame
+
+================================================== ================================
+2021/05/20
+================================================== ================================
+→ Unicorn Temple Renewal
+1. Boost mode added (3 keys/Meteor rod/Avish, Azmodan appearance rate increased)
+2. Normal monster drop item auto-routing
+3. Add treasure chest item
+4. Addition of boss appearance direction
+5. html output when key is clicked
+→ Giran Prison 'Guardian Taros' appearance action added
+
+================================================== ================================
+2021/05/21
+================================================== ================================
+→ When the attack is impossible due to tile recognition, if the target can be attacked, it is treated as true (needs to be modified later)
+
+================================================== ================================
+2021/05/23
+================================================== ================================
+→ Fire Dragon's Nest clone monster added
+1. When defeated, there is a certain chance to spawn the Guardian of the Fire Dragon or teleport randomly
+2. Drop item auto-routing
+
+================================================== ================================
+2021/05/24
+================================================== ================================
+→ FIX the problem of stopping when using the 'Triple' skill in 'Play Support' mode
+→ Some skill icons are changed to integrated packets
+
+================================================== ================================
+2021/05/28
+================================================== ================================
+→ Modify interserver access packet (connect to designated url and port)
+
+================================================== ================================
+2021/05/31
+================================================== ================================
+→ Change to use special warehouse
+1. Warehouse packets can be used when using the warehouse manager key
+2. Modify client packet
+3. Warehouse storage available as much as the expanded quantity
+
+================================================== ================================
+2021/06/04
+================================================== ================================
+→ Add Dragon Raid/Indun/Unicorn Temple integrated handler (Inherit handler and run thread)
+→ Modified to be able to level up to level 100
+
+================================================== ================================
+2021/06/10
+================================================== ================================
+→ Changed to be calculated as a percentage of the final probability according to the hit/resistance value
+→ Return processing in case of NpcTalkAction L1MonsterInstance
+
+================================================== ================================
+2021/06/16
+================================================== ================================
+→ Add new transformation items
+1. Winner's Ring
+2. Legend Clan Spellbook
+3. Arc Transformation Spellbook
+
+================================================== ================================
+2021/06/18
+================================================== ================================
+→ Sprite frame Changes by character level Live standard applied
+1. PolyFrameRate.xml file
+2. When updating, extract and change only the xml file
+
+================================================== ================================
+2021/06/24
+================================================== ================================
+→ Changed to be processed in Training Center/Gludio Red Knight Action NPCAI thread
+→ Reusable packet constant processing (pre-registration in cache memory to minimize speed and communication errors)
+
+================================================== ================================
+2021/06/30
+================================================== ================================
+→ Modified so that the blood clot function works normally
+→ Modify the alliance function to work normally
+→ Add Potential Enhancement Scroll (Heroic/Legendary)
+
+================================================== ================================
+2021/07/04
+================================================== ================================
+→ Added to increase Vanguard close-range attack speed
+→ Add log save list (item production/doll synthesis)
+
+================================================== ================================
+2021/07/12
+================================================== ================================
+→ Attendance check random reward item step added
+1. Only 1 step is selected (5 steps in total)
+2. The higher the level, the lower the drop rate
+→ Reduce NPC path finding array length (memory minimization)
+
+================================================== ================================
+2021/07/14
+================================================== ================================
+→ Changed to end if there is no designated play support specialized transformation item
+
+================================================== ================================
+2021/07/18
+================================================== ================================
+→ Blood mark border change packet added during siege
+
+================================================== ================================
+2021/07/20
+================================================== ================================
+→ VPN/overseas IP access blocking function added
+1. Korean IP standard notified by Korea Internet & Security Agency
+2. Add ON/OFF Externalization Config
+3. Add approval command (add/delete/reload allowed IP)
+
+================================================== ================================
+2021/07/21
+================================================== ================================
+→ Land of the Forsaken (Inter) added
+1. Entry level: 90~93 level
+2. Available hours: 18:00-24:00, available 3 hours a day (shared time with the land of the local castaways)
+3. Entry Conditions: 10,000 Adena, Possess Immortal Protection (Advanced or Normal)
+4. Features: normal zone, anonymity, appearance of boss 'Lord of the Abandoned Land'
+→ Class Ranking 2nd and 3rd Place Protection Added
+
+================================================== ================================
+2021/07/22
+================================================== ================================
+→ Land of the Forsaken (Inter) Added fixes
+1. Island area (Safety Zone) added to the land of the abandoned (Inter) hunting ground
+2. Land of the Abandoned (Inter) entrance location changed to an island
+3. Move to the hunting ground through 'random teleport'
+4. When returning from the hunting ground, move to the island area
+5. Go to the local server through the NPC in the island area
+
+================================================== ================================
+2021/07/27
+================================================== ================================
+→ Add npc action interface (NpcHtmlAction, NpcIdAction)
+1. Add actionFactory (store/call the responsible logic)
+2. Calling the responsible method when calling C_NpcAction (priority html -> id)
+3. Simplified logic (removed existing C_NpcAction2.java, improved speed/readability by reducing lines)
+
+================================================== ================================
+2021/08/02
+================================================== ================================
+→ Changed to prevent use of part-time dungeons on the day of using character sealing beads
+→ Change the order of acquisition of officers when the monarch is absent from clan approval
+
+================================================== ================================
+2021/08/25
+================================================== ================================
+→ Mirror War update
+1. Invasion time: 1 time between 12:00 and 24:00
+2. Location: Giran Prison 2nd Floor
+3. Using Transformation, Magic, and Items
+4. Same combat pattern as normal characters (debuff, teleport, etc.)
+5. Hunt surrounding monsters when there are no characters around
+6. Drop item rooting
+7. Each invasion class composition and character specifications are different
+8. Drop specific items and register multiple systems when defeating beings from another world
+9. Command .Mirror Wars [Start/End/Reload] [1: First Floor, 2: Second Floor] [1: Red Knights, 2: Black Knights, 3: Golden Star]
+→ Einhasad Point Shop Reorganization
+1. Deleting Keplicia's Armor/Weapon Magic Scroll Cube
+2. Keplicia's Mysterious Cube (used every 18 hours, 5 times in total) added
+→ Medal of Valor update
+1. 'Varga Medal Exchanger' and 'Varga Medal Maker Warga' added to Gludin Village
+2. Blessing of Stamina, Varga's Belt, Varga's Leggings, Mana Reduction Potion, Domination Transformation Scroll, Daily Movement Item added
+→ Land of the Forsaken (Inter) additional update
+1. 'East Teleporter Charlie' added
+2. Entry Level: East Level 90~93, West Level 90~91
+3. Available Hours: 18:30~21:00
+4. Entry Conditions: 10,000 Adena, Possess Immortal Protection (Advanced/Normal)
+5. Added 'Lord of the Cruel Land' and 'Lord of the Vicious Land'
+
+================================================== ================================
+2021/08/27
+================================================== ================================
+→ Instant Dungeon Aurakia Purification Update
+1. Number of admissions: 4-8 people, level limit: 83 or higher, entry limit: once a week per character
+2. Clear by destroying the 'Aurakia Restraint Sphere' within the time limit (a total of 4 stages)
+3. Upon clearing, Aurakia's Gift and Purification Orb fragments are given to all participants
+4. Unable to enter if possessing fragments of the Orb of Purification (Wednesday regular inspection will be deleted)
+
+================================================== ================================
+2021/08/29
+================================================== ================================
+→ Add restart packet after death
+
+================================================== ================================
+2021/08/30
+================================================== ================================
+→ Changed to produce 'Blessing of Stamina' with 'Crystal of Stamina'
+→ 'Blessing of the Battlefield', 'Blessed Protection of the Battlefield' added (blessing option random)
+
+================================================== ================================
+2021/09/01
+================================================== ================================
+→ Added Windaud Occupation War
+1. Entry Level: Level 85 or higher
+2. Entrance Portal: Windawd Castle Ruins Vortex below Udbeck Village or Notification UI
+3. Only pss assist available
+4. Unable to transform, forced to transform the same appearance by class
+5. Forced team matching by random server division upon entry
+6. Indication of participant anonymity
+7. Temporary medals are periodically given to characters (alive) in the occupied area
+8. If you kill an enemy character who has 2 or more knights medals, 1 medal from the enemy character is stolen.
+9. When the central guard tower is destroyed, the team with the most characters alive in the central occupation area succeeds in capturing it (the team that successfully captured it cannot destroy the guard tower or buff tower on its own while occupying it)
+10. When the occupation is successful, a lump sum reward is given to all characters in the occupation area
+11. All teams that fail to capture are forced to move to the starting point.
+12. Offensive/defensive missions are given every time the central occupation is renewed.
+13. Buff applied when 4 guard towers are destroyed
+14. At the end of the occupation war, the team that is occupying the last place wins.
+15. Forced return of the losing team and prohibition of entry into the battlefield, and the winning team proceeds with the raid
+16. Penalties are given for inactivity during the Occupation of Windawood.
+17. Adena is distributed according to the number of people on the winning team, presence in the map before occupation, and medal acquisition rate
+18. Register the deletion timer when obtaining medals (automatically deleted at the end of the occupation war)
+
+================================================== ================================
+2021/09/04
+================================================== ================================
+→ PC room buff recognition packet added
+→ FIX out of range error when outputting NPC spawn image
+
+================================================== ================================
+2021/09/08
+================================================== ================================
+→ CHA stat reorganization
+1. Hit Boost: +1 to all hits per 4 stats from char 4 (+1 stat bonus at 12, 35, 45, 55, 60)
+2. Skill cooldown reduction: From cha 7, 0.1 per 8 stats (12, 25, 60 stats 0.1 additional reduction)
+3. Status ailment time reduction: From cha 5, 0.1 per 8 stats (12, 25, 60 stats 0.1 additional reduction)
+→ Increases the number of Elixir used
+1. Up to 30
+2. From level 50, 1 per 2 levels, 80 levels 2, 90 levels 2, 100 levels 3
+
+================================================== ================================
+2021/09/15
+================================================== ================================
+→ Warrior class reboot
+1. Basic appearance and ranker transformation appearance renewal (spr added)
+2. HP increase when leveling up
+3. Changed to wear only one ax from dual wielding
+4. Skill update
+5. Titan's Rage, Antharas' Ax, Typhoon's Ax performance change
+6. Added new axes (Dimensional Ax, Gran Kain's Fear)
+7. Add new weapon crafting
+8. New skill and item drop list added
+
+================================================== ================================
+2021/09/21
+================================================== ================================
+→ Add Full Moon Treasure Island (Interserver)
+1. Entry level: level 60 or higher
+2. Admission: 10,000 Adena
+3. Admission time: 21:30 every day
+4. Usage time: 30 minutes
+5. Treasure detection shovel provided upon entry, forced archaeologist transformation
+6. While moving within the event area, a treasure detection mark under your feet at the treasure location
+7. The treasure display is displayed in different colors depending on the distance from the treasure (far side: blue - green - yellow - red: near side)
+8. Double-click the 'treasure detection shovel' at the location of the golden pillar to proceed with excavation
+9. When excavating treasure, if you have the 'Full Moon Compass', the excavation time is reduced by 5 times.
+10. When you dig up a treasure, the treasure gauge rises, and when it reaches 100%, the area where 'Eva's Treasure' appears is exposed.
+11. You can get 'Moonlight Gift Box' by excavating at least 1 treasure and waiting on the event map until the end of Treasure Island.
+
+================================================== ================================
+2021/09/23
+================================================== ================================
+→ Added a warrior to the 'Cougar Guardian' wearing class
+→ +10 dragon t-shirt, +7~+10 sylph t-shirt HP option added
+
+================================================== ================================
+2021/09/30
+================================================== ================================
+→ In the case of an HP absorption attack, it is changed to be absorbed only until the target's HP reaches 1 (prevention of exception)
+→ store packet change
+
+================================================== ================================
+2021/10/06
+================================================== ================================
+→ Added 'Hero's Skill Solvent'
+1. Use before class change
+2. Acquiring a skill mark by dissolving a specific skill (Legend, Myth)
+3. Select skill according to class when clicking mark
+→ Added missing revival crafting
+→ Added store purchase limit logic (DB management, multi-processing possible)
+
+================================================== ================================
+2021/10/10
+================================================== ================================
+→ Clan password registration data processing change (Linbin version must be updated)
+→ Added transformation event function (transformation level readjustment)
+
+================================================== ================================
+2021/10/13
+================================================== ================================
+→ Changed opcode on October 6, 21
+
+================================================== ================================
+2021/10/16
+================================================== ================================
+→ Live experience recovery
+1. Individual processing of loss per level
+2. 99% of the amount lost in recovery
+→ Changed to be managed in the global message database such as item acquisition and production
+
+================================================== ================================
+2021/10/22
+================================================== ================================
+→ Add attendance check warrior
+→ Added attendance check compensation list packet (in charge of Log)
+
+================================================== ================================
+2021/10/27
+================================================== ================================
+→ Changed so that the dragon's t-shirt protection order can be produced at all times
+→ Add a Massteleport switch
+→ Modify to operate monitoring commands (MOVE, CALL)
+
+================================================== ================================
+2021/11/02
+================================================== ================================
+→ Added connection queue function
+1. Register in Queue when queue occurs
+2. Queue check and queue sequence update every 10 seconds
+3. When the order of access comes, remove it from the Queue and connect automatically
+4. Remove from Queue when Queue is cancelled.
+5. Externalization of Queue Usage
+
+================================================== ================================
+2021/11/17
+================================================== ================================
+→ Class balancing 1st update
+
+================================================== ================================
+2021/11/30
+================================================== ================================
+→ 4 stages of doll synthesis (normal, blessing) added (event)
+→ Full moon treasure island treasure acquisition format change (treasure acquisition display board output)
+
+================================================== ================================
+2021/12/01
+================================================== ================================
+→ Class balancing 2nd update
+→ Tower of Domination Awakening Boss Update
+
+================================================== ================================
+2021/12/07
+================================================== ================================
+→ 100 level transformation added
+1. Added 4 types of 100 level transformations that can be transformed into transformation control rings
+2. Doppelganger King transformation changed to level 99
+3. Add spr data, change PolyFrameRate.xml
+
+================================================== ================================
+2021/12/15
+================================================== ================================
+→ Class balancing 3rd update
+
+================================================== ================================
+2021/12/22
+================================================== ================================
+→ Forgotten Island (local) update
+1. Add ship navigation system (add packet processing)
+2. Every Sat/Sun 09:00 ~ 18:00
+3. Level 85 or higher available
+4. Monster transformation according to day/night change
+5. Poisoning area occurs at regular intervals (HP decreases)
+
+================================================== ================================
+2021/12/29
+================================================== ================================
+→ Class balancing 4th update
+
+================================================== ================================
+2022/01/22
+================================================== ================================
+→ Skill management Java handler, factory added (skill individual management)
+
+================================================== ================================
+2022/02/10
+================================================== ================================
+→ Add TJ coupon system
+1. Add when item enchantment fails
+2. Batch registration at log flush (periodic loading as a large number of logs occur on the day of opening)
+3. DB update when character logout
+4. Add system setting Config
+→ Updated elixir extraction system
+1. You can purchase 'Elixir Extraction Potion' through Magic General Store 'Poi' in the Wizard's Lab
+2. Elixir obtainable upon success
+3. In case of failure, 10-30 Pure Elixir can be obtained with a chance
+4. Changed so that it can be stored in the Elixir Account Storage
+→ Medal of Valor Season 3 Update
+
+================================================== ================================
+2022/02/14
+================================================== ================================
+→ Manager query tuning
+
+================================================== ================================
+2022/02/16
+================================================== ================================
+→ Retouch the lair of the queen ant
+1. Changed to open for 1 hour once a week (designated config)
+2. You can enter if you have immortal protection (revival is not possible when the protection is exhausted)
+→ Changed to enable 'Dissolution of Clan' even in possession of castles and hideouts
+→ Attendance check growth/domination update
+
+================================================== ================================
+2022/02/23
+================================================== ================================
+→ Mirror Wars Season 2 Update
+1. Invasion time: Random appearance between 18:00 and 22:00 (probability of appearance)
+→ Added item deletion notification display
+
+================================================== ================================
+2022/03/14
+================================================== ================================
+→ Add manager server initialization button
+1. Initialization by procedure call (prevention of connection connection/exit repetition)
+2. Procedure name SERVER_RESET
+
+================================================== ================================
+2022/03/16
+================================================== ================================
+→ Black Tiger's Roar event update
+→ Changed to maintain cancellation, shape, and dice when transforming set items
+
+================================================== ================================
+2022/03/19
+================================================== ================================
+→ Add L1DoppelgangerInstance
+1. Inherit L1MonsterInstance
+2. Doppelganger Action Officer
+→ Add L1RedKnightInstance
+1. Inherit L1MerchantInstance
+2. Red Knights Training Center NPC Action Responsible
+
+================================================== ================================
+2022/03/20
+================================================== ================================
+→ Add log (Einhasad stats, doll potential, store history, ranking, TJ coupon, penalty recovery)
+
+================================================== ================================
+2022/03/23
+================================================== ================================
+→ Add stream in charge of item marking
+→ Item enchantment section stat system added
+1. item_enchant_ablity table
+2. Check in order from the current enchantment value (options set at +9 also apply to +10)
+3. Maximum enchantment check value 15, minimum enchantment check value 0 (minimize check loof)
+→ The mana recovery amount and cooldown time of 'Witch's Mana Recovery' and 'Keplisha's Mana Recovery' have been changed.
+1. Recovery amount: 1500
+2. Reuse time: 20 minutes
+
+================================================== ================================
+2022/03/27
+================================================== ================================
+→ Add Client Extended Proto Packet asynchronous processing handler (inherit ClientBasePacket)
+→ Strength/Deck Skill Icon Packet Update
+
+================================================== ================================
+2022/03/28
+================================================== ================================
+→ Add a teleport handler (assign L1PcInstance)
+→ Add experience handler (assign L1PcInstance, L1PetInstance)
+
+================================================== ================================
+2022/04/03
+================================================== ================================
+→ Add Tom Handler
+1. Assign to account
+2. Minimize excessive DB access through model processing
+3. Database update upon logout
+4. Acquiring additional points based on the final end date when logging in
+5. Add characters_tam_wait table (reservation information)
+→ Add Einhasad Handler
+1. Assign to account
+
+================================================== ================================
+2022/04/12
+================================================== ================================
+→ Opcode update dated 04/08/22
+
+================================================== ================================
+2022/04/20
+================================================== ================================
+→ 'Dopelganger King' transformation update
+1. Add bow attack motion
+2. When wearing a spear/chainsword, 2 attacks are possible
+
+================================================== ================================
+2022/04/25
+================================================== ================================
+→ Auracia purification skill acquisition process
+
+================================================== ================================
+2022/04/29
+================================================== ================================
+→ Add internal App Center
+1. Netty Http Framework
+2. Config externalization of detailed settings
+3. App_page_info table mapping and page processing
+4. When calling in-game, the character currently in operation is designated as the representative character (processed based on IP, needs to be changed if parameters are processed later)
+
+================================================== ================================
+2022/04/29
+================================================== ================================
+→ Changed to link the connector and the App Center
+1. URI: /outgame/info connector information
+2. URI: /outgame/login Login handling
+3. URI: /outgame/create account creation process
+4. URI: /outgame/engine Unauthorized engine log record (engine check specified in connector setting / table: app_engine_log)
+5. URI: /outgame/process Update user's running process information (Command: .process [character name])
+6. Add Encrytor.exe file / Encrypt initial request URL (connector setting blog)
+7. Add Decrytor.exe file / Decrypt connector log details
+8. Session is saved when logging in to the connector and acquired when logging in to the in-game (disappears after 10 minutes / disappears after 10 minutes after re-save when socket is closed)
+9. Files required for the connector Managed in the App Center
+
+================================================== ================================
+2022/05/11
+================================================== ================================
+→ Improved beginner's movement line
+1. Quest Update
+2. Added Silver Knight Dungeon
+3. Addition of super-preservation area buff activation
+→ Synthesis sentence improvement update
+→ Clan buff system improvement update
+→ Combo buff, level up buff update
+
+================================================== ================================
+2022/05/18
+================================================== ================================
+→ Added new mythic weapon 'Dantès' Trial'
+→ Added new dragon weapon 'Valacas Spear'
+
+================================================== ================================
+2022/06/02
+================================================== ================================
+→ Develop list.spz extraction program (spr_action table)
+1. Proceed with the file decrypted with the viewer
+2. Function: calculation / DB connection / DB storage / file creation
+
+================================================== ================================
+2022/06/15
+================================================== ================================
+→ Oman's top retouch update
+1. Add bloodstain item
+2. Insolence's Protection Stone added
+
+================================================== ================================
+2022/07/06
+================================================== ================================
+→ Add PSS transformation packet
+
+================================================== ================================
+2022/07/20
+================================================== ================================
+→ 100 level achievement update
+1. Level 100 Commemorative Ring and Transformation Control Ring added
+2. Added level 100 transformation
+3. When level 100 is reached, messages and buff statues are spawned and commemorative boxes are provided.
+4. Added the creation of a protective castle gift box
+
+================================================== ================================
+2022/08/02
+================================================== ================================
+→ Personal store, Youngja store DATA cache processing change
+1. Store opening and usage details are immediately reflected in the App Center
+2. Remove existing DB processing
+
+================================================== ================================
+2022/08/03
+================================================== ================================
+→ Selectis exhibition update
+1. Obtain buffs by displaying items (remove items when displayed)
+2. Buff time given according to the level of enhancement during exhibition
+3. Granting buff options according to the level of enhancement during exhibition
+4. Buff type can be selected and changed during exhibition
+5. Buff removal at the end of time and exhibition
+→ Relic system update
+1. Addition of holy relic inventory to store protective items
+2. Protection items are automatically stored in the relic inventory when acquired, such as crafting
+
+================================================== ================================
+2022/08/10
+================================================== ================================
+→ Illusionist Reboot Update
+1. Illusionist Ranker Transformation Renewal
+2. Illusionist Keylink basic attack range increased
+3. Illusionist Skill Renewal
+4. New Illusionist skill added
+5. Illusionist myth weapon added
+→ Changed so that it can be produced at all times through the 'Sacrificial Relic of Blessing' UI
+→ Update attendance check (random selection function not available)
+1. Separated by season (2 categories)
+2. Integrated processing of check time and time completion
+3. Change the logic and table form to facilitate adding and changing new groups
+
+================================================== ================================
+2022/08/31
+================================================== ================================
+→ Added class in charge of Gran Cain (fatigue) system
+1. Delete the old system
+2. Manage all settings in L1Fatigue class
+3. Add penalty timer
+
+================================================== ================================
+2022/09/08
+================================================== ================================
+→ Acquire BIN file data and add to be updated in database (./data/Contents)
+→ Changed various data to be processed as BIN data
+
+================================================== ================================
+2022/09/28
+================================================== ================================
+→ Smelting system update
+1. Added 2 slots that can be equipped with smelting stones on armor
+2. When selecting armor by double-clicking the smelting stone, it is installed in the slot
+3. Equipped smelting stones can be extracted again using a purification agent.
+4. The same option cannot be equipped on one armor (Ex: Level 3 AC -1, Level 4 AC -2 cannot be equipped at the same time)
+5. There are grades 1 to 5 for smelting stones, and the grade of smelting stones increases through synthesis.
+6. Options can be changed by replacing smelting stones of level 4 or higher
+7. Changed the setting so that armor equipped with smelting stones cannot be crafted, enchanted, stored, moved, deleted, used in personal storage, or registered in exhibitions.
+
+================================================== ================================
+2022/10/06
+================================================== ================================
+→ Clan approval subscription system update
+1. Save approval request history
+2. Added processing of waiting list in Clan UI
+→ Add event handling handler
+1. Set details in table event
+2. Event processing according to start time and end time
+→ Add non-profit or for-profit system settings
+1. Set whether active in Config
+2. Sponsorship-related systems are not available in case of non-profit setting
+
+================================================== ================================
+2022/10/12
+================================================== ================================
+→ Eva Kingdom renewal update
+1. Random teleport is possible when possessing the teleportation mastery ring
+2. When the Papurion raid appears, the dragon habitat teleporter 'Water Dragon's Well' portal is changed to appear in the Eva Kingdom.
+3. Changed the underwater debuff (inability to breathe) to be a little stronger
+4. Place the 'Hungry Whale Shark' NPC in the Eva Kingdom hunting ground and move to the treasure chest room or boss room through the 'Hungry Whale Shark'
+5. When 'Captain Jack's goggles' is used, 'Captain's vision' buff is created, and when the buff is activated, hidden NPCs in the Eva Kingdom are visible and can be hunted.
+
+================================================== ================================
+2022/10/17
+================================================== ================================
+→ Update object update process (prevent collision between two threads)
+
+================================================== ================================
+2022/10/19
+================================================== ================================
+→ Tower of Domination Improvement Update
+1. Increased monster difficulty
+2. EXP increase
+3. Suspension of 'Temple of the Ancient Gods' content
+4. Added new items obtainable at the summit
+→ Commander's Pauldrons, Saiha's Pauldrons, Archmage's Pauldrons options changed
+→ Class rebalancing 1st update
+1. CON stat HP increase bonus increased
+2. Mage skill rebalancing
+3. Warrior skill rebalancing
+4. Swordsman skill rebalancing
+→ 1st update to improve PC room benefits
+1. Provide PC Play Master UI
+2. Dungeon benefits update
+3. Buff benefits update
+4. Pixie's golden feather acquisition update
+→ Ranking reorganization update
+1. Rank aggregation change
+2. Ranker Buff Effect
+3. Ranker transformation by class Changed to allow only 1st place in each class
+4. Changed the ranking section where the ranker display icon is displayed
+→ Added new sacred objects of protection
+
+================================================== ================================
+2022/10/26
+================================================== ================================
+→ Magic doll update
+1. New level 5 dragon magic doll (blessing) added
+2. 6th level magic doll option added
+3. New [Advanced Synthesis] synthesis formula added
+
+================================================== ================================
+2022/11/02
+================================================== ================================
+→ Renewal of legendary and mythical weapons
+→ Class rebalancing 2nd update
+1. Knight skill rebalancing
+2. Illusionist skill rebalancing
+
+================================================== ================================
+2022/11/09
+================================================== ================================
+→ First level 100 exclusive hideout added
+1. Enter through the Glory Hideout Key
+2. You can invite other users through the Glory Hideout Invitation
+3. Added functions within the hideout
+→ Added HP/MP to be set at login with the last saved value
+
+================================================== ================================
+2022/11/16
+================================================== ================================
+→ Class rebalancing 3rd update
+1. Fairy skill rebalancing
+2. Dark Elf skill rebalancing
+
+================================================== ================================
+2022/11/23
+================================================== ================================
+→ God Einhasad's update
+→ Einhasad Point Reorganization
+→ Monster stats on the 1st and 2nd floors of Giran Prison are increased
+
+================================================== ================================
+2022/11/30
+================================================== ================================
+→ Class rebalancing 4th update
+1. Lancer skill rebalancing
+2. Changed the basic settings of the spearman's ranged form
+3. DG, ER bonus AC section adjustment
+
+================================================== ================================
+2022/12/07
+================================================== ================================
+→ 2nd update to improve PC room benefits
+1. 'Pixie's Golden Buff Enhancement' function added in 'Ancient Spirit/Giant's Grave' and 'Silver Knight Dungeon 1-4F'
+2. Added a function to open the 'Suspicious Merchant Koha' shop window in PC Play Master
+
+================================================== ================================
+2022/12/13
+================================================== ================================
+→ Change data and source structure to start from number 0 according to spell number live number
+→ Add ruler's mark relic
+
+================================================== ================================
+2022/12/14
+================================================== ================================
+→ Selectis exhibition improvement update
+1. Purchase and production of material items added to the Selectis Exhibition UI
+2. Added a function to extend 1 day to Adena after activating Selectis Exhibition
+3. Sales of production items that can be registered in the 'First Steps to Growth', 'For Survival', and 'Call of the Battlefield' exhibitions
+→ When a character is killed with the warrior skill 'Tempest' or the illusionist magic 'Osiris', the caster's disposition value is changed so that it does not decrease
+
+================================================== ================================
+2022/12/21
+================================================== ================================
+→ Free PVP zone setting added
+1. Free_pvp_region table region setting
+2. No chaotic penalty in PVP
+3. Print the Free PvP notation at the bottom
+→ Add Anshar's Blessing (Skill is temporarily activated when possessing inventory)
+
+================================================== ================================
+2023/01/13
+================================================== ================================
+→ Add NPOINT
+1. Earn points when purchasing items with NCOIN at App Center N Shop
+2. Add items that can be purchased with points
+
+================================================== ================================
+2023/01/25
+================================================== ================================
+→ Added 3rd level smelting stone replacement (ALCHEMY_ID: 7)
+
+================================================== ================================
+2023/02/01
+================================================== ================================
+→ General Store Improvements
+1. The items and prices of the general store in each town, siege, and dungeon have changed.
+2. The food/soup items sold by the general store have changed.
+3. The order documents sold by the secret merchant are transferred to the general store
+4. TAM stone statue crafting items have been changed
+
+================================================== ================================
+2023/02/08
+================================================== ================================
+→ Monarch Reboot
+1. Lord Skill Renewal
+2. Added monarch skills
+3. New monarch skill acquisition location added
+4. Lord Ranker Transformation Renewal
+→ Hidden hunting ground boost mode
+1. Added hidden hunting ground Boost area
+2. 4 Hidden Dimension Hourglasses: 1 hour charge (requires 4 Hourglasses of the same type)
+3. How to recharge: Double-click the Hourglass of the Hidden Dimension and select the Hidden Hunting Ground (Boost) item to recharge
+4. Charge up to 12 hours per week per character
+
+================================================== ================================
+2023/02/11
+================================================== ================================
+→ Added verification of whether the user's game client is active (Investigation of the in-game client activated in the App Center)
+→ App center sponsorship settlement system added
+1. Register in the app_support table when a user sends a message after sponsoring
+2. Sponsorship settlement process on the admin page
+3. Items related to sponsorship rewards set in webserver.properties config file
+
+================================================== ================================
+2023/03/02
+================================================== ================================
+→ Added new potential (heroic/legendary) grades
+→ Growth merit improvement update
+1. Added level 101 and 103 earring slots
+2. Added 1 elixir available from level 101
+
+================================================== ================================
+2023/03/05
+================================================== ================================
+→ Changed to launcher web browser CefSharp
+1. Using the reference as a file in the Chrome distribution file launcher 2 folder
+2. Need to change when launcher 2 chrome version is changed
+3. Launcher built-in function web linkage system added (form change when logging out / unavailable when encrypting)
+4. Add developer mode function (config setting)
+5. Individual processing of launcher app center login
+→ Forced shutdown added when launcher login / account creation fails 5 times
+
+================================================== ================================
+2023/03/10
+================================================== ================================
+→ Web server SSL certificate function added
+1. Private key encryption format pkcs8 (Netty only / openssl)
+2. After adding the certificate to the data/ssl/ folder, set the file path and enable SSL in the config
+3. Replaced with self-signed certificate in case of missing certificate file and problems
+
+================================================== ================================
+2023/03/12
+================================================== ================================
+→ Store purchase restricted account, character classification processing
+
+================================================== ================================
+2023/03/15
+================================================== ================================
+→ App Center N Coin gifting system added
+
+================================================== ================================
+2023/03/20
+================================================== ================================
+→ Einhasad's protection item reservation function added
+1. Use after verifying buff timeout when logging in
+2. Use after verifying the reserved item in the buff end timer
+3. Additional reservations are not allowed if there are already reserved items
+4. Cancellation process when clicking reserved item
+
+================================================== ================================
+2023/03/22
+================================================== ================================
+→ Changed the method of reducing the propensity value when PKing
+→ Change the self-defense system (when a party member attacks, all party members on the screen change to self-defense (purple))
+→ Modify the party assist function
+→ Ivory Tower entry level change
+→ Modify the production cost of high-end immortal protection
+→ Additional merits according to the number of connected characters of users using TAM
+→ Advanced Immortal Protection (PC/Free/Event) cooldown change
+→ Advanced Immortal Protection (PC/Free/Event) dedicated UI added
+→ Advanced Immortal Protection (PC/Free/Event) use function improved
+→ Clan Renewal
+1. Can modify the rank of unconnected personnel
+2. Clan Lord delegation function added
+3. Clan class number changes and conditions added
+4. Clan warehouse permission setting UI added
+5. Clan notification function added
+6. Added function to check clan weekly contribution and access information
+7. Clan maximum contribution changed from 10 million to 20 million
+8. When the monarch/sub-lord chats with the clan, the exclusive mark for the clan is displayed
+9. Added party invite/whisper function when right-clicking a clan member in the clan member list
+10. Clan join block list added
+
+================================================== ================================
+2023/03/29
+================================================== ================================
+→ Class Reboot - Dragon Knight
+1. Dragon Knight Ranker Transformation Renewal
+2. Dragon Knight 'Weakness Exposure' debuff effect change
+3. Dragon Knight Skill Renewal
+4. Dragon Knight new skill added
+→ Added Mythic weapon 'Aurakia's Transcendence'
+→ Rumtis Guardian Pendant added and synthesized added

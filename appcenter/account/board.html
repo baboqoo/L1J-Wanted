@@ -1,0 +1,29 @@
+<div id="svg-container" style="display: none;"></div>
+<link rel="stylesheet" href="/css/community.css">
+<link rel="stylesheet" type="text/css" href="/css/nccommunity-theme.css">
+<link rel="stylesheet" type="text/css" href="/css/l1.board.css">
+<style>
+.fe-svg-arrow_down_s, .fe-svg-arrow_left_s, .fe-svg-arrow_right_s, .fe-svg-arrow_up_s, .fe-svg-close_circle, .fe-svg-comment, .fe-svg-comment_reply, .fe-svg-comments, .fe-svg-like_s, .fe-svg-picture, .fe-svg-reload, .fe-svg-top, .fe-svg-vote {fill: rgba(0,0,0,.45)!important; color: rgba(0,0,0,.45)!important;}
+[class*=" board-list-"] .title .count, [class^=board-list-] .title .count {font-size: 13px; line-height: 1; color: rgba(0,0,0,.68);}
+[class*=" board-list-"] .fe-svg, [class^=board-list-] .fe-svg {width: 16px !important; height: 16px !important; vertical-align: middle !important;}
+.board-list-card .comment {display:none;}
+.board-write-btn {float: left; margin-top: 12px;}
+.nc-comment-more, .nc-comment-more_tag, .ncCommentMore, .wrap-btn-top {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center;-ms-flex-align: center; align-items: center;}
+.nc-comment-more, .nc-comment-more_tag, .ncCommentMore {-webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 50px; border: 1px solid rgba(34,34,34,.08); font-size: 15px; color: rgba(0,0,0,.68); cursor: pointer;}
+@media (max-width: 960px){
+	.board-write-btn {margin-left:12px;}
+}
+@media (min-width: 960px){
+	body .wrap-contents {padding-top: 35px;}
+}
+</style>
+<div id="ncCommunityList" class="nc-community-list l1-my-board-MY uikit-nccommunity-node">
+	<div class="board-top-utils"></div>
+	<div class="ncCommunityLoader nc-community-loader"><div class="loader-circle"></div></div>
+	<ul class="ncCommunityBoardList"></ul>
+	<div class="pagination-container" style="padding-top: 20px;"></div>
+	<div class="wrap-btn-top">
+		Back to Top
+		<button class="co-btn-top_list" aria-label="Back to Top"><svg class="fe-svg fe-svg-top"><use xlink:href="#fe-svg-top"></use></svg></button>
+	</div>
+</div>

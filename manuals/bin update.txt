@@ -1,0 +1,14 @@
+Bin Data Update Manual
+
+1. Run Live Update Launcher2 to receive all updates
+
+2. Extract desc-k and string-k with the extraction tool and put them in the data folder
+
+3. Sort by date in the Contents folder of the installed client and copy the changed empty files.
+Paste into pack folder data\Contents
+
+4. After changing the empty file to be updated to true in common.properties, the update completion message is displayed when the server is started, and then it is completed.
+
+5. Change it back to false after done so it doesn't change again
+
+6. Must be processed one by one in order (because empty data is huge, problems may occur if several are updated at once)

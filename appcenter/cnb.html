@@ -1,0 +1,48 @@
+<div class="ncc-header is-child-nav">
+	<div class="ncc-gnb-wrap">
+		<div class="ncc-search ncc-search--right-pc">
+			<fieldset>
+				<legend>Search</legend>
+				<div class="ncc-search-wrap">
+					<input class="ncc-search-close" type="button" value="Cancel" title="Cancel">
+					<form id="nccSuggestForm" name="nccSuggestForm" method="get" onsubmit="return totalSearchCheck();">
+						<input id="nccSuggestInput" name="query" class="ncc-search-input" type="text" placeholder="Search" autocomplete="off" data-name="suggest_input" onkeyup="searchInputKeyup(this, event);"> 
+						<a href="#none" class="ncc-search-input-delete" onclick="return false;" value="X" title="Delete" data-name="suggest_delete" style="display: none;"></a>
+						<input id="nccSuggestSubmit" class="ncc-search-submit" type="button" value="GO" title="Search" data-name="suggest_submit">
+						<div id="nccSuggestWrap" class="ncc-suggest-list-wrap" data-name="suggest_wrap" style="display: none;">
+							<div id="nccSuggestList" class="ncc-suggest-list" data-name="suggest_list"><div data-name="suggest_scroll"><ul></ul></div></div>
+						</div>
+					</form>
+				</div>
+			</fieldset>
+		</div>
+		<div class="ncc-login"></div>
+	</div>
+
+	<!-- 주 메뉴 -->
+	<div class="ncc-lnb-wrap"></div>
+</div>
+
+<div class="ncc-left-panel">
+	<div class="ncc-left-panel-wrap">
+		<div class="ncc-left-panel-header">
+			<div class="ncc-lnb-header-bi"><a href="/index" class="ncc-bi" target="_self">Lineage</a></div>
+			<div class="ncc-lnb-header-ncservice">playNC service</div>
+			<a class="ncc-left-panel-close">Close</a>
+		</div>
+		<div class="ncc-left-panel-content scrollbar-macosx">
+			<nav class="ncc-lnb-m"><ul class="ncc-lnb-list"></ul></nav>
+		</div>
+	</div>
+</div>
+
+<div class="ncc-right-panel"><div class="ncc-right-panel-wrap scrollbar-macosx"></div></div>
+
+<div class="ncc-character-panel">
+	<div class="ncc-character-panel-wrap">
+		<a class="ncc-character-panel-close">Close</a>
+		<div class="ncc-character-panel-header">Character selection</div>
+		<div class="ncc-character-list-wrap"><ul class="ncc-character-list"></ul></div>
+	</div>
+</div>
+<div class="ncc-dimmed"></div>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meata -->
+		<title>{SERVER_NAME}</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		
+		<!-- Mobile -->
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+		
+	    <!-- css -->
+	    <link rel="stylesheet" href="/css/pm.v2.css">
+	 	<style type="text/css" id="mode_toggle_button">.btn-fixed-wrap{position:fixed;left:16px;bottom:16px;z-index:100000;}.btn-fixed-wrap .btn-theme{position:relative;display:block;height:40px;opacity:0.95;border-radius:22px;-webkit-box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.25);box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.25);border:solid 1px #585858;background-color:#434343;}.btn-fixed-wrap .btn-theme > button{cursor:pointer;height:100%;margin:0px;padding:0 11px;background:#0000;outline:none;border:0px;font-weight:bold;font-family:"Noto Sans KR", -apple-system, BlinkMacSystemFont, Roboto, "맑은 고딕", "Malgun Gothic";}.btn-fixed-wrap .btn-theme > button span:nth-child(2){display:none;}.btn-fixed-wrap .btn-theme > button .icon{display:inline-block;width:26px;height:26px;background-repeat:no-repeat;background-position:50%;background-size:cover;vertical-align:middle;overflow:hidden;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48ZGVmcz48c3R5bGU+LmNscy0xe29wYWNpdHk6MC42O30uY2xzLTJ7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48dGl0bGU+4YSP4YWl4YSG4YWy4YSC4YW14YSQ4YW1X+GEi+GFoeGEi+GFteGEj+GFqeGGq19kYXJrX3YxLjBf4YSA4YW14YSM4YWp4Yar4YSA4YWm4YSJ4YW14YSR4YWh4YarPC90aXRsZT48ZyBpZD0ic3dpdGNoX2xpZ2h0Ij48ZyBjbGFzcz0iY2xzLTEiPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTEwLDUuNWExMC4zOSwxMC4zOSwwLDAsMSwuMjEtMi4xQTEwLDEwLDAsMSwwLDIyLjYsMTUuNzlhMTAuMzksMTAuMzksMCwwLDEtMi4xLjIxQTEwLjUsMTAuNSwwLDAsMSwxMCw1LjVaTTEzLDIyQTksOSwwLDAsMSw5LDQuOTRjMCwuMTksMCwuMzcsMCwuNTZBMTEuNTEsMTEuNTEsMCwwLDAsMjAuNSwxN2guNTZBOSw5LDAsMCwxLDEzLDIyWiIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIyMCA2IDIwIDMgMTkgMyAxOSA2IDE2IDYgMTYgNyAxOSA3IDE5IDEwIDIwIDEwIDIwIDcgMjMgNyAyMyA2IDIwIDYiLz48L2c+PC9nPjwvc3ZnPg==");}html.dark-mode .btn-fixed-wrap .btn-theme > button .icon{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiIgdmlld0JveD0iMCAwIDI2IDI2Ij48ZGVmcz48c3R5bGU+LmNscy0xLC5jbHMtMntvcGFjaXR5OjAuMjU7fS5jbHMtM3tmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT7hhI/hhaXhhIbhhbLhhILhhbXhhJDhhbVf4YSL4YWh4YSL4YW14YSP4YWp4YarX2RhcmtfdjEuMF/hhIDhhbXhhIzhhanhhqvhhIDhhabhhInhhbXhhJHhhaHhhqs8L3RpdGxlPjxnIGlkPSJzd2l0Y2hfZGFyayI+PGcgY2xhc3M9ImNscy0xIj48cGF0aCBkPSJNMTIsNy41YTEwLjM5LDEwLjM5LDAsMCwxLC4yMS0yLjFBMTAsMTAsMCwxLDAsMjQuNiwxNy43OWExMC4zOSwxMC4zOSwwLDAsMS0yLjEuMjFBMTAuNSwxMC41LDAsMCwxLDEyLDcuNVoiLz48L2c+PHBvbHlnb24gY2xhc3M9ImNscy0yIiBwb2ludHM9IjI1IDggMjIgOCAyMiA1IDIxIDUgMjEgOCAxOCA4IDE4IDkgMjEgOSAyMSAxMiAyMiAxMiAyMiA5IDI1IDkgMjUgOCIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTEwLDUuNWExMC4zOSwxMC4zOSwwLDAsMSwuMjEtMi4xQTEwLDEwLDAsMSwwLDIyLjYsMTUuNzlhMTAuMzksMTAuMzksMCwwLDEtMi4xLjIxQTEwLjUsMTAuNSwwLDAsMSwxMCw1LjVaIi8+PHBvbHlnb24gY2xhc3M9ImNscy0zIiBwb2ludHM9IjIzIDYgMjAgNiAyMCAzIDE5IDMgMTkgNiAxNiA2IDE2IDcgMTkgNyAxOSAxMCAyMCAxMCAyMCA3IDIzIDcgMjMgNiIvPjwvZz48L3N2Zz4=");}.btn-fixed-wrap .btn-theme > button .text{font-size:14px;letter-spacing:-0.7px;vertical-align:middle;color:#B8B8B8;}html.dark-mode .btn-fixed-wrap .btn-theme > button .text{color:#ffffff;}.btn-fixed-wrap .btn-theme > button .text + .text{display:inline-block;}html.dark-mode .btn-fixed-wrap .btn-theme > button .text + .text{color:#ff8940;}@media (min-width: 960px){.btn-fixed-wrap .btn-theme > button span:nth-child(2){display:inline-block;}}</style>
+	 	
+	 	<!-- js -->
+	 	<script src="/js/jquery-3.3.1.min.js"></script>
+	</head>
+	<body class="pm">
+		<div id="pm-page">
+			<div class="main">
+				<div class="contents">
+					<section class="top"><div class="top__icon"><span class="icon-i0"></span><span class="icon-i1"></span><span class="icon-i2"></span></div></section>
+					<section class="title"><h1>{SERVER_NAME} <b>Undergoing Web Inspection</b></h1><p class="ins-time">Usage is restricted until inspection is complete.</p></section>
+					<section class="message"><div class="message__box"><h4 class="label">Inspection Details</h4><p class="text">Web service inspection</p></div></section>
+					<section class="inquiry"><p>For related inquiries, please use <a href="javascript:customerLocation();">1:1 Inquiry</a>.</p></section>
+				</div>
+				<div class="btns"><a href="/index" class="submit-btn"><span>Confirm</span></a></div>
+			</div>
+			<div class="footer"><p>© {SERVER_NAME} Corp.</p></div>
+		</div>
+		<div class="mode_toggle_button_div"><div class="btn-fixed-wrap"><div class="btn-theme"><button class="btn-theme__toggle"><span class="icon"></span><span class="text">Dark Mode</span><span class="text state">OFF</span></button></div></div></div>
+		<script type="text/javascript">$(function(){if(getLocal('darkMode') == 'dark'){$('html').addClass('dark-mode');$(this).find('.state').html('ON');}$('.btn-theme__toggle').on('click', function(e){if(!$('html').hasClass('dark-mode')){$('html').addClass('dark-mode');$(this).find('.state').html('ON');setLocal('darkMode', 'dark');}else{$('html').removeClass('dark-mode');$(this).find('.state').html('OFF');setLocal('darkMode', 'light');}})});</script>
+		<script src="/js/storage.js"></script>
+		<script type="text/javascript">
+			function customerLocation(){
+				var form = document.createElement("form");
+				form.setAttribute('charset', 'UTF-8');
+				form.setAttribute('method', 'POST');
+				form.setAttribute('action', '/customer');
+				var hiddenField_1 = document.createElement('input');
+				hiddenField_1.setAttribute('type', 'hidden');
+				hiddenField_1.setAttribute('name', 'type');
+				hiddenField_1.setAttribute('value', '1');
+				form.appendChild(hiddenField_1);
+				
+				var hiddenField_2 = document.createElement('input');
+				hiddenField_2.setAttribute('type', 'hidden');
+				hiddenField_2.setAttribute('name', 'num');
+				hiddenField_2.setAttribute('value', '0');
+				form.appendChild(hiddenField_2);
+				document.body.appendChild(form);
+				form.submit();
+			}
+		</script>
+	</body>
+</html>

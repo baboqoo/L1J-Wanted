@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FishingList>
+	<!--
+	========== Fishing Rods ==========
+	RodId:			Fishing Rod ID
+	Interval:		Fishing Time (sec)
+	Bait:			Do you need bait?
+	RilId:			Fishing Reel ID
+	RilChargeCount:		Reel Charge Count
+	MaxChargeCount:		Max Charge Count
+	RewardExp:		Reward Exp
+	
+	========== Related to Rewards ==========
+	ItemId:			Reward Item ID
+	Count:			Number of Rewards
+	EffectId:		Effect ID
+	Broad:			Notification
+	Prob:			Acquisition Rate (can be specified up to 0.0001% / remaining probabilities are treated as failure / 100% acquisition if specified as 0)
+	 -->
+	
+	<!-- Fishing Rod -->
+	<Fishing RodId="41293" Interval="240" Bait="true" >
+		<Reward ItemId="41296" Count="1" Prob="40" /> 	<!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> 	<!-- Blue Veriana -->
+		<Reward ItemId="600331" Count="1" Prob="10" />	<!-- Red Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="1" />	<!-- Parrot Veriana -->
+	</Fishing>
+	
+	<!-- Paul's Fishing Rod -->
+	<Fishing RodId="41294" Interval="90" Bait="true" RilId="410140" RilChargeCount="100" MaxChargeCount="5000" >
+		<Reward ItemId="41296" Count="1" Prob="40" /> 	<!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> 	<!-- Blue Veriana -->
+		<Reward ItemId="600331" Count="1" Prob="10" />	<!-- Red Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="1" />	<!-- Parrot Veriana -->
+	</Fishing>
+	
+	<!-- Paul's Growth Rod -->
+	<Fishing RodId="600401" Interval="60" RilId="600400" RilChargeCount="50" MaxChargeCount="5000" RewardExp="5000" >
+		<Reward ItemId="41296" Count="1" Prob="57" /> 					<!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> 					<!-- Blue Veriana -->
+		<Reward ItemId="600331" Count="1" Prob="10" />					<!-- Red Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="1" /> 					<!-- Parrot Veriana -->
+		<Reward ItemId="41299" Count="1" Prob="0.1" /> 					<!-- Silver Veriana -->
+		<Reward ItemId="41300" Count="1" Prob="0.1" /> 					<!-- Gold Veriana  -->
+		<Reward ItemId="37069" Count="1" Broad="true" Prob="0.01" /> 	<!-- Shining Saiha Necklace (Revival) -->
+		<Reward ItemId="37067" Count="1" Broad="true" Prob="0.01" /> 	<!-- Warrior's Necklace (Revival) -->
+		<Reward ItemId="37068" Count="1" Broad="true" Prob="0.01" /> 	<!-- Sage's Necklace (Revival) -->
+		<Reward ItemId="37105" Count="1" Broad="true" Prob="0.01" /> 	<!-- Breath of Lindvior (Revival) -->
+		<Reward ItemId="37091" Count="1" Broad="true" Prob="0.01" /> 	<!-- Dragon's Heart (Revival) -->
+		<Reward ItemId="37104" Count="1" Broad="true" Prob="0.01" /> 	<!-- Breath of Fafurion (Revival) -->
+		<Reward ItemId="37102" Count="1" Broad="true" Prob="0.01" /> 	<!-- Breath of Antharas (Revival) -->
+		<Reward ItemId="37103" Count="1" Broad="true" Prob="0.01" /> 	<!-- Breath of Valakas (Revival) -->
+		<Reward ItemId="40346" Count="1" Broad="true" Prob="0.001" />	<!-- Breath of Antharas -->
+		<Reward ItemId="222306" Count="1" Broad="true" Prob="0.001" />	<!-- Sage's Necklace -->
+		<Reward ItemId="222304" Count="1" Broad="true" Prob="0.001" />	<!-- Warrior's Necklace -->
+		<Reward ItemId="20271" Count="1" Broad="true" Prob="0.001" />	<!-- Shining Saiha Necklace -->
+		<Reward ItemId="40466" Count="1" Broad="true" Prob="0.001" />	<!-- Dragon's Heart -->
+		<Reward ItemId="40362" Count="1" Broad="true" Prob="0.001" />	<!-- Breath of Fafurion -->
+		<Reward ItemId="40354" Count="1" Broad="true" Prob="0.001" />	<!-- Breath of Valakas -->
+		<Reward ItemId="40370" Count="1" Broad="true" Prob="0.001" />	<!-- Breath of Lindvior -->
+	</Fishing>
+	
+	<!-- Growth Fishing Rod -->
+	<Fishing RodId="600229" Interval="20" RilId="600228" RilChargeCount="100" MaxChargeCount="5000" RewardExp="5000" >
+		<Reward ItemId="41296" Count="1" Prob="69" /> 					<!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> 					<!-- Blue Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="0.9" />					<!-- Parrot Veriana -->
+		<Reward ItemId="820018" Count="1" Prob="0.09" />				<!-- Pure Elixir -->
+		<Reward ItemId="600230" Count="1" Broad="true" Prob="0.01" />	<!-- Einhasad's Gift -->
+	</Fishing>
+	
+	<!-- Adanced Growth Fishing Rod -->
+	<Fishing RodId="60229" Interval="20" RilId="60228" RilChargeCount="500" MaxChargeCount="5000" RewardExp="5000" >
+		<Reward ItemId="41296" Count="1" Prob="68" /> 					<!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> 					<!-- Blue Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="1" />					<!-- Parrot Veriana -->
+		<Reward ItemId="600338" Count="1" Prob="0.9" />					<!-- Runker Veriana -->
+		<Reward ItemId="820018" Count="1" Prob="0.09" />				<!-- Pure Elixir -->
+		<Reward ItemId="600230" Count="1" Broad="true" Prob="0.01" />	<!-- Einhasad's Gift -->
+	</Fishing>
+	
+	<!-- Silver Fishing Rod -->
+	<Fishing RodId="41305" Interval="90" Bait="true" RilId="410141" RilChargeCount="50" MaxChargeCount="5000" >
+		<Reward ItemId="41296" Count="1" Prob="40" /> <!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> <!-- Blue Veriana -->
+		<Reward ItemId="600331" Count="1" Prob="10" /><!-- Red Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="0.9" /><!-- Parrot Veriana -->
+		<Reward ItemId="41299" Count="1" Prob="0.1" /><!-- Silver Veriana -->
+	</Fishing>
+	
+	<!-- Gold Fishing Rod -->
+	<Fishing RodId="41306" Interval="90" Bait="true" RilId="410142" RilChargeCount="50" MaxChargeCount="5000" >
+		<Reward ItemId="41296" Count="1" Prob="40" /> <!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> <!-- Blue Veriana -->
+		<Reward ItemId="600331" Count="1" Prob="10" /><!-- Red Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="0.9" /><!-- Parrot Veriana -->
+		<Reward ItemId="41300" Count="1" Prob="0.1" /><!-- Gold Veriana  -->
+	</Fishing>
+	
+	<!-- Ancient Silver Fishing Rod -->
+	<Fishing RodId="600332" Interval="90" RilId="600333" RilChargeCount="300" MaxChargeCount="5000" >
+		<Reward ItemId="41296" Count="1" Prob="58.5" /> 								<!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> 									<!-- Blue Veriana -->
+		<Reward ItemId="600331" Count="1" Prob="10" /> 									<!-- Red Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="1" /> 									<!-- Parrot Veriana -->
+		<Reward ItemId="41299" Count="1" Prob="0.4" />									<!-- Silver Veriana -->
+		<Reward ItemId="600334" Count="1" EffectId="13641" Broad="true" Prob="0.1" />	<!-- Ancient Silver Veriana -->
+	</Fishing>
+	
+	<!-- Ancient Gold Fishing Rod -->
+	<Fishing RodId="600335" Interval="90" RilId="600336" RilChargeCount="300" MaxChargeCount="5000" >
+		<Reward ItemId="41296" Count="1" Prob="58.5" /> 								<!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> 									<!-- Blue Veriana -->
+		<Reward ItemId="600331" Count="1" Prob="10" />									<!-- Red Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="1" />									<!-- Parrot Veriana -->
+		<Reward ItemId="41300" Count="1" Prob="0.4" />									<!-- Gold Veriana  -->
+		<Reward ItemId="600337" Count="1" EffectId="13639" Broad="true" Prob="0.1" />	<!-- Ancient Gold Veriana -->
+	</Fishing>
+	
+	<!-- Dragon Fishing Rod -->
+	<Fishing RodId="600340" Interval="20" RilId="600341" RilChargeCount="100" MaxChargeCount="5000" RewardExp="5500" >
+		<Reward ItemId="41296" Count="1" Prob="50" />	<!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" />	<!-- Blue Veriana -->
+		<Reward ItemId="600331" Count="1" Prob="10" />	<!-- Red Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="1" />	<!-- Parrot Veriana -->
+		<Reward ItemId="600344" Count="1" Prob="5" />	<!-- Dragon Sapphire Veriana -->
+		<Reward ItemId="600343" Count="1" Prob="3" />	<!-- Dragon Ruby Veriana -->
+		<Reward ItemId="600342" Count="1" Prob="1" />	<!-- Dragon Diamond Veriana -->
+	</Fishing>
+  
+	<!-- Bullfrog Fishing Rod -->
+	<Fishing RodId="9991" Interval="20" Bait="true" >
+		<Reward ItemId="41296" Count="1" Prob="50" /> 	<!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> 	<!-- Blue Veriana -->
+		<Reward ItemId="41301" Count="1" Prob="2" /> 	<!-- Damp Fishing Bag -->
+		<Reward ItemId="9992" Count="1" Prob="1" /> 	<!-- Bullfrog -->
+		<Reward ItemId="41298" Count="1" Prob="1" /> 	<!-- Parrot Veriana -->
+		<Reward ItemId="41300" Count="1" Prob="0.05" />	<!-- Gold Veriana  -->
+		<Reward ItemId="41299" Count="1" Prob="0.05" />	<!-- Silver Veriana -->
+	</Fishing>
+
+	<!-- Templar Fishing Rod -->
+	<Fishing RodId="600403" Interval="90" Bait="true" RilId="600402" RilChargeCount="10" MaxChargeCount="10" >
+		<Reward ItemId="41296" Count="1" Prob="40" /> 	<!-- Veriana -->
+		<Reward ItemId="41297" Count="1" Prob="30" /> 	<!-- Blue Veriana -->
+		<Reward ItemId="600331" Count="1" Prob="10" />	<!-- Red Veriana -->
+		<Reward ItemId="41298" Count="1" Prob="1" />	<!-- Parrot Veriana -->
+	</Fishing>
+	
+</FishingList>

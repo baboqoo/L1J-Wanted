@@ -1,0 +1,4814 @@
+/*
+  Project : lineage rwd
+  Author  : uidev
+  Update  : Tue Jun 02 2020 16:47:11 GMT+0900 (Korean Standard Time)
+*/
+@charset "UTF-8";
+
+/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	min-height: 100%
+}
+
+.footer-info-tw,
+.slick-initialized .slick-slide,
+.slick-slide img,
+.wrap-my-signature .ui-dropdown.selected .option,
+.wrap-section-inventory .ui-dropdown.selected .option,
+.wrap-section-loglist .ui-dropdown.selected .option,
+.wrap-section-maillist .ui-dropdown.selected .option,
+[class*=" is-show"],
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block
+}
+
+.ui-slidetab .btns li,
+.wrap-my-character .section-my-character.char-info ul li span,
+audio,
+canvas,
+progress,
+section .view-body img,
+video {
+	display: inline-block
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0
+}
+
+progress {
+	vertical-align: baseline
+}
+
+#nc-cnb .ncc-character-list>li.on::after,
+.footer-copyright .copyright-studio,
+.footer-info,
+.footer-links-items.items1::after,
+.footer-links-list-kr .footer-links-items.items2::after,
+.footer-links-list-kr .footer-links-items:nth-child(1),
+.footer-links-list-kr .footer-links-items:nth-child(6),
+.footer-links-list-kr .footer-links-items:nth-child(7),
+.footer-links-list-sea .items1,
+.footer-links-list-tw .items1,
+.modal-loglist .info .date::after,
+.page-my .ui-dropdown-community .select-mobile::after,
+.page-my .ui-dropdown-community .select::after,
+.pagination .pagination-list .next [class*=" fe-icon-"],
+.pagination .pagination-list .next [class^=fe-icon-],
+.pagination .pagination-list .prev [class*=" fe-icon-"],
+.pagination .pagination-list .prev [class^=fe-icon-],
+.section-signature .ui-signature .info span:first-child::before,
+.slick-arrow.slick-hidden,
+.slick-slide.slick-loading img,
+.wrap-header .header .logo,
+.wrap-my-character .section-my-character.char-info h2,
+.wrap-section-loglist .section-info-text h2,
+[hidden],
+body.ingame #ncCommunityList.l1-world-stat .count-like,
+body.ingame #ncCommunityList.l1-world-stat .like,
+body.page-main .wrap-header,
+template {
+	display: none
+}
+
+.section-signature .ui-signature.empty,
+.wrap-my-signature .ui-dropdown.ui-dropdown-server .option li:hover,
+.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option li:hover,
+.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option li:hover,
+.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option li:hover,
+a {
+	background-color: transparent
+}
+
+a:active,
+a:hover {
+	outline-width: 0
+}
+
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted
+}
+
+b,
+strong {
+	font-weight: bolder
+}
+
+dfn,
+section .view-body em {
+	font-style: italic
+}
+
+h1 {
+	font-size: 2em;
+	margin: .67em 0
+}
+
+mark {
+	background-color: #ff0;
+	color: #000
+}
+
+small {
+	font-size: 80%
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+
+sub {
+	bottom: -.25em
+}
+
+sup {
+	top: -.5em
+}
+
+img {
+	border-style: none
+}
+
+svg:not(:root) {
+	overflow: hidden
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em
+}
+
+figure {
+	margin: 1em 40px
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+	margin: 0
+}
+
+optgroup {
+	font-weight: 700
+}
+
+button,
+input,
+select {
+	overflow: visible
+}
+
+button,
+select {
+	text-transform: none
+}
+
+.btn-gift:hover,
+.section-signature .ui-signature .open,
+[type=button],
+[type=reset],
+[type=submit],
+button {
+	cursor: pointer
+}
+
+[disabled] {
+	cursor: default
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+	-webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+button:-moz-focusring,
+input:-moz-focusring {
+	outline: ButtonText dotted 1px
+}
+
+textarea {
+	overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+	box-sizing: border-box;
+	padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+	height: auto
+}
+
+[type=search] {
+	-webkit-appearance: textfield
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+
+* {
+	box-sizing: border-box
+}
+
+.slick-dots li button:focus,
+.slick-dots li button:hover,
+.slick-list:focus,
+button,
+input,
+textarea {
+	outline: 0
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, "ë§‘ì€ ê³ ë”•", "Malgun Gothic", "Microsoft JhengHei", meiryo, "MS PGothic", "ë‹ì›€", Dotum, sans-serif;
+	font-family: "ë§‘ì€ ê³ ë”•", "Malgun Gothic", AppleSDGothicNeo-Light, "Noto Sans CJK KR", Dotum, "ë‹ì›€", "Microsoft NeoGothic", "Droid sans", Sans-serif;
+	background: #fff
+}
+
+body:not(.page-board) svg:not(:root) {
+	width: 100%;
+	height: 100%;
+	vertical-align: top
+}
+
+.footer-copyright::after,
+.section-signature .my-character-list .wrap-items::after,
+.ui-slidetab .btns::after,
+.wrap-my-character .section-my-character.char-biorhythm .graph::after,
+.wrap-my-character .section-my-character.char-stats .hpmp-info::after,
+.wrap-my-character .section-my-character.char-stats .pk-info::after,
+.wrap-my-character .section-my-character.char-stats .stat-info::after {
+	content: '';
+	display: table;
+	clear: both
+}
+
+.layer-item-marketprice-info .item-info .name,
+.wrap-section-inventory .section-inventory .item-list li strong {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.wrap-my-character .section-my-character .box,
+.wrap-my-character .section-my-character .equipment-list,
+.wrap-my-character .section-my-character .hpmp-info,
+.wrap-my-character .section-my-character .pk-info,
+.wrap-my-character .section-my-character .stat-info,
+.wrap-my-character .section-my-character header,
+.wrap-my-character .section-my-character.char-info,
+.wrap-section-loglist .section-info-text,
+.wrap-section-my-articles .section-my-articles header {
+	padding-left: 18px;
+	padding-right: 18px
+}
+
+@media (min-width:1340px) {
+
+	.wrap-section-loglist .section-info-text,
+	.wrap-section-my-articles .section-my-articles header {
+		padding-left: 0;
+		padding-right: 0
+	}
+}
+
+.wrap-my-character .section-my-character.char-equipment header,
+.wrap-section-inventory,
+.wrap-section-loglist .section-info-text,
+.wrap-section-loglist .section-loglist .privacy,
+.wrap-section-loglist .section-loglist .table-list,
+.wrap-section-maillist,
+.wrap-section-my-articles {
+	max-width: 1260px;
+	padding-left: 18px;
+	padding-right: 18px;
+	margin: 0 auto
+}
+
+@media (min-width:640px) {
+
+	.wrap-my-character .section-my-character.char-equipment header,
+	.wrap-section-inventory,
+	.wrap-section-loglist .section-info-text,
+	.wrap-section-loglist .section-loglist .privacy,
+	.wrap-section-loglist .section-loglist .table-list,
+	.wrap-section-maillist,
+	.wrap-section-my-articles {
+		padding-left: 40px;
+		padding-right: 40px
+	}
+}
+
+.ui-slidetab,
+.wrap-my-character,
+.wrap-my-signature {
+	max-width: 1260px;
+	margin-left: 0;
+	margin-right: 0
+}
+
+@media (min-width:960px) {
+
+	.ui-slidetab,
+	.wrap-my-character,
+	.wrap-my-signature,
+	.wrap-section-loglist .section-loglist .privacy {
+		margin-left: 40px;
+		margin-right: 40px
+	}
+}
+
+.wrap-my-signature .ui-dropdown.ui-dropdown-server .option,
+.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option,
+.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option,
+.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option {
+	left: 0;
+	right: 0;
+	width: 320px;
+	max-width: 1224px;
+	margin: -36px auto 0;
+	padding: 8px;
+	border: 1px solid #d3d6da;
+	background-color: #fff;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15);
+	max-height: none;
+	z-index: 100
+}
+
+@media (min-width:640px) {
+
+	.wrap-my-signature .ui-dropdown.ui-dropdown-server .option,
+	.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option,
+	.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option,
+	.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option {
+		width: 600px
+	}
+}
+
+.wrap-my-signature .ui-dropdown.ui-dropdown-server .option header,
+.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option header,
+.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option header,
+.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option header {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 4px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #1f1f1f;
+	border-bottom: 0
+}
+
+.wrap-my-signature .ui-dropdown.ui-dropdown-server .option .btn-close,
+.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option .btn-close,
+.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option .btn-close,
+.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option .btn-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	text-align: left;
+	text-indent: -9999em;
+	white-space: nowrap;
+	overflow: hidden;
+	background-image: url(/img/common/icon-close.png);
+	background-size: 14px 14px;
+	background-position: center center;
+	background-repeat: no-repeat
+}
+
+.wrap-my-signature .ui-dropdown.ui-dropdown-server .option ul,
+.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option ul,
+.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option ul,
+.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option ul,
+section menu,
+section ol,
+section ul {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+
+.wrap-my-signature .ui-dropdown.ui-dropdown-server .option li,
+.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option li,
+.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option li,
+.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option li {
+	list-style: none;
+	float: left;
+	width: calc(100% * .33333 - 2px);
+	margin: 1px;
+	height: auto;
+	border: 1px solid #f4f5f7;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 14px
+}
+
+.wrap-my-signature .ui-dropdown.ui-dropdown-server .option li.selected a,
+.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option li.selected a,
+.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option li.selected a,
+.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option li.selected a {
+	border-color: #c69c7c;
+	color: #aa8060
+}
+
+.wrap-my-signature .ui-dropdown .option li:hover,
+.wrap-my-signature .ui-dropdown.ui-dropdown-server .option li:hover a,
+.wrap-section-inventory .ui-dropdown .option li:hover,
+.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option li:hover a,
+.wrap-section-loglist .ui-dropdown .option li:hover,
+.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option li:hover a,
+.wrap-section-maillist .ui-dropdown .option li:hover,
+.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option li:hover a {
+	background-color: rgba(153, 153, 153, .1)
+}
+
+.wrap-my-signature .ui-dropdown.ui-dropdown-server .option li a,
+.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option li a,
+.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option li a,
+.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option li a {
+	display: block;
+	text-align: center;
+	margin: -5px 0;
+	padding: 5px 0;
+	line-height: 21px;
+	color: #1f1f1f;
+	text-decoration: none;
+	letter-spacing: -1px;
+	overflow: hidden
+}
+
+.ui-slidetab {
+	position: relative;
+	height: 51px;
+	background-color: #f4f5f7;
+	overflow: hidden;
+	font-size: 15px
+}
+
+.ui-slidetab .handle {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.ui-slidetab .btns {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap
+}
+
+.ui-slidetab .btns li a {
+	display: block;
+	margin: 0;
+	height: 50px;
+	line-height: 52px;
+	color: #1f1f1f;
+	text-align: center;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	min-width: 65px
+}
+
+.ui-slidetab .btns li a.on {
+	color: #aa8060
+}
+
+.ui-slidetab.percentage .btns,
+.ui-slidetab.percentage .handle,
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-100.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-100.bar {
+	width: 100%
+}
+
+#ncCommunityList .board-list-card,
+.ui-slidetab.percentage .btns li a {
+	padding-left: 0;
+	padding-right: 0
+}
+
+@media screen and (min-width:960px) {
+	.wrap {
+		margin: 0 23px
+	}
+
+	.ui-slidetab {
+		border: 1px solid #e1e1e5;
+		font-size: 16px
+	}
+
+	.ui-slidetab .btns li {
+		vertical-align: top;
+		border-left: 1px solid #e1e1e5
+	}
+
+	.ui-slidetab .btns li:first-child {
+		border-left: none
+	}
+
+	.ui-slidetab .btns li a {
+		line-height: 45px;
+		background-color: #fff;
+		color: #000
+	}
+
+	.ui-slidetab .btns li a.on {
+		background-color: #c69c7c;
+		color: #fff;
+		border-bottom: none
+	}
+}
+
+@media screen and (min-width:1260px) {
+	.wrap {
+		margin: 0 auto
+	}
+}
+
+.page-my .ui-slidetab,
+.page-search .ui-slidetab {
+	background-color: #fff
+}
+
+.page-my .ui-slidetab::before,
+.page-search .ui-slidetab::before {
+	content: '';
+	display: block;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 1px;
+	background: #e1e1e5
+}
+
+.footer-links-list,
+.items6,
+.page-my .ui-slidetab .btns li,
+.page-search .ui-slidetab .btns li,
+.wrap-my-character .section-my-character.char-equipment,
+.wrap-section-maillist .section-maillist .normal-list li header,
+.wrap-section-my-articles .section-my-articles header {
+	position: relative
+}
+
+.page-my .ui-slidetab .btns li a.on::after,
+.page-search .ui-slidetab .btns li a.on::after {
+	content: '';
+	display: block;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #aa8060
+}
+
+.overlay,
+.ui-modal {
+	z-index: 9999999
+}
+
+.ui-modal .modal {
+	width: 100%;
+	width: calc(100% - 36px);
+	min-width: 284px;
+	margin: 0 auto;
+	background: #fff
+}
+
+.ui-modal .modal .contents {
+	position: relative;
+	-ms-word-break: break-all;
+	word-break: break-all
+}
+
+.ui-modal .modal .contents header.title {
+	padding: 18px 30px;
+	color: #fff;
+	font-size: 20px;
+	background-color: #b5bdca
+}
+
+.ui-modal .modal .contents article {
+	padding: 32px 30px;
+	color: #474747;
+	font-size: 13px
+}
+
+.ui-modal .modal .btn-close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 0;
+	text-decoration: none;
+	width: 20px;
+	height: 18px;
+	background-image: url(/img/common/modal-close.png);
+	background-size: 20px 18px;
+	background-position: center center;
+	background-repeat: no-repeat
+}
+
+.loadingbar {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 100px;
+	text-align: center;
+	z-index: 1
+}
+
+.loadingbar::before {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+	content: '';
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, .9);
+	background-image: url(/img/common/loading.gif);
+	background-size: 31px 31px;
+	background-position: center center;
+	background-repeat: no-repeat
+}
+
+section .nodata {
+	min-height: 220px;
+	padding-top: 70px;
+	text-align: center
+}
+
+section .nodata p {
+	margin-bottom: 15px;
+	font-size: 13px;
+	line-height: 1.54;
+	color: #474747
+}
+
+section .nodata p strong {
+	font-weight: 400;
+	color: #1f1f1f
+}
+
+section .nodata a,
+section .nodata button {
+	display: inline-block;
+	min-width: 135px;
+	padding: 9px 20px 11px;
+	margin: 0 auto;
+	color: #aa8060 !important;
+	border: 1px solid #c69c7c;
+	outline: 0;
+	border-radius: 100px;
+	font-size: 15px;
+	background-color: transparent
+}
+
+section .nodata a:hover,
+section .nodata button:hover {
+	text-decoration: none !important
+}
+
+.slick-loading .slick-list {
+	background: url(/img/loading.gif) center center no-repeat #fff
+}
+
+.slick-next,
+.slick-prev {
+	position: absolute;
+	z-index: 99;
+	display: block;
+	width: 22px;
+	height: 22px;
+	line-height: 0;
+	font-size: 0;
+	cursor: pointer;
+	background: 0 0;
+	color: transparent;
+	top: 50%;
+	padding: 0;
+	border: none;
+	outline: 0
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+	outline: 0;
+	background: 0 0;
+	color: transparent
+}
+
+.slick-dots li button:focus::before,
+.slick-dots li button:hover::before,
+.slick-next:focus::before,
+.slick-next:hover::before,
+.slick-prev:focus::before,
+.slick-prev:hover::before {
+	opacity: 1
+}
+
+.slick-next.slick-disabled::before,
+.slick-prev.slick-disabled::before {
+	opacity: .25
+}
+
+.slick-next::before,
+.slick-prev::before {
+	font-family: dotum;
+	font-size: 22px;
+	line-height: 1;
+	color: #c7c7cc;
+	opacity: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.slick-prev {
+	left: -25px
+}
+
+[dir=rtl] .slick-prev {
+	left: auto;
+	right: -25px
+}
+
+.slick-next::before,
+.slick-prev::before {
+	content: ''
+}
+
+[dir=rtl] .slick-prev::before {
+	content: ">"
+}
+
+.slick-next {
+	right: -25px
+}
+
+[dir=rtl] .slick-next {
+	left: -25px;
+	right: auto
+}
+
+[dir=rtl] .slick-next::before {
+	content: "<"
+}
+
+.slick-dots {
+	position: absolute;
+	list-style: none;
+	display: block;
+	text-align: center;
+	padding: 0;
+	width: 100%
+}
+
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	margin: 0 4px !important;
+	padding: 0;
+	cursor: pointer
+}
+
+.slick-dots li button {
+	border: 0;
+	background: 0 0;
+	display: block;
+	height: 8px;
+	width: 8px;
+	outline: 0;
+	line-height: 0;
+	font-size: 0;
+	color: transparent;
+	cursor: pointer
+}
+
+.slick-dots li button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 6px;
+	height: 6px;
+	border: 1px solid #cdcdcd;
+	border-radius: 50%;
+	font-family: dotum;
+	font-size: 30px;
+	color: #c69c7c;
+	opacity: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+.slick-dots li.slick-active button::before {
+	border: 1px solid #c69c7c;
+	color: #c69c7c;
+	opacity: .75;
+	background-color: #c69c7c
+}
+
+.slick-slider {
+	margin-bottom: 30px;
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0
+}
+
+.slick-list.dragging {
+	cursor: pointer;
+	cursor: hand
+}
+
+.slick-slider .slick-list,
+.slick-slider .slick-track {
+	-webkit-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0)
+}
+
+.slick-track {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block
+}
+
+.slick-track::after,
+.slick-track::before {
+	content: "";
+	display: table
+}
+
+.slick-track::after,
+.wrap-section-maillist .section-maillist {
+	clear: both
+}
+
+.slick-loading .slick-slide,
+.slick-loading .slick-track {
+	visibility: hidden
+}
+
+.slick-slide {
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	display: none
+}
+
+[dir=rtl] .slick-slide {
+	float: right
+}
+
+.slick-slide.dragging img {
+	pointer-events: none
+}
+
+.slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent
+}
+
+.slick-arrow {
+	top: 0;
+	height: 38px;
+	font-weight: 700
+}
+
+.slick-arrow.slick-prev {
+	left: 0
+}
+
+.slick-arrow.slick-next {
+	right: 0
+}
+
+.footer-info-tw dl,
+body,
+html,
+section dd,
+section dl,
+section dt,
+section figure,
+section p {
+	margin: 0;
+	padding: 0
+}
+
+body .wrap-contents {
+	margin: 0 auto;
+	padding-top: 48px;
+	text-align: left
+}
+
+body.page-main .wrap-contents {
+	max-width: 100% !important
+}
+
+body.app .wrap-contents {
+	padding: 0 0 50px
+}
+
+body.ingame {
+	font-size: 16px;
+	font-family: "ë§‘ì€ ê³ ë”•", "Malgun Gothic", AppleSDGothicNeo-Light, "Noto Sans CJK KR", Dotum, "ë‹ì›€", "Microsoft NeoGothic", "Droid sans", Sans-serif
+}
+
+body.ingame #nc-cnb .ncc-lnb {
+	display: block !important
+}
+
+body.ingame #nc-cnb.is-sticky .ncc-header {
+	background-color: #192950 !important
+}
+
+body.ingame .wrap-header {
+	background-color: transparent;
+	min-height: 48px
+}
+
+body.ingame #nc-cnb .ncc-lnb .m7 .ncc-lnb-item__sub {
+	margin-left: -300px
+}
+
+body.ingame.page-main #nc-cnb .ncc-header {
+	background-color: rgba(0, 0, 0, .25)
+}
+
+.launcher.page-my #nc-cnb .ncc-header,
+.launcher.page-search #nc-cnb .ncc-header,
+body.ingame.page-my #nc-cnb .ncc-header,
+body.ingame.page-search #nc-cnb .ncc-header {
+	background-color: #192950
+}
+
+.launcher.page-my #nc-cnb .ncc-header .ncc-lnb-sub__bg,
+.launcher.page-search #nc-cnb .ncc-header .ncc-lnb-sub__bg,
+body.ingame.page-my #nc-cnb .ncc-header .ncc-lnb-sub__bg,
+body.ingame.page-search #nc-cnb .ncc-header .ncc-lnb-sub__bg {
+	background-color: #1f3263;
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .25)
+}
+
+body.ingame .section-contents {
+	padding-bottom: 40px
+}
+
+.floatingbanner.off,
+body .hidden,
+body.ingame .btn-servermaster,
+body.ingame .count-word,
+body.ingame .pswp__button--download,
+body.ingame .section-search.section-search-direct {
+	display: none !important
+}
+
+body.ingame #ncCommunityView .board-view .view-body .xed font[size="2"] {
+	font-size: 13px !important
+}
+
+body.ingame #ncCommunityView .board-view .view-body .xed font[size="3"] {
+	font-size: 15px !important
+}
+
+body.ingame #ncCommunityView .board-view .view-body .xed font[size="4"] {
+	font-size: 18px !important
+}
+
+body.ingame #ncCommunityView .board-view .view-body .xed font[size="5"] {
+	font-size: 20px !important
+}
+
+body.ingame #ncCommunityList {
+	min-height: 600px
+}
+
+body.ingame #ncCommunityList .board-list-card .board-items-footer {
+	padding: 0 20px
+}
+
+body.ingame .overlay {
+	background-color: rgba(0, 0, 0, .7) !important
+}
+
+body.ingame .modal-confirm {
+	width: 420px
+}
+
+body.ingame .modal-confirm>.btn-close {
+	display: inline-block;
+	width: 30px;
+	height: 30px
+}
+
+body.ingame .modal-confirm>.btn-close::after,
+body.ingame .modal-confirm>.btn-close::before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 1px;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	background-color: rgba(21, 16, 13, .6)
+}
+
+.section-signature .my-character-list .btn-close::before,
+body.ingame .modal-confirm>.btn-close::before {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.section-signature .my-character-list .btn-close::after,
+body.ingame .modal-confirm>.btn-close::after {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+
+body.ingame .modal-confirm .contents article {
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.8;
+	color: #1f1f1f
+}
+
+body.ingame .modal-confirm .contents article p::before {
+	content: '';
+	display: block;
+	width: 44px;
+	height: 44px;
+	margin: 0 auto 15px;
+	background-image: url(/img/common/icon-confirm.png);
+	background-size: 44px 44px;
+	background-position: center center;
+	background-repeat: no-repeat
+}
+
+body.ingame .modal-confirm .contents footer.wrap-button {
+	text-align: center;
+	padding-bottom: 40px
+}
+
+body.ingame .modal-confirm .contents footer.wrap-button .button {
+	padding: 9px 15px;
+	border: 1px solid #c7c7cc;
+	outline: 0;
+	border-radius: 100px;
+	text-decoration: none;
+	background-color: transparent
+}
+
+.section-signature .ui-signature .wrap-button .button.selected,
+.wrap-button .button.selected,
+body.ingame .modal-confirm .contents footer.wrap-button .button.selected {
+	color: #aa8060;
+	border: 1px solid #c69c7c
+}
+
+.section-signature .ui-signature .wrap-button .button.primary,
+.wrap-button .button.primary,
+body.ingame .modal-confirm .contents footer.wrap-button .button.primary {
+	color: #fff;
+	border-color: #c69c7c;
+	background: #c69c7c
+}
+
+@media (min-width:960px) {
+
+	.wrap-my-signature .ui-dropdown.ui-dropdown-server .option,
+	.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option,
+	.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option,
+	.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option {
+		width: 920px
+	}
+
+	.wrap-my-signature .ui-dropdown.ui-dropdown-server .option li,
+	.wrap-section-inventory .ui-dropdown.ui-dropdown-server .option li,
+	.wrap-section-loglist .ui-dropdown.ui-dropdown-server .option li,
+	.wrap-section-maillist .ui-dropdown.ui-dropdown-server .option li {
+		width: calc(100% * .16667 - 2px)
+	}
+
+	.ui-modal .modal {
+		width: 674px
+	}
+
+	.slick-dots li {
+		margin: 0 6px
+	}
+
+	.slick-dots li button::before {
+		width: 8px;
+		height: 8px
+	}
+
+	body .wrap-contents {
+		padding-top: 35px
+	}
+
+	body.ingame .modal-confirm .contents footer.wrap-button .button {
+		padding-top: 7px;
+		font-size: 16px
+	}
+}
+
+.section-signature .ui-signature .wrap-button .icon-check::before,
+.wrap-button .icon-check::before,
+body.ingame .modal-confirm .contents footer.wrap-button .icon-check::before {
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 9px;
+	margin-right: 4px;
+	background: url(/img/common/icon-check.png) 50% 50%/12px 9px no-repeat
+}
+
+.section-signature .ui-signature .wrap-button .icon-check.selected::before,
+.wrap-button .icon-check.selected::before,
+body.ingame .modal-confirm .contents footer.wrap-button .icon-check.selected::before {
+	background: url(/img/common/icon-check-on.png) 50% 50%/12px 9px no-repeat
+}
+
+.section-signature .ui-signature .wrap-button .icon-go::after,
+.wrap-button .icon-go::after,
+body.ingame .modal-confirm .contents footer.wrap-button .icon-go::after {
+	content: '';
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin-left: 4px;
+	vertical-align: middle;
+	background: 0 0;
+	border-top: 1px solid #888;
+	border-right: 1px solid #888;
+	border-left: initial;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.section-signature .ui-signature .wrap-button .icon-go.selected::after,
+.wrap-button .icon-go.selected::after,
+body.ingame .modal-confirm .contents footer.wrap-button .icon-go.selected::after {
+	border-color: #aa8060
+}
+
+body.ingame .modal-confirm .contents footer.wrap-button .button {
+	min-width: 80px;
+	font-size: 13px;
+	color: #aa8060;
+	border-color: #aa8060;
+	background-image: none !important
+}
+
+body.ingame .modal-confirm .contents footer.wrap-button .button:hover {
+	color: #fff;
+	background-color: #aa8060
+}
+
+body.ingame .modal-confirm .contents footer.wrap-button .button+.button {
+	margin-left: 5px
+}
+
+body.ingame .modal-confirm .contents footer.wrap-button .button.btn-close {
+	position: static;
+	width: auto;
+	height: auto
+}
+
+section h1,
+section h2,
+section h3,
+section h4,
+section h5 {
+	margin: 0;
+	padding: 0;
+	font-weight: 400
+}
+
+section li {
+	display: list-item;
+	margin: 0;
+	padding: 0
+}
+
+section em,
+section i,
+section var {
+	font-style: normal
+}
+
+section a {
+	outline: 0;
+	text-decoration: none;
+	color: inherit
+}
+
+.section-signature .ui-signature .co-btn span,
+.section-signature .ui-signature .ncCommmentMore span,
+section img {
+	vertical-align: top
+}
+
+section * {
+	box-sizing: border-box;
+	outline: 0
+}
+
+section button {
+	cursor: pointer;
+	border: 0;
+	background: 0 0
+}
+
+section .view-body h1,
+section .view-body h2,
+section .view-body h3,
+section .view-body h4,
+section .view-body h5 {
+	display: block;
+	margin: initial;
+	padding: initial;
+	font-weight: 700
+}
+
+section .view-body p {
+	display: block;
+	margin: 1em 0
+}
+
+section .view-body ul {
+	display: block;
+	list-style-type: disc;
+	padding-left: 40px;
+	margin: 1em 0
+}
+
+section .view-body ol {
+	display: block;
+	list-style-type: decimal;
+	padding-left: 40px;
+	margin: 1em 0
+}
+
+section .view-body li {
+	display: list-item
+}
+
+section .view-body i,
+section .view-body var {
+	font-style: initial
+}
+
+section .view-body a {
+	color: initial;
+	text-decoration: underline
+}
+
+section .view-body * {
+	outline: initial
+}
+
+.floatingbanner {
+	display: none;
+	width: 214px;
+	height: 214px;
+	position: absolute;
+	left: 50%;
+	margin-left: -107px;
+	top: 279px;
+	background-size: cover;
+	z-index: 15
+}
+
+.floatingbanner a {
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	border-radius: 50%
+}
+
+.floatingbanner .event {
+	width: 200px;
+	height: 200px
+}
+
+.floatingbanner .close {
+	left: 171px;
+	top: 158px;
+	width: 44px;
+	height: 44px
+}
+
+@media (min-width:960px) {
+	.floatingbanner {
+		top: 472px
+	}
+}
+
+.btn-gift {
+	position: absolute;
+	right: 35px;
+	top: 1px;
+	display: inline-block;
+	padding: 0
+}
+
+.btn-gift:hover .flag-gift {
+	color: #f2703b
+}
+
+.btn-gift .flag-gift {
+	display: inline-block;
+	height: 22px;
+	padding: 3px 5px;
+	line-height: 15px;
+	color: #8c919a;
+	border: 1px solid #e1e1e5;
+	box-shadow: 0 0 0 transparent;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: top;
+	border-radius: 15px
+}
+
+.btn-gift .flag-gift::before {
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	vertical-align: top;
+	margin: 0 2px 0 0;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23F16126' d='M18.965 12.51l-6.455 6.455a3.56 3.56 0 0 1-5.02 0L1.035 12.51a3.56 3.56 0 0 1 0-5.02L7.49 1.035a3.56 3.56 0 0 1 5.02 0l6.455 6.455a3.56 3.56 0 0 1 0 5.02'%3E%3C/path%3E%3Cpath fill='%23FFF' d='M12.5 6.989s-2.374-.279-2.809 0c0 0-1.02.471-1.02 1.957v2.108c-.018 1.486 1.02 1.957 1.02 1.957.435.279 2.809 0 2.809 0v1.829c-.877.277-2.68.26-2.68.26-3.038-.002-3.32-3.394-3.32-3.394V8.294S6.782 4.902 9.82 4.9c0 0 1.803-.017 2.68.261V6.99z'%3E%3C/path%3E%3C/svg%3E")
+}
+
+.launcher .wrap-contents,
+body.page-my .wrap-contents {
+	padding-top: 0
+}
+
+.launcher:not(.page-servermaster) .wrap-header {
+	min-height: 88px;
+	background: 0 0
+}
+
+.launcher .ui-youtube-modal .modal {
+	max-width: 1010px
+}
+
+.launcher.page-main .wrap-contents {
+	padding-top: 0 !important
+}
+
+.launcher::-webkit-scrollbar {
+	width: 12px
+}
+
+.launcher::-webkit-scrollbar-track {
+	background: #e7e9ee
+}
+
+.launcher::-webkit-scrollbar-thumb {
+	background-color: #f5f7fb;
+	border: 1px solid #aab1c1
+}
+
+#ncCommunityComment,
+#ncCommunityList,
+#ncCommunityView,
+#ncCommunityWrite {
+	max-width: 1260px;
+	margin: 0 auto
+}
+
+@media (min-width:960px) {
+	.launcher .wrap-contents {
+		padding-top: 48px
+	}
+
+	#ncCommunityComment,
+	#ncCommunityList,
+	#ncCommunityView,
+	#ncCommunityWrite {
+		padding-left: 40px;
+		padding-right: 40px
+	}
+}
+
+#ncCommunityList {
+	min-height: 400px
+}
+
+@media (min-width:415px) {
+	#ncCommunityList .board-list-card {
+		padding-left: 18px;
+		padding-right: 18px
+	}
+}
+
+#ncCommunityReport {
+	z-index: 9100008
+}
+
+.board-list-default .title .category {
+	width: auto
+}
+
+#nc-cnb .ncc-character-list-wrap .loadingbar {
+	display: none;
+	position: fixed
+}
+
+#nc-cnb .ncc-character-list {
+	background-color: rgba(244, 245, 247, .85)
+}
+
+#nc-cnb .ncc-character-list>li {
+	position: relative;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1;
+	text-align: left;
+	color: #1f1f1f;
+	cursor: pointer;
+	border-bottom: 1px solid #fff
+}
+
+#nc-cnb .ncc-character-list>li::before {
+	position: absolute;
+	right: 18px;
+	top: 21px;
+	display: inline-block;
+	content: '';
+	width: 11px;
+	height: 1px;
+	background-color: #c7c7cc
+}
+
+#nc-cnb .ncc-character-list>li::after {
+	position: absolute;
+	right: 23px;
+	top: 16px;
+	display: inline-block;
+	content: '';
+	width: 1px;
+	height: 11px;
+	background-color: #c7c7cc
+}
+
+#nc-cnb .ncc-character-list>li span {
+	display: block;
+	padding: 15px 18px
+}
+
+#nc-cnb .ncc-character-list>li ul.l1-character-list {
+	padding: 10px 0;
+	background-color: #fff
+}
+
+#nc-cnb .ncc-character-list>li ul.l1-character-list li {
+	margin: 0;
+	font-size: 13px;
+	font-weight: 300;
+	color: #474747
+}
+
+#nc-cnb .ncc-character-list>li ul.l1-character-list li:hover {
+	color: #d17c15
+}
+
+#nc-cnb .ncc-character-list>li ul.l1-character-list li span {
+	padding: 7px 18px
+}
+
+.page-my #nc-cnb .ncc-gnb-wrap .ncc-bi,
+.page-search #nc-cnb .ncc-gnb-wrap .ncc-bi {
+	background-image: url(/img/bi-lineageremaster-type2.png) !important
+}
+
+.is-sticky .ncc-header {
+	background-color: #aa8060
+}
+
+.wrap-header {
+	min-height: 56px;
+	background-color: #aa8060
+}
+
+@media (min-width:1340px) {
+
+	#ncCommunityComment,
+	#ncCommunityList,
+	#ncCommunityView,
+	#ncCommunityWrite,
+	.wrap-my-character .section-my-character.char-equipment header,
+	.wrap-section-inventory,
+	.wrap-section-loglist .section-info-text,
+	.wrap-section-loglist .section-loglist .table-list,
+	.wrap-section-maillist,
+	.wrap-section-my-articles {
+		padding-left: 0;
+		padding-right: 0
+	}
+
+	.ui-slidetab,
+	.wrap-my-character,
+	.wrap-my-signature,
+	.wrap-section-loglist .section-loglist .privacy {
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	.floatingbanner {
+		top: 619px
+	}
+
+	.wrap-header .header {
+		max-width: 1260px
+	}
+}
+
+.wrap-header .header .header-title {
+	display: none;
+	margin: 0;
+	padding: 0;
+	font-size: 21px;
+	color: #fff;
+	letter-spacing: -1px;
+	text-align: center;
+	font-weight: 400;
+	line-height: 1.2
+}
+
+.wrap-header .header-subcopy {
+	margin-top: 5px;
+	text-align: center;
+	font-size: 13px;
+	color: rgba(255, 255, 255, .4);
+	line-height: 1.2
+}
+
+.launcherLayer {
+	z-index: 10001000 !important
+}
+
+.co-btn-top {
+	position: fixed;
+	right: 18px;
+	bottom: 18px;
+	z-index: 10
+}
+
+@media (min-width:1333px) {
+	.co-btn-top {
+		right: 50%;
+		margin-right: -685px
+	}
+}
+
+.fe-icon-top {
+	width: 37px;
+	height: 37px;
+	background-position: -943px -20px
+}
+
+.wrap-footer {
+	margin-top: 90px;
+	width: 100%;
+	background-color: #F6F6F6; /* #111 */
+}
+
+.footer .select-country .wrap-footer .icon-country,
+.footer .select-country .wrap-footer .icon-country-arrow,
+.footer-sns-items .wrap-footer a,
+.wrap-footer .footer .select-country .icon-country,
+.wrap-footer .footer .select-country .icon-country-arrow,
+.wrap-footer .footer-logo,
+.wrap-footer .footer-sns-items a,
+.wrap-footer .sprites {
+	background-image: url(/img/logo_sm.png); /*url(/img/footer.png);*/
+	background-size: 60px auto; /*149px auto;*/
+	background-repeat: no-repeat
+}
+
+.footer {
+	clear: both;
+	max-width: 880px;
+	margin: 0 auto;
+	padding: 40px 0 55px;
+	text-align: center
+}
+
+.footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.footer .footer-communtiy-policy {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.14;
+	letter-spacing: -.9px;
+	text-align: center;
+	color: #1f1f1f
+}
+
+.footer .footer-communtiy-policy::after {
+	content: '';
+	display: inline-block;
+	width: 1px;
+	height: 13px;
+	margin: -2px 8px 0 11px;
+	vertical-align: middle;
+	background-color: #babdc2
+}
+
+.footer .select-country {
+	position: relative;
+	margin: 15px auto 0;
+	cursor: pointer
+}
+
+.footer .select-country-title {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.14;
+	letter-spacing: -.9px;
+	text-align: center;
+	color: #1f1f1f;
+	cursor: pointer
+}
+
+.footer .select-country .icon-country {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	margin-right: 2px;
+	vertical-align: middle;
+	background-position: 0 -43px
+}
+
+.footer .select-country .icon-country-arrow {
+	display: inline-block;
+	width: 8px;
+	height: 5px;
+	margin-left: 4px;
+	vertical-align: middle;
+	background-position: 0 -74px
+}
+
+.footer .select-country-list {
+	position: absolute;
+	z-index: 10;
+	overflow: hidden;
+	left: 50%;
+	width: 180px;
+	height: 0;
+	margin-top: 10px;
+	margin-left: -90px
+}
+
+.footer .select-country-items {
+	border-top: 1px solid #ceab90;
+	text-align: center
+}
+
+.footer .select-country-items:first-child,
+.section-signature .ui-signature .thumb img {
+	border: 0
+}
+
+.footer .select-country-items a {
+	display: block;
+	height: 33px;
+	font-size: 14px;
+	line-height: 31px;
+	color: #fff;
+	text-decoration: none;
+	background-color: #c69c7c
+}
+
+.footer .select-country.on .select-country-list {
+	height: 101px
+}
+
+.footer-sns-list {
+	text-align: center;
+	line-height: 1
+}
+
+.footer-sns-items {
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	margin: 0 4px
+}
+
+.footer-sns-items a {
+	text-align: left;
+	text-indent: -9999em;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 100%;
+	outline: 0
+}
+
+.footer-sns-items-facebook a {
+	background-position: 0 -94px
+}
+
+.footer-sns-items-facebook a:hover {
+	background-position: 0 -155px
+}
+
+.footer-links {
+	padding: 5px 0;
+	border-top: 1px solid rgba(34, 34, 34, 0.08)/*#1f1f1f*/;
+	border-bottom: 1px solid rgba(34, 34, 34, 0.08)/*#1f1f1f*/;
+	font-weight: 350;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: -.075em
+}
+
+.footer-links-items {
+	display: inline-block;
+	position: relative;
+	padding: 0 4px 0 3px;
+	color: #9d9d9d;
+	font-size: 12px
+}
+
+.footer-links-items a {
+	color: #9d9d9d;
+	text-decoration: none
+}
+
+.footer-copyright {
+	margin-top: 3px;
+	padding-top: 13px;
+	font-size: 11px;
+	color: rgba(0, 0, 0, 0.45)/*#5f5f5f*/;
+	line-height: 1.5
+}
+
+.footer-copyright a {
+	color: inherit;
+	text-decoration: none
+}
+
+.footer-info-tw dt,
+.section-signature .ui-signature .wrap-button,
+.wrap-section-my-articles .section-my-articles .board-list li.nodata {
+	text-align: center
+}
+
+.footer-info-tw dd {
+	padding: 0;
+	margin: 7px 0 0
+}
+
+.footer-info-tw p {
+	margin: 0;
+	padding: 9
+}
+
+.footer-info-tw img {
+	width: 45px;
+	height: 45px
+}
+
+.footer-logo {
+	display: none;
+	margin: 19px auto 0;
+	/*width: 36px;
+	height: 20px; */
+	height: 40px;
+	text-align: left;
+	text-indent: -9999em;
+	white-space: nowrap;
+	overflow: hidden;
+	background-position: center 0
+}
+
+.layer-grade {
+	display: none;
+	position: absolute;
+	bottom: 23px;
+	left: -274px;
+	width: 648px;
+	height: 246px;
+	background: url(/img/common/grade-lineage-2019.png) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+	z-index: 9999
+}
+
+h2 {
+	font-size: 16px
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: 700
+}
+
+.wrap-section-inventory .section-inventory header,
+.wrap-section-my-articles .section-my-articles header {
+	font-size: 13px;
+	color: #575757;
+	vertical-align: middle
+}
+
+.ui-select-tab .select {
+	position: relative;
+	display: block;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #efeff5;
+	background-color: #f6f9fd
+}
+
+.ui-select-tab .select::after {
+	content: '';
+	position: absolute;
+	right: 18px;
+	top: 40%;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 6px solid #c7c7cc
+}
+
+.ui-select-tab .select.open::after {
+	-webkit-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg)
+}
+
+.ui-select-tab .select-tab {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	width: calc(100% - 18px * 2);
+	margin: 0;
+	padding: 0;
+	border: 1px solid #efeff5;
+	border-top: 0
+}
+
+.ui-select-tab .select-tab li {
+	width: 100%;
+	list-style-type: none;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #efeff5;
+	background-color: #f6f9fd
+}
+
+.ui-select-tab .select-tab li:last-child,
+.wrap-my-character .section-my-character.char-biorhythm {
+	border-bottom: 0
+}
+
+.ui-select-tab .select-tab li a {
+	display: block;
+	width: 100%;
+	color: #474747;
+	text-decoration: none
+}
+
+@media (min-width:640px) {
+	.ui-select-tab .select-tab {
+		width: calc(100% - 40px * 2)
+	}
+
+	.section-signature .my-character-list .wrap-items .items {
+		float: left !important;
+		width: calc(100% / 2)
+	}
+}
+
+.wrap-section-loglist .section-info-text h2 {
+	padding: 0 0 10px;
+	color: #1f1f1f;
+	font-size: 16px
+}
+
+.wrap-section-loglist .section-info-text li {
+	padding-bottom: 5px;
+	color: #575757;
+	font-size: 12px
+}
+
+.wrap-section-loglist .section-info-text li::before {
+	content: "-";
+	display: inline-block;
+	color: #d8d8d8;
+	font-size: 12px;
+	font-family: Dotum;
+	vertical-align: middle;
+	margin-right: 5px
+}
+
+.wrap-section-loglist .section-info-text li span {
+	display: inline-block;
+	width: 90%;
+	vertical-align: top
+}
+
+.wrap-section-loglist .section-info-text p {
+	color: #474747;
+	font-size: 13px
+}
+
+#item-dimmed {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	background-color: rgba(204, 204, 204, .5)
+}
+
+.layer-item-marketprice-info {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 220px;
+	padding: 29px 15px 20px;
+	font-size: 14px;
+	border: 1px solid #c7c7cc;
+	background-color: #fff
+}
+
+.layer-item-marketprice-info .item-info {
+	padding-bottom: 14px;
+	border-bottom: 1px solid #f0f3f7
+}
+
+.layer-item-marketprice-info .item-info .thumb {
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+	margin-top: -3px
+}
+
+.layer-item-marketprice-info .item-info .name {
+	display: inline-block;
+	width: calc(100% - 40px);
+	padding-left: 7px;
+	font-size: 13px;
+	font-weight: 400
+}
+
+.layer-item-marketprice-info dl {
+	margin-top: 15px !important
+}
+
+.layer-item-marketprice-info dl dt {
+	padding-bottom: 10px;
+	color: #474747
+}
+
+.layer-item-marketprice-info dl dd {
+	padding-bottom: 14px
+}
+
+.layer-item-marketprice-info dl dd li {
+	padding-bottom: 5px !important;
+	color: #888
+}
+
+.layer-item-marketprice-info dl dd li strong {
+	padding-left: 4px;
+	color: #aa8060;
+	font-weight: 400
+}
+
+.layer-item-marketprice-info .btn-powerbook {
+	font-size: 0
+}
+
+.layer-item-marketprice-info .btn-powerbook a {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-image: url(/img/my/btn-pb.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 26px 26px
+}
+
+.layer-close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	display: block;
+	width: 28px;
+	height: 28px;
+	font-size: 0;
+	cursor: pointer;
+	background: url(/img/common/icon-close.png) 50% 50%/14px 14px no-repeat
+}
+
+.page-my .no-data {
+	width: 100% !important;
+	margin: 0;
+	padding: 30px 0 !important;
+	text-align: center !important
+}
+
+.page-my .no-data::before {
+	content: '';
+	display: block;
+	width: 44px;
+	height: 44px;
+	margin: 0 auto;
+	background-image: url(/img/common/icon-warning.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 44px 44px
+}
+
+.page-my .no-data p {
+	padding-top: 10px;
+	color: #888;
+	font-size: 13px
+}
+
+.wrap-my-signature .ui-dropdown,
+.wrap-section-inventory .ui-dropdown,
+.wrap-section-loglist .ui-dropdown,
+.wrap-section-maillist .ui-dropdown {
+	display: inline-block;
+	position: relative;
+	min-width: 100px;
+	height: 30px;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 16px
+}
+
+.wrap-my-signature .ui-dropdown select,
+.wrap-section-inventory .ui-dropdown select,
+.wrap-section-loglist .ui-dropdown select,
+.wrap-section-maillist .ui-dropdown select {
+	-webkit-appearance: none;
+	border: 0;
+	background-color: transparent
+}
+
+.wrap-my-signature .ui-dropdown.is-active .select::after,
+.wrap-section-inventory .ui-dropdown.is-active .select::after,
+.wrap-section-loglist .ui-dropdown.is-active .select::after,
+.wrap-section-maillist .ui-dropdown.is-active .select::after {
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 6px solid #c7c7cc;
+	border-top: 0
+}
+
+.wrap-my-signature .ui-dropdown .select,
+.wrap-my-signature .ui-dropdown .select-mobile,
+.wrap-section-inventory .ui-dropdown .select,
+.wrap-section-inventory .ui-dropdown .select-mobile,
+.wrap-section-loglist .ui-dropdown .select,
+.wrap-section-loglist .ui-dropdown .select-mobile,
+.wrap-section-maillist .ui-dropdown .select,
+.wrap-section-maillist .ui-dropdown .select-mobile {
+	position: relative;
+	height: 100%;
+	padding-right: 35px;
+	background-color: #fff;
+	cursor: pointer
+}
+
+.wrap-my-signature .ui-dropdown .select-mobile.disabled,
+.wrap-my-signature .ui-dropdown .select.disabled,
+.wrap-section-inventory .ui-dropdown .select-mobile.disabled,
+.wrap-section-inventory .ui-dropdown .select.disabled,
+.wrap-section-loglist .ui-dropdown .select-mobile.disabled,
+.wrap-section-loglist .ui-dropdown .select.disabled,
+.wrap-section-maillist .ui-dropdown .select-mobile.disabled,
+.wrap-section-maillist .ui-dropdown .select.disabled {
+	color: #000;
+	background-color: #fff
+}
+
+.wrap-my-signature .ui-dropdown .select-mobile::after,
+.wrap-my-signature .ui-dropdown .select::after,
+.wrap-section-inventory .ui-dropdown .select-mobile::after,
+.wrap-section-inventory .ui-dropdown .select::after,
+.wrap-section-loglist .ui-dropdown .select-mobile::after,
+.wrap-section-loglist .ui-dropdown .select::after,
+.wrap-section-maillist .ui-dropdown .select-mobile::after,
+.wrap-section-maillist .ui-dropdown .select::after {
+	content: '';
+	position: absolute;
+	right: 18px;
+	top: 50%;
+	margin-top: -10px;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 6px solid #c7c7cc
+}
+
+.wrap-my-signature .ui-dropdown .option,
+.wrap-section-inventory .ui-dropdown .option,
+.wrap-section-loglist .ui-dropdown .option,
+.wrap-section-maillist .ui-dropdown .option {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	left: -1px;
+	right: -1px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #ddd;
+	background-color: #fff
+}
+
+.wrap-my-signature .ui-dropdown .option li,
+.wrap-section-inventory .ui-dropdown .option li,
+.wrap-section-loglist .ui-dropdown .option li,
+.wrap-section-maillist .ui-dropdown .option li {
+	height: 30px;
+	padding-top: 8px;
+	padding-left: 8px;
+	background-color: #fff;
+	cursor: pointer
+}
+
+.wrap-my-signature .ui-dropdown [class^=fe-icon-],
+.wrap-section-inventory .ui-dropdown [class^=fe-icon-],
+.wrap-section-loglist .ui-dropdown [class^=fe-icon-],
+.wrap-section-maillist .ui-dropdown [class^=fe-icon-] {
+	position: absolute;
+	right: 10px;
+	top: 50%
+}
+
+.wrap-my-signature .select::after,
+.wrap-section-inventory .select::after,
+.wrap-section-loglist .select::after,
+.wrap-section-maillist .select::after {
+	margin-top: -7px !important
+}
+
+.ui-select-tab {
+	float: left;
+	width: 100%;
+	margin: 0 auto 10px
+}
+
+.wrap-button {
+	text-align: center;
+	padding: 18px 0 30px;
+	font-size: 15px
+}
+
+.wrap-button .button {
+	padding: 9px 15px;
+	color: #888;
+	border: 1px solid #c7c7cc;
+	outline: 0;
+	border-radius: 100px;
+	text-decoration: none;
+	background-color: transparent;
+	font-size: 13px
+}
+
+.pagination {
+	padding: 18px 0 30px;
+	text-align: center;
+	font-size: 13px
+}
+
+.pagination .btn {
+	outline: 0;
+	border: 0;
+	font-size: 0;
+	vertical-align: middle;
+	background-color: transparent
+}
+
+.pagination .btn::before {
+	content: '';
+	display: inline-block;
+	width: 31px;
+	height: 30px;
+	color: #575757;
+	font-size: 16px;
+	font-family: Dotum;
+	line-height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #efefef
+}
+
+.pagination .btn:disabled {
+	opacity: .3
+}
+
+.pagination .btn.prev::before {
+	content: '<'
+}
+
+.pagination .btn.next::before {
+	content: '>'
+}
+
+.pagination .page {
+	padding: 0 10px;
+	color: #888;
+	cursor: pointer
+}
+
+.pagination .page:hover,
+.pagination .pagination-list li a:hover {
+	text-decoration: underline
+}
+
+.pagination .page strong {
+	color: #1f1f1f;
+	font-weight: 400
+}
+
+.pagination .page.selected,
+.pagination .pagination-list li.current,
+.pagination .pagination-list li.selected {
+	color: #1f1f1f
+}
+
+.pagination .page.selected:hover {
+	text-decoration: none
+}
+
+.pagination .pagination-list {
+	margin: 30px auto 0;
+	padding: 0;
+	list-style: none;
+	text-align: center
+}
+
+.pagination .pagination-list li {
+	display: inline-block;
+	min-width: 30px;
+	height: 30px;
+	margin: 0 4px;
+	font-size: 16px;
+	line-height: 30px;
+	vertical-align: middle
+}
+
+.pagination .pagination-list li a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: #575757
+}
+
+.pagination .pagination-list .prev {
+	margin-right: 15px
+}
+
+.pagination .pagination-list .next {
+	margin-left: 15px
+}
+
+.pagination .pagination-list .next a,
+.pagination .pagination-list .prev a {
+	position: relative;
+	border: 1px solid #e1e1e5
+}
+
+.pagination .pagination-list .next a:hover,
+.pagination .pagination-list .prev a:hover {
+	text-decoration: underline;
+	border-color: #747880
+}
+
+.pagination .pagination-list .next a:before,
+.pagination .pagination-list .prev a:before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 8px;
+	height: 8px;
+	border: 0 solid #747880;
+	border-width: 1px 1px 0 0
+}
+
+.pagination .pagination-list .prev a:before {
+	margin: -4px 0 0 -2px;
+	-webkit-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg)
+}
+
+.pagination .pagination-list .next a:before {
+	margin: -4px 0 0 -6px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg)
+}
+
+.section-signature .ui-signature {
+	position: relative;
+	padding-top: 48px;
+	padding-bottom: 26px;
+	text-align: center;
+	background-color: #f4f5f7;
+	margin-top: 44px !important
+}
+
+.section-signature .ui-signature .thumb {
+	position: absolute;
+	left: 50%;
+	top: -44px;
+	width: 88px;
+	height: 88px;
+	margin-left: -44px;
+	border-radius: 50%;
+	overflow: hidden
+}
+
+.section-signature .ui-signature .thumb img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%
+}
+
+.section-signature .ui-signature .writer {
+	margin-top: 10px;
+	font-size: 20px;
+	color: #1f1f1f
+}
+
+.section-signature .ui-signature .info {
+	margin-top: 5px;
+	color: #474747
+}
+
+.section-signature .ui-signature .info span {
+	position: relative;
+	margin-left: 5px;
+	padding-left: 10px
+}
+
+.section-signature .ui-signature .info span::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 2px;
+	height: 2px;
+	margin-top: -1px;
+	background-color: #c7c7c7
+}
+
+.section-signature .ui-signature .info span:first-child {
+	margin-left: 0;
+	padding-left: 0
+}
+
+.section-signature .ui-signature .info .clan {
+	color: #c5986b
+}
+
+.section-signature .ui-signature .utils {
+	margin-top: 13px
+}
+
+.section-signature .ui-signature .co-btn,
+.section-signature .ui-signature .ncCommmentMore {
+	height: 37px;
+	padding: 9px 25px 10px;
+	border: 1px solid #e1e1e5;
+	border-radius: 100px;
+	font-size: 15px;
+	color: #575757;
+	background-color: #fff
+}
+
+.section-signature .ui-signature .co-btn:hover,
+.section-signature .ui-signature .ncCommmentMore:hover {
+	border-color: #c7c7cc
+}
+
+.section-signature .ui-signature .co-btn [class^=fe-icon-],
+.section-signature .ui-signature .ncCommmentMore [class^=fe-icon-] {
+	margin-right: 5px;
+	font-size: 12px;
+	vertical-align: middle
+}
+
+.section-signature .ui-signature .co-btn+.co-btn,
+.section-signature .ui-signature .co-btn+.ncCommmentMore,
+.section-signature .ui-signature .ncCommmentMore+.co-btn,
+.section-signature .ui-signature .ncCommmentMore+.ncCommmentMore {
+	margin-left: 6px
+}
+
+.section-signature .ui-signature .name {
+	margin-top: 10px;
+	color: #1f1f1f;
+	font-size: 18px !important
+}
+
+.section-signature .ui-signature .name::after {
+	top: 5px
+}
+
+.section-signature .ui-signature .wrap-button .button {
+	padding: 9px 15px;
+	color: #888;
+	border: 1px solid #c7c7cc;
+	outline: 0;
+	border-radius: 100px;
+	text-decoration: none;
+	background-color: transparent
+}
+
+@media (min-width:960px) {
+	#ncCommunityList .board-list-card {
+		padding-left: 0;
+		padding-right: 0
+	}
+
+	.page-board .ui-slidetab {
+		margin-bottom: 20px
+	}
+
+	#nc-cnb .ncc-lnb .m7 .ncc-lnb-item__sub {
+		margin-left: 0px
+	}
+
+	.page-my #nc-cnb .ncc-gnb-wrap .ncc-bi,
+	.page-search #nc-cnb .ncc-gnb-wrap .ncc-bi {
+		background-image: url(/img/bi-lineageremaster-type1.png) !important
+	}
+
+	.wrap-header {
+		position: static;
+		min-height: 197px;
+		background-color: #452b34;
+		background-image: url(/img/header-lineageremaster.jpg);
+		background-repeat: no-repeat;
+		background-size: 2560px auto;
+		background-position: 50% 50%
+	}
+
+	.wrap-header .header {
+		position: relative;
+		margin: 0 auto
+	}
+
+	.wrap-header .header .logo {
+		display: block;
+		position: absolute;
+		top: 15px;
+		left: 0;
+		text-decoration: none;
+		font-family: verdana;
+		color: #000;
+		font-size: 35px;
+		font-weight: 300
+	}
+
+	.wrap-header .header .header-title {
+		font-size: 32px
+	}
+
+	.wrap-header .header-subcopy {
+		margin-top: 17px
+	}
+
+	.footer {
+		padding: 40px 0 75px
+	}
+
+	.footer .footer-communtiy-policy {
+		font-size: 16px;
+		letter-spacing: -1px
+	}
+
+	.footer .footer-communtiy-policy::after {
+		margin-top: 0
+	}
+
+	.footer .select-country {
+		margin-top: 21px
+	}
+
+	.footer .select-country-title,
+	.pagination,
+	.wrap-my-signature .ui-dropdown .select,
+	.wrap-my-signature .ui-dropdown .select-mobile,
+	.wrap-section-inventory .ui-dropdown .select,
+	.wrap-section-inventory .ui-dropdown .select-mobile,
+	.wrap-section-loglist .ui-dropdown .select,
+	.wrap-section-loglist .ui-dropdown .select-mobile,
+	.wrap-section-maillist .ui-dropdown .select,
+	.wrap-section-maillist .ui-dropdown .select-mobile {
+		font-size: 16px
+	}
+
+	.footer .select-country-items a {
+		font-size: 15px
+	}
+
+	.footer-links {
+		/*margin: 0;
+		padding: 22px 0 0;
+		border: 0;
+		font-size: 13px*/
+		padding: 13px;
+	}
+
+	.footer-links-list .footer-links-items {
+		padding: 0 11px
+	}
+
+	.footer-copyright .copyright-company,
+	.footer-copyright .copyright-studio,
+	.footer-links-list-kr .footer-links-items:nth-child(n),
+	.footer-links-list-sea .items1,
+	.footer-links-list-tw .items1 {
+		display: inline-block
+	}
+
+	.footer-links-items {
+		font-size: 14px
+	}
+
+	.footer-copyright {
+		font-size: 12px;
+		margin-top: 12px;
+		line-height: 18px;
+		/*padding-top: 25px;
+		letter-spacing: -.9px;
+		border-top: 1px solid #1f1f1f*/
+	}
+
+	.footer-copyright .copyright-company br,
+	.footer-copyright .copyright-studio br {
+		display: none
+	}
+
+	.footer-info,
+	.footer-logo,
+	.footer-logo a,
+	.tw .footer .footer-copyright .copyright-studio br {
+		display: block
+	}
+
+	.footer-tw .footer-copyright,
+	.tw .footer .footer-copyright {
+		text-align: left
+	}
+
+	.footer-info-tw {
+		float: right;
+		margin: 0;
+		text-align: right
+	}
+
+	.footer-info-tw dt {
+		float: right
+	}
+
+	.footer-info-tw dt img {
+		margin-top: 4px
+	}
+
+	.footer-info-tw dd {
+		float: right;
+		margin: 0
+	}
+
+	.ui-select-tab .select {
+		display: none;
+		border: 0
+	}
+
+	.ui-select-tab .select-tab {
+		position: relative;
+		width: 100% !important;
+		border: 0
+	}
+
+	.ui-select-tab .select-tab li {
+		float: left;
+		width: 33.33333%;
+		border: 0;
+		border-right: 1px solid #fff;
+		background-color: #f4f5f7
+	}
+
+	.ui-select-tab .select-tab li:last-child {
+		border-right: 0
+	}
+
+	.ui-select-tab .select-tab li a.selected {
+		color: #fff;
+		background-color: #a2a8b2
+	}
+
+	.ui-select-tab .select-tab li.on {
+		background-color: #a2a8b2
+	}
+
+	.wrap-section-loglist .section-info-text {
+		border-top: 1px solid #f4f5f7;
+		padding-top: 20px
+	}
+
+	.ui-slidetab {
+		margin-top: 40px;
+		margin-bottom: 40px
+	}
+
+	.section-signature .ui-signature .wrap-button .button,
+	.wrap-button .button {
+		padding-top: 7px;
+		font-size: 16px
+	}
+}
+
+.section-signature .ui-signature .wrap-button .button {
+	font-size: .8em
+}
+
+.section-signature .ui-signature.empty .msg {
+	padding-top: 15px;
+	color: #a2a8ba;
+	font-size: 14px
+}
+
+.section-signature .ui-signature .btn {
+	position: relative;
+	display: inline-block;
+	padding-right: 25px;
+	cursor: pointer
+}
+
+.section-signature .ui-signature .btn::after {
+	content: '';
+	position: absolute;
+	right: 2px;
+	top: 4px;
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-top: 1px solid #747880;
+	border-left: 1px solid #747880;
+	-webkit-transform: rotate(224deg);
+	-ms-transform: rotate(224deg);
+	transform: rotate(224deg)
+}
+
+.section-signature .ui-signature .open::after {
+	top: 9px;
+	border-top: 1px solid #747880;
+	border-left: 1px solid #747880;
+	-webkit-transform: rotate(-314deg);
+	-ms-transform: rotate(-314deg);
+	transform: rotate(-314deg)
+}
+
+.section-signature .ui-signature .info,
+.wrap-my-character .section-my-character.char-info ul {
+	font-size: 14px
+}
+
+.section-signature .my-character-list {
+	visibility: hidden;
+	position: absolute;
+	z-index: 99;
+	width: 100%;
+	max-width: 1260px;
+	background-color: #fff
+}
+
+.section-signature .my-character-list.show {
+	visibility: visible
+}
+
+.section-signature .my-character-list .list {
+	margin-bottom: 0 !important;
+	padding: 0 18px
+}
+
+.section-signature .my-character-list .thumb {
+	display: inline-block;
+	margin-right: 13px;
+	vertical-align: middle
+}
+
+.section-signature .my-character-list .thumb img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%
+}
+
+.section-signature .my-character-list .info {
+	display: inline-block;
+	vertical-align: middle;
+	color: #474747;
+	font-size: 13px
+}
+
+.section-signature .my-character-list .info .name {
+	color: #1f1f1f;
+	font-size: 14px;
+	cursor: pointer
+}
+
+.section-signature .my-character-list .info .server::after,
+.section-signature .my-character-list .info .server::before {
+	content: "|";
+	display: inline-block;
+	color: #888;
+	font-size: 11px;
+	font-family: Dotum;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 5px
+}
+
+.section-signature .my-character-list .slick-dots {
+	position: static;
+	min-height: 46px
+}
+
+.section-signature .my-character-list .wrap-items {
+	text-align: center;
+	border-top: 1px solid #eee
+}
+
+.section-signature .my-character-list .wrap-items .items {
+	padding: 8px 0;
+	text-align: left;
+	list-style-type: none;
+	border-bottom: 1px solid #efefef
+}
+
+.section-signature .my-character-list .wrap-items .items:hover {
+	background-color: #fdf9f2
+}
+
+.section-signature .my-character-list .btn-close {
+	position: relative;
+	clear: both;
+	display: block;
+	height: 50px;
+	font-size: 0;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #f4f5f7
+}
+
+.section-signature .my-character-list .btn-close::after,
+.section-signature .my-character-list .btn-close::before {
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 1px;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	background: #c7c7cc
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-0.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-0.bar {
+	width: 0%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-1.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-1.bar {
+	width: 1%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-2.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-2.bar {
+	width: 2%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-3.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-3.bar {
+	width: 3%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-4.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-4.bar {
+	width: 4%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-5.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-5.bar {
+	width: 5%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-6.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-6.bar {
+	width: 6%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-7.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-7.bar {
+	width: 7%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-8.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-8.bar {
+	width: 8%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-9.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-9.bar {
+	width: 9%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-10.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-10.bar {
+	width: 10%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-11.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-11.bar {
+	width: 11%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-12.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-12.bar {
+	width: 12%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-13.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-13.bar {
+	width: 13%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-14.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-14.bar {
+	width: 14%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-15.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-15.bar {
+	width: 15%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-16.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-16.bar {
+	width: 16%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-17.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-17.bar {
+	width: 17%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-18.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-18.bar {
+	width: 18%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-19.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-19.bar {
+	width: 19%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-20.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-20.bar {
+	width: 20%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-21.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-21.bar {
+	width: 21%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-22.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-22.bar {
+	width: 22%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-23.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-23.bar {
+	width: 23%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-24.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-24.bar {
+	width: 24%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-25.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-25.bar {
+	width: 25%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-26.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-26.bar {
+	width: 26%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-27.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-27.bar {
+	width: 27%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-28.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-28.bar {
+	width: 28%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-29.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-29.bar {
+	width: 29%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-30.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-30.bar {
+	width: 30%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-31.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-31.bar {
+	width: 31%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-32.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-32.bar {
+	width: 32%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-33.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-33.bar {
+	width: 33%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-34.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-34.bar {
+	width: 34%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-35.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-35.bar {
+	width: 35%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-36.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-36.bar {
+	width: 36%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-37.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-37.bar {
+	width: 37%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-38.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-38.bar {
+	width: 38%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-39.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-39.bar {
+	width: 39%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-40.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-40.bar {
+	width: 40%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-41.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-41.bar {
+	width: 41%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-42.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-42.bar {
+	width: 42%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-43.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-43.bar {
+	width: 43%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-44.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-44.bar {
+	width: 44%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-45.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-45.bar {
+	width: 45%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-46.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-46.bar {
+	width: 46%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-47.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-47.bar {
+	width: 47%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-48.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-48.bar {
+	width: 48%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-49.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-49.bar {
+	width: 49%
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph,
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-50.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-50.bar {
+	width: 50%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-51.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-51.bar {
+	width: 51%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-52.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-52.bar {
+	width: 52%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-53.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-53.bar {
+	width: 53%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-54.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-54.bar {
+	width: 54%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-55.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-55.bar {
+	width: 55%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-56.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-56.bar {
+	width: 56%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-57.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-57.bar {
+	width: 57%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-58.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-58.bar {
+	width: 58%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-59.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-59.bar {
+	width: 59%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-60.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-60.bar {
+	width: 60%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-61.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-61.bar {
+	width: 61%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-62.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-62.bar {
+	width: 62%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-63.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-63.bar {
+	width: 63%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-64.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-64.bar {
+	width: 64%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-65.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-65.bar {
+	width: 65%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-66.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-66.bar {
+	width: 66%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-67.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-67.bar {
+	width: 67%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-68.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-68.bar {
+	width: 68%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-69.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-69.bar {
+	width: 69%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-70.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-70.bar {
+	width: 70%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-71.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-71.bar {
+	width: 71%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-72.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-72.bar {
+	width: 72%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-73.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-73.bar {
+	width: 73%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-74.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-74.bar {
+	width: 74%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-75.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-75.bar {
+	width: 75%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-76.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-76.bar {
+	width: 76%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-77.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-77.bar {
+	width: 77%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-78.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-78.bar {
+	width: 78%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-79.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-79.bar {
+	width: 79%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-80.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-80.bar {
+	width: 80%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-81.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-81.bar {
+	width: 81%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-82.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-82.bar {
+	width: 82%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-83.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-83.bar {
+	width: 83%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-84.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-84.bar {
+	width: 84%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-85.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-85.bar {
+	width: 85%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-86.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-86.bar {
+	width: 86%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-87.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-87.bar {
+	width: 87%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-88.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-88.bar {
+	width: 88%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-89.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-89.bar {
+	width: 89%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-90.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-90.bar {
+	width: 90%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-91.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-91.bar {
+	width: 91%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-92.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-92.bar {
+	width: 92%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-93.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-93.bar {
+	width: 93%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-94.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-94.bar {
+	width: 94%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-95.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-95.bar {
+	width: 95%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-96.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-96.bar {
+	width: 96%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-97.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-97.bar {
+	width: 97%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-98.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-98.bar {
+	width: 98%
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .percent-99.bar,
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .percent-99.bar {
+	width: 99%
+}
+
+.wrap-my-character .section-my-character {
+	position: relative;
+	border-bottom: 5px solid #f4f5f7
+}
+
+.wrap-my-character .section-my-character header {
+	padding-top: 22px;
+	padding-bottom: 16px
+}
+
+.wrap-my-character .section-my-character h2 {
+	color: #1f1f1f;
+	font-size: 16px
+}
+
+.wrap-my-character .section-my-character .box {
+	padding-top: 28px;
+	padding-bottom: 28px;
+	background-color: #f4f5f7
+}
+
+.wrap-my-character .section-my-character dl {
+	margin-top: 0 !important
+}
+
+.wrap-my-character .section-my-character.char-info {
+	padding-top: 22px;
+	padding-bottom: 22px
+}
+
+.wrap-my-character .section-my-character.char-info ul li {
+	display: block;
+	padding-bottom: 10px;
+	color: #575757
+}
+
+.wrap-my-character .section-my-character.char-info ul li strong {
+	display: inline-block;
+	padding-left: 10px;
+	font-weight: 400;
+	color: #1f1f1f
+}
+
+.wrap-my-character .section-my-character.char-level .level-info {
+	margin: 0 auto 10px;
+	font-size: 16px;
+	color: #1f1f1f;
+	text-align: center
+}
+
+.wrap-my-character .section-my-character.char-level .level-info strong {
+	font-weight: 400
+}
+
+.wrap-my-character .section-my-character.char-level .level-info .figure {
+	padding-left: 5px;
+	color: #aa8060
+}
+
+.wrap-my-character .section-my-character.char-level .stat {
+	width: 100%;
+	height: 10px;
+	border-radius: 100px;
+	background-color: #fff
+}
+
+.wrap-my-character .section-my-character.char-level .stat .bar {
+	display: block;
+	height: 10px;
+	border-radius: 100px;
+	background-color: #c69c7c
+}
+
+.wrap-my-character .section-my-character.char-level .ranking dl {
+	display: inline-block;
+	width: 50%;
+	margin: 0 -6px 0 0 !important;
+	padding: 19px 0 14px;
+	text-align: center;
+	border-bottom: 1px solid #eeeff4
+}
+
+.wrap-my-character .section-my-character.char-level .ranking dl.ranking-server {
+	border-right: 1px solid #eeeff4
+}
+
+.wrap-my-character .section-my-character.char-level .ranking dt {
+	padding-bottom: 8px;
+	color: #575757;
+	font-size: 13px
+}
+
+.wrap-my-character .section-my-character.char-level .ranking dd {
+	color: #1f1f1f;
+	font-size: 14px
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-graph {
+	padding-top: 35px;
+	padding-bottom: 35px
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-graph li {
+	display: block;
+	position: relative;
+	width: 100%
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-graph li:nth-child(2) .bar,
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-index li:nth-child(2)::before {
+	background-color: #ebc77b
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-graph li:nth-child(3) .bar,
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-index li:nth-child(3)::before {
+	background-color: #8fc0fc
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-graph li:nth-child(4) .bar,
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-index li:nth-child(4)::before {
+	background-color: #c2b4b1
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar {
+	display: inline-block;
+	height: 5px;
+	vertical-align: middle;
+	background-color: #ff8671
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-1 {
+	width: calc(1% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-2 {
+	width: calc(2% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-3 {
+	width: calc(3% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-4 {
+	width: calc(4% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-5 {
+	width: calc(5% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-6 {
+	width: calc(6% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-7 {
+	width: calc(7% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-8 {
+	width: calc(8% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-9 {
+	width: calc(9% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-10 {
+	width: calc(10% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-11 {
+	width: calc(11% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-12 {
+	width: calc(12% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-13 {
+	width: calc(13% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-14 {
+	width: calc(14% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-15 {
+	width: calc(15% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-16 {
+	width: calc(16% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-17 {
+	width: calc(17% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-18 {
+	width: calc(18% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-19 {
+	width: calc(19% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-20 {
+	width: calc(20% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-21 {
+	width: calc(21% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-22 {
+	width: calc(22% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-23 {
+	width: calc(23% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-24 {
+	width: calc(24% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-25 {
+	width: calc(25% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-26 {
+	width: calc(26% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-27 {
+	width: calc(27% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-28 {
+	width: calc(28% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-29 {
+	width: calc(29% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-30 {
+	width: calc(30% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-31 {
+	width: calc(31% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-32 {
+	width: calc(32% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-33 {
+	width: calc(33% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-34 {
+	width: calc(34% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-35 {
+	width: calc(35% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-36 {
+	width: calc(36% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-37 {
+	width: calc(37% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-38 {
+	width: calc(38% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-39 {
+	width: calc(39% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-40 {
+	width: calc(40% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-41 {
+	width: calc(41% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-42 {
+	width: calc(42% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-43 {
+	width: calc(43% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-44 {
+	width: calc(44% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-45 {
+	width: calc(45% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-46 {
+	width: calc(46% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-47 {
+	width: calc(47% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-48 {
+	width: calc(48% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-49 {
+	width: calc(49% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-50 {
+	width: calc(50% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-51 {
+	width: calc(51% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-52 {
+	width: calc(52% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-53 {
+	width: calc(53% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-54 {
+	width: calc(54% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-55 {
+	width: calc(55% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-56 {
+	width: calc(56% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-57 {
+	width: calc(57% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-58 {
+	width: calc(58% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-59 {
+	width: calc(59% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-60 {
+	width: calc(60% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-61 {
+	width: calc(61% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-62 {
+	width: calc(62% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-63 {
+	width: calc(63% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-64 {
+	width: calc(64% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-65 {
+	width: calc(65% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-66 {
+	width: calc(66% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-67 {
+	width: calc(67% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-68 {
+	width: calc(68% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-69 {
+	width: calc(69% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-70 {
+	width: calc(70% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-71 {
+	width: calc(71% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-72 {
+	width: calc(72% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-73 {
+	width: calc(73% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-74 {
+	width: calc(74% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-75 {
+	width: calc(75% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-76 {
+	width: calc(76% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-77 {
+	width: calc(77% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-78 {
+	width: calc(78% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-79 {
+	width: calc(79% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-80 {
+	width: calc(80% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-81 {
+	width: calc(81% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-82 {
+	width: calc(82% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-83 {
+	width: calc(83% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-84 {
+	width: calc(84% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-85 {
+	width: calc(85% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-86 {
+	width: calc(86% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-87 {
+	width: calc(87% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-88 {
+	width: calc(88% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-89 {
+	width: calc(89% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-90 {
+	width: calc(90% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-91 {
+	width: calc(91% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-92 {
+	width: calc(92% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-93 {
+	width: calc(93% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-94 {
+	width: calc(94% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-95 {
+	width: calc(95% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-96 {
+	width: calc(96% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-97 {
+	width: calc(97% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-98 {
+	width: calc(98% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-99 {
+	width: calc(99% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .bar.percent-100 {
+	width: calc(100% - 30px)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .graph .var {
+	display: inline-block;
+	padding-left: 5px;
+	color: #1f1f1f;
+	font-size: 12px;
+	vertical-align: middle
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .plus .graph {
+	margin-left: 50%
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .minus .graph {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .minus .graph .var {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	padding-left: 0;
+	padding-right: 5px
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-index {
+	margin: 0 auto;
+	padding: 18px 0 38px;
+	text-align: center
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-index li {
+	display: inline-block;
+	padding: 0 12px;
+	color: #575757;
+	font-size: 12px
+}
+
+.wrap-my-character .section-my-character.char-biorhythm .biorhythm-index li::before {
+	display: block;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin: 0 auto 6px;
+	background-color: #ff8671
+}
+
+.wrap-my-character .section-my-character.char-equipment .equipment-list,
+.wrap-my-character .section-my-character.char-equipment header {
+	background-color: #f0f3f7
+}
+
+.wrap-my-character .section-my-character.char-equipment li {
+	padding: 0 0 16px
+}
+
+.wrap-my-character .section-my-character.char-equipment li .thumb {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle
+}
+
+.wrap-my-character .section-my-character.char-equipment li .name {
+	padding-left: 7px;
+	font-size: 13px;
+	font-weight: 400;
+	cursor: pointer
+}
+
+.wrap-my-character .section-my-character.char-stats {
+	border-bottom: 0;
+	font-size: 13px
+}
+
+.wrap-my-character .section-my-character.char-stats .wrap-button {
+	padding-bottom: 0
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info {
+	background-color: #f4f5f7
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dt {
+	float: left;
+	width: 30px;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #fff
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd {
+	float: left;
+	width: calc(100% - 30px);
+	height: 50px;
+	border-bottom: 1px solid #fff
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd.hp .bar {
+	background-color: #ff8671 !important
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd.hp .var {
+	color: #ff8671
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd.mp .bar {
+	background-color: #8fc0fc !important
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd.mp .var {
+	color: #8fc0fc
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph {
+	width: calc(100% - 18px);
+	height: 10px;
+	margin-top: 5px;
+	border-radius: 100px;
+	background-color: #fff
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph .bar {
+	display: block;
+	height: 10px;
+	border-radius: 100px
+}
+
+.wrap-my-character .section-my-character.char-stats .hpmp-info dd .var {
+	display: block;
+	padding: 8px 0 0;
+	font-size: 13px
+}
+
+.wrap-my-character .section-my-character.char-stats .stat-info {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 12px;
+	border-bottom: 1px solid #efefef;
+	border-top: 0
+}
+
+.wrap-my-character .section-my-character.char-stats .stat-info dt {
+	float: left;
+	width: 60px;
+	padding-left: 20px;
+	color: #1f1f1f
+}
+
+.wrap-my-character .section-my-character.char-stats .stat-info dt.odd {
+	width: 40px;
+	padding-left: 0
+}
+
+.wrap-my-character .section-my-character.char-stats .stat-info dt.odd+dd {
+	padding-right: 20px
+}
+
+.wrap-my-character .section-my-character.char-stats .stat-info dd {
+	float: left;
+	width: calc(50% - 50px)
+}
+
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph {
+	display: inline-block;
+	width: 70%
+}
+
+.wrap-my-character .section-my-character.char-stats .stat-info dd .graph .bar {
+	display: block;
+	height: 8px;
+	background-color: #ebc77b
+}
+
+.wrap-my-character .section-my-character.char-stats .stat-info dd .var {
+	display: inline-block;
+	width: 30%;
+	color: #474747;
+	text-align: right
+}
+
+.wrap-my-character .section-my-character.char-stats .pk-info {
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 12px;
+	border-bottom: 1px solid #efefef;
+	border-top: 0
+}
+
+.wrap-my-character .section-my-character.char-stats .pk-info dt {
+	float: left;
+	width: 30%;
+	color: #1f1f1f
+}
+
+.wrap-my-character .section-my-character.char-stats .pk-info dd {
+	float: left;
+	width: 70%;
+	color: #474747;
+	text-align: right
+}
+
+.wrap-section-inventory .select-tab-inventory,
+.wrap-section-maillist .select-tab-maillist {
+	margin-top: 19px
+}
+
+.wrap-section-inventory .section-inventory .item-list {
+	padding: 16px 0;
+	border-top: 1px solid #f7f7f7;
+	font-size: 16px
+}
+
+.wrap-section-inventory .section-inventory .item-list li {
+	display: block;
+	padding-bottom: 16px
+}
+
+.wrap-section-inventory .section-inventory .item-list li .thumb {
+	width: 32px;
+	height: 32px;
+	margin-right: 7px;
+	vertical-align: middle
+}
+
+.wrap-section-inventory .section-inventory .item-list li strong {
+	display: inline-block;
+	font-weight: 400;
+	width: calc(100% - 40px)
+}
+
+.wrap-section-inventory .section-inventory .view-more {
+	padding-top: 30px;
+	font-size: 16px;
+	text-align: center
+}
+
+.wrap-section-inventory .section-inventory .view-more button {
+	height: 60px;
+	width: 100%;
+	color: #474747;
+	border: 1px solid #efefef;
+	background-color: #fff
+}
+
+.wrap-section-maillist .section-maillist .normal-list li {
+	padding: 15px 18px 18px;
+	border-bottom: 1px solid #f7f7f7
+}
+
+.wrap-section-maillist .section-maillist .normal-list li header::after {
+	content: ">";
+	display: inline-block;
+	color: #d6d7d9;
+	font-size: 12px;
+	font-family: Dotum;
+	vertical-align: middle;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	position: absolute;
+	right: 0;
+	top: 50%
+}
+
+.wrap-section-maillist .section-maillist .normal-list li header.on::after {
+	color: #474747;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg)
+}
+
+.wrap-section-maillist .section-maillist .normal-list li .subject {
+	display: block;
+	cursor: pointer
+}
+
+.wrap-section-maillist .section-maillist .normal-list li .subject.new::after {
+	content: 'new';
+	display: inline-block;
+	width: 23px;
+	height: 12px;
+	margin-left: 6px;
+	color: #ff5f3c;
+	font-size: 12px
+}
+
+.wrap-section-maillist .section-maillist .normal-list li .info {
+	display: block;
+	color: #474747;
+	font-size: 13px
+}
+
+.modal-loglist .info .date,
+.wrap-section-maillist .section-maillist .normal-list li .info .date,
+.wrap-section-my-articles .section-my-articles .board-list .board-items .info .date,
+.wrap-section-my-articles .ui-dropdown-filter .select::after {
+	color: #888
+}
+
+.wrap-section-maillist .section-maillist .normal-list li article {
+	display: none;
+	margin-top: 18px;
+	padding-top: 16px;
+	color: #474747;
+	font-size: 13px;
+	border-top: 1px solid #f7f7f7
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .check,
+.wrap-section-my-articles .section-my-articles .board-list .board-items .delete,
+.wrap-section-my-articles .section-my-articles header .delete-checked {
+	outline: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 0;
+	background: 0 0
+}
+
+.wrap-section-my-articles .ui-dropdown-filter {
+	width: inherit !important;
+	margin-bottom: 16px;
+	color: #575757;
+	font-size: 15px
+}
+
+.wrap-section-my-articles .ui-dropdown-filter .option {
+	min-width: 150px;
+	padding-bottom: 8px
+}
+
+.wrap-section-my-articles .section-my-articles header .ui-dropdown-filter {
+	margin: 10px 0 0
+}
+
+.wrap-section-my-articles .section-my-articles header .delete-checked {
+	position: absolute;
+	right: 18px;
+	bottom: 12px;
+	color: #474747;
+	font-size: 13px
+}
+
+.wrap-section-my-articles .section-my-articles .board-list {
+	max-width: 1260px;
+	text-align: center;
+	font-size: 13px;
+	color: #474747;
+	border-top: 1px solid #efefef !important
+}
+
+@media (min-width:640px) {
+
+	.wrap-my-character .section-my-character .box,
+	.wrap-my-character .section-my-character .equipment-list,
+	.wrap-my-character .section-my-character .hpmp-info,
+	.wrap-my-character .section-my-character .pk-info,
+	.wrap-my-character .section-my-character .stat-info,
+	.wrap-my-character .section-my-character header,
+	.wrap-my-character .section-my-character.char-info {
+		padding-left: 40px;
+		padding-right: 40px
+	}
+
+	.wrap-section-inventory .section-inventory .item-list li {
+		display: inline-block;
+		width: 50%
+	}
+
+	.wrap-section-my-articles .section-my-articles .board-list {
+		border-top: 2px solid #d3d6da
+	}
+}
+
+.wrap-section-my-articles .section-my-articles .board-list li {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 15px 0;
+	border-bottom: 1px solid #f7f7f7;
+	text-align: left
+}
+
+.wrap-section-my-articles .section-my-articles .board-list li div {
+	display: inline-block;
+	margin: 0 -4px 0 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: top
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items-head {
+	display: none;
+	color: #474747;
+	font-weight: 400
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .rank {
+	padding-left: 8px
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .check {
+	background-image: url(/img/my/icon-check-off.png);
+	background-size: 16px 12px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	vertical-align: top;
+	width: 16px;
+	height: 12px;
+	margin-top: 5px;
+	margin-right: 14px;
+	cursor: pointer
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .check:checked {
+	background-image: url(/img/my/icon-check-on.png);
+	background-size: 16px 12px;
+	background-position: center center;
+	background-repeat: no-repeat
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .subject {
+	display: inline-block;
+	max-width: 85%;
+	color: #1f1f1f;
+	font-size: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .subject strong {
+	padding-right: 5px;
+	color: #474747;
+	font-weight: 400
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .count {
+	position: absolute;
+	right: 18px;
+	top: 50px;
+	color: #575757 !important;
+	vertical-align: middle
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .count span em {
+	margin-left: 4px
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .count .count-like {
+	padding-left: 6px
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .count .count-comment {
+	padding-left: 10px
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .info {
+	padding-left: 33px;
+	display: block;
+	margin: 10px 0 0 35px
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .info .board {
+	padding-right: 14px;
+	color: #474747
+}
+
+.wrap-section-my-articles .section-my-articles .board-list .board-items .delete {
+	background-image: url(/img/my/btn-delete.png);
+	background-size: 15px 15px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 18px;
+	top: 18px;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	font-size: 0
+}
+
+.wrap-section-loglist {
+	padding-top: 22px
+}
+
+.wrap-section-loglist .section-loglist .privacy {
+	margin-bottom: 30px;
+	padding-top: 0;
+	padding-bottom: 28px;
+	border-bottom: 5px solid #f4f5f7;
+	line-height: 1.6
+}
+
+.wrap-section-loglist .section-loglist .privacy header {
+	padding-bottom: 20px;
+	color: #1f1f1f;
+	font-size: 15px
+}
+
+.wrap-section-loglist .section-loglist .privacy .agreement {
+	padding: 10px;
+	color: #474747;
+	font-size: 13px;
+	border: 1px solid #efefef
+}
+
+.wrap-section-loglist .section-loglist .table-list .ui-dropdown-loglist {
+	height: inherit;
+	min-width: 140px !important;
+	padding-bottom: 16px
+}
+
+.wrap-section-loglist .section-loglist .table-list .ui-dropdown-loglist .select {
+	padding-top: 0;
+	color: #1f1f1f;
+	font-size: 16px
+}
+
+.wrap-section-loglist .section-loglist .table-list .ui-dropdown-loglist .select::after {
+	margin-top: -3px;
+	color: #575757
+}
+
+.wrap-section-loglist .section-loglist .table-list .ui-dropdown-loglist .option {
+	padding-bottom: 8px
+}
+
+.wrap-section-loglist .section-loglist .table-list table {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	color: #474747;
+	border-top: 1px solid #f4f5f7;
+	width: calc(100% - 1px)
+}
+
+.wrap-section-loglist .section-loglist .table-list table th {
+	display: none;
+	padding: 13px 0;
+	color: #474747;
+	font-weight: 400
+}
+
+.wrap-section-loglist .section-loglist .table-list table td {
+	padding: 15px 0;
+	border-bottom: 1px solid #f7f7f7;
+	color: #1f1f1f
+}
+
+@media (min-width:960px) {
+	.section-signature .my-character-list {
+		width: calc(100% - 80px);
+		border: 1px solid #eee
+	}
+
+	.section-signature .my-character-list .list {
+		margin: 0;
+		padding: 50px 30px 10px !important
+	}
+
+	.section-signature .my-character-list .wrap-items .items .info .server::before {
+		display: none
+	}
+
+	.section-signature .my-character-list .wrap-items {
+		display: block;
+		margin: 0 auto;
+		border-top: 0 !important
+	}
+
+	.section-signature .my-character-list .wrap-items .items {
+		float: left;
+		display: inline-block;
+		max-width: 280px;
+		width: calc(100% * .25 - 20px * (1 - .25));
+		margin-left: 20px;
+		margin-bottom: 20px;
+		padding: 14px 16px;
+		border: 1px solid #eee
+	}
+
+	.section-signature .my-character-list .wrap-items .items:last-child {
+		border-bottom: 1px solid #eee !important
+	}
+
+	.section-signature .my-character-list .wrap-items .items:nth-child(4n+1) {
+		margin-left: 0
+	}
+
+	.section-signature .my-character-list .wrap-items .items .thumb img {
+		width: 60px;
+		height: 60px
+	}
+
+	.section-signature .my-character-list .wrap-items .items .info .name {
+		display: block
+	}
+
+	.section-signature .my-character-list .btn-close {
+		margin-top: 20px
+	}
+
+	.wrap-my-character {
+		position: relative;
+		margin-top: 30px;
+		border-bottom: 0
+	}
+
+	.wrap-my-character .char-biorhythm,
+	.wrap-my-character .char-equipment,
+	.wrap-my-character .char-info,
+	.wrap-my-character .char-level,
+	.wrap-my-character .char-stats {
+		width: calc(50% - 15px);
+		border-top: 1px solid #efefef
+	}
+
+	.wrap-my-character .box,
+	.wrap-my-character .hpmp-info,
+	.wrap-my-character .pk-info,
+	.wrap-my-character .ranking,
+	.wrap-my-character .stat-info,
+	.wrap-my-character .top-area {
+		border-left: 1px solid #efefef;
+		border-right: 1px solid #efefef
+	}
+
+	.wrap-my-character .biorhythm-index {
+		border-left: 1px solid #efefef;
+		border-right: 1px solid #efefef;
+		border-bottom: 1px solid #efefef
+	}
+
+	.wrap-my-character .char-info {
+		border: 1px solid #efefef !important
+	}
+
+	.wrap-my-character .char-level {
+		margin-top: 30px;
+		border-bottom: 0 !important
+	}
+
+	.wrap-my-character .char-biorhythm,
+	.wrap-my-character .char-stats {
+		margin-top: 30px
+	}
+
+	.wrap-my-character .char-equipment {
+		position: absolute !important;
+		right: 0;
+		top: 0;
+		border-bottom: 0 !important
+	}
+
+	.wrap-my-character .char-equipment .equipment-list,
+	.wrap-my-character .char-equipment header {
+		padding-left: 30px !important
+	}
+
+	.wrap-my-character .section-my-character .box,
+	.wrap-my-character .section-my-character .equipment-list,
+	.wrap-my-character .section-my-character .hpmp-info,
+	.wrap-my-character .section-my-character .pk-info,
+	.wrap-my-character .section-my-character .stat-info,
+	.wrap-my-character .section-my-character header,
+	.wrap-my-character .section-my-character.char-info {
+		padding-left: 18px;
+		padding-right: 18px
+	}
+
+	.wrap-my-character .section-my-character header {
+		padding-bottom: 22px
+	}
+
+	.wrap-my-character .section-my-character .box {
+		padding-top: 22px;
+		padding-bottom: 22px
+	}
+
+	.wrap-my-character .section-my-character.char-stats .hpmp-info dd {
+		padding: 0 30px 0 10px
+	}
+
+	.wrap-my-character .section-my-character.char-stats .hpmp-info dd .graph {
+		width: 100%
+	}
+
+	.wrap-section-inventory .select-tab-inventory,
+	.wrap-section-maillist .select-tab-maillist {
+		margin-top: 0
+	}
+
+	.wrap-section-inventory .section-inventory .item-list li {
+		display: inline-block;
+		width: 33.33333%
+	}
+
+	.wrap-section-my-articles .section-my-articles header {
+		margin-bottom: 15px
+	}
+
+	.wrap-section-my-articles .section-my-articles header .delete-checked {
+		right: 0
+	}
+
+	.wrap-section-my-articles .section-my-articles .board-list li {
+		padding: 15px 40px;
+		padding-left: 0 !important;
+		padding-right: 0 !important
+	}
+
+	.wrap-section-my-articles .section-my-articles .board-list .board-items-head {
+		display: block;
+		border-bottom: 1px solid #eceff4
+	}
+
+	.wrap-section-my-articles .section-my-articles .board-list .board-items .subject {
+		max-width: 60%
+	}
+
+	.wrap-section-my-articles .section-my-articles .board-list .board-items .count {
+		position: relative;
+		top: inherit;
+		right: 0
+	}
+
+	.wrap-section-my-articles .section-my-articles .board-list .board-items .info {
+		position: absolute;
+		right: 40px;
+		top: 20px;
+		margin: inherit
+	}
+
+	.wrap-section-my-articles .section-my-articles .board-list .board-items .delete {
+		right: 0;
+		top: 20px
+	}
+
+	.wrap-section-loglist {
+		padding-top: 0
+	}
+
+	.wrap-section-loglist .section-loglist .privacy {
+		margin-bottom: 28px;
+		padding: 30px;
+		border: 5px solid #f4f5f7
+	}
+
+	.wrap-section-loglist .section-loglist .privacy header {
+		padding-bottom: 20px;
+		color: #1f1f1f;
+		font-size: 15px
+	}
+
+	.wrap-section-loglist .section-loglist .privacy .agreement {
+		padding: 10px;
+		color: #474747;
+		font-size: 13px;
+		border: 1px solid #efefef
+	}
+
+	.wrap-section-loglist .section-loglist .table-list table th {
+		display: table-cell;
+		border-bottom: 1px solid #eceff4
+	}
+
+	.wrap-section-loglist .section-loglist .table-list table {
+		border-top: 0
+	}
+
+	body.page-my .wrap-contents {
+		padding-top: 35px
+	}
+}
+
+.wrap-section-loglist .section-loglist .table-list table td,
+.wrap-section-loglist .section-loglist .table-list table th {
+	border: 1px solid #efefef;
+	border-left: 0
+}
+
+.wrap-section-loglist .section-loglist .table-list table td:last-child,
+.wrap-section-loglist .section-loglist .table-list table th:last-child {
+	border-right: 0 !important
+}
+
+.wrap-section-loglist .section-loglist .table-list .btn-view-log {
+	color: #aa8060;
+	text-decoration: underline;
+	cursor: pointer
+}
+
+.wrap-section-loglist .section-info-text {
+	border-top: 0
+}
+
+.modal-loglist article {
+	padding-bottom: 100px !important
+}
+
+.modal-loglist article header {
+	padding: 0 0 23px;
+	border-bottom: 1px solid #efefef
+}
+
+.modal-loglist .name {
+	padding-bottom: 9px;
+	color: #1f1f1f;
+	font-size: 16px
+}
+
+.modal-loglist .info {
+	color: #474747;
+	font-size: 12px
+}
+
+.modal-loglist .info span::after {
+	content: 'Â·';
+	display: inline-block;
+	margin: 0 0 0 5px;
+	font-size: 5px
+}
+
+.wrap-my-signature {
+	padding-top: 20px
+}
+
+.wrap-my-signature .ui-dropdown {
+	margin-left: 18px
+}
+
+@media (min-width:960px) {
+	.wrap-my-signature .ui-dropdown {
+		margin-left: 0
+	}
+}
+
+.wrap-my-character .section-my-character.char-equipment li .name.status-bless,
+.wrap-section-inventory .section-inventory .item-list li strong.status-bless {
+	color: #f1d200
+}
+
+.wrap-my-character .section-my-character.char-equipment li .name.status-curse,
+.wrap-section-inventory .section-inventory .item-list li strong.status-curse {
+	color: #c51515
+}
+
+.section-signature .my-character-list .wrap-items .items {
+	cursor: pointer;
+}
+
+#nc-cnb .ncc-header {
+	background-color: #aa8060;
+}
+
+.custom-theme#nc-cnb .ncc-gnb-wrap .ncc-bi {
+	background-image: url(/img/bi-lineageremaster-type2.png);
+}
+
+.wrap-section-inventory .no-data {
+	width: 100% !important;
+	margin: 0;
+	padding: 30px 0 !important;
+	text-align: center !important;
+	display: inline-block;
+}
+
+.wrap-section-inventory .no-data::before {
+	content: '';
+	display: block;
+	width: 44px;
+	height: 44px;
+	margin: 0 auto;
+	background-image: url(/img/icon-warning-my.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 44px 44px;
+}
+
+.wrap-section-inventory .no-data p {
+	padding-top: 10px;
+	color: #888;
+	font-size: 13px;
+}
+
+@media (min-width: 960px) {
+	.wrap-my-character .char-stats {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.custom-theme#nc-cnb .ncc-gnb-wrap .ncc-bi {
+		background-image: url(/img/bi-lineageremaster-type1.png);
+	}
+}

@@ -1,0 +1,14 @@
+#############################################
+※ Decryption of Connection Logger
+#############################################
+※ Log created in case of exceptions (Location: log folder of the connection tool)
+※ Key change not required
+#############################################
+
+1. Run Decryptor.exe
+
+2. Input the text to decrypt (Encrypted log text / Exclude time)
+
+3. Click the Decrypt button
+
+4. Check the text displayed at the bottom

@@ -1,0 +1,28 @@
+Process: Connector -> Installation Path Configuration
+
+FORDER_LOAD_EXCEPTION 		Error finding the paths for Launcher2 and client during Connector installation.
+LAUNCHER2_PATH_NOT_FOUND 	Failed to find the Launcher2 folder path.
+CLIENT_PATH_NOT_FOUND 		Failed to find the client folder path.
+
+Process: Connector -> Blog -> Connector -> AppCenter -> Connector
+
+CONNECTOR_INFO_LOAD_EXCEPTION 	Error loading Connector configuration information.
+BLOG_EMPTY 			Failed to call the Connector setup blog.
+BLOG_DOCUMENT_EMPTY 		Failed to load the Connector setup blog page.
+BLOG_LOC_NOT_FOUND 		Failed to load the encryption text set in the Connector setup blog page.
+BLOG_TEXT_EMPTY 		No encryption text set in the Connector setup blog page.
+INFO_URI_DECRYPT_FAIL 		Failed to create URL for AppCenter by using the encryption text from the Connector setup blog.
+INFO_CODE : CODE 		Code returned by the server after the Connector requested information from the AppCenter server.
+	1. FAIL_REQUIRED_PARSE 	Received information is missing essential data (Connector side).
+	2. CLOSE		Server not running or communication error.
+	3. THROW_EXCEPTION	Server not running or communication error.
+	4. FAIL_REQUIRED_INFO	Server failed to set essential configuration information (AppCenter side).
+
+Process: Connector -> AppCenter Deployment File -> Connector -> Installation
+
+IMPORT_FILE_EXCEPTION		Error during deployment file setup.
+MSDLL_FILE_URL_EMPTY		Missing download path for MSDLL file.
+MSDLL_DOWNLOAD_EXCEPION		Error downloading MSDLL file.
+LINBIN_FILE_URL_EMPTY		Missing download path for LINBIN file.
+LINBIN_DOWNLOAD_EXCEPION	Error downloading LINBIN file.
+LINBIN_UPDATE_EXCEPION		Error updating LINBIN file.

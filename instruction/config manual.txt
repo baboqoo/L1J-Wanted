@@ -1,0 +1,34 @@
+config manual
+alchemy.properties			Doll synthesis / Potential related settings
+altsettings.properties		various settings
+attendance.properties		Attendance check setting
+charsettings.properties		Character related settings
+collection.properties		Relic/Exhibition Setting
+common.properties			Empty data db update setting
+companion.properties		Pet-related settings (currently not used)
+connector.properties		Connector-related settings
+craft.properties			Production-related settings
+deathpenalty.properties		Settings related to death penalty
+dungeon.properties			Dungeon/hunting ground related settings
+einhasad.properties			Einhasad related settings
+enchant.properties			Enchant related settings
+etc.properties				various settings
+eventpush.properties		Event push (system message) related settings
+fatigue.properties			Settings related to Gran Cain (fatigue)
+interserver.properties		Interserver related settings
+message.properties			Message-related settings (operator whisper reply, etc.)
+occupy.properties			Conquest War related settings
+pcplaymaster.properties		Settings related to PC play master (PC room buff)
+playsupport.properties		Settings related to play support
+pledge.properties			Clan-related settings
+quest.properties			Quest-related settings
+ranking.properties			Ranking system related settings
+rates.properties			Magnification-related settings
+revenge.properties			Settings related to multiple systems
+server.properties			Server-related settings
+smelting.properties			Smelting system related settings
+speed.properties			Speed-related settings
+spell.properties			Skill-related settings
+tjcoupon.properties			TJ coupon related settings
+version.properties			Server version related settings
+webserver.properties		Web server related settings

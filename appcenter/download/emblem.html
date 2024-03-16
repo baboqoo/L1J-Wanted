@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- css -->
+	<link rel="stylesheet" href="/css/community.css">
+	<link rel="stylesheet" type="text/css" href="/css/nccommunity-theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/l1.download.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+	.list_mark {max-width: 1260px; margin: 60px auto 20px;}
+	.list_mark ul {padding-inline-start: 0; border-left: 1px solid #c1c7d0; width:100%;margin:0 auto;list-style:none;font-size:0;line-height:0;letter-spacing:0;}
+	.list_mark ul > li {list-style:none; display:inline-block; width:10%;height:60px;margin-bottom:-1px;border:1px solid #c1c7d0;border-left:none;font-size:15px;line-height:60px;text-align:center;}
+	.list_mark ul > li a {vertical-align: -webkit-baseline-middle; cursor: pointer;}
+	.pagination-container {margin: 0 auto; display: table;}
+	.paginationjs .paginationjs-pages li, .paginationjs .paginationjs-pages li:last-child {border: none;}
+	.paginationjs .paginationjs-pages li>a {color: #b5b5b5;}
+	.paginationjs .paginationjs-pages li.active>a {background: #fff;color: #1f1f1f;line-height: 28px;}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const account		= {USER_DATA};
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const emblem_data	= {EMBLEM_DATA};
+</script>
+<body class="page-download">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Download</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div class="wrap-section-launcher">
+					<section class="download"><div class="download_area"><div class="download_area_inner"><div class="icon_launcher2"></div><div class="text_wrap"><h2>Blood Pledge Emblems</h2><p class="desc">Right-click on the emblem you want and select "Save image as..."<br/>Once you place the emblem in the folder where you have the Lineage installed,<br>you will be able to select it from the clan configuration screen (ingame)</p><span class="comment"></span></div></div></div></section>
+					<div class="list_mark"></div>
+					<div class="pagination-container"></div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+	<script type="text/javascript">
+	$(function(){
+		let container = $('.pagination-container');
+		container.pagination({
+			dataSource: emblem_data,// 처리할 데이터
+	    	pageSize: 60,// 한 화면에 보여질 개수
+	    	showPrevious: false,// 처음버튼 삭제
+	        showNext: false,// 마지막버튼 삭제
+	        showPageNumbers: true,// 페이지 번호표시
+	        callback: function (data, pagination) {// 화면 출력
+	            var dataHtml = '';
+	        	dataHtml += '<ul>';
+	            if (data.length > 0) {
+	            	$.each(data, function (index, item) {
+	            		dataHtml += '<li><a class="view_file_download"><img src="/img/clanEmble/' + item + '" alt="" title="' + item + '"></a></li>';
+	                });
+	            } else {
+	            	dataHtml += '<li><span class="nodata">No data found!</span></li>';
+	            }
+	            dataHtml += '</ul>';
+	            $(".list_mark").html(dataHtml);// 렌더링
+	        }
+	    })
+	});
+	</script>
+
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+</body>
+</html>

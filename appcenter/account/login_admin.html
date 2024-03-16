@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meata -->
+		<title>{SERVER_NAME}</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<!-- Mobile -->
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+	    <!-- css -->
+		<style>
+		* {
+			box-sizing: border-box;
+		}
+		html {
+			font-family: sans-serif;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+		legend {
+    			box-sizing: border-box;
+    			color: inherit;
+    			display: table;
+    			max-width: 100%;
+    			padding: 0;
+    			white-space: normal;
+		}
+		html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, div, pre, iframe, hr, h1, h2, h3, h4, h5, h6, a, img {
+    			margin: 0;
+    			padding: 0;
+    			border: 0;
+		}
+		article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+   			 display: block;
+		}
+		button, input, select, textarea {
+    			font: inherit;
+		}
+		button, input, select {
+    			overflow: visible;
+		}
+		button, input, select, textarea {
+    			margin: 0;
+		}
+		button, select {
+    			text-transform: none;
+		}
+		input, textarea, button {
+    			outline: 0;
+		}
+		button {
+    			border: 0;
+    			background: none;
+    			border-radius: 0;
+    			padding: 0;
+		}
+		button, [type="button"], [type="reset"], [type="submit"] {
+    			cursor: pointer;
+		}
+		button, html [type="button"], [type="reset"], [type="submit"] {
+    			-webkit-appearance: button;
+		}
+		html {
+   			 min-width: 320px;
+    			height: 100%;
+    			font-size: 62.5%;
+    			background-color: #efeff4;
+    			text-rendering: optimizeLegibility;
+    			-moz-osx-font-smoothing: grayscale;
+    			-webkit-font-smoothing: antialiased;
+		}
+		body {
+    			height: 100%;
+    			font-size: 1.4rem;
+    			line-height: 1.5;
+		}
+		#container {
+    			position: relative;
+    			height: 100%;
+		}
+		.wrapper .contents {
+    			min-height: 100%;
+		}
+		#container .contents {
+    			min-height: 100%;
+    			margin-bottom: -141px;
+		}
+		.inner-box {
+    			padding: 0 20px;
+		}
+		.inner-box .login-wrap {
+    			position: relative;
+    			width: 100%;
+    			margin: 0 auto;
+		}
+		#container .contents .inner-box {
+    			margin: 0 auto;
+		}
+		#container .contents::after {
+    			content: '';
+    			display: block;
+    			height: 141px;
+		}
+		.header {
+    			padding: 45px 0 41px 0;
+    			text-align: center;
+		}
+		.account-form legend {
+    			display: none;
+		}
+		.account-form .input-account-wrap, .account-form .input-pwd {
+    			position: relative;
+		}
+		.account-form .btn-wrap {
+    			padding: 0 0 19px 0;
+		}
+		.account-form .input-email label, .account-form .input-pwd label {
+    			display: none;
+		}
+		.account-form .input-email input, .account-form .input-pwd input {
+    			width: 100%;
+    			font-size: 1.5rem;
+    			color: #334571;
+    			padding: 15px 16px 17px 16px;
+    			border: 1px solid #d5d9e2;
+    			border-radius: 0;
+    			background: #ffffff;
+    			-webkit-appearance: none;
+    			-moz-appearance: none;
+    			appearance: none;
+    			outline: none;
+    			vertical-align: middle;
+    			ime-mode: disabled !important;
+		}
+		.account-form .input-email input:-webkit-autofill, .account-form .input-email input:-webkit-autofill:hover, .account-form .input-email input:-webkit-autofill:focus input:-webkit-autofill, .account-form .input-email textarea:-webkit-autofill, .account-form .input-email textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus, .account-form .input-email select:-webkit-autofill, .account-form .input-email select:-webkit-autofill:hover, .account-form .input-email select:-webkit-autofill:focus {
+    			-webkit-text-fill-color: #9398aa;
+    			-webkit-box-shadow: inset 0 0 0px 9999px #ffffff;
+		}
+		.account-form .input-email input[type='email'], .account-form .input-email input[type='text'] {
+    			padding-left: 120px !important;
+    			padding-right: 40px;
+    			height: 56px;
+		}
+		.account-form .input-pwd input[type='password'] {
+    			padding-right: 40px;
+		}
+		.account-form .btn-delete {
+    			text-align: left;
+    			text-indent: -9999em;
+    			white-space: nowrap;
+    			overflow: hidden;
+    			position: relative;
+    			display: block;
+    			width: 30px;
+    			height: 30px;
+    			cursor: pointer;
+    			display: none;
+    			position: absolute;
+    			right: 8px;
+    			top: 14px;
+    			z-index: 9;
+		}
+		.account-form .btn-delete::before, .account-form .btn-delete::after {
+    			content: '';
+    			position: absolute;
+    			top: 15px;
+    			left: 5px;
+    			width: 64%;
+    			height: 1px;
+    			margin-top: -1px;
+    			background: #b9bcc6;
+		}
+		.account-form .btn-delete::before {
+    			-webkit-transform: rotate(45deg);
+    			-ms-transform: rotate(45deg);
+    			transform: rotate(45deg);
+		}
+		.account-form .btn-delete::after {
+    			-webkit-transform: rotate(-45deg);
+    			-ms-transform: rotate(-45deg);
+    			transform: rotate(-45deg);
+		}
+		.account-form .msg {
+    			display: block;
+    			line-height: 1.8rem;
+    			letter-spacing: 0em;
+		}
+		.account-form .btn-login {
+    			position: relative;
+    			display: block;
+    			width: 100%;
+    			height: 56px;
+    			margin: 0 auto;
+    			font-size: 1.7rem;
+    			line-height: 56px;
+    			color: #fff;
+    			vertical-align: middle;
+    			text-decoration: none;
+    			white-space: nowrap;
+    			box-sizing: border-box;
+    			-webkit-transition: background-color 0.3s ease, border 0.3s ease;
+    			transition: background-color 0.3s ease, border 0.3s ease;
+    			background-color: #334571;
+    			cursor: pointer;
+    			border: inherit solid currentColor;
+		}
+		.text_info {
+    			max-width: 365px;
+    			margin: 20px auto;
+		}
+		.text_info ul li {
+    			list-style: none;
+    			padding-bottom: 10px;
+    			color: #666;
+		}
+		.footer {
+    			padding: 100px 0 25px 0;
+    			text-align: center;
+		}
+		#container .footer {
+    			width: 100%;
+    			height: 141px;
+    			margin: 0 auto;
+		}
+		.footer p {
+    			width: 100%;
+    			height: 16px;
+    			font-size: 1.3rem;
+    			color: #9398aa;
+    			text-align: center;
+		}
+		@media (min-width: 640px) {
+			.header {
+    				padding: 25px 0 21px 0;
+			}
+		}
+		@media (min-width: 960px) {
+			html, body {
+    				background-color: #e4e4ec;
+			}
+			.wrapper {
+    				padding-top: 110px;
+			}
+			.wrapper .contents {
+    				min-height: inherit !important;
+			}
+			.wrapper .contents::after {
+    				display: none;
+			}
+			.inner-box {
+    				min-width: 450px !important;
+    				max-width: 450px;
+    				min-height: 637px;
+    				margin-top: 112px;
+    				padding-bottom: 100px;
+    				box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+    				background-color: #efeff4;
+			}
+			.header {
+    				padding: 45px 0 36px 0;
+			}
+			.inner-box .login-wrap {
+    				max-width: 365px;
+			}
+			.footer {
+    				padding: 25px 0 !important;
+    				height: 66px !important;
+			}
+		}
+		</style>
+
+	 	<!-- js -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	</head>
+	<body class="pc nc-signin">
+		<div id="container" class="wrapper">
+			<div class="contents">
+			    <div class="inner-box">
+			        <header class="header"><h1><a><span>{SERVER_NAME}</span></a></h1></header>
+			        <section class="login-wrap">
+			            <form id="loginForm" name="loginForm" method="post" class="account-form" onsubmit="return loginCheck_admin();")>
+		                    <fieldset>
+		                        <legend>{SERVER_NAME} Login</legend>
+	                            <div class="input-account-wrap"><div class="input-email"><label for="login_name">Account email</label><input type="text" id="login_name" name="login_name" maxlength="64" autocomplete="username" autocapitalize="off" placeholder="Account"  tabindex="1" value="" onKeyup="loginWriteCheck(this);" style="padding: 15px 16px 17px 16px !important;"/><span class="btn-delete">Delete</span><span class="msg"></span></div></div>
+		                        <div class="input-pwd"><label for="password">Password</label><input type="password" id="password" name="password" maxlength="16" autocomplete="current-password" autocapitalize="off" placeholder="Password"  tabindex="2" onKeyup="loginWriteCheck(this);"><span class="btn-delete">Delete</span><span class="msg"></span></div>
+		                        <div class="btn-wrap"><button class="btn-login" id="btnPlayncLogin" type="submit"><span>Login</span></button></div>
+		                    </fieldset>
+			            </form>
+			        </section>
+			        <style>
+			        .text_info {max-width: 365px; margin: 20px auto;}
+			        .text_info ul li {list-style: none; padding-bottom: 10px; color: #666;}
+			        </style>
+			        <div class="text_info"><ul><li>Enter your game account and password.</li><li>Accounts can be created on the connector.</li><li>Please note that the account name cannot be recovered if lost.</li></ul></div>
+			    </div>
+			</div>
+			<div class="footer"><p>Copyright &copy; {SERVER_NAME}. All Rights Reserved.</p></div>
+		</div>
+		
+		<script type="text/javascript">
+		function loginWriteCheck(o){
+			if ($(o).focus()) {
+				var write = $(o).val();
+				if (!write) {
+					$(o).closest('div').find('.btn-delete').css('display', 'none');
+				} else {
+					$(o).closest('div').find('.btn-delete').css('display', 'inline');
+					$(o).closest('div').find('.msg').html('');
+				}
+			}
+	
+			$(o).focus(function(){
+				var write = $(o).val();
+				$(o).closest('div').find('.btn-delete').css('display', !write ? 'none' : 'inline');
+			});
+		}
+		$('.btn-delete').on('click', function(event) {
+			var del = $(this).closest('div').find('input');
+			del.val('');
+			$(this).css('display', 'none');
+		});
+		function loginCheck_admin(){
+			if (!loginForm.login_name.value) {
+				$('.input-email').find('.msg').html('Please enter your account email.');
+				loginForm.login_name.focus();
+				return false;
+			}
+			if (!loginForm.password.value) {
+				$('.input-pwd').find('.msg').html('Please enter a password.');
+				loginForm.password.focus();
+				return false;
+			}
+			var senddata = {"loginname":loginForm.login_name.value, "password":loginForm.password.value};
+			$.ajax ({
+				type:"post",
+				datatype:"json",
+				url:"/define/account/loginAdminCheck",
+				data:senddata,
+				success:function(data){
+					switch (data.result_code) {
+					case 1:
+						location.href=data.location;
+						break;
+					case 2:
+						$('.input-email').find('.msg').html('Access is not possible due to insufficient privileges.');
+						break;
+					default:
+						$('.input-email').find('.msg').html('The account does not exist or the password is incorrect.');
+						break;
+					}
+				}, error: function(request, status, error){
+					console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+				}
+			});
+			return false;
+		}
+		</script>
+	</body>
+</html>

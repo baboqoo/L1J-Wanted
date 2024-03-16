@@ -1,0 +1,81 @@
+package l1j.server.server.construct;
+
+public class L1BeginnerQuest {
+	// 퀘스트 번호
+	public static final int QUEST_BEGIN					= 256;
+	
+	public static final int ITEM_USE					= 256;
+	public static final int ATTACK_TRAINING				= 257;
+	public static final int FOOD_COLLECT				= 258;
+	public static final int OPEN_EYE					= 259;
+	public static final int POLY_USE					= 260;
+	public static final int BATTLE						= 261;
+	public static final int ARMOR_ENCHANT				= 262;
+	public static final int UNDERGROUND_WORLD			= 263;
+	public static final int WEAPON_ENCHANT				= 264;
+	public static final int BLACKSCOUT_REMOVE			= 265;
+	public static final int BLACKSCOUT_INFORMATION		= 266;
+	public static final int BLACKSTUDUNT_DEFENSE		= 267;
+	public static final int RETRUN_PAPER				= 268;
+	public static final int TEON						= 269;
+	public static final int DWARF_HUNT_1				= 270;
+	public static final int PLEDGE_JOIN					= 271;
+	public static final int PLEDGE_CREATE				= 272;
+	public static final int DWARF_HUNT_2				= 273;
+	public static final int RESOLV_USE					= 274;
+	public static final int DOLL_USE					= 275;
+	public static final int SILVER_WEAPON_CREATE		= 276;
+	public static final int SILVER_WEAPON_EQUIP			= 277;
+	public static final int DARK_HUNT					= 278;
+	public static final int LEVEL_50					= 279;
+	public static final int TALKING_DUNGEN				= 280;
+	public static final int STRAGE_BONE					= 281;
+	public static final int LEVEL_55					= 283;
+	public static final int ORC_HUNT_1					= 284;
+	public static final int ORC_HUNT_2					= 285;
+	public static final int LEVEL_60					= 287;
+	public static final int SPIDER						= 288;
+	public static final int STRANGE_EYES				= 289;
+	public static final int FOOD_ABLITY					= 290;
+	public static final int LEVEL_65					= 291;
+	public static final int BATTLE_PAPER				= 292;
+	public static final int LYKANSROF					= 293;
+	public static final int LEVEL_70					= 294;
+	public static final int CORRUPT_SAGE				= 295;
+	public static final int BLACKKNIGHT_CAMP			= 296;
+	public static final int LEVEL_72					= 297;
+	public static final int GEMSTONE_COLLECT			= 298;
+	public static final int BLACKKNIGHT_HUNT			= 299;
+	public static final int LEVEL_74					= 300;
+	public static final int CURTS_AIDE					= 301;
+	public static final int LEVEL_75					= 302;
+	public static final int WORLD_MOVE					= 303;
+	public static final int RUN_1						= 304;
+	public static final int RUN_2						= 305;
+	public static final int RUN_3						= 306;
+	public static final int RUN_4						= 307;
+	public static final int MAGICTION_STONE				= 308;
+	public static final int SECTION_INFORMATION			= 309;
+	public static final int DAY_QUEST					= 361;
+	public static final int FISHING_GET					= 365;
+	public static final int MARBIN_PAPER				= 367;
+	public static final int PSS							= 368;
+	public static final int LEVEL_77					= 370;
+	public static final int SCRET_SPACE					= 371;
+	public static final int CRAFT_UI					= 372;
+	public static final int INDUN_AUTOMATCH				= 373;
+	public static final int EINHASAD_POINT				= 374;
+	public static final int BURIM_ZONE					= 375;
+	public static final int HUNT_COLLECT				= 377;
+	public static final int HIGHT_HUNT_ZONE				= 378;
+	public static final int MAGIC_DOLL_UI				= 379;
+	public static final int EXP_GROW					= 380;
+	public static final int BRAVE_COIN					= 381;
+	public static final int SILVER_KNIGHT_1_FLOOR		= 382;
+	public static final int HERO_ITEM					= 383;
+	public static final int SILVER_KNIGHT_2_FLOOR		= 384;
+	public static final int ADEN_SPEED_GRACE			= 385;
+	
+	public static final int QUEST_END					= 385;
+}
+

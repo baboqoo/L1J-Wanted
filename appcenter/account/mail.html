@@ -1,0 +1,19 @@
+<style>
+.section-maillist .no-data {width: 100%!important; margin: 0; padding: 30px 0!important; text-align: center!important;}
+.section-maillist .no-data::before {content: '';display: block; width: 44px;height: 44px; margin: 0 auto; background-image: url(/img/icon-warning-my.png); background-position: center center; background-repeat: no-repeat; background-size: 44px 44px;}
+.section-maillist .no-data p {padding-top: 10px; color: #888; font-size: 13px;}
+</style>
+<div class="wrap-section-maillist">
+	<div class="ui-select-tab select-tab-maillist">
+		<div class="select open"><span>Personal Letter</span></div>
+		<ul class="select-tab option" style="display: block;">
+			<li data-value="NORMAL"><a href="#" class="selected">Personal Letter</a></li>
+			<li data-value="PLEDGE"><a href="#">Pledge Letter</a></li>
+			<li data-value="STOREGE"><a href="#">Storage</a></li>
+		</ul>
+	</div>
+	<section class="section-maillist">
+		<div class="normal-list"></div>
+		<div class="pagination-container"></div>
+	</section>
+</div>

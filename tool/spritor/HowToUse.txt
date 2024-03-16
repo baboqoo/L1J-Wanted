@@ -1,0 +1,21 @@
+####################################################################
+※ Sprite Calculation / Storage Program
+####################################################################
+※ list.spz file is a file extracted with the viewer for processing.
+####################################################################
+※ If already registered in the table, update.
+####################################################################
+※ Multiple selections possible / Select up to 100 items.
+####################################################################
+
+1. Run Spritor.exe.
+
+2. Select the list.spz file.
+
+3. Connect to the database.
+
+4. Check the sprite and select checkboxes.
+
+5. Click "Save Action" to save data in the spr_action database.
+
+6. Click "Save Information" to save data in the spr_info database.

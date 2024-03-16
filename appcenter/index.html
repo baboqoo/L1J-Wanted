@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{SERVER_NAME}</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+ 	<!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+// 전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const account		= {USER_DATA};
+const index_data		= {INDEX_DATA};
+</script>
+
+<body class="page-main">
+    <!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="container" class="container">
+		<!-- section-contents -->
+		<div class="section-contents">
+			<div class="wrap-contents">
+	
+				<!-- mainContentsUtil main-special -->
+				<section class="section-promotion">
+					<div class="section-promotion__list banner-wrap"><ul></ul></div>
+					<div class="pagination-wrap">
+						<div class="page-no"><span class="current">1</span><span class="divider" style="padding: 0 4px;">/</span><span class="total">1</span></div>
+						<button type="button" class="btn-prev-mobile" style="z-index: 10;">prev</button><button type="button" class="btn-next-mobile" style="z-index: 10;">next</button>
+						<div class="pagination-mobile"><div class="handle" style="width: 100%;"></div></div>
+						<div class="pagination-pc"><button type="button" class="btn-prev" style="z-index: 1;">prev</button><button type="button" class="btn-next" style="z-index: 1;">next</button></div>
+					</div>
+					<div class="section-promotion__listall"><div class="bundle"><button class="btn-listall"></button><div class="wrap-listall"><ul></ul></div></div></div>
+				</section>
+					
+				<!-- shortcut -->
+				<div class="wrap-section-shortcut">
+					<section class="section-shortcut">
+						<div class="handle" style="max-width: 1280px;">
+							<!-- mainContentsUtil main-shortcut-rwd -->
+							<ul class="btns">
+								<li class="only-pc" style="width: calc(12.5%);"><a href="/account/mypage"><span class="icon" style="background-image:url(/img/mainContent/pc_my.png)"></span><span class="name">LinWeb</span></a></li>
+								<li class="visible" style="width: calc(12.5%);"><a href="/guide"><span class="icon" style="background-image:url(/img/mainContent/pc_returnbrave.png)"></span><span class="name">Server Information</span></a></li>
+								<li class="visible" style="width: calc(12.5%);"><a href="/board"><span class="icon" style="background-image:url(/img/mainContent/m_community.png)"></span><span class="name">Forum</span></a></li>
+								<li class="visible" style="width: calc(12.5%);"><a href="/my/item-search"><span class="icon" style="background-image:url(/img/mainContent/m_price.png)"></span><span class="name">Market Rates</span></a></li>
+								<li class="visible" style="width: calc(12.5%);"><a href="/powerbook"><span class="icon" style="background-image:url(/img/mainContent/m_power.png)"></span><span class="name">Powerbook</span></a></li>
+								<li class="visible" style="width: calc(12.5%);"><a href="/goods/coupon"><span class="icon" style="background-image:url(/img/mainContent/pc_coupon.png)"></span><span class="name">Coupons</span></a></li>
+								<li class="visible" style="width: calc(12.5%);"><a href="javascript:urlTypeform('1', '1', 'post', '/customer');"><span class="icon" style="background-image:url(/img/mainContent/pc_security.png)"></span><span class="name">Tickets</span></a></li>
+								<li class="visible" style="width: calc(12.5%);"><a href="javascript:urlTypeform('2', '2', 'post', '/customer');"><span class="icon" style="background-image:url(/img/mainContent/pc_report.png)"></span><span class="name">Reports</span></a></li>
+							</ul>
+						</div>
+					</section>
+				</div>
+				
+				<!-- portal -->
+				<div class="wrap-section wrap-section-portal">
+					<section class="bundle">
+						
+						<!-- 공지사항 -->
+						<section class="section-notice"><header><h2><a href="javascript:urlTypeform('0', null, 'post', '/notice');">Announcements</a></h2></header><article><ul></ul></article></section>
+						
+		    			<!-- 핫이슈 -->
+						<section class="section-hotissue"><header><h2>Hot issues</h2><span class="btn-toggle"></span></header><article><ol class="keyword"></ol></article></section>
+						
+						<section class="section-powerbookcartoon">
+							<!-- 업데이트 -->
+							<section class="section-powerbook section-update slick-item"><header><h2><a href="javascript:urlTypeform('1', null, 'post', '/notice');">Updates</a></h2></header><article></article></section>
+							
+							<!-- 이벤트 -->
+							<section class="section-powerbook section-event slick-item"><header><h2><a href="javascript:urlTypeform('2', null, 'post', '/notice');">Events</a></h2></header><article></article></section>
+						</section>
+					</section>
+				</div>
+					
+				<div class="section-blank"></div>
+					
+				<!-- content -->
+				<div class="wrap-section wrap-section-article">
+					<!-- powerbook -->
+					<section class="section-content-type6 true"><header><h2>UPDATES</h2></header><article id="lineageworld"></article></section>
+					
+					<!-- community -->
+					<section class="section-content-type4 true"><header><h2>COMMUNITY: Server Bulletin Board</h2></header><article id="board_user"></article></section>
+					
+					<!-- content request -->
+					<section class="section-content-type4 true"><header><h2>CONTENTS: Content Contest</h2></header><article id="content_user"></article></section>
+				</div>
+				
+				<!-- nshop -->
+				<div class="wrap-section wrap-section-nshop"><section class="section-nshop"><header><h2>Lineage N Shop</h2></header><article id="nshopRoll"><div class="slick-item"></div></article></section></div>
+				
+				<div class="wrap-section wrap-section-etcservice">
+		           	<section class="section-etcservice">
+		           		<a href="javascript:urlTypeform('1', '0', 'post', '/customer');">Technical Support</a>
+		           		{TELEGRAM}
+		            	<a href="https://www.youtube.com/results?search_query={SERVER_NAME}" target="_self">Youtube</a>
+				<a id="grade-layer-item">Game Content Rating<span class="grade-layer" id="FooterGradeLayer"><img src="/img/grade-lineage-2019.png"></span></a>
+		            </section>
+		        </div>
+		    </div>
+		</div>
+
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/slick.min.js"></script>
+	<script src="/js/util.js"></script>
+	<script src="/js/storage.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/index.js"></script>
+</body>
+</html>

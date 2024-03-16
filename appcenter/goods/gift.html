@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>N Coin Gift</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+	<link rel="stylesheet" href="/css/my_style.css"/>
+	<link rel="stylesheet" href="/css/app.css"/>
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const getTime		= '{NOW}';
+const account		= {USER_DATA};
+</script>
+<body>
+	<div id="app">
+		<div class="wrap">
+			<header class="gift_header"><h1><span>N Coin</span> Gift</h1></header>
+			<div class="scroll-wrapper container" style="position: relative;">
+				<div id="Container" class="container scroll-content" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 515px;">
+					<section class="present_wrap">
+						<div class="present_content">
+							<div class="present_info">
+								<div class="coin_info"><div class="my_coin"><span class="coin">N Coins to make a gift <span id="userNcoin" class="">0</span></span></div></div> 
+								<div class="present_amount">
+									<h2 class="tit">Enter gift amount</h2>
+									<div class="input_box">
+										<input type="text" autocomplete="off" placeholder="Please enter amount" id="ncoinAmount" maxlength="9" class="chargeAmt" onKeyup="ncoin_input(this);">
+										<button type="button" class="chargeAmt-reset" id="ncoin-reset"><span>Reset</span></button>
+									</div>
+									<p class="error_msg ncoin_msg" style="display: none;"></p>
+								</div>
+								<div class="present_amount present_char">
+									<h2 class="tit">Character Selection</h2>
+									<div class="input_box">
+										<input type="text" autocomplete="off" placeholder="Please enter your character name" id="friendName" maxlength="20" class="chargeAmt friend_txt" onKeyup="friend_input(this);">
+										<button type="button" class="chargeAmt-reset" id="friend-reset"><span>Reset</span></button>
+									</div>
+									<p class="error_msg friend_msg" style="display: none;"></p>
+								</div>
+							 </div>
+							<section class="present_warn">
+								<ul>
+									<li>If you don't have enough N Coin make your gift after you recharge them.</li>
+									<li>You can make gifts from within the game.</li>
+									<li>The recipient of the gift must be registered on the server.</li>
+									<li>The N Coins given cannot exceed the established limit.</li>
+									<li>The gift will decrease your N Coins credit and increase the gift recipient's credit immediately.</li>
+								</ul>
+							</section>
+						</div>
+					</section>
+				</div>
+			</div>
+			
+			<div class="btn_wrap"><button type="button" class="btn" onClick="send_gift_confirm();"><span>Gift</span></button></div>
+			
+		</div>
+	</div>
+
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;">
+		<div class="wrapper">
+			<div class="btn_close close">close</div>
+			<div class="header">Alert</div>
+			<div class="conWrap"><div class="con"></div></div>
+			<div class="btn_modal"></div>
+		</div>
+	</div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/util.js"></script>
+	<script src="/js/popup.js"></script>
+ 	
+<script>
+if (!account || !account.ingame) {
+	self.close();
+}
+
+const ncoin_value = account.ncoin;
+$('#userNcoin').text(commaAdd(ncoin_value));
+
+function ncoin_input(obj) {
+	inputCheckNumber(obj);
+	input_box_enable(obj);
+}
+
+function friend_input(obj) {
+	input_box_enable(obj);	
+}
+
+function input_box_enable(obj) {
+	var input_box = $(obj).parent('.input_box');
+	if ($(obj).val().length > 0) {
+		if (!input_box.hasClass('on')) {
+			input_box.addClass('on');
+		}
+	} else {
+		if (input_box.hasClass('on')) {
+			input_box.removeClass('on');
+		}
+	}
+}
+
+$('.chargeAmt-reset').on('click', function(event) {
+	var input_box = $(this).parent('.input_box');
+	input_box.removeClass('on');
+	input_box.children('input').val('');
+
+	var err_msg = input_box.parent('.present_amount').children('.error_msg');
+	err_msg.text('');
+	err_msg.css('display', 'none');
+});
+
+function ncoin_error_msg(msg) {
+	$('.ncoin_msg').text(msg);
+	$('.ncoin_msg').css('display', 'block');
+}
+
+function friend_error_msg(msg) {
+	$('.friend_msg').text(msg);
+	$('.friend_msg').css('display', 'block');
+}
+
+// 선물 완료 처리
+function finish_gift() {
+	window.opener.location.reload();// 부모 윈도우 리로드
+	popupClose();// 팝업 종료
+	$('input').val('');// 입력값 초기화
+	$('.input_box').removeClass('on');
+}
+
+// 선물 하기
+function send_gift_excute(amount, name) {
+	$('.ncoin_msg').css('display', 'none');
+	$('.friend_msg').css('display', 'none');
+	const sendData = {
+		"ncoin_amount": amount,
+		"friend_name": name
+	};
+	$.ajax ({
+		type:		"POST",
+		datatype:	"json",
+		url:		"/define/gift",
+		data:		sendData,
+		success:function(data){
+			switch (data) {
+			case 1:
+				popupShow('The gift was created successfully.', '<span class="type2"><a href="javascript:finish_gift();" class="close">Close</a></span>', null);
+				break;
+			case 2:
+				popupShow('Only available from within the game.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+				break;
+			case 3:
+				popupShow('We couldn\'t find your account information.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+				break;
+			case 4:
+				popupShow('The selected character cannot be found.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+				break;
+			case 5:
+				popupShow('The character is not in the game', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+				break;
+			case 6:
+				popupShow('You don\'t have enough N coins.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+				break;
+			case 7:
+				popupShow('Gift recipient could not be found.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+				break;
+			case 8:
+				popupShow('You can\'t give yourself a gift.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+				break;
+			default:
+				popupShow('Gift creation failed.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+				break;
+			}
+		}, error: function(request, status, error){
+			console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		}
+	});
+}
+
+// 선물 하기
+function send_gift_confirm() {
+	if (ncoin_value <= 0) {
+		ncoin_error_msg('You don\'t have enough N Coin');
+		return;
+	}
+	const ncoin_input = $('#ncoinAmount');
+	if (!ncoin_input.val()) {
+		ncoin_error_msg('Please enter the amount of N Coins');
+		return;
+	}
+	const nocin_amount = Number(commaRemove(ncoin_input.val()));
+	if (nocin_amount > ncoin_value) {
+		ncoin_error_msg('You don\'t have enough N Coin');
+		return;
+	}
+	if (nocin_amount < 10000) {
+		ncoin_error_msg('You cannot gift less than 10 thousand N Coins');
+		return;
+	}
+	const friend_input = $('#friendName');
+	if (!friend_input.val()) {
+		friend_error_msg('Please enter the name of the character you want to send the gift to.');
+		return;
+	}
+	const friend_name = $('#friendName').val();
+	if (friend_name.length > 20) {
+		friend_error_msg('The character name is incorrect.');
+		return;
+	}
+	var pattern = /\s/g;   // 공백 체크 정규표현식 - 탭, 스페이스
+	if (friend_name.match(pattern)) {
+		friend_error_msg('Spaces are not allowed in character names.');
+		return;
+	}
+	const name_regex = /^[가-힣|a-z|A-Z|0-9|]+$/;
+	if (!name_regex.test(friend_name)) {
+		friend_error_msg('The character name is incorrect.');
+		return;
+	}
+	if (account.firstChar != undefined && account.firstChar.name == friend_name) {
+		friend_error_msg('You can\'t give yourself a gift.');
+		return;
+	}
+	popupShow('Are you sure you want to make the gift?', '<span class="type2"><a href="javascript:send_gift_excute(' + nocin_amount + ', \'' + friend_name + '\');" class="close">Yes</a></span>', '<span class="type1"><a href="javascript:popupClose();" class="close">No</a></span>');
+}
+
+</script>
+</body>
+</html>

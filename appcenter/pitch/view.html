@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- css -->
+	<link rel="stylesheet" href="/css/community.css">
+	<link rel="stylesheet" type="text/css" href="/css/nccommunity-theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/l1.board.css">
+	<link rel="stylesheet" href="/css/report.css" />
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+.comment-form {position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; border: 1px solid rgba(34,34,34,.08);}
+.comment-form .comment-form-textarea {height: 69px !important; padding: 0 0 0 16px !important; border: none !important;}
+.comment-form .comment-form-textarea textarea {height: 69px; padding: 12px 0;}
+.comment-form .comment-toolbar {height: 40px; border-width: 1px 0 0; border-style: solid; border-color: rgba(34,34,34,.08); background-color: #fff; bottom: 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative;}
+.comment-form.is-active .comment-toolbar {display: -webkit-box; display: -ms-flexbox; display: flex;}
+.comment-form .comment-toolbar .right {height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: auto;}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-board">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="svg-container" style="display: none;"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Community</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div id="ncCommunityView" class="nc-community-view uikit-nccommunity-node" data-board-id="{ID}" data-board-num="{ROWNUM}">
+			        <section class="board-view" style="margin-bottom: 40px;">
+			        	<div class="view-header" style="">
+			        		<h2 class="view-title">{TITLE}</h2>
+			        		<div class="view-info">{WRITER_INFO}</div>
+			        	</div>
+			        	<div class="view-body"><div data-contents-type="text">{CONTENT}</div></div>
+				{LIKES}
+				{SIGNATURE}
+			          	<div class="view-bottom">
+							<div class="left"><button class="co-btn co-btn-round co-btn-list" onClick="javascript:location.href='/pitch';"><i class="fe-icon-arrow_left"></i><span>Return to list</span></button></div>
+							<div class="right">
+								<div class="wrap-util">
+									{UTIL_BUTTON}
+									<button class="co-btn co-btn-report" data-id="{ROWNUM}" data-name="{WRITER_NAME}" data-boardid="{ID}" onClick="reportBtn(this);">Report</button>
+								</div>
+								<button class="co-btn co-btn-round co-btn-write" onClick="javascript:location.href='/pitch/write';"><svg class="fe-svg fe-svg-write"><use xlink:href="#fe-svg-write"></use></svg><span>Write</span></button>
+							</div>
+						</div>
+					</section>
+				</div>
+			    <div id="ncCommunityComment" class="nc-community-comment uikit-nccommunity-node">
+			    	<section class="wrap-comment ncCommentCommonWrap">
+			    		<div class="comment-header"><h3 class="comment-title"><a href="#comment" name="comment">Comment</a>&nbsp;<span class="commentTotalCount">{ANSWER_SIZE}</span></h3></div>
+			    		{COMMENT_WRITE_AREA}
+			    		<div class="comment-order" style="margin-top: 50px;"></div>
+			    		<div class="comment-body">
+			    			<div class="commentThread comment-thread">
+			    				{COMMENT_LIST}
+			    			</div>
+			    		</div>
+			    	</section>
+					<div class="board-prev-next-article">
+						<div class="board-nav">
+							{PRE}
+							{NEXT}
+						</div>
+					</div>
+					<div class="view-bottom" style="">
+						<div class="left"><button class="co-btn co-btn-round co-btn-list" onClick="javascript:location.href='/pitch';"><i class="fe-icon-arrow_left"></i><span>Return to list</span></button></div>
+						<div class="right">
+							<div class="wrap-util">
+								{UTIL_BUTTON}
+								<button class="co-btn co-btn-report" data-id="{ROWNUM}" data-name="{WRITER_NAME}" data-boardid="{ID}" onClick="reportBtn(this);">Report</button>
+							</div>
+							<button class="co-btn co-btn-round co-btn-write" onClick="javascript:location.href='/pitch/write';"><svg class="fe-svg fe-svg-write"><use xlink:href="#fe-svg-write"></use></svg><span>Write</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+	<div id="ncCommunityReportModal" class="co-layer-modal"></div>
+	<div id="ncCommunityReport" class="co-layer nc-community-report">
+		<input type="hidden" name="log" id="reportLog">
+		<header class="co-layer-header"><h1 class="co-layer-title">Report</h1><button class="co-btn co-btn-close ly-close"><svg class="fe-svg fe-svg-close"><use xlink:href="#fe-svg-close"></use></svg></button></header>
+		<section class="co-layer-contents report-contents">
+			<div class="report-target"><h2>Person to report on</h2><span class="target">Target</span></div>
+			<div class="report-cause">
+				<h2>Please select a reason for reporting.</h2>
+				<ul class="list-cause" id="reportCauseList">
+					<li><label for="reportCase1">Sexual</label><input type="radio" name="reportCase" id="reportCase1" checked="checked" value="1"><div class="wrap-icon"><svg class="fe-svg fe-svg-check_off"><use xlink:href="#fe-svg-check_off"></use></svg><svg class="fe-svg fe-svg-check_on"><use xlink:href="#fe-svg-check_on"></use></svg></div></li>
+					<li><label for="reportCase2">Abuse</label><input type="radio" name="reportCase" id="reportCase2" value="2"><div class="wrap-icon"><svg class="fe-svg fe-svg-check_off"><use xlink:href="#fe-svg-check_off"></use></svg><svg class="fe-svg fe-svg-check_on"><use xlink:href="#fe-svg-check_on"></use></svg></div></li>
+					<li><label for="reportCase3">Advertisement</label><input type="radio" name="reportCase" id="reportCase3" value="3"><div class="wrap-icon"><svg class="fe-svg fe-svg-check_off"><use xlink:href="#fe-svg-check_off"></use></svg><svg class="fe-svg fe-svg-check_on"><use xlink:href="#fe-svg-check_on"></use></svg></div></li>
+					<li><label for="reportCase4">Illegal Program</label><input type="radio" name="reportCase" id="reportCase4" value="4"><div class="wrap-icon"><svg class="fe-svg fe-svg-check_off"><use xlink:href="#fe-svg-check_off"></use></svg><svg class="fe-svg fe-svg-check_on"><use xlink:href="#fe-svg-check_on"></use></svg></div></li>
+					<li><label for="reportCase5">Content</label><input type="radio" name="reportCase" id="reportCase5" value="5"><div class="wrap-icon"><svg class="fe-svg fe-svg-check_off"><use xlink:href="#fe-svg-check_off"></use></svg><svg class="fe-svg fe-svg-check_on"><use xlink:href="#fe-svg-check_on"></use></svg></div></li>
+					<li><label for="reportCase6">Privacy</label><input type="radio" name="reportCase" id="reportCase6" value="6"><div class="wrap-icon"><svg class="fe-svg fe-svg-check_off"><use xlink:href="#fe-svg-check_off"></use></svg><svg class="fe-svg fe-svg-check_on"><use xlink:href="#fe-svg-check_on"></use></svg></div></li>
+					<li><label for="reportCase7">Lies</label><input type="radio" name="reportCase" id="reportCase7" value="7"><div class="wrap-icon"><svg class="fe-svg fe-svg-check_off"><use xlink:href="#fe-svg-check_off"></use></svg><svg class="fe-svg fe-svg-check_on"><use xlink:href="#fe-svg-check_on"></use></svg></div></li>
+					<li><label for="reportCase0">Others</label><input type="radio" name="reportCase" id="reportCase0" value="0"><div class="wrap-icon"><svg class="fe-svg fe-svg-check_off"><use xlink:href="#fe-svg-check_off"></use></svg><svg class="fe-svg fe-svg-check_on"><use xlink:href="#fe-svg-check_on"></use></svg></div></li>
+				</ul>
+			</div>
+		</section>
+		<footer class="co-btn-wrap report-btn-wrap"><button class="reportFinish co-btn co-btn-finish" aria-label="Enter">Enter</button><button class="reportCancel co-btn co-btn-cancel ly-close" aria-label="Cancel">Cancel</button></footer>
+	</div>
+	
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+	<script src="/js/pitch.js"></script>
+</body>
+</html>

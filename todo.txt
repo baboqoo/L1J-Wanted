@@ -1,0 +1,204 @@
+DB
+===
+borrar contenido (pero revisar antes de donde viene):
+
+app_alim_log
+app_board_content_comment: borrar
+app_board_free_comment: borrar
+app_board_pitch_comment: borrar
+app_report
+app_trade
+
+
+revisar:
+app_board_content
+app_board_free
+app_board_notice
+app_board_pitch
+app_coupon
+app_customer
+app_customer_normal
+app_dictionary_item
+app_guide
+app_guide_boss
+app_guide_recommended
+app_item_search
+app_nshop
+app_powerbook
+app_powerbook_guide
+app_promotion
+app_shop_rank
+
+
+traducir:
+server_explain
+skills_info
+skills_passive
+skills
+skills_handler
+
+con programa:
+armor: hay que hacer un programa que lea las referencias y cree el texto. No podemos automaticamente con SQL porque a veces hay 2 referencias.
+tiene un campo con contenido en coreano: MATERIAL que habrá que sincronizar su cambio con la tabla de materiales del codigo fuente
+
+traducido hasta la tabla:
+========================
+Catalyst
+
+
+todas las tablas de caracter se alimentan con registros que se crean desde el servidor y usan muchas veces el getdescKr para meter 
+el nombre del item o de lo que sea. Hay que mirar que tablas se usan como fuente y añadir el descEn, crear el getDescEn y al final
+conseguir que no haya ni una puta referencia a getDescKr, solo a getDesc o getDescEn.
+
+
+
+==========
+marronazo:
+==========
+los skills pasivos no se pueden aprender usando el objeto (que se trata como un libro). 
+Por que?
+
+1. Haces click en el objeto, que se instancia como un Speelbook (derivada de L1ItemInstance)
+2. Se intenta instanciar el skill pasivo a traves de
+	L1PassiveSkills passive = SkillsTable.getPassiveToClassType(this, pc.getType());
+		2.1 Se obtiene el nombre del libro eliminando colorcitos con
+			String bookName = item.getItem().getDescKr().replaceAll(ItemTable.COLOR_REPLACE_STR, StringUtil.EmptyString);
+		2.2 Se recorren todos los skills pasivos con
+			for (L1PassiveSkills passive : CLASS_PASSIVES.get(classType)) 
+		2.3 Para cada skill pasivo, mira si su nombre (que es una cadena para reglas) coincide con el libro. Esta cadena para reglas se carga
+			al cargar los registros de la tabla skills_passive
+			
+Lo hemos solventado haciendo que la cadena regla se haga con desc_kr y no con name. Hay que hacer algo parecido con los skills activos por
+si cambiamos tambien el nombre de ingles a coreano
+
+
+===============
+L1Trade
+
+en esta unidad se usa el método L1PCInstance.getClassName que originalmente daba el nombre de la clase (knight, warrior, etc) en koreano.
+Lo hemos cambiado por getClassNameEn y getClassNameKr. Solo se usa aqui y en otras unidades pero solo para temas de logs sin importancia.
+¿Podríamos cambiarlo por su referencia? habrá que probar los trades. (nota: creo que esto SOLO es el trade de personajes con la marble)
+
+===============
+Evento Level 100.
+Ahora mismo es un parametro (EVENT_LEVEL_100), al activarlo aparecen (siempre) cuantro npcs nuevos en giran que hacen craft de algo con un objeto que no se como se consigue
+Solo si está activado esto, al llegar a level 100 alguien aparece el spawn de la estatua. Pero al reiniciar el server, la estatua desaparece. 
+Modificar un poco esto así al arranque del server: 
+
+si el parametro está activo y HAY algun level 100
+	- aparecen los 4 npcs
+	- se mira quien fue el ultimo en llegar al lvl 100 (podemos agregar un campo a la tabla characters con la fecha en la que llega al nivel 100)
+	  y creamos la estatua con su nombre y tal. Ahora mismo seguro que no hay spawn del npc statua. Habrá que crearla y meterle la condición como los 4 npcs mas lo de si hay lvl 100 en el server.
+	  
+Podríamos ir un poco mas alla. Metemos un parametro de cantidad de dias que la estatua está activa. Digamos que 2. Si hay algun player que haya subido a nivel 100 en los ultimos dos dias, pues estatua.
+Si no lo hay, estatua fuera. Habría que mirar los timers y esas cosas, porque al crear el npc ya sea cuando alguien sube a nivel 100 o cuando se arranca el server, habría que mirarlo y agregar
+el timer. Ademas, si alguien sube a nivel 100 estando ya un timer activo, hay que eliminarlo y crear el nuevo.
+
+===============
+ai robots
+
+En la unidad MySqlCharacterStorage, a la hora de leer un character mira si su cuenta es "AIRobot" (en original lo miraba en koreano, ahora lo tengo traducido).
+Buscando he visto que la unidad L1Robot4 lee y crea robots usando esa cuenta especial. 
+También he encontrado que en la tabla "삭제금지 characters" hay un huevo de chars creados en esa cuenta "AIRobot". 
+Igual si pillo unos cuantos y los meto en Characters, tengo robots de esos que hacen de todo. COMPROBARLO.
+Y en la unidad RobotScroll (¿será un puto bot en plan mago que te sigue??) ah cojones, una vez tuve una quest que me daba un mago que me seguía, no recuerdo en que puto server era.
+Item 5564, 5565
+No va, investigar
+
+======================
+Hay algunas unidades que todavía usan el gestDescKr, pero no lo he cambiado porque quiero comprobar bien que no me cargo nada si lo hago.
+
+C_NPCAction.houseBuyPayment con la acción "pay" que la he encontrado en el uml "agit-e.uml"
+CharacterCompanionTable : no parece que nos haga falta mas, porque no hay pets
+SkillsTable: esto si parece necesario para hacer la union entre libros y el skill que se aprende. Lo suyo sería montar una tabla en la BD que los relacionara sin buscar textos en coreano.
+S_AttenDanceBonusGroupInfo
+S_AttenDanceRandomBonusGroupInfo
+
+
+Revisar tambien la unidad  S_PremiumShopSellList ya que tiene un literal en coreano NCOIN_STRING con el nombre de los NCOIN. Estudiar si funciona o si hay que cambiarlo.
+
+===========================
+nombres de jugadores
+comprobar si el sistema comprueba si el nombre existe sin tener en cuenta mayusculas minusculas. Si no, entonces arreglarlo. 
+Cambiar tambien S_WhoCharInfo para que tampoco contemple mayusculas
+
+
+====
+todo: agregar una comprobación al crear un personaje para que no se puedan usar los nombres de los personajes de la AI (ai_users) ni bots (bots)
+
+====
+Añadir a LinUtils
+
+añadir a la navaja suiza una opción que diga todas las unidades donde hay un S_SystemMessage que no tiene el segundo parámetro TRUE
+
+=================
+GMCommands
+
+hay un fichero xml con comandos de GM que se procesa y lee al arrancar el server
+./data/xml/GmCommands/GMCommands.xml
+
+no estaría mal traducirlo para tener tambien esos comandos de GM
+
+
+
+
+
+
+	
+************************ commands ******************************
+hay que revisar todos los commands, porque los mensajes de ayuda y de error de uso tienen el comando mal escrito o los parametros no corresponden con los reales
+así que hay que revisarlos todos 
+C:\Lineage\L1J-REMASTERED\src\l1j\server\server\command\executor\L1xxxxxx.java
+
+*******************
+
+Eventos
+Los eventos definidos en el juego (tabla notifications), como el del Treasure Island etc generan en el cliente la lista de eventos. Si lanzamos manualmente por ejemplo la treasure island (.treasureisland), la lista no se actualiza y sigue diciendo que tendrá lugar dentro de X horas. 
+Habría que modificar el comando para "refrescar" esa lista (con S_Notification probablemente)
+
+***************
+Mirar donde se implementa la inserción de un artículo en el inventario de alguien (al comprar, al recibir un drop, al coger...) para que el item_name de esta tabla tenga el texto en ingles y no en coreano.
+Para ello tendremos que implementar el desc_kr en las tablas armor, weapon, etcitem.
+**************
+en la tabla character_items el campo "duraribility" debería llamarse "damage". El campo bless debería llamarse "is_blessed" y comportarse JUSTO al contrario, ya que ahora 1 = no blessed, 0 = blessed
+**************
+en el Launcher, si nos identificamos con una cuenta administradora, y luego con otra, en la web seguimos conectados como el administrador de la otra cuenta. Hay que actualizar la conexión cada vez que se cambia de cuenta.
+*********************
+Los personajes en giran arriba, el tigre, oso panda, etc. No están en el server normal, parece ser un evento:
+Howard: $37819 : npc id 81027
+Shilene: $41438 : npc id 40000 (Hero Coin)
+Maro: $41466 : npc id 81022
+Guardian Wizard of Aden: $30551 : npc id 81023
+
+Hero Coin: $27534 (etcitem id 40000)
+Hero Coin Seller^Alkin: $35570 (no existe NPC con esta descripción)
+
+Existe otro Hero Coin pero que no se puede usar aqui, ya que el de antes es especial de evento:
+
+Hero Coin: $25912 (etcitem id 52006)
+
+**********************
+Se supone que la Fruith of Growth solo debería afectar al personaje que se la toma, pero afecta a todos los de la cuenta. Revisar con la documentación koreana.
+
+***************************
+Tengo la exp x 5, pero claro, en las quest, se hace todo super rapido. Estaria bien que este multiplicador tuviera un maximo
+en funcion del level, es decir, por debajo del level 10 aunque diga x5, hacer x2, etc.
+
+Otra: el PSS se puede usar desde level 1 al 10, luego ya no hasta el level... (lo miro) para que así se hagan las quest
+cazando y no con el PSS.
+
+Mejor. Tenemos la unidad A_QuestFinish que se llama cada vez que se termina una quest. Miramos que ID tiene la quest donde se matan los cerdos,
+que es donde se aprende a usar el PSS. Seguramente las quest siguientes tienen un id mas grande. Así que si esa quest , la de los cerdos
+está hecha y el level es menor que... lo que decidamos, deshabilitamos el PSS.
+*************************
+siendo level 11 en quest donde matas esqueletos, pulse telehome y me fui directo a giran. Comprobar si en el live server es igual.
+Si no lo es, habrá que controlar que si eres menos de lvl X y pulsas telehome, te vas a TI
+*************************
+
+
+
+
+
+
+
+

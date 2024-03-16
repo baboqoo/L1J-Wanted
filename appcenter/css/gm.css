@@ -1,0 +1,164 @@
+@charset "UTF-8";
+li {list-style: none;}
+ul {margin-block-start: 0; margin-block-end: 0; padding-inline-start: 0;}
+a {cursor: pointer;}
+.pagination {margin: 0 auto; display: table;}
+
+.ui-dropdown {position: relative; height: 36px; font-size: 14px; line-height: 150%; letter-spacing: -1px; text-align: left; color: #1f1f1f; display: inline-block;}
+.ui-dropdown .select {padding: 7px 17px; color: #929292fa; font-weight: 500; font-size: 15px; cursor: pointer; width: 180px; border: 1px solid #ddd;}
+.ui-dropdown .select::after {content: ''; position: absolute; margin-top: 7px; width: 0; height: 0; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 6px solid #c7c7cc; right: 20px;}
+.ui-dropdown.is-active .select::after {border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 6px solid #c7c7cc; border-top: 0;}
+.ui-dropdown .option {display: none; position: absolute; z-index: 10; left: 0; right: 0; margin: 0; padding: 0; list-style: none; border: 1px solid #ddd; background-color: #fff;}
+.ui-dropdown .option li {padding: 6px 16px; cursor: pointer;}
+.ui-dropdown .option li:hover {background-color:#e9ecef;}
+.ui-dropdown.is-active .option {display: block;}
+#container #page_container #server_data, #container #page_container #user_data, #container #page_container #support_data, #container #page_container #report_data, #container #page_container #chat_data {margin: auto; max-width: 1260px; border: 1px solid #e1e1e5; padding: 30px;}
+
+#container #page_container #server_data ul {padding-inline-start: 0px;}
+#container #page_container #server_data ul li {padding: 10px; border: 1px solid #ddd; margin: 10px;}
+#container #page_container #server_data ul li .title {font-size: 14px; font-weight: 600; color: #0d636c; margin-right: 15px;}
+#container #page_container #server_data ul li .var {font-size: 12px; font-weight: 500; color: #217189;}
+#container #page_container #server_data ul li .graph .percent-wrap {position: relative; height: 8px; display: inline-block; vertical-align: middle; width: 100%; background-color: #cfcfcf; cursor: zoom-in;}
+#container #page_container #server_data ul li .graph .bar {background-color: #ff8671; height: 100%; display: inline-block; vertical-align: middle; -webkit-transition: all 300ms ease; -ms-transition: all 300ms ease; transition: all 300ms ease; top: 0; position: absolute;}
+#container #page_container #server_data ul li .info-tooltip {position: absolute; background: #217189; border: 1px solid #217189; border-radius: 10px; padding: 6px; font-size: 11px; top: -33px; right: 0; color: #fff; display: none;}
+#container #page_container #server_data ul li .graph .percent-wrap:hover > .info-tooltip {display: block;}
+
+#container #page_container #user_data .user_top {padding: 0 10px 15px;}
+#container #page_container #user_data .user_top .user_search, #container #page_container #chat_data .chat_top .chat_search {border: 1px solid #ddd; width: 228px; padding: 1px;}
+#container #page_container #user_data .user_top input, #container #page_container #chat_data .chat_top input {border: none; padding: 8px 0 8px 8px;}
+#container #page_container #user_data .user_top button, #container #page_container #chat_data .chat_top button {width: 36px; height: 36px; cursor: pointer; border: 0; background-color: transparent; color: transparent; background-image: url(/img/shop/icon-search.png); background-size: 16px 16px; background-position: center center; background-repeat: no-repeat; padding: 6px;}
+
+#container #page_container #user_data li.users, #container #page_container #support_data li.supports, #container #page_container #report_data li.reports {border: 1px solid #ddd; padding: 10px; margin: 10px;}
+#container #page_container #user_data li.users:hover, #container #page_container #support_data li.supports:hover, #container #page_container #report_data li.reports:hover {background: #f3f3f3;}
+
+#container #page_container #user_data .simple span {vertical-align: middle; display: inline-block; padding-right: 20px; line-height: 0;}
+#container #page_container #user_data .profileUrl img {width: 56px;}
+#container #page_container #user_data .name {width: 130px;}
+#container #page_container #user_data .level {width: 150px;}
+#container #page_container #user_data .pledge {width: 130px; text-align: center;}
+#container #page_container #user_data .online {width: 150px;}
+#container #page_container #user_data .user_detail {display: none; z-index: 10000001; position: fixed; top: 22%; left: 41%; padding: 20px; background: #fff; width: 320px; height: 470px; overflow: auto;}
+#container #page_container #user_data .user_detail .close {float: right; min-width: fit-content; background: #ff7272; color: #fff; border: 0;}
+#container #page_container #user_data .user_detail .detail_img img {width: 100px;}
+#container #page_container #user_data .user_detail .detail_box > div {display: flow-root;}
+#container #page_container #user_data .user_detail .detail_box span {float:right; padding-right: 5px;}
+#container #page_container #user_data .user_detail .detail_box .detail_stat {display: -webkit-box; border: 1px solid #ddd; padding: 5px; margin-top: 10px;}
+#container #page_container #user_data .user_detail .detail_box .detail_stat .stat_box {display: inline-block; width: 100%;}
+#container #page_container #user_data .user_detail .detail_box .detail_event {text-align: center; padding-top: 20px;}
+#container #page_container #user_data .user_detail .detail_box .detail_event button {background: #ff7272; padding: 5px; color: #fff; border: 0; margin: 5px;}
+#container #page_container #user_data .user_detail .detail_box .detail_inv .inv_info {color: #c73434;}
+#container #page_container #user_data .user_detail .detail_box .detail_inv_list {display:none;position: fixed; left: 39%; background: #fff; padding: 10px; width: 360px; height: 234px; overflow: auto; border: 1px solid;}
+#container #page_container #user_data .user_detail .detail_box .detail_inv_list .inv_box {display: inline-flex;}
+#container #page_container #user_data .user_detail .detail_box .detail_inv_list .inv_box li {width: 312px; max-height: 30px; overflow: auto; margin: 7px 0;}
+#container #page_container #user_data .user_detail .detail_box .detail_inv_list .inv_box li img {width: 23px;}
+#container #page_container #user_data .user_detail .detail_box .detail_inv_list .inv_box li .name {vertical-align: top; font-size: 14px; font-weight: 500; color: #777;}
+#container #page_container #user_data .user_detail .detail_box .detail_inv_list .inv_box li .name.status-bless {color: #ffb13c;}
+#container #page_container #user_data .user_detail .detail_box .detail_inv_list .inv_box li .name.status-curse {color: #d50000;}
+#container #page_container #user_data .user_detail .detail_box .detail_inv_list .inv_box li .del {float: right;}
+#container #page_container #user_data .user_detail .detail_box .detail_inv .inv_info:hover > .detail_inv_list {display:block;}
+
+#container #page_container #support_data .supports {color: #444;}
+#container #page_container #support_data .supports .item {margin-right: 10px; width: 180px; display: inline-grid;}
+#container #page_container #support_data .supports .item.status .val.on {color: crimson; font-weight: 600;}
+#container #page_container #support_data .supports .event {float: right; line-height: 36px;}
+#container #page_container #support_data .supports .event button {margin-left: 5px; background: #ff7272; border: none; color: #fff; padding: 4px; width: 60px; border-radius: 5px;}
+#container #page_container #support_data .supports .event button:hover {background: #cb5a5a;}
+#container #page_container #support_data .supports .key {color: #0d636c; font-weight: 600;}
+#container #page_container #support_data .support_tab_top {display: flow-root; padding-bottom: 10px;}
+#container #page_container #support_data .support_tab_top .caption {text-align: left; font-size: 14px; line-height: 30px;}
+#container #page_container #support_data .support_tab_top button {float: right; height: 36px; padding: 7px 20px; background-color: #368db0; color: #fff;}
+#container #page_container #support_data .support_tab_top button:hover {background: #2b6f8a;}
+.support-select {position: relative; display: initial; padding-left: 10px;}
+#container #page_container #support_data .ui-select-tab {float: none; padding: 0 10px; display: inline-block;}
+#container #page_container #support_data .ui-select-tab .select-tab {position: relative; width: 100%!important; border: 0;}
+#container #page_container #support_data .ui-select-tab .select-tab li {width: 50%; float: left; border: 0; border-right: 1px solid #fff; background-color: #f4f5f7;}
+#container #page_container #support_data .ui-select-tab .select-tab li a.selected {color: #fff; background-color: #a2a8b2;}
+#container #page_container #support_data .finish_form_div {display: none; position: fixed; top: 30%; left: 0; z-index: 10000001; margin: auto; width: 100%;}
+#container #page_container #support_data .finish_form_div .finish_form {width: 400px; background: #fff; padding: 20px; margin: auto;}
+#container #page_container #support_data .finish_form_div span {font-size: 14px;}
+#container #page_container #support_data .finish_form_div .close {float: right; text-decoration: none; background: #ff7272; padding: 5px 15px; color: #fff; border-radius: 5px; font-size: 14px;}
+#container #page_container #support_data .finish_form_div .detail-item .support_request_content {margin: 0; font-size: 12px; font-family: Arial, sans-serif; resize: none; outline: none; border: 1px solid #ddd; width: 100%; padding: 12px; margin-top: 10px; height: 133px;}
+#container #page_container #support_data .finish_form_div .requst_submit_btn {text-align: center; padding-top: 10px;}
+#container #page_container #support_data .finish_form_div .requst_submit_btn button {width: 120px; background: #ff7272; color: #fff; border: 0; padding: 10px; border-radius: 5px;}
+#container #page_container #support_data .finish_form_div .close:hover, #container #page_container #support_data .finish_form_div .requst_submit_btn button:hover {background: #d55959;}
+
+#container #page_container #report_data .reports {color: #444;}
+#container #page_container #report_data .reports .item {margin-right: 10px; width: 150px; display: inline-grid;}
+#container #page_container #report_data .reports .item.log {width: 250px;}
+#container #page_container #report_data .reports .key {color: #0d636c; font-weight: 600;}
+#container #page_container #report_data .reports .event {float: right; line-height: 36px;}
+#container #page_container #report_data .reports .event button {margin-left: 5px; background: #ff7272; border: none; color: #fff; padding: 4px; width: 60px; border-radius: 5px;}
+#container #page_container #report_data .reports .event button:hover {background: #cb5a5a;}
+
+#container #page_container #chat_data .chat_top .chat_search {width: 100%;}
+#container #page_container #chat_data .chat_top input {width: 90%;}
+#container #page_container #chat_data .chat_top button {float: right;}
+#container #page_container #chat_data .chat_top h4 {color: #0d636c;}
+#container #page_container #chat_data .chat_top #chat_result #chat_result_box {}
+#container #page_container #chat_data .chat_top #chat_result #chat_result_box ul {height: 200px; border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; overflow-y: scroll;}
+#container #page_container #chat_data .chat_top #chat_result #chat_result_box ul li {color: #0d636c;}
+
+@media (max-width: 960px){
+	#container #page_container #user_data .simple span {padding-right: 10px; font-size: 12px;}
+	#container #page_container #user_data .name {width: 70px;}
+	#container #page_container #user_data .level {width: 80px;}
+	#container #page_container #user_data .pledge {width: 70px;}
+	#container #page_container #user_data .online {width: 90px;}
+	#container #page_container #user_data .user_detail {top: 5%; left: 35%;}
+	#container #page_container #user_data .user_detail .detail_box .detail_inv_list {left: 30%;}
+	#container #page_container #support_data .supports .item {width: 100px; font-size: 14px;}
+	#container #page_container #support_data .supports .event {line-height: 32px;}
+	#container #page_container #support_data .supports .event button {line-height: 32px; width: 40px;}
+	#container #page_container #report_data .reports .item {width: 80px; font-size: 12px;}
+	#container #page_container #report_data .reports .item.log {width: 200px;}
+	#container #page_container #report_data .reports .event {line-height: 32px;}
+	#container #page_container #report_data .reports .event button {line-height: 32px; width: 40px;}
+}
+
+@media (max-width: 640px){
+	#container #page_container #user_data .simple span {padding-right: 5px; font-size: 10px;}
+	#container #page_container #user_data .name {width: 60px;}
+	#container #page_container #user_data .level {width: 60px;}
+	#container #page_container #user_data .pledge {width: 60px;}
+	#container #page_container #user_data .online {width: 60px;}
+	#container #page_container #support_data .supports .item {width: 60px; font-size: 10px;}
+	#container #page_container #support_data .supports .event {line-height: 25px;}
+	#container #page_container #report_data .reports .item {width: 60px; font-size: 10px;}
+	#container #page_container #report_data .reports .item.log {width: 150px;}
+	#container #page_container #report_data .reports .event {line-height: 25px;}
+}
+
+@media (max-width: 550px){
+	#container #page_container #user_data .simple span {padding-right: 3px;}
+	#container #page_container #user_data .name {width: 55px;}
+	#container #page_container #user_data .level {width: 55px;}
+	#container #page_container #user_data .pledge {width: 55px;}
+	#container #page_container #user_data .online {width: 55px;}
+	#container #page_container #support_data .supports .item {width: 50px;}
+	#container #page_container #support_data .supports .event {line-height: 25px; font-size: 10px;}
+	#container #page_container #support_data .supports .event button {line-height: 25px; width: 30px;}
+	#container #page_container #report_data .reports .item {width: 50px;}
+	#container #page_container #report_data .reports .item.log {width: 100px;}
+	#container #page_container #report_data .reports .event {line-height: 25px; font-size: 10px;}
+	#container #page_container #report_data .reports .event button {line-height: 25px; width: 30px;}
+}
+
+@media (max-width: 480px){
+	#container #page_container #server_data, #container #page_container #user_data, #container #page_container #support_data, #container #page_container #report_data, #container #page_container #chat_data {padding: 12px 0px;}
+	#container #page_container #user_data .user_top {padding: 0 10px;}
+	#container #page_container #user_data .simple span {float: none; display: -webkit-inline-box;}
+	#container #page_container #user_data .user_detail {left: 16%;}
+	#container #page_container #user_data .user_detail .detail_box .detail_inv_list {left: 6%;}
+	#container #page_container #user_data .user_top .user_search {width: 230px;}
+	#container #page_container #user_data .user_top input {width: 190px;}
+	#container #page_container #support_data .support_tab_top {padding-bottom: 0px;}
+	.ui-select-tab {margin: 0px auto 4px !important;}
+	#container #page_container #support_data .supports .event {float: none; display: block; text-align: center; padding-top: 10px;}
+	#container #page_container #support_data .supports .event button {line-height: 20px; width: 100px;}
+	#container #page_container #support_data .supports .item.character {width: 65px;}
+	#container #page_container #support_data .supports .item.pay {width: 60px;}
+	#container #page_container #support_data .supports .item.date {width: 75px;}
+	#container #page_container #report_data .reports .event {float: none; text-align: center; display: block; padding-top: 10px;}
+	#container #page_container #report_data .reports .event button {line-height: 20px; width: 100px;}
+}
+

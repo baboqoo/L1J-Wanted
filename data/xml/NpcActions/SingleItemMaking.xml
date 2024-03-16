@@ -1,0 +1,1004 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<NpcActionList>
+	<!--대리석의 유산1개->마력의 돌 / 연금 술사-->
+	<Action Name="a" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40304"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="20" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--대리석의 유산10개->마력의 돌 / 연금 술사-->
+	<Action Name="b" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40304"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="200" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--대리석의 유산50개->마력의 돌 / 연금 술사-->
+	<Action Name="c" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40304"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="1000" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--대리석의 유산1개->정령의 구슬 / 연금 술사-->
+	<Action Name="d" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40304"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="40" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--대리석의 유산10개->정령의 구슬 / 연금 술사-->
+	<Action Name="e" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40304"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="400" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--대리석의 유산50개->정령의 구슬 / 연금 술사-->
+	<Action Name="f" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40304"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="2000" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--대리석의 유산1개->흑마석 / 연금 술사-->
+	<Action Name="g" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40304"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="10" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--대리석의 유산10개->흑마석 / 연금 술사-->
+	<Action Name="h" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40304"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="100" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--대리석의 유산50개->흑마석 / 연금 술사-->
+	<Action Name="i" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40304"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="500" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--코뿔소 하의 유산1개->마력의 돌 / 연금 술사-->
+	<Action Name="j" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40307"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="25" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--코뿔소 하의 유산10개->마력의 돌 / 연금 술사-->
+	<Action Name="k" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40307"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="250" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--코뿔소 하의 유산50개->마력의 돌 / 연금 술사-->
+	<Action Name="l" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40307"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="1250" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--코뿔소 하의 유산1개->정령의 구슬 / 연금 술사-->
+	<Action Name="m" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40307"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="60" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--코뿔소 하의 유산10개->정령의 구슬 / 연금 술사-->
+	<Action Name="n" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40307"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="600" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--코뿔소 하의 유산50개->정령의 구슬 / 연금 술사-->
+	<Action Name="o" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40307"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="3000" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--코뿔소 하의 유산1개->흑마석 / 연금 술사-->
+	<Action Name="p" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40307"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="20" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--코뿔소 하의 유산10개->흑마석 / 연금 술사-->
+	<Action Name="q" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40307"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="200" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--코뿔소 하의 유산50개->흑마석 / 연금 술사-->
+	<Action Name="r" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40307"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="1000" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--에바의 유산1개->마력의 돌 / 연금 술사-->
+	<Action Name="s" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40306"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="30" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--에바의 유산10개->마력의 돌 / 연금 술사-->
+	<Action Name="t" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40306"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="300" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--에바의 유산50개->마력의 돌 / 연금 술사-->
+	<Action Name="u" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40306"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="1500" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--에바의 유산1개->정령의 구슬 / 연금 술사-->
+	<Action Name="v" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40306"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="50" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--에바의 유산10개->정령의 구슬 / 연금 술사-->
+	<Action Name="w" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40306"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="500" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--에바의 유산50개->정령의 구슬 / 연금 술사-->
+	<Action Name="x" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40306"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="2500" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--에바의 유산1개->흑마석 / 연금 술사-->
+	<Action Name="y" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40306"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="20" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--에바의 유산10개->흑마석 / 연금 술사-->
+	<Action Name="z" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40306"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="200" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--에바의 유산50개->흑마석 / 연금 술사-->
+	<Action Name="A" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40306"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="1000" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--파아그리오의 유산1개->마력의 돌 / 연금 술사-->
+	<Action Name="B" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40305"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="25" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--파아그리오의 유산10개->마력의 돌 / 연금 술사-->
+	<Action Name="C" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40305"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="250" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--파아그리오의 유산50개->마력의 돌 / 연금 술사-->
+	<Action Name="D" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40305"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="1250" ItemId="40318"/>
+		</MakeItem>
+	</Action>
+	<!--파아그리오의 유산1개->정령의 구슬 / 연금 술사-->
+	<Action Name="E" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40305"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="30" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--파아그리오의 유산10개->정령의 구슬 / 연금 술사-->
+	<Action Name="F" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40305"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="300" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--파아그리오의 유산50개->정령의 구슬 / 연금 술사-->
+	<Action Name="G" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40305"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="1500" ItemId="40319"/>
+		</MakeItem>
+	</Action>
+	<!--파아그리오의 유산1개->흑마석 / 연금 술사-->
+	<Action Name="H" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40305"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="10" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--파아그리오의 유산10개->흑마석 / 연금 술사-->
+	<Action Name="I" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40305"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="100" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--파아그리오의 유산50개->흑마석 / 연금 술사-->
+	<Action Name="J" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40305"/>
+			<Material Amount="50000" ItemId="40308"/>
+			<Item Amount="500" ItemId="40320"/>
+		</MakeItem>
+	</Action>
+	<!--검은 핏자국1개 / 연금 술사-->
+	<Action Name="K" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40524"/>
+			<Material Amount="10000" ItemId="40308"/>
+			<Item Amount="1" ItemId="40304"/>
+			<Item Amount="1" ItemId="40305"/>
+			<Item Amount="1" ItemId="40306"/>
+			<Item Amount="1" ItemId="40307"/>
+		</MakeItem>
+	</Action>
+	<!--검은 핏자국10개 / 연금 술사-->
+	<Action Name="L" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="10" ItemId="40524"/>
+			<Material Amount="100000" ItemId="40308"/>
+			<Item Amount="10" ItemId="40304"/>
+			<Item Amount="10" ItemId="40305"/>
+			<Item Amount="10" ItemId="40306"/>
+			<Item Amount="10" ItemId="40307"/>
+		</MakeItem>
+	</Action>
+	<!--검은 핏자국50개 / 연금 술사-->
+	<Action Name="M" NpcId="70520">
+		<MakeItem AmountInputable="false">
+			<Material Amount="50" ItemId="40524"/>
+			<Material Amount="500000" ItemId="40308"/>
+			<Item Amount="50" ItemId="40304"/>
+			<Item Amount="50" ItemId="40305"/>
+			<Item Amount="50" ItemId="40306"/>
+			<Item Amount="50" ItemId="40307"/>
+		</MakeItem>
+	</Action>
+	<!--계산기 / 브레이즈-->
+	<Action Name="1" NpcId="70605">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40526"/>
+			<Material Amount="5" ItemId="40779"/>
+			<Material Amount="1000" ItemId="40308"/>
+			<Item Amount="1" ItemId="40391"/>
+		</MakeItem>
+	</Action>
+	<!--연마재 / 티미-->
+	<Action Name="1" NpcId="71006">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41209"/>
+			<Item Amount="1" ItemId="41210"/>
+			<Succeed>
+				<ShowHtml HtmlId="jpe0055"/>
+			</Succeed>
+		</MakeItem>
+	</Action>
+	<!--허브 / 대장간 론-->
+	<Action Name="request ei004" NpcId="71003">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41210"/>
+			<Item Amount="1" ItemId="41211"/>
+		</MakeItem>
+	</Action>
+	<!--특제 캔디/ 약제사 이크시-->
+	<Action Name="request ei005" NpcId="71001">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41211"/>
+			<Item Amount="1" ItemId="41212"/>
+		</MakeItem>
+	</Action>
+	<!--시안 일부 / 치코리-->
+	<Action Name="1" NpcId="71009">
+		<MakeItem AmountInputable="false">
+			<Material Amount="3" ItemId="41222"/>
+			<Item Amount="1" ItemId="40017"/>
+			<Succeed>
+				<ShowHtml HtmlId="jpe0074"/>
+			</Succeed>
+		</MakeItem>
+	</Action>
+	<!--바나나 쥬스 / 방어 아나운서-->
+	<Action Name="1" NpcId="71011">
+		<MakeItem AmountInputable="false">
+			<Material Amount="3" ItemId="40060"/>
+			<Material Amount="3" ItemId="40061"/>
+			<Material Amount="3" ItemId="40062"/>
+			<Item Amount="1" ItemId="40026"/>
+			<Succeed>
+				<ShowHtml HtmlId="jpe0065"/>
+			</Succeed>
+		</MakeItem>
+	</Action>
+	<!--군주의 봉투 / 모험자 에이타-->
+	<Action Name="request ei028" NpcId="71032">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41214"/>
+			<Material Amount="5" ItemId="41215"/>
+			<Material Amount="5" ItemId="41216"/>
+			<Item Amount="1" ItemId="41217"/>
+		</MakeItem>
+	</Action>
+	<!--나이트의 봉투 / 모험자 에이타-->
+	<Action Name="request ei029" NpcId="71032">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41214"/>
+			<Material Amount="5" ItemId="41215"/>
+			<Material Amount="5" ItemId="41216"/>
+			<Item Amount="1" ItemId="41218"/>
+		</MakeItem>
+	</Action>
+	<!--에르프의 것의 봉투 / 모험자 에이타-->
+	<Action Name="request ei030" NpcId="71032">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41214"/>
+			<Material Amount="5" ItemId="41215"/>
+			<Material Amount="5" ItemId="41216"/>
+			<Item Amount="1" ItemId="41219"/>
+		</MakeItem>
+	</Action>
+	<!--위저드의 봉투 / 모험자 에이타-->
+	<Action Name="request ei031" NpcId="71032">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41214"/>
+			<Material Amount="5" ItemId="41215"/>
+			<Material Amount="5" ItemId="41216"/>
+			<Item Amount="1" ItemId="41220"/>
+		</MakeItem>
+	</Action>
+	<!--다크 에르프의 봉투 / 모험자 에이타-->
+	<Action Name="request ei032" NpcId="71032">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41214"/>
+			<Material Amount="5" ItemId="41215"/>
+			<Material Amount="5" ItemId="41216"/>
+			<Item Amount="1" ItemId="41221"/>
+		</MakeItem>
+	</Action>
+	<!--계곡의 표 / 르바-->
+	<Action Name="request amulet of valley" NpcId="70506">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40653"/>
+			<Item Amount="1" ItemId="20243"/>
+		</MakeItem>
+	</Action>
+	<!--섬의 표 / 르바-->
+	<Action Name="request amulet of island" NpcId="70506">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="40613"/>
+			<Item Amount="1" ItemId="20259"/>
+		</MakeItem>
+	</Action>
+	<!--율법박사의 부적 / 율법박사-->
+	<Action Name="request ei034" NpcId="71034">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41227"/>
+			<Item Amount="1" ItemId="41228"/>
+		</MakeItem>
+	</Action>
+	<!--상아의 탑의 링 / 하-미트-->
+	<Action Name="request ring of oren tower" NpcId="71033">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41228"/>
+			<Item Amount="1" ItemId="20282"/>
+		</MakeItem>
+	</Action>
+	<!--지난의 편지 / 뼈세공인 지난-->
+	<Action Name="0" NpcId="71022">
+		<MakeItem AmountInputable="false">
+			<Material Amount="5" ItemId="41229"/>
+			<Item Amount="1" ItemId="41230"/>
+			<Succeed>
+				<ShowHtml HtmlId="jpe0154"/>
+			</Succeed>
+		</MakeItem>
+	</Action>
+	<!--맛티의 편지 / 뼈세공인 맛티-->
+	<Action Name="request ei021" NpcId="71021">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41230"/>
+			<Item Amount="1" ItemId="41231"/>
+		</MakeItem>
+	</Action>
+	<!--존의 소포 / 존-->
+	<Action Name="0" NpcId="71020">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41231"/>
+			<Item Amount="1" ItemId="41232"/>
+		</MakeItem>
+	</Action>
+	<!--재료표 / 골세공인 케이이-->
+	<Action Name="0" NpcId="71023">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41233"/>
+			<Material Amount="1" ItemId="41234"/>
+			<Item Amount="1" ItemId="41235"/>
+		<Succeed>
+			<ShowHtml HtmlId="jpe0146"/>
+		</Succeed>
+		</MakeItem>
+	</Action>
+	<!--케이이의 소포 / 뼈세공인 케이이-->
+	<Action Name="1" NpcId="71023">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41235"/>
+			<Material Amount="3" ItemId="41236"/>
+			<Material Amount="3" ItemId="41237"/>
+			<Item Amount="1" ItemId="41238"/>
+		<Succeed>
+			<ShowHtml HtmlId="jpe0147"/>
+		</Succeed>
+		</MakeItem>
+	</Action>	
+	<!--뼈세공인의 봉투 / 제자 비트-->
+	<Action Name="0" NpcId="71019">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41239"/>
+			<Item Amount="1" ItemId="41241"/>
+		<Succeed>
+			<ShowHtml HtmlId="jpe0116"/>
+		</Succeed>
+		</MakeItem>
+	</Action>
+	<!--뼈 아모 / 페다-->
+	<Action Name="0" NpcId="71018">
+	<MakeItem AmountInputable="false">
+		<Material Amount="1" ItemId="41240"/>
+		<Item Amount="1" ItemId="20124"/>
+		<Succeed>
+			<ShowHtml HtmlId="jpe0135"/>
+		</Succeed>
+		</MakeItem>
+	</Action>
+	<!--파고의 약 / 파고-->
+	<Action Name="request ei014" NpcId="70005">
+	<MakeItem AmountInputable="false">
+		<Material Amount="1" ItemId="41225"/>
+		<Item Amount="1" ItemId="41226"/>
+		</MakeItem>
+	</Action>
+	<!--1000아데나 / 케스킨-->
+	<Action Name="1" NpcId="71025">
+	<MakeItem AmountInputable="false">
+		<Material Amount="1" ItemId="41226"/>
+		<Material Amount="1" ItemId="40653"/>
+		<Item Amount="1000" ItemId="40308"/>
+		<Succeed>
+			<ShowHtml HtmlId="jpe0085"/>
+		</Succeed>
+		</MakeItem>
+	</Action>
+	<!--1000아데나 / 케스킨-->
+	<Action Name="2" NpcId="71025">
+	<MakeItem AmountInputable="false">
+		<Material Amount="1" ItemId="41226"/>
+		<Material Amount="1" ItemId="40613"/>
+		<Item Amount="1000" ItemId="40308"/>
+		<Succeed>
+			<ShowHtml HtmlId="jpe0085"/>
+		</Succeed>
+		</MakeItem>
+	</Action>
+	<!--무기물 주머니 / 갱부 옴--> 
+	<Action Name="request mineral bag">
+		<MakeItem>
+			<Item Amount="1" ItemId="41002"/>
+			<Material Amount="1" ItemId="40614"/>
+		</MakeItem>
+	</Action>
+	<!--곡괭이 / 다르후가딘-->
+	<Action Name="request hoe" NpcId="71166">
+		<MakeItem>
+			<Item Amount="1" ItemId="40527"/>
+			<Material Amount="5" ItemId="40899"/>
+			<Material Amount="300" ItemId="40308"/>
+		</MakeItem>
+	</Action>
+	<!--오옴의 봉투 / 갱부 오옴-->
+	<Action Name="request oum giftbag" NpcId="71146">
+		<MakeItem>
+			<Item Amount="1" ItemId="40687"/>
+			<Material Amount="1" ItemId="40527"/>
+			<Succeed>
+				<ShowHtml HtmlId="midoum3"/>
+			</Succeed>
+		</MakeItem>
+	</Action>
+	<!--수리된 귀 링 / 낚시 아줌마-->
+	<Action Name="request not_broken earring" NpcId="80081">
+		<MakeItem>
+			<Item Amount="1" ItemId="21049"/>
+			<Material Amount="1" ItemId="41305"/>
+			<Material Amount="1" ItemId="41303"/>
+			<Material Amount="1000" ItemId="40308"/>
+		</MakeItem>
+	</Action>
+	<!--수리된 링 / 낚시 아줌마―-->
+	<Action Name="request not_broken ring left" NpcId="80081">
+		<MakeItem>
+			<Item Amount="1" ItemId="21048"/>
+			<Material Amount="1" ItemId="41306"/>
+			<Material Amount="1" ItemId="41302"/>
+			<Material Amount="1000" ItemId="40308"/>
+		</MakeItem>
+	</Action>
+	<!--수리된 넥크리스 / 낚시 아줌마―-->
+	<Action Name="request not_broken amulet" NpcId="80081">
+		<MakeItem>
+			<Item Amount="1" ItemId="21050"/>
+			<Material Amount="1" ItemId="41307"/>
+			<Material Amount="1" ItemId="41301"/>
+			<Material Amount="1000" ItemId="40308"/>
+		</MakeItem>
+	</Action>
+	<!--천상의 물약 / 깃털 수집가-->
+	<Action Name="0" NpcId="3200013">
+		<MakeItem AmountInputable="false">
+			<Material Amount="100" ItemId="41159"/>
+			<Item Amount="1" ItemId="210094"/>
+			<Succeed>
+				<ShowHtml HtmlId="feathercol2"/>
+			</Succeed>
+			<Fail>
+				<ShowHtml HtmlId="feathercol3"/>
+			</Fail>
+		</MakeItem>
+	</Action>
+	<!--할로윈 이벤트 / 할로윈 이벤트-->
+	<Action Name="0" NpcId="6000001">
+		<MakeItem AmountInputable="false">
+			<Material Amount="25000" ItemId="40308"/>
+			<Item Amount="1" ItemId="20380"/>
+			<Succeed>
+				<ShowHtml HtmlId="2008hallo2"/>
+			</Succeed>
+			<Fail>
+				<ShowHtml HtmlId="2008hallo3"/>
+			</Fail>
+		</MakeItem>
+	</Action>
+	<!--테베 / 조우의 돌골렘-->
+	<Action Name="A" NpcId="200016">
+		<MakeItem AmountInputable="false">
+			<Material Amount="100" ItemId="210081"/>
+			<Item Amount="1" ItemId="210082"/>
+			<Succeed>
+				<ShowHtml HtmlId="joegolem18"/>
+			</Succeed>
+			<Fail>
+				<ShowHtml HtmlId="joegolem19"/>
+			</Fail>
+		</MakeItem>
+	</Action>
+	<!--신생의 벨트(수) / 특전 아이템 관리인-->
+	<Action Name="a" NpcId="81200">
+		<MakeItem>
+			<Item Amount="1" ItemId="21070"/>
+			<Material Amount="1" ItemId="21069"/>
+		</MakeItem>
+	</Action>
+	<!--신생의 벨트(불) / 특전 아이템 관리인-->
+	<Action Name="b" NpcId="81200">
+		<MakeItem>
+			<Item Amount="1" ItemId="21072"/>
+			<Material Amount="1" ItemId="21069"/>
+		</MakeItem>
+	</Action>
+	<!--신생의 벨트(풍) / 특전 아이템 관리인-->
+	<Action Name="c" NpcId="81200">
+		<MakeItem>
+			<Item Amount="1" ItemId="21071"/>
+			<Material Amount="1" ItemId="21069"/>
+		</MakeItem>
+	</Action>
+	<!--신생의 벨트(지) / 특전 아이템 관리인-->
+	<Action Name="d" NpcId="81200">
+		<MakeItem>
+			<Item Amount="1" ItemId="21073"/>
+			<Material Amount="1" ItemId="21069"/>
+		</MakeItem>
+	</Action>
+	<!--친목의 귀 링(AC1-HP20) / 특전 아이템 관리인-->
+	<Action Name="e" NpcId="81200">
+		<MakeItem>
+			<Item Amount="1" ItemId="21075"/>
+			<Material Amount="1" ItemId="21074"/>
+		</MakeItem>
+	</Action>
+	<!--친목의 귀 링(AC1-MP10) / 특전 아이템 관리인-->
+	<Action Name="f" NpcId="81200">
+		<MakeItem>
+			<Item Amount="1" ItemId="21076"/>
+			<Material Amount="1" ItemId="21074"/>
+		</MakeItem>
+	</Action>
+	<!--친목의 귀 링(AC1-HP10-MP5) / 특전 아이템 관리인-->
+	<Action Name="g" NpcId="81200">
+		<MakeItem>
+			<Item Amount="1" ItemId="21077"/>
+			<Material Amount="1" ItemId="21074"/>
+		</MakeItem>
+	</Action>
+	<!--친목의 귀 링(MR2-HP20) / 특전 아이템 관리인-->
+	<Action Name="h" NpcId="81200">
+		<MakeItem>
+			<Item Amount="1" ItemId="21078"/>
+			<Material Amount="1" ItemId="21074"/>
+		</MakeItem>
+	</Action>
+	<!--친목의 귀 링(MR2-MP10) / 특전 아이템 관리인-->
+	<Action Name="i" NpcId="81200">
+		<MakeItem>
+			<Item Amount="1" ItemId="21079"/>
+			<Material Amount="1" ItemId="21074"/>
+		</MakeItem>
+	</Action>
+	<!--친목의 귀 링(MR2-HP10-MP5) / 특전 아이템 관리인-->
+	<Action Name="j" NpcId="81200">
+		<MakeItem>
+			<Item Amount="1" ItemId="21080"/>
+			<Material Amount="1" ItemId="21074"/>
+		</MakeItem>
+	</Action>
+	<!--라보르의 주머니 / 라보르-->
+	<Action Name="request bag of rabor" NpcId="70890">
+		<MakeItem AmountInputable="false">
+			<Material Amount="1" ItemId="41005"/>
+			<Item Amount="1" ItemId="41006"/>
+		</MakeItem>
+	</Action>
+	<!--진명왕의 방어용 기구 비법서 / 부관 마르베스-->
+	<Action Name="request dantes manual" NpcId="71169">
+		<MakeItem>
+			<Item Amount="1" ItemId="40966"/>
+			<Material Amount="1" ItemId="41035"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/괴물눈 스테이크 1개-->
+	<Action Name="a" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="49048"/>
+			<Material Amount="1" ItemId="41277"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/곰구이 1개-->
+	<Action Name="b" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="49048"/>
+			<Material Amount="1" ItemId="41278"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/씨호떡 1개-->
+	<Action Name="c" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="49048"/>
+			<Material Amount="1" ItemId="41279"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/개미다리 치즈구이 1개-->
+	<Action Name="d" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="49048"/>
+			<Material Amount="1" ItemId="41280"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/과일 샐러드 1개-->
+	<Action Name="e" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="49048"/>
+			<Material Amount="1" ItemId="41281"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/과일 탕수육 1개-->
+	<Action Name="f" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="49048"/>
+			<Material Amount="1" ItemId="41282"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/멧돼지 꼬치구이 1개-->
+	<Action Name="g" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="49048"/>
+			<Material Amount="1" ItemId="41283"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/버섯 스프 1개-->
+	<Action Name="h" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="49048"/>
+			<Material Amount="1" ItemId="41284"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/괴물눈 스테이크 10개-->
+	<Action Name="i" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="49048"/>
+			<Material Amount="10" ItemId="41277"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/곰구이 10개-->
+	<Action Name="j" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="49048"/>
+			<Material Amount="10" ItemId="41278"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/씨호떡 10개-->
+	<Action Name="k" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="49048"/>
+			<Material Amount="10" ItemId="41279"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/개미다리 치즈구이 10개-->
+	<Action Name="l" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="49048"/>
+			<Material Amount="10" ItemId="41280"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/과일 샐러드 10개-->
+	<Action Name="m" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="49048"/>
+			<Material Amount="10" ItemId="41281"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/과일 탕수육 10개-->
+	<Action Name="n" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="49048"/>
+			<Material Amount="10" ItemId="41282"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/멧돼지 꼬치구이 10개-->
+	<Action Name="o" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="49048"/>
+			<Material Amount="10" ItemId="41283"/>
+		</MakeItem>
+	</Action>
+	<!--모듬 양념 소스/버섯 스프 10개-->
+	<Action Name="p" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="49048"/>
+			<Material Amount="10" ItemId="41284"/>
+		</MakeItem>
+	</Action>
+	<!--허브/캐비어 카나페 1개-->
+	<Action Name="s" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="210039"/>
+			<Material Amount="1" ItemId="49049"/>
+		</MakeItem>
+	</Action>
+	<!--허브/악어 스테이크 1개-->
+	<Action Name="t" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="210039"/>
+			<Material Amount="1" ItemId="49050"/>
+		</MakeItem>
+	</Action>
+	<!--허브/터틀 드래곤 과자 1개-->
+	<Action Name="u" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="210039"/>
+			<Material Amount="1" ItemId="49051"/>
+		</MakeItem>
+	</Action>
+	<!--허브/키위 패롯 구이 1개-->
+	<Action Name="v" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="210039"/>
+			<Material Amount="1" ItemId="49052"/>
+		</MakeItem>
+	</Action>
+	<!--허브/스콜피온 구이 1개-->
+	<Action Name="w" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="210039"/>
+			<Material Amount="1" ItemId="49053"/>
+		</MakeItem>
+	</Action>
+	<!--허브/일렉카둠 스튜 1개-->
+	<Action Name="x" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="210039"/>
+			<Material Amount="1" ItemId="49054"/>
+		</MakeItem>
+	</Action>
+	<!--허브/거미다리꼬치구이 1개-->
+	<Action Name="y" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="210039"/>
+			<Material Amount="1" ItemId="49055"/>
+		</MakeItem>
+	</Action>
+	<!--허브/크랩살스프 1개-->
+	<Action Name="z" NpcId="80091">
+		<MakeItem>
+			<Item Amount="1" ItemId="210039"/>
+			<Material Amount="1" ItemId="49056"/>
+		</MakeItem>
+	</Action>
+	<!--허브/캐비어 카나페 10개-->
+	<Action Name="C" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="210039"/>
+			<Material Amount="10" ItemId="49049"/>
+		</MakeItem>
+	</Action>
+	<!--허브/악어 스테이크 10개-->
+	<Action Name="D" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="210039"/>
+			<Material Amount="10" ItemId="49050"/>
+		</MakeItem>
+	</Action>
+	<!--허브/터틀 드래곤 과자 10개-->
+	<Action Name="E" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="210039"/>
+			<Material Amount="10" ItemId="49051"/>
+		</MakeItem>
+	</Action>
+	<!--허브/키위 패롯 구이 10개-->
+	<Action Name="F" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="210039"/>
+			<Material Amount="10" ItemId="49052"/>
+		</MakeItem>
+	</Action>
+	<!--허브/스콜피온 구이 10개-->
+	<Action Name="G" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="210039"/>
+			<Material Amount="10" ItemId="49053"/>
+		</MakeItem>
+	</Action>
+	<!--허브/일렉카둠 스튜 10개-->
+	<Action Name="H" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="210039"/>
+			<Material Amount="10" ItemId="49054"/>
+		</MakeItem>
+	</Action>
+	<!--허브/거미다리꼬치구이 10개-->
+	<Action Name="I" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="210039"/>
+			<Material Amount="10" ItemId="49055"/>
+		</MakeItem>
+	</Action>
+	<!--허브/크랩살스프 10개-->
+	<Action Name="J" NpcId="80091">
+		<MakeItem>
+			<Item Amount="10" ItemId="210039"/>
+			<Material Amount="10" ItemId="49056"/>
+		</MakeItem>
+	</Action>
+	<!-- 반지 세공사 레스아 -->
+	<Action Name="1" NpcId="5065">
+		<MakeItem>
+		<Item Amount="1" ItemId="20449"/> <!-- 군왕의 화령반지 -->
+		    <Material Amount="1" ItemId="20304"/>
+			<Material Amount="1" ItemId="30131"/>
+			<Material Amount="20000" ItemId="41246"/>
+			<Succeed>
+				<ShowHtml HtmlId="lesa2"/>
+			</Succeed>
+			<Fail>
+				<ShowHtml HtmlId="lesa3"/>
+			</Fail>
+		</MakeItem>
+	</Action>
+	<Action Name="2" NpcId="5065">
+		<MakeItem>
+		<Item Amount="1" ItemId="20448"/> <!-- 군왕의 수령반지 -->
+		    <Material Amount="1" ItemId="20285"/>
+			<Material Amount="1" ItemId="30132"/>
+			<Material Amount="20000" ItemId="41246"/>
+			<Succeed>
+				<ShowHtml HtmlId="lesa2"/>
+			</Succeed>
+			<Fail>
+				<ShowHtml HtmlId="lesa3"/>
+			</Fail>
+		</MakeItem>
+	</Action>
+	<Action Name="3" NpcId="5065">
+		<MakeItem>
+		<Item Amount="1" ItemId="20447"/> <!-- 군왕의 지령반지 -->
+		    <Material Amount="1" ItemId="20300"/>
+			<Material Amount="1" ItemId="30133"/>
+			<Material Amount="20000" ItemId="41246"/>
+			<Succeed>
+				<ShowHtml HtmlId="lesa2"/>
+			</Succeed>
+			<Fail>
+				<ShowHtml HtmlId="lesa3"/>
+			</Fail>
+		</MakeItem>
+	</Action>
+	<Action Name="4" NpcId="5065">
+		<MakeItem>
+		<Item Amount="1" ItemId="20450"/> <!-- 군왕의 풍령반지 -->
+		    <Material Amount="1" ItemId="20302"/>
+			<Material Amount="1" ItemId="30134"/>
+			<Material Amount="20000" ItemId="41246"/>
+			<Succeed>
+				<ShowHtml HtmlId="lesa2"/>
+			</Succeed>
+			<Fail>
+				<ShowHtml HtmlId="lesa3"/>
+			</Fail>
+		</MakeItem>
+	</Action>
+</NpcActionList>

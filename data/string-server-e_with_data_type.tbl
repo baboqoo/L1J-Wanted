@@ -1,0 +1,126 @@
+\fYAdded \fV{0}%d \fYminutes of time for the PSS. You have a total of \fV{1}%d \fYminutes to use
+Quest Information for {0}%s
+{0}%s has completed quest number {1}%d.
+All quests for {0}%s completed.
+{0}%s's quest has been reset.
+{0}%s is not running.
+{0}%s has been terminated.
+{0}%s is already running.
+Cannot create {0}%s handler.
+{0}%s will start in {1}%d minutes.
+Client version: {0}%d, connected LinBin version: {1}%d
+Re-running command {0}%s.
+{0}%s has declined the friend request.
+{0}%s has been added as a friend.
+Friend request sent to {0}%s.
+\aHPolymorph name >> {0}%s Polymorph number >> {1}%d
+[{0}%s] Dungeon usage time has been reset.
+Character {0}%s is not currently connected to the Aden World.
+You can discard from level {0}%d and above.
+You can use the item when you reach level {0}%d or higher.
+You can use the item only when you are below level {0}%d.
+You can use it after {0}%d seconds.
+{0}%s is not a Prince or Princess Guardian Knight.
+\fY{0}%s logged in. \fVIP: {1}%s Account:{2}%s
+You can use it after {0}%s seconds.
+Adena ({0}%d) obtained: {1}%s ({2}%s)
+Survival Cry: Available after {0}%d minutes {1}%d seconds.
+Rank: Appointed as {0}%s.
+{0}%s's rank has been changed to {1}%s.
+Players with a level above {0}%d cannot use the shop without a clan.
+{0}%s's shop exceeds the maximum purchase quantity ({1}%d).
+Players below level {0}%d cannot use this.
+Trade: You can only trade items from level {0}%d and above.
+Trade: You can only trade items when the other player is level {0}%d and above.
+War Declaration available from level {0}%d.
+War Declaration is possible if there are {0}%d or more clan members online.
+Available from level {0}%d and above.
+Insufficient level {0}%d Wild Enchant. (Required Enchant: {1}%d)
+Crafting failed: Number: {0}%d. Please contact the administrator!
+\aHPolymorph name >> {0}%s
+Cannot create a clan for levels below {0}%d.
+Unable to create a clan: Incorrect characters or symbols included. ({0}%s)
+New protective clans can only be joined by players below level {0}%d.
+Level {0}%d, {1}%d percent payout.
+Attendance information for {0}%s's {1}%s has been modified.
+Attendance information for {0}%s's {1}%s [{2}%d] date has been modified.
+Character {0}%s does not exist in the world.
+{0}%s character has been motherboard banned.
+Hello, this is the administrator.\r\nYou have been restricted from using the service until {1}%s due to '{0}%s' reason.\r\nThe client will close shortly.
+The account ban registered under {0}%s has been deleted.
+There is no account ban registered under {0}%s account.
+{0}%s is not in a party state.
+Character '{0}%s' does not exist.
+A character name change request has been made for '{0}%s'.
+Please enter '{0}%s [character name]' for a character name change.
+Please enter '{0}%s [start or end]' to proceed.
+Administrator returned to [{0}%s, No. {1}%d].
+{0}%s character does not have an active session.
+{0}%s character does not have hard disk information.
+Hard disk ban applied to the character {0}%s.
+Hard disk ban associated with the account {0}%s has been removed.
+No hard disk ban found for the account {0}%s.
+To add/remove/reload, please enter: {0}%s [add/remove/reload] [character name for add/account name for remove].
+Please specify within the range of 1-{0}%d.
+Level updated for {0}%s.
+To change level, enter: {0}%s [character name] [level].
+{0}%s character does not have motherboard information.
+Motherboard ban associated with the account {0}%s has been removed.
+No motherboard ban found for the account {0}%s.
+To specify {0}%s [opcode] [type].
+{0}%s character is not a normal user.
+{0}%s character does not have process information.
+Please enter {0}%s [character].
+Please enter {0}%s [count].
+Team Number: {0}%d
+The fortress '{0}%s' is already in the middle of a war.
+The fortress '{0}%s' is already closed.
+Please enter {0}%s [start/stop] [fortress name] [waiting minutes].
+Siege time has been changed to {0}%s.
+{0}%d minutes until the siege begins.
+The usage time of {0}%s has expired and it has been destroyed.
+[Ring of Growth] Stage {0}%d: Obtained Tam Points ({1}%d).
+Forced termination of {0}%s siege.
+[{0}%s = {1}%s Alliance]
+Acquired {0}%s ({1}%d).
+Obtained Adena ({0}%d): {1}%s ({2}%s).
+Report Notification: {0}%s (Reporter: {1}%s).
+Not a member of the {0}%s alliance.
+Completed Level ({0}%d) Quest.
+Physical Damage: [{0}%d]
+A blessing energy permeates {0}%s.
+Cannot be used as it exceeds the maximum Ainsard stats of {0}%d.
+\aDProbability [ {0}%d ], Chance [ {1}%d ]
+\fYProbability [ {0}%d ], Chance [ {1}%d ]
+Obtained experience points from rank {0}%d.
+Please wait {0}%d seconds before using.
+{0}%d seconds until available for use.
+Can be used in {0}%d minutes and {1}%d seconds.
+N Coins {0}%s won has been charged.
+Players above level {0}%d cannot join a new alliance.
+{0}%s cannot be used more than {1}%d at once.
+N Coins {0}%s won has been charged. (Coupon used)
+N Points {0}%s won has been credited. (Coupon used)
+Only those at level {0}%s or above can enter.
+Reset the {1}%s time of {0}%s.
+Changed the {1}%s of {0}%s to {2}%d.
+\aD Acquired {0}%s (ID {1}%d)
+Inflation: Added {0}%d people / Current inflation: {1}%d people
+Inflation: Reduced {0}%d people / Current inflation: {1}%d people
+{0}%s [+,-] [COUNT] input
+It cannot be used for {0}%d minutes (until {1}%d{2}%s{3}%d).
+Failed to send {0}%s to [{1}%s].
+{0}%s was sent to [{1}%s].
+{1}%d {0}%s have been deployed.
+{1}%d {0}%s have been hired.
+You have received {1}%d {0}%s. (Level {3}%d~{4}%d)
+You obtained {0}%s({1}%d).
+Deleting the character of {1}%s from the {0}%s account.
+Chat restriction on {0}%s: {1}%d minutes applied.
+You have added to your party all the user within {0}%d tiles.
+You have joined {0}%s's party.
+You have added {0}%s to your party.
+The character {0}%s's account has been released and is no longer banned.
+You can enter after {0}%s
+You have achieved {0}%dth place.
+The administrator has granted {0}%s({1}%d).

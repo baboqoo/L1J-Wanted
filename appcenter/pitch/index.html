@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- css -->
+	<link rel="stylesheet" href="/css/community.css">
+	<link rel="stylesheet" type="text/css" href="/css/nccommunity-theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/l1.board.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+.fe-svg-arrow_down_s, .fe-svg-arrow_left_s, .fe-svg-arrow_right_s, .fe-svg-arrow_up_s, .fe-svg-close_circle, .fe-svg-comment, .fe-svg-comment_reply, .fe-svg-comments, .fe-svg-like_s, .fe-svg-picture, .fe-svg-reload, .fe-svg-top, .fe-svg-vote {fill: rgba(0,0,0,.45)!important; color: rgba(0,0,0,.45)!important;}
+[class*=" board-list-"] .title .count, [class^=board-list-] .title .count {font-size: 13px; line-height: 1; color: rgba(0,0,0,.68);}
+.board-list-card .comment {display:none;}
+.board-write-btn {float: left; margin-top: 12px;}
+@media (max-width: 960px){
+	.board-write-btn {margin-left:12px;}
+}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-board">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="svg-container" style="display: none;"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Community</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div id="ncCommunityList" class="nc-community-list l1-community-free uikit-nccommunity-node">
+					<div class="board-top-utils">
+						<div id="wrapSearch" class="wrap-search">
+				        	<div id="ncCommunitySearchType" class="ui-dropdown-wrap board-search">
+								<!-- mobile -->
+								<div class="ui-dropdown ui-dropdown-elements">
+									<div class="select">
+										<select name="board-search">
+											<option value="title,contents">Title + Content</option>
+											<option value="title">Title</option>
+											<option value="writer">Writer</option>
+										</select>
+										<i class="fe-icon-arrow_down"></i>
+									</div>
+								</div>
+								<!-- pc -->
+								<div class="ui-dropdown ui-dropdown-community">
+									<div class="select">
+										<span id="search_type">Title + Content</span>
+										<input type="hidden" name="data_val" id="data_val" value="title,contents"/>
+										<i class="fe-icon-arrow_down"></i>
+									</div>
+									<ul class="option">
+										<li class="ui-dropdown-custom_items" data-textvalue="Title + Content" data-value="title,contents">Title + Content</li>
+										<li class="ui-dropdown-custom_items" data-textvalue="Title" data-value="title">Title</li>
+										<li class="ui-dropdown-custom_items" data-textvalue="Writer" data-value="writer">Writer</li>
+									</ul>
+								</div>
+								<form name="search_board_form" class="ui-input-box ui-input-box-search" onsubmit="return search_check();">
+									<input type="hidden" name="num" id="num"/>
+									<input type="hidden" name="searchType" id="searchType"/>
+					                <input type="search" id="ncCommunitySearch" class="input-board-search" name="searchText" value="" placeholder="Search Posts" required="" autocomplete="off" aria-label="Search Posts">
+					                <button class="co-btn co-btn-reset" aria-label="Cancel" type="button"><i class="fe-icon-close_circle"></i></button>
+					                <button class="co-btn co-btn-clear" aria-label="Reset search" type="button"></button>
+								</form>
+							</div>
+						</div>
+				        <div class="board-btngroup">
+							<div class="wrap-btn-type">
+								<button class="btn-type-selected list" aria-label="Select type"><svg class="fe-svg fe-svg-list"><use xlink:href="#fe-svg-list"></use></svg></button>
+								<span class="btn-type-list">
+									<button class="co-btn btn-list" aria-label="List type"><svg class="fe-svg fe-svg-list"><use xlink:href="#fe-svg-list"></use></svg></button>
+									<button class="co-btn btn-cards is-disabled" aria-label="Card Type"><svg class="fe-svg fe-svg-card"><use xlink:href="#fe-svg-card"></use></svg></button>
+								</span>
+							</div>
+							<span class="list-count-area">
+								<div id="boardSize" class="ui-dropdown-wrap board-size">
+									<!-- mobile -->
+									<div class="ui-dropdown ui-dropdown-elements">
+						          		<div class="select">
+							          		<select name="board-size">
+							          			<option data-textvalue="20 units" value="20">20 units</option>
+							          			<option data-textvalue="30 units" value="30">30 units</option>
+							          			<option data-textvalue="50 units" value="50">50 units</option>
+							          		</select>
+							          		<i class="fe-icon-arrow_down"></i>
+							          	</div>
+									</div>
+									<!-- pc -->
+									<div class="ui-dropdown ui-dropdown-community">
+										<div class="select"><span id="search_count">20 units</span><i class="fe-icon-arrow_down"></i></div>
+										<ul class="option">
+											<li class="ui-dropdown-custom_items" data-textvalue="20 units" data-value="20">20 units</li>
+											<li class="ui-dropdown-custom_items" data-textvalue="30 units" data-value="30">30 units</li>
+											<li class="ui-dropdown-custom_items" data-textvalue="50 units" data-value="50">50 units</li>
+										</ul>
+									</div>
+								</div>
+							</span>
+							<button class="co-btn btn-reload" aria-label="Refresh" onClick="refreshform();"><svg class="fe-svg fe-svg-reload"><use xlink:href="#fe-svg-reload"></use></svg></button>
+							<button class="co-btn co-btn-round btn-write" aria-label="Write" onClick="javascript:location.href='/pitch/write';" style="z-index: 111111111111;"><svg class="fe-svg fe-svg-write"><use xlink:href="#fe-svg-write"></use></svg><span>Write</span></button>
+						</div>
+			        </div>
+			        
+			        <div class="ncCommunityNoticeList board-notice"></div>
+			        
+			        <div class="ncCommunityLoader nc-community-loader"><div class="loader-circle"></div></div>
+			        <ul class="ncCommunityBoardList board-list-default"></ul>
+					<input type="hidden" name="totSize" id="totSize" value="{TOTAL_SIZE}" />
+					<input type="hidden" name="cursize" id="cursize" value="0" />
+					<div class="wrap-community-more"></div>
+			    	<a href="/pitch/write" class="co-btn co-btn-round btn-write board-write-btn">Write</a>
+			    	<div class="wrap-btn-top" style="float: right;">Back to Top<button class="co-btn-top_list" aria-label="Back to Top"></button></div>
+			    </div>
+		
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+<script src="/js/storage.js"></script>
+<script src="/js/pitch.js"></script>
+<script type="text/javascript">
+var totBoardSize	= $('#totSize').val(),
+	currBoardSize	= $('#cursize').val();
+
+var board_pitch_list_count = 20;
+var board_scrollY = 0;
+var communityInfiniteList = JSON.parse(getSession('COMMUNITY_INFINITE_LIST'));
+if (communityInfiniteList != undefined) {
+	if (communityInfiniteList.board == 'pitch') {
+		board_pitch_list_count = communityInfiniteList.list_count;
+		board_scrollY = communityInfiniteList.scroll_Y;
+		if (!board_pitch_list_count || board_pitch_list_count < 20) {
+			board_pitch_list_count = 20;
+			board_scrollY = 0;
+		}
+	}
+	removeSession('COMMUNITY_INFINITE_LIST');
+}
+var parameter = {
+	size:			currBoardSize,	// 현재 리스트 수
+	last:			board_pitch_list_count,	// 취득할 최대 수
+	search_type:	'',				// 검색 타입
+	search_text:	''				// 검색어
+};
+
+var boardRendar = function(){
+	$.ajax ({
+		type:		"post",
+		datatype:	"json",
+		url:		"/define/pitch",
+		data:		parameter,// 파라미터 전달
+		success:function(data){
+			$.each(data, function(key, element){
+				if(element.key == 'PITCH'){
+					createPitch(element.value);
+				}else if(element.key == 'TOP_PITCH'){
+					createTopPitch(element.value);
+				}
+			});
+			$('.nc-community-loader').css('display', 'none');
+			if (board_scrollY > 0) {
+				window.scrollTo(0, board_scrollY);
+			}
+		}, error: function(request, status, error){
+			console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		}
+	});
+}
+
+var createTopPitch = function(data){
+	if(data.length > 0){
+		var addhtml = '';
+		$.each(data, function(key, element){
+			addhtml += 
+	        	'<div class="board-notice-item is-new" onClick="urlform(\'' + element.rownum + '\', \'post\', \'/pitch/view\');">' +
+	        	'<span class="category">Notification</span>' +
+	        	'<a href="javascript:urlform(\'' + element.rownum + '\', \'post\', \'/pitch/view\');">' + element.title + '</a>' +
+	        	'<i class="fe-icon-new"></i><div class="info"><span class="writer"><img src="/img/lineage_writer.png" alt=""></span></div></div>';
+		});
+		$('.ncCommunityNoticeList.board-notice').html(addhtml);
+	}
+}
+
+var createPitch = function(data){
+	var addhtml = '';
+    if(data.length > 0){
+    	$.each(data,function(key,element){//리스트수만큼 반복
+			addhtml += createBoardHtml(element);
+        });
+    	$('#cursize').val(Number(currBoardSize) + Number(data.length));// 리스트수갱신
+    	$('#totSize').val(Number(totBoardSize) - Number(data.length));// 총길이 갱신
+    	if($('#totSize').val() <= 0 || (parameter.search_type != '' && parameter.search_text != '')){
+    		$('.wrap-community-more').html('');
+    	}else{
+    		$('.wrap-community-more').html('<button class="nc-comment-more" onClick="javascritp:boardMore();"><span class="txt">Show more</span></button>');
+    	}
+    }else{
+    	addhtml = '<li class="no-data"><div style="text-align: center; padding: 46px; font-size: 22px;">No data found!</div></li>';
+    	$('.wrap-community-more').html('');
+    }
+    $('.ncCommunityBoardList').html(addhtml);// html넣기
+}
+
+//새로고침 버튼
+var refreshform = function(){
+	$('#cursize').val(currBoardSize);// 리스트수 초기화
+	$('#totSize').val(totBoardSize);// 총길이 초기화
+	
+	parameter.last			= $('#search_count').html().substring(0, 2);
+	parameter.search_type	= '';
+	parameter.search_text	= '';
+
+	board_pitch_list_count = 20;
+	board_scrollY = 0;
+
+	boardRendar();
+}
+
+//검색
+var search_check = function(){
+	var f = document.search_board_form;
+	if(!f.searchText.value){// 검색어 입력 체크
+		return false;
+	}
+	var search_type = $('#data_val').val();// 검색타입
+	$('#cursize').val(currBoardSize);// 리스트수 초기화
+	$('#totSize').val(totBoardSize);// 총길이 초기화
+		
+	parameter.last			= $('#search_count').html().substring(0, 2);
+	parameter.search_type	= search_type;
+	parameter.search_text	= f.searchText.value;
+	boardRendar();
+	return false;
+}
+
+//최초 페이지 로드 후 렌더링
+$(document).ready(function(){
+	boardRendar();
+});
+</script>
+	
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+</body>
+</html>

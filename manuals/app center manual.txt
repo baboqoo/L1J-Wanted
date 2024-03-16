@@ -1,0 +1,9 @@
+App Center Manaul
+
+cnb.xml		Top menu setting (processed in conjunction with app_page_info)
+
+The image is in the img folder, and you can extract it with the tool during live update and put the image that is added to the item folder.
+
+Uploaded images are registered by date in the upload folder, and you can check where they are used with the PROMO_1_ file name.
+
+The editor tool uses SUMMERNOTE and creates HTML when copying and pasting by dragging when registering Powerbook.

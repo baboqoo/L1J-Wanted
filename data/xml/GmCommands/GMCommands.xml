@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GMCommands>
+	<ItemSetList>
+		<!-- +5 데스나이트 세트(정의 샘플) -->
+		<ItemSet Name="데스셋">
+			<Item Id="20010" Amount="1" Enchant="5"/>
+			<Item Id="20100" Amount="1" Enchant="5"/>
+			<Item Id="20166" Amount="1" Enchant="5"/>
+			<Item Id="20198" Amount="1" Enchant="5"/>
+		</ItemSet>
+		<!-- +5 커츠 세트 -->
+		<ItemSet Name="커츠셋">
+			<Item Id="20041" Amount="1" Enchant="5"/>
+			<Item Id="20150" Amount="1" Enchant="5"/>
+			<Item Id="20184" Amount="1" Enchant="5"/>
+			<Item Id="20214" Amount="1" Enchant="5"/>
+		</ItemSet>
+		<!-- +5 데몬 세트 -->
+		<ItemSet Name="데몬셋">
+			<Item Id="20009" Amount="1" Enchant="5"/>
+			<Item Id="20099" Amount="1" Enchant="5"/>
+			<Item Id="20165" Amount="1" Enchant="5"/>
+			<Item Id="20197" Amount="1" Enchant="5"/>
+		</ItemSet>
+		<!-- +5 반왕 세트 -->
+		<ItemSet Name="반왕셋">
+			<Item Id="20024" Amount="1" Enchant="5"/>
+			<Item Id="20118" Amount="1" Enchant="5"/>
+			<Item Id="20170" Amount="1" Enchant="5"/>
+			<Item Id="20203" Amount="1" Enchant="5"/>
+		</ItemSet>
+		<!-- +5 케레니스 세트 -->
+		<ItemSet Name="케레셋">
+			<Item Id="20042" Amount="1" Enchant="5"/>
+			<Item Id="20151" Amount="1" Enchant="5"/>
+			<Item Id="20185" Amount="1" Enchant="5"/>
+			<Item Id="20215" Amount="1" Enchant="5"/>
+		</ItemSet>
+		<!-- +5 군왕 세트 -->
+		<ItemSet Name="군왕셋">
+			<Item Id="20057" Amount="1" Enchant="5"/>
+			<Item Id="20109" Amount="1" Enchant="7"/>
+			<Item Id="20178" Amount="1" Enchant="7"/>
+			<Item Id="20200" Amount="1" Enchant="7"/>
+		</ItemSet>
+	</ItemSetList>
+
+	<RoomList>
+		<Room Id="1" Name="운영자방" LocX="32737" LocY="32796" MapId="99"/>
+		<Room Id="2" Name="상담소" LocX="32736" LocY="32796" MapId="16896"/>
+		<Room Id="3" Name="판도라" LocX="32638" LocY="32955" MapId="0"/>
+		<Room Id="4" Name="기란" LocX="33442" LocY="32797" MapId="4"/>
+		<Room Id="5" Name="아덴성" LocX="32895" LocY="32533" MapId="300"/>
+		<Room Id="6" Name="글루디오" LocX="32612" LocY="32734" MapId="4"/>
+		<Room Id="7" Name="오렌" LocX="34061" LocY="32276" MapId="4"/>
+		<Room Id="8" Name="버경" LocX="33515" LocY="32858" MapId="4"/>
+		<Room Id="9" Name="하늘정원" LocX="32763" LocY="32817" MapId="622"/>
+		<Room Id="10" Name="말하는섬" LocX="32580" LocY="32931" MapId="0"/>
+		<Room Id="11" Name="웰던" LocX="33705" LocY="32504" MapId="4"/>
+		<Room Id="12" Name="벗꽃" LocX="32760" LocY="32870" MapId="610"/>
+		<Room Id="13" Name="낚시" LocX="32805" LocY="32814" MapId="5490"/>
+		<Room Id="14" Name="켄트성" LocX="32736" LocY="32787" MapId="15"/>
+		<Room Id="15" Name="윈다우드성" LocX="32735" LocY="32788" MapId="29"/>
+		<Room Id="16" Name="기란성" LocX="32730" LocY="32802" MapId="52"/>
+		<Room Id="17" Name="하이네성" LocX="32572" LocY="32826" MapId="64"/>
+		<Room Id="18" Name="아덴" LocX="33966" LocY="33253" MapId="4"/>
+		<Room Id="19" Name="켄성수호탑" LocX="33168" LocY="32779" MapId="4"/>
+		<Room Id="20" Name="윈성수호탑" LocX="32623" LocY="33379" MapId="4"/>
+		<Room Id="21" Name="기란성수호탑" LocX="33630" LocY="32677" MapId="4"/>
+		<Room Id="22" Name="하이네성수호탑" LocX="33524" LocY="33394" MapId="4"/>
+		<Room Id="23" Name="아덴성수호탑" LocX="34090" LocY="33260" MapId="4"/>
+		<Room Id="24" Name="해적섬" LocX="32424" LocY="33068" MapId="440"/>
+		<Room Id="25" Name="베히모스" LocX="32800" LocY="32868" MapId="1001"/>
+		<Room Id="26" Name="실베리아" LocX="32800" LocY="32856" MapId="1000"/>
+		<Room Id="27" Name="테베사막" LocX="32630" LocY="32903" MapId="780"/>
+		<Room Id="28" Name="테베피라미드내부" LocX="32743" LocY="32799" MapId="781"/>
+		<Room Id="29" Name="테베오시리스제단" LocX="32735" LocY="32830" MapId="782"/>
+		<Room Id="30" Name="고대무덤" LocX="32772" LocY="32861" MapId="400"/>
+		<Room Id="31" Name="고라스" LocX="32737" LocY="32834" MapId="2004"/>
+		<Room Id="32" Name="정령의무덤" LocX="32923" LocY="32798" MapId="430"/>
+		<Room Id="33" Name="마족신전" LocX="32929" LocY="32995" MapId="410"/>
+		<Room Id="34" Name="발라카스" LocX="32723" LocY="32796" MapId="67"/>
+		<Room Id="35" Name="파푸리온" LocX="32769" LocY="32833" MapId="65"/>
+		<Room Id="36" Name="린드비오르" LocX="34035" LocY="33011" MapId="4"/>
+		<Room Id="37" Name="안타라스" LocX="32668" LocY="32867" MapId="37"/>
+		<Room Id="38" Name="오염땅" LocX="32982" LocY="32808" MapId="244"/>
+		<Room Id="39" Name="선박지상" LocX="32843" LocY="32693" MapId="550"/>
+		<Room Id="40" Name="선박심해" LocX="32781" LocY="32801" MapId="558"/>
+		<Room Id="41" Name="티칼제단" LocX="32731" LocY="32862" MapId="784"/>
+		<Room Id="42" Name="악마왕영토" LocX="32682" LocY="32892" MapId="5167"/>
+		<Room Id="43" Name="기르타스" LocX="32862" LocY="32862" MapId="537"/>
+		<Room Id="44" Name="화전민" LocX="32738" LocY="32448" MapId="4"/>
+		<Room Id="45" Name="오크성수호탑" LocX="32797" LocY="32285" MapId="4"/>
+		<Room Id="46" Name="요정숲" LocX="33051" LocY="32340" MapId="4"/>
+		<Room Id="47" Name="서버지기1" LocX="32738" LocY="32872" MapId="2236"/>
+		<Room Id="48" Name="서버지기2" LocX="32802" LocY="32824" MapId="13052"/>
+		<Room Id="49" Name="서버지기3" LocX="32735" LocY="32864" MapId="13053"/>
+		<Room Id="50" Name="서버지기4" LocX="32545" LocY="32866" MapId="12150"/>
+		<Room Id="51" Name="서버지기5" LocX="33537" LocY="32703" MapId="725"/>
+		<Room Id="52" Name="서버지기6" LocX="32865" LocY="32638" MapId="511"/>
+		<Room Id="53" Name="노래하는섬" LocX="32782" LocY="32756" MapId="68"/>
+		<Room Id="54" Name="숨겨진계곡" LocX="32690" LocY="32855" MapId="69"/>
+		<Room Id="55" Name="윈다우드" LocX="32630" LocY="33180" MapId="4"/>
+		<Room Id="56" Name="켄트" LocX="33050" LocY="32780" MapId="4"/>
+		<Room Id="57" Name="하이네" LocX="33607" LocY="33239" MapId="4"/>
+		<Room Id="58" Name="은기사" LocX="33080" LocY="33392" MapId="4"/>   
+		<Room Id="59" Name="침묵의동굴" LocX="32855" LocY="32900" MapId="304"/>
+		<Room Id="60" Name="군터" LocX="32669" LocY="32790" MapId="3"/>
+		<Room Id="61" Name="짚시" LocX="33978" LocY="32927" MapId="4"/>
+		<Room Id="62" Name="블루디카" LocX="32741" LocY="32797" MapId="305"/>
+		<Room Id="63" Name="디가르뎅" LocX="32766" LocY="32797" MapId="77"/>
+		<Room Id="64" Name="오아시스" LocX="32861" LocY="33255" MapId="4"/>
+		<Room Id="65" Name="지저호수" LocX="32803" LocY="33048" MapId="420"/>
+		<Room Id="66" Name="지옥" LocX="32701" LocY="32777" MapId="666"/>
+		
+		<Room Id="12852" Name="지배의탑1" LocX="32814" LocY="32800" MapId="12852"/>
+		<Room Id="12853" Name="지배의탑2" LocX="32802" LocY="32797" MapId="12853"/>
+		<Room Id="12854" Name="지배의탑3" LocX="32802" LocY="32794" MapId="12854"/>
+		<Room Id="12855" Name="지배의탑4" LocX="32673" LocY="32862" MapId="12855"/>
+		<Room Id="12856" Name="지배의탑5" LocX="32670" LocY="32867" MapId="12856"/>
+		<Room Id="12857" Name="지배의탑6" LocX="32672" LocY="32853" MapId="12857"/>
+		<Room Id="12858" Name="지배의탑7" LocX="32673" LocY="32852" MapId="12858"/>
+		<Room Id="12859" Name="지배의탑8" LocX="32669" LocY="32843" MapId="12859"/>
+		<Room Id="12860" Name="지배의탑9" LocX="32678" LocY="32851" MapId="12860"/>
+		<Room Id="12861" Name="지배의탑10" LocX="32804" LocY="32784" MapId="12861"/>
+		<Room Id="12862" Name="지배의탑11" LocX="32712" LocY="32913" MapId="12862"/>
+		
+		<Room Id="15482" Name="월드기란" LocX="33640" LocY="32782" MapId="15482"/>
+		<Room Id="15483" Name="월드오크" LocX="32796" LocY="32402" MapId="15483"/>
+		<Room Id="15484" Name="월드하이네" LocX="32759" LocY="32700" MapId="15484"/>
+		<Room Id="15492" Name="월드기란내성" LocX="32729" LocY="32802" MapId="15492"/>
+		<Room Id="15493" Name="월드오크내성" LocX="32798" LocY="32863" MapId="15493"/>
+		<Room Id="15494" Name="월드하이네내성" LocX="32572" LocY="32825" MapId="15494"/>
+	</RoomList>
+</GMCommands>

@@ -1,0 +1,1417 @@
+.clonewar [Start/End/Reload] [1: Giran Prison 1st floor, 2: Giran Prison 2nd floor, 5490: Fishing] [1: Red Knights, 2: Black Knights, 3: Golden Star]
+Mirror War AI has been reloaded.
+Mirror War AI is currently disabled.
+Mirror war AI is already running.
+Mirror War AI is not running.
+The selected clan for Mirror War AI is already in use.
+Mirror War AI can not be reloaded becouse is in use.
+Fishing AI has been started.
+Fishing AI has been terminated.
+!
+of
+Somebody has caught
+Siege has begun! Don't let your guard down, everyone!
+World War will begin.
+It can be used in the safety zone.
+There are no characters saved in the marble.
+There are not enough character slots.
+The character name saved in the marble cannot be retrieved.
+You cannot use it on yourself.
+Only characters level 70 or higher can be saved.
+The name of the character to be saved cannot be retrieved.
+Please enter .charactertrade [1: Character information \ 2: Inventory \ 3: Skill] [Character Name]
+Character information not found.
+Entry not allowed if you possess the Dragon Hunter's Mark.
+Please enter .hottimepush [Character Name/All] [Item] [Quantity] [Enchant]
+No target found.
+The item cannot be found.
+The item with the specified ID does not exist
+The entrance to the ant cave has been opened.
+The raid ends in 5 minutes.
+The number of people entering the instance dungeon is too high.
+ minutes until you will be forcibly moved to the village.
+Meet Svin behind the wall.
+The battle zone has begun.
+(Character Slot Expansion)
+\\fU* Items have been awarded to the winning team *
+\\aH............The battle zone will begin in 3 minutes. ............
+[Notice] Battle zone has opened.
+Tip: Each team is randomly assigned without considering server differences. Confirm your affiliation through the Knight's sentence.
+Please enter .controlbattle [Start/End] [Heine/Windawood] [Wait: minutes]
+Castle Name [Heine/Windawood]
+Wait time: 1~30 (Unit: minutes)
+After a moment, the
+
+was dropped to someone in Aden World.
+Someone in Aden World has picked up
+.
+(Connected)
+The sea dungeon has been reset.
+Full Moon Treasure Island is already running.
+Full Moon's Treasure Island has already ended.
+You cannot reload becouse Full Moon Treasure is already running.
+Treasure information has been reloaded.
+Please enter .treasureisland [start/end/reload]
+After a while, you will be taken to the village.
+\\aD LFC victory reward:
+) obtained
+[1. Status], [2. Reload], [3. Force quit]
+Please enter .LFC 1\n
+[1. Remaining space], [2. Open map], [3. Detailed information]\n
+[Map ID]
+Please enter .LFC 2\n
+[1. Config][2. Type][3. Reward]\n
+[4. All]
+Please enter .LFC 3 [Map ID]
+Weekly quests have been updated. When you restart your character, you will receive a new quest list.
+Weekly quests have been updated. Reconnect to receive benefits.
+A bug has been detected.
+\\fYThe user [
+] has been reported for exploiting bugs!!
+A draw between the 'Blue' and 'Red' teams in the Battle Zone.
+\\fW* The Battle Zone has ended *.
+Hello, this is a message from Lineage Warrior. There will be a server shutdown for server maintenance shortly. Please log out from a safe location. Thank you.
+The server will shut down in
+seconds. Please log out from a safe location.
+minutes. Please log out from a safe location.
+The input time limit has been exceeded.
+Please use the town bulletin board for selling Dragon Keys.
+You don't have a Dragon Key.
+Post registration has been completed.
+Victory for the 'Red' team in the Battle Zone.
+You cannot summon yourself.
+The user has canceled the application.
+The user is currently offline.
+Battle Zone entry closing in 1 minute.
+Battle Zone entry closing in 10 seconds.
+Battle Zone entry has been closed.
+Victory for the 'Blue' team in the Battle Zone.
+(Accuracy)
+Obtained Clan Contribution Points (10,000).
+ castle.
+Obtained Adena (500,000)
+ obtained.
+Obtained Adena (5,000,000)
+Obtained Berries (10,000)
+Obtained Berries (30,000)
+Time is over. See you next time.
+Arrived earlier than expected.
+ Clan has conquered
+Ready to use in
+Sending failed because the title of the letter was too long.
+The letter was too long to be sent.
+seconds.
+You will be moved outside of the Haunted House in
+seconds.
+minutes
+Move outside in a few seconds. 
+Percentage
+Success
+Failure
+The game will start in
+The item name cannot be searched. Please enter your search term again.
+ has been summoned.
+Pet racing will start soon.
+Cannot be selected for levels below 80.
+You can only select one.
+Deaths
+Unable to hire more due to lack of charisma.
+Number currently employed:
+, desired number:
+Please enter .
+DUMMY
+ : No soldiers have been hired.
+An unexpected error has occurred. Please report this situation so it can be fixed.
+ has a total of 
+ mercenaries deployed.
+DUMMY
+Online Members:
+is currently using the warehouse.
+Kills
+Not available in Immune to Harm state.
+Castle's inner courtyard has been created on the battlefield.
+, enter through the portal and defeat the final boss.
+has appeared.
+Total Members:
+
+The stat values to be applied are not normal.
+has emerged as the ultimate victor!
+A portal leading to 
+DUMMY
+ has captured the southern buff tower. The sealed magic is released.
+ has captured the northern buff tower. The sealed magic is released.
+ empowers allies with blessings and summons a powerful area-of-effect spell on the enemy within the occupied area using the eastern buff tower's power.
+has captured the Heine Ward Tower!
+DUMMY
+The target is not on the same server.
+You can't be the target
+The number of characters in the account name you entered is too short.\nPlease enter at least 4 characters.
+The number of characters in the password you entered is too short.\nPlease enter at least 4 characters.
+The number of digits in the password you entered is too long.\nPlease enter a maximum of 12 characters.
+Your password contains characters that are not allowed.
+ [account name] [password]
+The account already exists.
+The account creation has been completed successfully.
+'s account has been seized.
+A character with that name does not exist in the Aden world.
+ [character name]
+ [account name]
+\\aECharacter:
+) Clan:
+connect[
+] level
+] class
+\\aF0Monarch 1 Knight 2 Elf 3 Mage 4 Dark Elf 5 Dragon Knight 6 Illusionist 7 Warrior
+ [action id]
+ gains the ability to bypass the enemy's damage reduction with the western buff tower's power.
+ [level] [percent]
+Command error
+ adenas have been added to your inventory.
+ [amount]
+This is a character name that already exists.
+DUMMY
+DUMMY
+This item does not exist.
+ [item ID] [number of enchantments]
+You received
+ as a present.
+\\fY You can find gifts in the additional item warehouse.
+The Arnold event is currently underway.
+Arnold event is not in progress.
+The Arnold event has been forced to end.
+ [Start/End]
+\\aGNotification:\\aA The Ant Queen's hiding place is already open.
+\\aGNotification:\\aA The Ant Queen's hiding place has already ended.
+The Ant Queen's hiding place has been opened.
+The GM opened the Ant Queen's hiding place.
+This attendance check group does not exist.
+DUMMY
+ has captured the eastern buff tower. The sealed magic is released.
+ empowers enemies with a strong debuff effect using the eastern buff tower's power.
+ has captured the western buff tower. The sealed magic is released.
+ [username/all] [group number] [date (0: all)] [0,1,2]
+Invalid IP.
+Approved IP has been added.
+Approved IP has been deleted.
+Approved IP has been reloaded.
+.vpn [add/delete/reload] [ip]
+ [add/remove/reload] [IP]
+Auto loot settings have been reloaded.
+The item cannot be found.
+It is already on the auto loot list.
+Added to auto loot item.
+There is no such item in the auto loot section.
+It has been deleted from the auto loot section.
+ [reload]
+ [Add|Delete] [itemid|name]
+ [search] [name]
+dominates!
+Registration has failed.
+Lord will begin.
+In 30 seconds, the battle against
+The battle will start soon.
+The buff tower has been rebuilt!
+Deletion has failed.
+Occupation Battle has started! 
+BanAccountTable reload completed
+In about 1 minute, the battle against 
+was expelled.
+Battle Zone is already running.
+Battle Zone has been launched.
+The battle zone has already ended.
+The battle zone has ended.
+\\aGNotification:\\aA The Dark Dragon's Dungeon is already open.
+\\aGNotification:\\aA The Dark Dragon's Dungeon is already closed.
+This is not a buff skill.
+ [all/me] [skill ID] [number]
+ [1: Pull-up 2: Blessing 3: Raw Horse 4: Black Snake 5: Coma]
+Buff icon:
+ th.
+ [id] [amount]
+ [Screen 1~4] (1: Pull-up 2: Blessing 3: Raw horse 4: Black death 5: Coma)
+Soon
+ [List/PM/Equipment/Party] [PM/Equipment/Party:Character Name]
+Skill number:
+ [castgfx]
+There is no Clan with this name.
+ Clan information has changed.
+ [Clan name] [Surname number]
+Kent 1, Orc 2, Windawood 3, Giran 4, Heine 5, Weldern 6, Aden 7, Diad 8
+ This character exists in the world.
+ The character's coordinates have been changed.
+ [character id]
+DUMMY
+The number of digits in the password you entered is too short.
+Please enter at least 4 characters.
+The number of digits in the password you entered is too long.
+Please enter a maximum of 12 characters.
+Your password contains characters that are not allowed.
+There is no character with that name.
+ [character name] [password]
+Change password account: [
+] password: [
+ Password change completed.
+Password change character: [
+The character password has been changed. (Not connected)
+DUMMY
+The number of digits in the quiz you entered is too short.
+The number of digits in the quiz you entered is too long.
+DUMMY
+Quiz change account: [
+] Quiz: [
+ Your quiz changes have been completed.
+Quiz change character: [
+The character quiz has been changed. (Not connected)
+ [0~3 (snow)] or [16~19 (rain)]
+The user's name does not exist in the DB.
+The session will end in 5 minutes.
+The session will end in 4 minutes.
+The character has been successfully deleted.
+DUMMY
+In
+minutes, the
+The character name is inappropriate.\r\nA restart will be conducted shortly for a character name change.
+Medals have been awarded to the knights within the occupied area.
+The session will end in 3 minutes.
+The session will end in 2 minutes.
+The character is not connected.
+ [character name] [minutes].
+ character chat restricted for
+ minutes (Reason:
+ [character name] [minutes] [reason for debt]
+Disable some chats.
+Activates all chats.
+The session will end in 1 minute.
+The chat restriction for the mentioned character has been lifted.
+The character cannot be found.
+The session will end in 30 seconds.
+Gran Kain '
+\\fW** Check:
+ Character:
+\\fW** total
+The suggested item has been found **
+] Character search error **
+] Account search error **
+ [Character Name] [Inventory/Warehouse/Elf Warehouse/Equipment/Account]
+Character Name:
+\nAccount:
+\nPassword:
+\nQuiz:
+\nRecent access:
+\nConnection IP:
+\nCreated IP:
+DUMMY
+ Clan does not exist.
+ [Clan name]
+[Contribution]
+ were given to all clans.
+This is a non-existent Clan.
+This is a Clan that cannot provide contributions.
+ were given to the Clan.
+ [All/Clan Name] [Amount]
+There is no such user.
+There is no such clan.
+You will be removed from the group because you are part of a Clan.
+ [character name] [clan name]
+DUMMY
+It cannot be used on this map.
+Starting the Clan mark designation.
+The Clan mark notation ends.
+ Einhasad points
+Doll cleaning count - Dolls without master cleaned: 
+ Dolls not cleaned becouse active master: 
+\\aGNotification:\\aA The Rift Insolence Tower is already open.
+\\aGNotification:\\aA The Rift Insolence Tower is already closed.
+ occupation battle will begin.
+\\aA*[+
+) [Created]*
+ [Name] [Quantity] [Enchant] [Attribute 1~20] [Confirmation 0~1] [Doll Potential 1~141]
+There isn't any set with that name.
+ [set name]
+The GM has imposed restrictions on actions.
+The actions of all users have been restricted.\r\nblock_teleport:
+The user is not currently connected.
+''s actions have been restricted.\r\nblock_teleport:
+ [character name/all] [block_teleport] [block_equip] [block_invis] [block_attack] [block_spell] [block_item]\n[0: false, 1: true]
+Item number:
+, starting number:
+, end number:
+ [Item Number] [Start Number] and [End Number]
+ [Character Name] as [Basic/Skill/Inven].
+There is no inventory information.
+There is no skill information.
+\\aGNotification:\\aA The Demon King's territory is already open.
+\\aGNotification:\\aA The Demon King's territory is already closed.
+ [win/ticket/auto]
+ fighting dog was selected as the winner.
+ [win] [odd/even]
+It's already turned on.
+The status of dog fighting tickets is printed.
+It's already turned off.
+The status of dog fighting tickets has been closed.
+ [ticket] [on/off]
+The automatic win system for dog fighting has begun (depending on the number of tickets sold).
+The automatic win system for dog fighting has ended (no manipulation).
+ [auto] [On/Off].
+ [manipulation/probability/win/ticket]
+The Doll Race normal ratio has been set to: 
+.
+The minimum ratio cannot be higher than the maximum ratio.
+The Doll Race minimum ratio has been set to:
+.
+The Doll Race good ratio has been set to:
+The maximum ratio cannot be lower than the minimum ratio.
+The Doll Race maximum ratio has been set to:
+ [manipulation] [type: 0=deception,1=min_speed,2=down,3=max_speed] [good/average/bad]
+Probability: Normal
+Probability: Gura
+Probability: Bad
+Please enter a value between 1 and 5.
+ lane's doll was declared the winner.
+ [win] [1~5]
+The doll race ticket status is printed.
+The doll race ticket status is closed.
+\\aGNotification:\\aA The Domination Tower is already opened.
+' points (Warning: 1st stage will be given upon accumulating '
+\\aGNotification:\\aA The Domination Tower is already closed.
+seconds.
+The Domination Tower opening event is currently underway.
+The Domination Tower opening event has been launched.
+The Domination Tower opening event is not in progress.
+The Domination Tower opening event has been canceled.
+The dump details have been saved.
+ is not online.
+The
+ time has been reset by the GM (Game Master).
+The time has been reset.
+ [character name] [dungeon].\r\nDungeon: normal/pcroom/ti/battleship
+The GM has paid Einhasad daily bonus.
+Einhasad daily bonuses were paid to all connected users.
+ received the Einhasad daily bonus.
+The character is not connected.
+ [all/character name]
+ has received
+This user does not exist.
+ [character name] [amount]
+Enchant production on
+Enchant production off
+The NPC is not found.
+' points)
+ [NPCID] [Time (minutes)]
+) minutes.
+Gran Kain is in '6th level' state.\n'
+Quit Fake PC.
+DUMMY
+ is a character name that does not exist.
+is not an unmanned character.
+Fake PC started.
+No command available.
+You cannot register yourself.
+ registered.
+Current registration command:
+There are no registered commands.
+ command executed.
+ Setting [command name]
+ view |
+ [argument]
+Cooking icon:
+\\aGNotification:\\aA The Forgotten Island is already open.
+\\aGNotification:\\aA The Forgotten Island is already closed.
+ Clan has obtained
+ house.
+Received
+ from the Game Master.
+: You do not belong to a Clan.
+ [clan member to grant] [house number].
+You cannot search for characters that are not online.
+Character currently connected [
+] was exilled.
+DUMMY
+GM settings =
+A survey is currently in progress.
+Ongoing survey details:
+ [survey content]
+seconds.
+The monsters will appear in
+minute.
+ [place name] (Refer to GMCommands.xml for place names)
+This is a user ID that is not currently connected.
+' points\nEnd time: '
+Golden Star Blessing
+% has been applied.
+ [numerical value]
+The Gran Kaine system is already in operation.
+The Gran Kaine system has been activated.
+The Gran Kaine system is already disabled.
+The Gran Kaine system has been disabled.
+ [on/off]
+The Clan dungeon usage time has
+st monsters group will appear in
+nd monsters group will appear in
+rd monsters group will appear in
+HarddriveTable reload completed
+minutes remaining.
+seconds remaining.
+ [daily/monthly]
+Gran Kain is in '
+ stage' status.\n'
+You are now invisible
+Invisibility has been canceled.
+ was expelled.
+' points (Warning: '
+' stage is granted when '
+ [character name] [number]
+There is no content with that number.
+There is no title or content registered for the number.
+ player does not exist.
+ will receive a letter from you.
+ Error!
+Return. You will be forced to return in 
+seconds.
+ [character name] [level]
+Item ID does not exist.
+ N Coins to all connected users.
+ [minimum level] [maximum level] [item ID] [enchant] [quantity]
+4th region activation has 10 seconds left.
+You've defeated all the villains.
+MatherBoardTable reload completed
+3rd region activation has 10 seconds left.
+Memory information after using garbage collection
+Memory used:
+Remaining memory:
+Maximum available memory:
+\\aGWarning: Memory will be reset in a few minutes
+\\aGNotification: Memory cleanup has been completed.
+Yoy have killed
+ monsters.
+Moved to coordinates
+.
+ [X coordinate] [Y coordinate] [Map ID]
+The administrator has granted you
+ N Coins.
+Granted
+ N Coins have been reset.
+ has received
+ [All/Character Name/Reset] [Number/Character Name]
+ [mob/npc] [spawn/delete]
+All monsters have been placed.
+All monsters have been deleted.
+All NCs have been deployed.
+All NPCs have been deleted.
+Already running.
+It was not running.
+DUMMY
+DUMMY
+2nd region activation has 10 seconds left.
+Item ID does not exist.
+(
+) has been sent as a gift.
+Sorry, you do not have the necessary permissions to perform this action.
+ [account name] [item ID] [enchant] [quantity] (if you use * for the account name, it will apply to all accounts)
+' points are accumulated)\nEnd time: '
+The final battle begins! The time limit is 5 minutes.
+You have added all user on the screen to a party.
+ does not have a party.
+The second army will be deployed in 2 minutes.
+ was forced to join your party.
+All the the currently connected users were forced to join your party.
+There is no party to disolve.
+Removed the party invitation.
+ [nearby, screen, all, join (username)]
+ [invite (username), forceinvite, removeinvitation]
+You have been summoned to the Game Master.
+Not a party member.
+There is no such character.
+PvP will be available after this moment.
+PvP will be unavailable for a certain period starting now.
+Player Support System is already operational.
+Play Support System has been activated.
+Play Support System is no longer running.
+Play Support System has been stopped.
+The GM has terminated the Play Support System.
+ [character name] [graphic ID]
+The third army will be deployed in 2 minutes.
+ has been permanently expelled.
+This character doesn't exist.
+The item was not found.
+\\aD[Gift]
+ acquired
+) acquired
+\\aD[Gift] +
+) acquired
+ acquired
+The item with the specified ID does not exist.
+ [character name] [item id] [quantity] [enchantment] [attribute] [seal 129]
+There is no such character with this name.
+The final battle will start in 6 minutes.
+was moved to prison.
+You have been locked up in prison.
+It can be used in private stores.
+May luck be with the heroes' journey...
+1st region activation has 10 seconds left.
+Monsters will attack soon.
+The total Adena in all accounts is [
+].
+The second army will be deployed in 1 minute.
+at [
+] is currently online and the account warehouse Adena is [
+] The total amount of adena in the character is [
+] was expelled from a wide area.
+Ready to use in
+'s character is in personal shop mode.
+ is currently in automatic registration mode.
+\\aG Game Master has summoned \\aAyou\\aG.
+ seconds until the second army is deployed.
+Reload: The ArmorSetTable table has been reloaded.
+Reload: The SpawnTable table has been reloaded.
+Reload: The droplist table has been reloaded.
+Reload: NpcAction table has been reloaded.
+Reload: NpcActionTeleportTable table has been reloaded.
+Reload: The NpcTable table has been reloaded.
+Reload: The NpcInfoTable table has been reloaded.
+Reload: The polymorphs table has been reloaded.
+Reload: The resolvent table has been reloaded.
+Reload: The TreasureBox.xml file has been reloaded.
+Reload: The HealingPotion.xml file has been reloaded.
+Reload: The file has been reloaded in the config folder.
+Reload: The CatalystTable table has been reloaded.
+Reload: The Infinite Battle table has been reloaded.
+Reload: Exp table has been reloaded.
+Reload: Skill table has been reloaded.
+Reload: The mobskill table has been reloaded.
+Reload: The NpcShopTable table has been reloaded.
+Reload: The WeaponSkill table has been reloaded.
+Reload: The characters_levelup_item table has been reloaded.
+Reload: The banIp table has been reloaded.
+Reload: Item information has been reloaded.
+Reload: The shop table has been reloaded.
+Reload: The weapon_damege table has been reloaded.
+Reload: The clan_data table has been reloaded.
+Reload: The castle table has been reloaded.
+Reload: The spawnlist_npc_cash_shop table has been reloaded.
+Reload: npcchat table has been reloaded.
+Reload: The dungeon table has been reloaded.
+Reload: The mapids table has been reloaded.
+Reload: The MapFixKey table has been reloaded.
+Reload: The MapTypeTable table has been reloaded.
+Reload: The beginner table has been reloaded.
+Reload: The BossSpawnTable table has been reloaded.
+Reload: AdenShop table has been reloaded.
+Reload: RobotAIThread table has been reloaded.
+Reload: The AttendanceTable table has been reloaded.
+Reload: The manager_user_teleport table has been reloaded.
+Reload: The TB_LFCCOMPENSATE table has been reloaded.
+Reload: The CraftInfoLoader table has been reloaded.
+Reload: The PlaySupportTable table has been reloaded.
+Reload: BeginnerQuestTable table has been reloaded
+Reload: MagicDollInfoTable table has been reloaded
+Reload: PenaltyItemTable table has been reloaded
+Reload: ItemClickMessageTable table has been reloaded
+The ranking has been updated.
+The ranking system is not working.
+Reload: The HuntCollectTable table has been reloaded.
+Reload: The spawnlist_ruun table has been reloaded.
+Reload: ItemSelectorTable table has been reloaded
+Reload: The EnchantResultTable table has been reloaded.
+Reload: ServerExplainTable table has been reloaded
+Reload: Fishing.xml table has been reloaded
+Reload: SpellMeltTable table has been reloaded
+Reload: WarTimeTable table has been reloaded
+Reload: The ShipContentLoader table has been reloaded.
+Reload: L1CollectionLoader table has been reloaded
+Reload: L1TimeCollectionLoader table has been reloaded
+Reload: ItemBoxTable table has been reloaded
+Reload: ItemBuffTable table has been reloaded
+Reload: L1EnchantAblityLoader table has been reloaded
+Reload: L1DungeonTimerLoader table has been reloaded
+Reload: BalanceTable table has been reloaded
+Reload: EventTable table has been reloaded
+Reload: NotificationTable table has been reloaded
+Reload: SmeltingLoader table has been reloaded
+Reload: The FreePVPRegionTable table has been reloaded.
+Reload: ConnectRewardTable table has been reloaded
+Shop NPC:
+'s items have been reloaded.
+ [npc id]
+The letter has been deleted.
+ Please enter .removeletter
+Traps have been relocated
+The character's experience has been restored.
+The character is not connected.
+ seconds until the third army is deployed.
+ [1: Character creation 2: Character start 3: Character end]
+There are no more available names for creation.
+\\aG System:\\aA Artificial Intelligence (AI) characters creation completed
+.robot4 (1) [Number to generate]
+.robot4 (2) [1.Scarecrow] [2.Hunting] [3.Village] [Number]
+Scarecrow AI:
+ character terminated.
+.robot4 (3) [1.scarecrow, 2.hunting, 3.village]
+Skill, luck, everything... must be equipped...
+Fishing robots have been deployed.\r\n------------------------------------------------------ -------------
+You are already in protected mode.
+Not in protected mode.
+ seconds until the fourth army is deployed.
+[System]:\\aAProtected mode has been activated.
+[System]:\\aAProtected mode has been disabled.
+ [0~6] [name].\n0=miscellaneous items, 1=Weapons, 2=Armor, 3=NPCs, 4=Transformations, 5=NPCs (spriteId), 6=Skills (skill).
+A total of [
+] searches have been carried out.
+Account:[
+], Character Name:[
+] seized accounts/characters have been found.
+days
+hours
+Please enter .uptime
+)'s dialogue is as follows
+ [number] [quantity]
+ seconds until the fifth army is deployed.
+Please enter the rest of the command
+Server saving has been completed.
+Detected! [Item
+ : [Min purchase price
+] [Max sale price
+ [seconds to wait/now/cancel]
+ was strongly expelled.
+ [spriteId]
+Unlimited Icons:
+The NPC is not found.
+DUMMY
+DUMMY
+ Tams.
+It has already entered standby mode.
+[System]:\\aAThe server is entering standby. Some packets have been blocked.
+Server is not on standby.
+[System]:\\aAThe standby state is canceled and normal play is possible.
+(On: Switch to standby state | Off: Start the game in normal mode)
+If you RESTART, you will have GM privileges.
+The GM numbers do not match.
+Attribute
+ is unknown.
+(to)
+Changed it to .
+ [character name] [attribute] [change value].
+(Attribute: ac, mr, hit, dmg, hp, mp, align, karma, access, str, con, dex, int, wis, cha)
+) was summoned.
+ [npcid/name] [summon number]
+The administrator has granted you 
+Granted to all connected players
+ has received
+ [all/character name] [amount]
+To reach the Dark Dragon's messenger, you must break through a total of 4 regions...
+ [number]
+ TAM
+ : There is no such character.
+) is restored to its original state.
+) is not found
+ [spawn ID] [+,-]
+ seconds until the match ends.
+[
+] character name does not exist in database.
+The match starts in 4 minutes. Please join now if you want to participate.
+There is no character with that name.
+ Go to town.
+Inflation cannot be less than zero. Current Inflation: 15.
+Current number of people involved:
+Total number of people involved:
+Remaining inflation people:
+Total buff time:
+seconds
+Remaining buff time:
+Please enter a number greater than 0.
+Please enter a time greater than 0.
+The entered time is less than the currently set buff time.
+The number entered is less than the currently set number of buffs.
+[+inflate] [0] to check the current status.
+[+Inflate] [~] [number] [time] (time unit: seconds) for automatic inflation.
+[+Inflate] [Reset] to initialize.
+List of surnames: Kent, Orc, Giran, Heine
+Round 2 failed.
+The Clan gathering point usage time has
+remaining.
+Aden's heroes are gathering...
+Movement of Dark Dragon's messengers, leading an army to invade, has been detected...
+Before they invade for the sake of Aden's peace, we will find and eliminate the Dark Dragon's messengers...
+The web server is already activated.
+The web server is activated and connection is possible.
+The web server is already disabled.
+The web server is disabled and access is blocked. (Caution: In-game access is not possible).
+The match starts in 3 minutes. Please join now if you want to participate.
+Currently connected:
+Robots:
+Automatic player shops:
+Calculated:
+-- Administrators [GM]:
+
+-- Players:
+-- Robots:
+-- Private Stores:
+ [all]
+The Demon King's territory has been opened.
+The Demon King's territory is closed.
+Isval: The Forgotten Island has been opened.
+Isval: The Forgotten Island has closed.
+The rift in dominance has been bridged.
+The cracks in dominance have been broken.
+The Dark Dragon's Dungeon has been opened.
+The Dark Dragon's Dungeon has ended.
+[PC Room End Notice] PC Room usage time has ended.
+If you set your phone with .phone, the security buff will be activated.
+It is currently on standby for opening and has no experience points.
+Currently in protected mode, there is no penalty.
+A Balrog appears and moves to the village.
+Heroes at the Reaper's Altar are moved to the starting point.
+Greedy ones...you will know the end.
+Lazarus has appeared.
+** The Flame of Hope has been obtained. Receive the Rod of Time from Gereng **
+** Check the Flame Box provided in your inventory **
+** Check the cold weather box you received in your inventory **
+** Check the box of flash provided in your inventory **
+Use the acquired skills to destroy the Auraquia restraint sphere.
+The server version has been updated. Please restart the connection and download the main patch again.
+Existence bug forced to close! Please reconnect
+It cannot be used while waiting to open.
+It cannot be used while waiting for opening.
+Purchases are not possible while the server is down.
+As the ship departs, your actions are restricted.
+You are in protected mode.
+Protected Mode: No death penalty.
+It cannot be used in a invisible state.
+We're running out of ingredients.
+This is not a normal item.
+You can purchase one at a time.
+Number of purchases exceeded
+The purchase price exceeded 2 billion won.
+This is not a purchasable rank.
+It cannot be purchased from Interserver.
+Contains items not purchased from the Packet Shop.
+You cannot purchase different items at once.
+Maximum purchase quantity: miscellaneous items (15) / equipment (1)
+Note: Only that character can cancel.
+Note: You cannot block yourself.
+After pressing the command [.unmanned store], you can connect with a different character.
+When running an unmanned store, open store windows must be closed to prevent afterimages on the floor.
+An unmanned store can only have one character.
+This is an abnormal item. please try again.
+Up to 7 items can be registered.
+You cannot use your own store.
+The target Clan was not found.
+It is impossible to declare a siege on your own blood.
+Open the left slot first.
+Unlock the level 60 ring.
+Unlock the level 95 ring.
+Unlock level 60 earrings.
+Unlock level 101 earrings.
+We have an important announcement, so some chats have been banned.
+While the premium battle zone is in progress, only general chat is possible.
+Chatting is not possible in purple state. (Clan and party chatting are possible)
+Production failure: Weight gauge cannot exceed 90%.
+The rift in the Forgotten Island is closed.
+The dimension is disconnected.
+The Dark Dragon's Dungeon is closed.
+The PC room buff is not being applied.
+Note: The PC room buff product is already in effect.
+Near/far damage +3, siege +3, SP +3 due to wanted are being applied.
+The seal release order has been issued.
+The cry of survival is charged.
+\\aG[Warning] \\aDIf you level down once more, your character will be seized.
+Gran Kain's Wrath Stage 1
+Gran Kain's Wrath Stage 2
+Gran Kain's Wrath Stage 3
+Gran Kain's Wrath Stage 4
+Gran Kain's Wrath Stage 5
+Gran Kain's Wrath Stage 6
+PlaySupport is not available.
+There are no PlaySupport certified items.
+Can only be used in inner or underground hideouts.
+You can no longer create instanced dungeons. Please try again later.
+Daily Clan dungeons can no longer be created.
+Weekly Clan dungeons can no longer be created.
+Clan gathering points can no longer be created.
+Due to level restrictions, you can no longer gain experience points.
+The current experience level is higher.
+It cannot be used because Adena exceeds 2,000,000,000.
+Adena cannot be picked up because it exceeds 2,000,000,000.
+You have more than 2,000,000,000 Adena.
+You cannot set more than the amount you have.
+Your input timed out.
+The monarch of the opposing Clan refused.
+The distance from the target is too far to conduct a transaction.
+There is no one with that character name.
+Bulletin board posts cannot be deleted.
+The number of characters for the bulletin board title has been exceeded.
+Writing level: 30
+\\aThis is a bulletin board exclusively for administrators.
+Warehouse: Available from level 5.
+Warehouse: Available from level 20.
+Storage & disposal is not possible for 30 seconds after logging in.
+This is not possible during a siege.
+Items cannot be discarded in this area.
+For inn keys, please use /exchange or use the warehouse.
+You cannot change the doll while it is summoned.
+This item cannot be changed.
+GM revived it.
+Notice: Your kill death has been reset.
+Can only be used with Chaotic alignment.
+It can only be used in Laufull alignment.
+Command [.security settings]\nSecurity settings are not set.
+Security is not unlocked. Command [.unsecure]
+This is a pledge that has no pledge or cannot contribute.
+Those below level 30 cannot send letters.
+Rank grant failure: No rank grant authority.
+Failure to grant rank: Granted rank is higher or the same as your own.
+Alliances are limited to 4 clans.
+Those above level 70 must use the Advanced Character Exchange Order.
+Those below level 70 must use the low-level character exchange order form.
+Impossible to upload: When one party presses Done
+Wedding ring charged.
+Thank you for your donation.
+You have used up all of the wedding ring moves. (Please recharge)
+There are no rooms or halls for rent.
+It's not the key to our inn.
+Gate Repair: The gates of Kent Castle were repaired.
+This is a character whose level has been down. Please use it after leveling up.
+Stat reset is only possible at level 55 or higher.
+Not yet available (requires delay)
+There are no more taxes to pay.
+This is not the entry time.
+There are no lords or no clans have been created on the account.
+Used when Einhasad's blessing remains.
+Einhasad Protection: EXP +53% [Level 1 to 54]
+Einhasad Protection: EXP +43% [Level 55 to 59]
+Einhasad Protection: EXP +33% [Level 60 to 64]
+Einhasad Protection: EXP +23% [Level 65 to 69]
+Einhasad Protection: EXP +150%
+System message: All dragons are still awake.
+The item's enchantment value has been reduced by -1.
+The item's enchantment value has increased by +1.
+The Hero's Protection buff product is already in effect.
+The Life Protection buff product is already in effect.
+Pet: Candle of Pet Recollection can be used from level 10 or higher.
+Einhasad stats have been reset.
+The energy of blessing could not permeate.
+A siege is underway.
+The clans that own the castle are as follows:
+This item cannot be manufactured.
+This production has been temporarily discontinued.
+The experience recovery method is incorrect. (Refer to PowerBook)
+\\aG[!] You are protected from the opponent's magic with new protection.
+\\aG[!] You are protected from the opponent's magic with new Clan protection.
+\\aG[!] New Protection Zone You are protected from the opponent's magic.
+The new level deals only 50% of the damage.
+New protection clans cannot attack each other.
+The new protection Clan deals only 50% of the damage.
+New protection zones do not attack each other.
+\\f3The move failed due to a large number of concurrent users. Please try again later.
+Someone has already entered. Please try again later.
+Insolence Tower
+A suspicious shadow begins to appear on the floor.
+Round 2 has ended. You must move to the next area.
+Round 2 boss defeated! Move to the center of the map and prepare for the final battle.
+World Siege:
+ World siege has begun!
+Siege:
+ Siege has begun!
+The World Siege has ended!
+ Siege has ended!
+Clan] VS [
+Clan] war, forcibly concludes.
+The Arnold event has ended.
+The GM is opening an Arnold event.
+Please use NPC in front of Giran Inn.
+The Arnold event will last for
+hours.
+Round 1 has ended. You must move to the next area.
+Round 1 boss defeated! Move to the next area and prepare for battle.
+Round 1 failed.
+[PC Room usage]
+seconds remaining.
+The sacred item from the Thebes Osiris Altar has been acquired.
+The sacred item from the Tikal Altar has been acquired.
+\\aDThe time rift will open in a moment.
+\\aThe location of the crack is to the right of the desert oasis.
+The Time Rift will remain in effect until Osiris' power is restored.
+The time rift will remain until Kukulkan's power is restored.
+Time Rift: Rift closes after a short period of time.
+Thebes Osiris Altar
+Tikal Altar
+Dog fighting ticket sales status
+Doll Race ticket sales status
+ has
+ tickets for sale.
+(Clan:
+minutes, the Colosseum will end.
+seconds, the Colosseum will end.
+In 10 seconds, Round 2 will begin.
+In 2 minutes, the final round will start.
+, access LeanBean version:
+Server shutdown aborted. The server is operating normally.
+\\aA* Clan raid ranking has been updated *
+Gilting check:
+DUMMY
+DUMMY
+check :
+ [number] [on/off]
+show:
+.show
+Proto-continuous code[
+DUMMY
+Proto code[
+], number[
+The match starts in 2 minutes. Please join now if you want to participate.
+Mob Action:
+The match starts in 1 minute. Please join now if you want to participate.
+Map changes:
+ [type]
+MapEpack:
+DUMMY
+DUMMY
+ [name]
+Production check:
+Effect number:
+The match has started.
+ test
+Prepare for Inifinite War in \feGiran!
+ [number] [1: Activate / 2: Stop]
+Prepare for Inifinite War in \feAden!
+Picture number
+Prepare for Inifinite War in \feGludin!
+Prepare for Inifinite War in \feTalking Island!
+Skill number
+Prepare for Inifinite War in \feElven Village!
+Buff continuation
+10 minutes until the match starts.
+Buff number
+ [buff] [number] [time].
+Cooking number
+ [cooking] [number] [time].
+Aura number
+ [aura] [number] [time].
+Unlimited number
+ [unlimited] [number].
+Dock number
+ [poison] [number] [time].
+bloodstain number
+ [dragonblood] [number] [time].
+Vibration number
+ [hadin] [number].
+ [buff/cooking/aura/unlimited/poison/dragonblood/hadin]
+9 minutes until the match starts.
+Command
+In
+DUMMY
+You have been expelled.
+8 minutes until the match starts.
+DUMMMY
+\\aAicon continuous output number: [\\aG
+\\aAIcon deletion number: [\\aG
+ \\aI[Duration] [display/delete] [i/i~j]
+\\aAIcon continuous output number:[\\aG
+ \\aL[continuous] [i/i~j]
+7 minutes until the match starts.
+6 minutes until the match starts.
+command
+[Command] Command
+5 minutes until the match starts. Please join now if you want to participate.
+On
+Only administrators can view it.
+You cannot view it during the match.
+Preparing for the next match.
+You cannot acquire a crown accessory while polymorphing.
+The time rift is currently closed.
+This portal has already closed.
+Entry is not permitted if you possess a token of oath.
+Entry is not permitted if you possess the Token of Oath (weekly).
+You can no longer enter.
+The Colosseum showdown match has started.
+Illusionist
+DUMMY
+DUMMY
+DUMMY
+DUMMY
+DUMMY
+The current hideout is not in use.
+\\aG[!] : Only those with level
+ or higher can enter.
+Only Clan members possessing the castle can use it.
+Only users using the PC Room can enter.
+\\aANotification: [Experience points can be granted up to level \\aG[
+]
+You cannot leave the battle zone and re-enter.
+The battle zone is fully occupied.
+You cannot enter the battle zone during a party.
+The battle zone is not currently open.
+Weapons sold by merchants can be obtained randomly.
+Notification: [Experience points can be granted up to level (
+)]
+th Legion Boss Clear Reward: Experience Points Obtained.
+DUMMY
+DUMMY
+DUMMY
+DUMMY
+DUMMY
+\\fYYou are not anymore wanted and the additional options have disappeared.
+Thank you for the bounty on
+
+is
+You have achieved the level. Please congratulate everyone.
+Achievement Statue will be placed in Giran Town for 1 hour.
+The Colosseum showdown match will begin in
+'s Buff Commemorating Level
+[PC Room Usage Time] PC Room benefits will be applied for
+Please try again in 1 second.
+Level 100 Buff Statue
+Character slot expansion completed
+The dungeon time has already been reset.
+! Can only be used when your Einhasad Blessing gauge is below
+.
++ Einhasad Blessing gauge has been increased by
+.
+.
+Commemorative statue of
+No elixir has been consumed yet.
+
+(Hall)
+has killed
+
+Recognizing it as a wall
+Add key x:
+The selection coordinates are not walls.
+Delete key x:
+This is an expired inn key.
+The coordinates of all characters in the account have been moved to Giran Village.
+Sponsor Shop
+The same buff product is already in effect.
+The stat buff product is already in effect.
+Double-Click
+Aden Upper
+days.
+Creator:
+\\aA[GM]: You have joined a new protection Clan.
+\\aA[GM]: You will automatically withdraw when you reach level (
+).
+\\aA[GM]: Only 50% of PK damage is applied to the new protective clan.
+The summoned magical doll cannot be reinforced.
+You already have a scroll unsealing.
+The skill number does not exist. Please contact with a GM.
+This skill cannot be dissolved.
+TJ coupons are currently not available for use.
+There are no recoverable items.
+You can no longer gain experience points.
+Destroyed the flame of the soul.
+New protection Clan members do not attack each other.
+New protection Clan members deals only 50% damage.
+New protection Clan zone does not attack each other.
+ \\fYThe survey will start in a moment. (Time limit: 30 seconds)
+ YES = agree, NO = oppose, otherwise invalid~!
+ The survey results will be announced shortly.
+ \\fW[Result] Approval:
+ votes, Opposition:
+ votes.
+Character on sale.
+After the transaction, the transaction amount goes into this account warehouse.
+Status room character information.
+class: [
+] level: [
+%] Elixir: [
+The trading partner is currently experiencing abnormal connectivity.
+The trade target has no empty character slots.
+There are no empty character slots. Please secure a character slot and try again.
+Infinite War viewing mode is disabled.
+Deathmatch is already saturated.
+Training completion certificate (1) is required.
+You will need a training completion certificate (1) and a dragon diamond (1).
+Training completion certificate (1) and Blessed Dragon's Diamond (1) are required.
+This is a wrong request.
+\\aAGunter: Let's create a level [\\aG5\\aA]...
+\\aAGunther: Now meet [\\aG Training Instructor Theon\\aA]...
+\\fHGunther (Master): You... haven't even reached level [5] yet?!
+There are not enough Black Death coins.
+You cannot receive it in a invisible state.
+\\aANotification: Experience points can be granted up to level \\aG
+.
+Note: Closed after update on October 14, 2015.
+Not all party members have gathered.
+ has embarked on a journey to the past with comrades.
+Purchase Limit per Account: 0
+The Demon King's territory has not yet been opened.
+Entry is allowed for 60 minutes from opening time.
+Cannot move: Owned by the Elemental Master.
+Silver Knight's field is accessible at level 10 to 29.
+Training Dungeon is accessible at level 10 to 44.
+Storm Training Dungeon is accessible at level 45 to 51.
+\\fQRiki: Only levels below \\f3[Lv.45]\\fQ are allowed to enter.
+You have too many items.
+Cannot use due to the weight of your belongings.
+Insufficient N Coins.
+DUMMY
+Available Quantity: 0
+System: Insufficient N Coins.
+System: Insufficient TAM.
+System: Insufficient Einhasad Points.
+Insufficient contribution points for purchase.
+\\aA System: Insufficient \\aG coins.
+You have won first place.
+Dragon Knight
+This bulletin board can only be used by administrators.
+Bookmark expansion required: There is no enought space.
+In the bookmarks you want to add there is one whose name is already used in your current bookmark list
+Command 
+ does not exist.
+Dark Elf
+Chat messages - OFF -
+Chat messages - ON -
+Wizard
+The Gran Kaine system is not working.
+You can not activate it with your actual Clan configuration.
+You can not activate it in your state.
+It is only possible in the immediate registration state.
+Your secondary character is already unregistered.
+It can only be used in the space in front of the Giran Village Inn.
+This number doesn't exist. Please enter again.
+Invalid number. Please enter again. ('-' cannot be entered)
+Please enter numbers only.
+Your phone number has already been set.\nIf you want to change your number, please send GM a letter with your contact information.
+ configuration complete. A verification message will be sent at initialization.
+ [phone number] (a verification message will be sent after finish the process)
+Elf
+The coordinates of all characters in the account have been moved to Giran Village.
+This location is not available.
+You can not use it in your actual state.
+Knight
+Cannot be used while dead.
+ has been invited to the party
+It can be used if you have a Clan and are a monarch, vice-lord, or guardian knight.
+Already wanted
+The reward can be only be
+ Adena
+Example)
+Monarch
+The maximum amount is
+Warrior
+Adena is not enough
+The maximum amount wanted is
+\\aDA bounty has been placed on [
+\\aD[Wanted Person]:
+Near/far damage +3, siege +3, SP +3 due to wanted
+Not currently connected.
+Fencer
+====== +3 Close/Range Damage, +3 Damage in Siege, +3 Damage Reduction, +3 SP: applied =====
+] is Wanted!
+Less than 10 minutes have passed since you changed your quiz. Please change it later.
+Please enter between 4 and 12 characters in English or numbers.
+Please enter only English characters or numbers.
+ [desired security password].
+Your account is already secure.
+\\aDSecurity settings have been completed successfully.
+\\aDSecurity Password:
+ (If you forget it, changing the account password will be impossible)
+Security settings are required first. Command: [.security]
+Security has been temporarily lifted. You can change your password temporarily.
+ [Configured Password]
+The entered security password does not match. *Hint: It has
+ characters.
+It has been less than 10 minutes since you changed your password. Please change it again later.
+You can change your password after setting up security. Command [.security settings]
+You can change your password after unlocking security. Command [.unsecure]
+Please enter between 6 and 16 characters in English or numbers.
+Lancer
+ [New Password]
+Your account password has been changed to (
+).
+This is a character name that is prohibited from being created.
+The same name exists.
+You can change it after temporarily leaving the Clan.
+Monarchs can only be changed after consultation with one GM
+Payment status cannot be changed.
+The character name is incorrect.
+ [New Character Name]
+Please enter between 1 and 6 Korean characters.
+When you reconnect, your name will be changed to your new name.
+You don't have enough "Name Change Scroll"
+Only available at level 60 or higher.
+Male
+Note: Can be used in private stores.
+Personal stores can only be opened in markets.
+Warning: Your secondary character is already in an unmanned store.
+]'s head.
+* Total gift *: \\aA[
+] has arrived.
+\\aANotice: Game Master has provided 'Full Buff'.
+\\aANotice: 'Buff' has been provided around the Game Master.
+\\aANotice: 'GM's Blessing' has been provided around the Game Master.
+\\aANotice: 'Mana of Life' has been provided around the Game Master.
+\\aANotice: 'Blacksmith's Buff' has been provided around the Game Master.
+\\aANotice: 'Coma Buff' has been provided around the Game Master.
+\\aANotice: Game Master has provided 'Buff'.
+\\aANotice: Game Master has provided 'GM's Blessing'.
+\\aANotice: Game Master has provided 'Mana of Life'.
+\\aANotice: Game Master has provided 'Blacksmith's Buff'.
+\\aANotice: Game Master has provided 'Coma Buff'.
+\\aGWarning: \\aAWorld Chat has been Deactivated.
+\\aGWarning: \\aAWorld Chat has been Activated.
+Purchase Limit per Account:
+Available Quantity (1 Week): 0
+Available Quantity (1 Day): 0
+The GM has modified the information for the [
+ ] item.
+Female
+The GM has changed your level to
+.
+Received a transformation buff from the GM.
+You have been moved to [
+] by the GM.
+Received 'Full Buff' from the Game Master.
+Characters who have joined the Clan cannot be used.
+You cannot change to the same class.
+Logging out due to a class change.
+Character slots are already full.
+The raid will end in 3 minutes.
+The raid will end in 1 minute.
+The raid will end in 10 seconds.
+The raid will end in 5 seconds.
+Tip: During the occupation, you must be in a valid occupied area to obtain a medal.
+Tip: You can take away one medal by killing an opponent's knight in various locations on the battlefield.
+Tip: The occupied area is inside the shining fence around the central guard tower. The area around the buff tower is not included.
+Tip: Knights who occupy the buff tower receive powerful buff effects.
+Tip: You must have at least one medal to enter the boss area after winning.
+Tip: Knights with more medals receive a larger share of the tax.
+Tip: If you stay in the waiting area continuously after the start of the occupation, you will receive a penalty where medals disappear.
+Tip: Characters who destroy the buff tower last and their nearby fellow knights can obtain medals.
+Another-world forces have invaded Giran Prison 1st floor.
+The forces that controlled Giran Prison 2nd floor have left.
+Knight Gillian in Heine Village has opened a passage to the Treasure Island.
+The Treasure Island event has ended. Rewards have been given to participants who excavated treasures and stayed on the island.
+The transformation event has started. Transformation levels are being adjusted.
+'
+' will start shortly.
+' will end shortly.
+Someone in Aden World has obtained [
+].
+The forces that controlled Giran Prison 1st floor have all been annihilated.
+The forces that controlled Giran Prison 1st floor have left.
+The transformation event has ended. Transformation levels have been adjusted.
+has been sent to all users.
+Possible
+Impossible
+Hideout N.
+Gludin
+Glorious
+Warning: This is an unused item.
+Consumable item required when using the siege engine during a siege.
+You can feel the blessing of the Mysterious Sky Garden.
+Please enter '.changename ChangeCharacterName' to change your character's name.
+You can receive a 'buff' from the birthday celebration elf once.
+You can restore experience points for free at the Aden Cathedral.
+seconds
+Seal Orb
+Dog Fight Ticket
+Odd
+Even
+It takes
+ seconds to prepare for the next fight
+Started selling dog fight tickets.
+5 minutes before the dog fighting game starts!
+4 minutes before the dog fighting game starts!
+2 minutes before the dog fighting game starts!
+2 minutes before the dog fighting game starts!
+1 minute before the dog fighting game starts!
+Ticket sales for the Dogfight will close in 10 seconds.
+The dog fighting match will begin shortly.
+The game begins!
+We will announce the betting odds.
+The winner of round
+is
+.
+The result of round
+is a draw.
+In a moment, the doll competition will begin.
+We have started selling cheerleading horns.
+The doll race will start in 5 minutes.
+The doll race will start in 4 minutes.
+The doll race will start in 3 minutes.
+The doll race will start in 2 minutes.
+The doll race will start in 1 minute.
+In a moment, the sale of cheer horns will close.
+The sale of cheer horns has closed.
+After
+ seconds, the cheer horn race will begin.
+Start! 
+Doll Race Ticket
+is
+Preparing for the next race.
+[Event] Adena drop rate increased!
+[Event] Increased item drop rate!
+[Event] Transformation level eased!
+[Event] Red Orc Mask!
+Usage:
+Exchange Location:
+Available Quantity:
+Available Quantity (1 Week):
+Available Quantity (1 Day):
+ [Reason Code]\r\nReason Code List:\r\n 
+World chat has been enabled.
+World chat has been disabled.
+World chat is currently enabled. You can disable it by turning off chat.
+World chat is currently disabled. You can enable it by turning on chat.
+Craft ID [
+Number to create [
+ (not enough)
+The game starts in
+ seconds.
+The match will end in
+ seconds.
+The instance dungeon is full. Please try again later.
+Registration is complete.
+It cannot be used in the instance state.
+Insufficient required items.
+It is still in preparation.
+Incorrect betting amount.
+Level requirement is not met.
+The opponent (team) is currently unable to participate.
+Individual match registration is not possible while in a party.
+RVR content is a party content.
+PVP content is a non-party content.
+Only the party leader can apply.
+There are party members who cannot participate.
+Exceeded the maximum party size.
+Failed to meet the minimum required party size.
+A Colosseum application was received, but it was canceled due to being in a party (individual match) or not in a party (group match).
+A Colosseum application has been received. If you do not accept it within 15 seconds, it will be considered canceled.
+Colosseum registration is complete. If the opponent does not accept within 15 seconds, it will be canceled.
+The opponent rejected the application.
+The match has been canceled.
+The game has ended. After judging the results shortly, you will be moved to the town.
+The game has been forcibly closed by a GM.
+You have won. The victory reward items will be given shortly.
+You have lost in the LFC match.
+[Match Ready] 
+[Closing Soon] 
+Congratulations. You have won in the random reward.
+The betting amount is exceeded. Gulp!
+ placed a bet of
+ won. 
+Odd or even, double the bet //// Numbers 1 to 6, triple the bet /// Please enter odd/even or a number.
+ guessed correctly. Deposited
+ won.
+ guessed wrong. No prize, enjoy.
+chose
+odd.
+even.
+.
+The game will be canceled if you go too far.
+ adenas. It doubles with each correct guess of one creature!
+ Place your bet on the monster's name you want to bet on! (Bugbear, Elder, Wild Boar, Spatoi, Slime, Skeleton, Werewolf, Monster Eye, Orc Warrior)
+Really? hahaha
+Oh! Good... Congratulations... We have paid out the winnings...
+Too bad hehe. Please try again next time!
+You bet on the Orc Warrior. The game will be canceled if you go too far!
+You bet on the Spatoi. The game will be canceled if you go too far!
+You bet on the Wild Boar. The game will be canceled if you go too far!
+You bet on the Slime. The game will be canceled if you go too far!
+You bet on the Skeleton. The game will be canceled if you go too far!
+You bet on the Werewolf. The game will be canceled if you go too far!
+You bet on the Bugbear. The game will be canceled if you go too far!
+You bet on the Elder. The game will be canceled if you go too far!
+You bet on the Monster Eye. The game will be canceled if you go too far!
+PSS "All" mode is disabled. We apologize for the inconveniences.

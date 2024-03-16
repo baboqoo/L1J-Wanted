@@ -1,0 +1,2 @@
+2024-03-14 03:06:52	Purchase	[Elfita]	NPCID: 70030	[332740907] Whetstone (5)	Total amount: 2000
+2024-03-14 03:07:18	Purchase	[Elfita]	NPCID: 70030	[332740908] Whetstone (1)	Total amount: 400

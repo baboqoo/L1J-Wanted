@@ -1,0 +1,19 @@
+Linbin update method
+
+1. Connect to the live server to receive all updates
+
+2. Copy the lin.bin file in the client folder bin32 folder and paste it to the desktop
+
+3. Change the file extension name to exe
+
+4. Right-click and click Properties -> Details -> Check Version
+
+5. Change the extension name back to bin and change the file name to be distributed
+
+6. put it in appcenter\connector\linbin folder
+
+7. version.properties version change
+
+8. connector.properties linbin deployment file name matching
+
+9. Run connector -> Check if the file size of MSRMST.BIN in the client folder bin32 folder and the size of Lin.bin are the same

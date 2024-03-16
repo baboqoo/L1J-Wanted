@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<link rel="stylesheet" href="/css/l1.my.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+.pagination-container {margin: 0 auto; display: table;}
+.paginationjs .paginationjs-pages li, .paginationjs .paginationjs-pages li:last-child {border: none;}
+.paginationjs .paginationjs-pages li>a {color: #b5b5b5;background: transparent;font-size: 16px;}
+.paginationjs .paginationjs-pages li.active>a {background: transparent;color: #1f1f1f;line-height: 28px;}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const account		= {USER_DATA};
+</script>
+<body class="page-customer">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">LinWeb</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div class="wrap-my-signature">
+					<div><span>{SERVER_NAME}</span></div>
+					<section class="section-signature">
+						<div class="ui-signature" data-type="character_signature">
+							<div class="thumb"><img src="{CHARACTER_PROFILE}" alt=""></div>
+							<div class="name btn">{CHARACTER_NAME}</div>
+							<div class="info"><span class="server">{SERVER_NAME}</span><span class="level">{CHARACTER_LEVEL}Lv</span></div>
+						</div>
+						<div class="my-character-list">
+							<div class="list"><div class="wrap-items">{CHARACTER_LIST}</div></div>
+							<div class="btn-close">Close</div>
+						</div>
+					</section>
+				</div>
+				
+				<div id="mypageTab" class="ui-slidetab percentage">
+					<div class="handle" style="perspective: 1000px; backface-visibility: hidden; transform: translateX(0px);">
+						<ul class="btns" style="display: flex;">
+							<li style="width: 20%;"><a href="#" data-type="char">Character</a></li>
+							<li style="width: 20%;"><a href="#" data-type="inv">Inventory/Warehouse</a></li>
+							<li style="width: 20%;"><a href="#" data-type="mail">Letter</a></li>
+							<li style="width: 20%;"><a href="#" data-type="board">Board</a></li>
+							<li style="width: 20%;"><a href="#" data-type="comment">Comment</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="page_container"></div>
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+ 	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var tabType = '{TAB}';
+			if (tabType == '') {
+				tabType = 'char'
+			}
+			$(document).on('click', '.ui-signature .btn', function(){
+				if ($(this).hasClass('open')) {
+					$(this).removeClass('open');
+					$('.my-character-list').hide();
+				} else {
+					$(this).parent().next().show().addClass('show');
+					$(".ui-signature .btn").addClass('open');
+				}
+			});
+			$(document).on('click', '.my-character-list .btn-close', function(){
+				$(this).parent().removeClass('show').hide();
+				$('.ui-signature .btn').removeClass('open');
+			});
+			$(document).on('click', '#btnSetChar', function(){
+				if(cnb)cnb.openCharacterPan();
+				if(window.cnbCharacterChange)window.cnbCharacterChange();
+				$('.my-character-list').hide();
+			});
+			
+			var myTap = $('#mypageTab');
+			var myTaps = myTap.find('li');
+			myTaps.on('click', function(event){
+				var seleteType = $(this).children('a').attr('data-type');
+				if (tabType != seleteType) {
+					urlTypeform(seleteType, null, 'post', '/account/mypage');
+				}
+				eventStop(event);
+			});
+			
+			switch(tabType){
+			case 'inv':
+				$('a[data-type=inv]').addClass('on');
+				includeHTML(document.querySelector('#page_container'), '/account/inventory.html');
+				includeJS('/js/mypage-inventory.js');
+				break;
+			case 'mail':
+				$('a[data-type=mail]').addClass('on');
+				includeHTML(document.querySelector('#page_container'), '/account/mail.html');
+				includeJS('/js/mypage-mail.js');
+				break;
+			case 'board':
+			case 'comment':
+				$('a[data-type=' + tabType + ']').addClass('on');
+				includeHTML(document.querySelector('#page_container'), '/account/board.html');
+				includeJS('/js/mypage-' + tabType + '.js');
+				break;
+			default:
+				$('a[data-type=char]').addClass('on');
+				includeHTML(document.querySelector('#page_container'), '/account/character.html');
+				includeJS('/js/mypage-character.js');
+				break;
+			}
+		});
+		</script>
+</body>
+</html>

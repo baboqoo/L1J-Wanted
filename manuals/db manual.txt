@@ -1,0 +1,128 @@
+accounts					account data
+accounts_free_buff_shield			protection (buff)
+accounts_pcmaster, accounts_pcmaster_golden	PC room buff related
+accounts_shop_limit				Store Purchase Restriction Information (Account)
+app_alim_log					App center log history (N shop purchase history/gift history/coupon usage history)
+app_auth_extension				File extensions allowed in app center
+app_board_content, app_board_content_comment	Content Contest
+app_board_free, app_board_free_comment		Free Board
+app_board_notice				News/update/event
+app_board_pitch, app_board_pitch_comment	Public board
+app_char 					app center character id
+app_coupon					coupon data
+app_customer					customer center inquiry/report
+app_customer_normal				Customer Center Frequently Asked Questions
+app_engine_log					Engine detection details
+app_guide, app_guide_boss, app_guide_recommend	warrior guide
+app_item_search					Item search abbreviation
+app_nshop					N Shop sales info
+app_page_info					Integration of page information
+app_powerbook					Powerbook (content type)
+app_powerbook_guide				data at the bottom of the powerbook
+app_promotion					Image information at the top of the main page
+app_report					App center report details
+app_shop_rank					Price page item ranking
+app_support					data to settle sponsorship
+						After the user deposits into the sponsorship account, enter the amount in the input field at the bottom and send a message
+						loaded into the db 
+						Payment can be made on the admin page
+app_support_message				Support page description
+						Agree or not Page Comment AGREE
+						Consent Status Page Comments PROGRESS
+						Reward related message REWARD
+app_support_request				sponsored account request data
+						when user clicks the account request button on the sponsorship page
+						loaded into the db
+app_terms_agree 				app center consent info
+
+app_trade					exchange
+app_uri_block					request to block
+app_uri_pass					request to allow
+auth_ip						VPN or foreign IP force permission data
+ban_account					account ban information
+ban_board					board ban Information
+ban_hdd						hard number ban info
+ban_ip						IP ban Information
+
+bin_ 						Live empty data information
+
+catalyst					Additional information on target-click creation items such as Resuscitation Scroll / Eternal Light (Empty Data Additional Settings)
+						You can set more data in bin_catalyst_common (probability of success / notification of success)
+						Resuscitation Order -> resuscitation item -> complete data
+catalyst_custom					Target designation creation item setting random setting
+						items not in bin can be added separately
+character_arca					Character quest reservation info
+character_death_exp, character_death_item 	Death penalty recovery information
+character_einhasadfaith				Information of God Einhasad
+character_einhasadstat				Einhasd Point Stat Information
+character_equipset				character saved equipset info
+character_eventpush				System letter (push) information
+character_favorbook				relic information
+character_revenge				character revenge info
+character_shop_limit				Shop Purchase Restriction (Character)
+character_skills_active 			character acquired active skill info
+character_skills_passive			character acquired pasive skill info
+character_timecollection			character exhibition buff info
+clan_contribution_buff				Clan Contribution Buff
+clan_joinning					characters waiting to join clan info
+
+connect_reward					getting/staying online rewards
+craft_block					block certain crafting
+craft_info					crafting information
+craft_success_count_user			limited number of success crafting
+dungeon_timer					Timed Dungeon
+dungeon_timer_account, dungeon_timer_character	Timed Dungeon User Information
+dungeon_timer_item				Timed dungeon charging item
+enchant_result					success/fails result effect information displayed on the screen when enchanting
+event						Event setting (transformation event drop rate increase NPC spawn)
+favorbook					relic info. When setting data, you can set according to bin_favorbook_common
+free_pvp_region					FREE PVP zone setting
+item_box					Treasure Box 
+item_buff					buff items
+item_collection					Item Inventory Possession Stat Criteria (Relic)
+item_enchant_ablity				Item stats per enchantment
+item_selector, item_selector_warehouse		Item selection box function
+item_terms					Set item duration
+magicdoll_info					doll information
+magicdoll_potential				doll potential information
+
+map_balance					balancing each map
+						difficulty can be set for each map
+						adena, drop, experience can be set separately
+
+notification, notification_event_npc		Right alarm UI setting. Possible to either turn on/off
+npc_info					additional setting (compenstation, transform, spawn, image, etc.)
+						rewards given
+						msg = whether to display a message when npc appears or dies
+						dieMsgPcList = wheither or not shout conquest
+						transform = if they transform or not
+npc_night					Monsters that transform at night (Forgotten Island)
+npcaction_teleport				information to teleport by clicking NPC
+
+polyitems					transform items such as potions or spells
+repair_item_cost				set the cost of restoring lost items due to death
+
+
+shop_info					Set store currency
+shop_limit					set store purchase limit
+						according to 'limitType', 'account_shop_limit', 'character_shop_limit' are classified and saved
+
+skills						active skill info			
+skills_passive					passive skill info
+skills_info					skill icon info
+spell_melt					skill dissolving info
+
+spr_action					velocity info for each action in the image
+spr_info					information such as the width and height of image
+						the presence of monsters capable of attacking 2 square (e.g. Valakas) it is possible to attack from behind 2 squares with one-handed sword
+
+tj_coupon					stores recoverable items from echant failures
+						excessive enchant is attempted on the day of the server opening, so set in the config to possible after server opens
+
+town_npc					Tax NPC settings
+
+weapon_skill					PVP/PVE can be set for each
+						almost everything that was processed in the original source has been moved
+						absorption, amount of damage according to absorption enchant damage amount can be set according to sp
+						starting from +10, the triggering weapon (annihilator's chainsword) is set as enchant_limit column
+

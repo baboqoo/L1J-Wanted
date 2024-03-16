@@ -1,0 +1,428 @@
+If you look at it, in the case of Linbin, put it in this folder
+You can put the file name like this
+All routes are specified.
+yes
+
+Additional updates are carried out based on the version and the Linbin file name based on the Linbin change criteria.
+For the version, you can enter the Linbin version there.
+yes yes
+Then the version looks like this
+yes
+
+And the name of the unapproved engine just came out.
+yes;
+
+the engine settings
+
+You can set it up here
+yes
+
+When the engine name is detected, it is transmitted to the server and the engine name and account are displayed on the console window.
+Then you have to decide for yourself whether the engine is really an illegal program.
+yes yes
+Register here too
+like that
+yes
+
+Now that the web server is built-in, all Powerbooks are made.
+yes
+
+So it takes some time when the first server is started.
+It's in development mode right now, so I turned it on right away.
+
+If you turn it off, the server turns on after the server data is complete.
+Is it this long?
+yes
+It takes some time because all the data is created. You have to set it to false during operation.
+Otherwise, if you call it right away, an error will appear. It is called without data.
+yes
+
+I put all the data in here.
+Items dropped by monsters are also set
+
+All data makes powerbook data in server
+nice really
+
+Skills come out
+Item information is also set like this.
+yes yes
+
+The administrator setting is set to level 1 in the account table.
+yes
+The web manager is handled separately from the game manager.
+Oh, then, is the level different between the web manager and the game manager? yes
+
+You can set your level there.
+
+If the game manager is set in characters, the web manager is set in the account table.
+aha yes
+
+And now the App Center is almost identical to the homepage.
+In that case, using the App Center as the homepage is not good for security.
+yes you know? address is exposed
+Oh yes
+
+So, the way to block external access is to set that to true so that you cannot access anything other than in-game and launcher browsers.
+If you see the browser ingame, other browsers are blocked.
+yes yes
+
+It goes like this
+Aha I'll check that out
+Yes, and if you want to connect from outside as an administrator
+It is set up separately like this. Only the operator can log in.
+aha that's good
+There is an admin page like this
+yes yes
+
+If you look at it, when you run the connector, it moves the connector to the launcher 2 folder.
+This is because the current browser is set to Chrome.
+So I made it refer to the files in launcher2 without separate distribution files.
+Or you have to use ie. Because ie doesn't support scripts anymore, the screen breaks.
+So I changed it to use chrome.
+Yes, if you look at this, the browser in the contactor displays normally and operates.
+Aha, maybe because of this, browsers are missing from all other servers.
+ah..
+I tried to create almost the same function as the current NC one.
+Yes, it's just the same haha
+
+And now I'm using the Chrome browser.
+There are about 20 files that need to be distributed to use the Chrome browser. I use them as those in the launcher 2 folder.
+yes yes
+
+There may be cases where you can't use the Chrome browser because of an update from NC later.
+
+yes in that case
+I made it possible to select the browser there. Whether it is the default IE or Chrome.
+Oh, so if you do it with a pulse, is it ie? Yes yes yes
+Now I can't right-click on the connector browser or go to developer mode.
+The way to do that is that the port number must be entered. Which port is the developer mode running?
+Now this is developer mode
+ah..
+
+I can use it like this
+Can I ask you to write the address to enter your developer mode?
+It's written there. Modern times, this is related to connectors, so maybe only I can do it.
+Because it is used when developing connectors
+I just let you know
+Oh yes
+Looking at it now, there is point information and a logout function. It is a function that communicates with the web in the connector.
+I added a developer mode to create such functions.
+Oh yes
+
+And when a problem occurs in the connector
+The log is left like this
+The server is not open now, so I tried to connect and it failed, so the log is left.
+Ah yes yes, since this is executed by the user in modern times, the information is encrypted so that the user cannot know it.
+By copying the contents of the log
+If you do this, you can see the contents. If the user has a problem while operating, if there is a log, you can check it like that.
+Yes, the log path is the current date in the log folder of the folder execution location.
+Decrypro is used to check the log contents.
+
+The encryptor creates encrypted text that registers the access information request url on the connector setting blog.
+Now, let's do it locally. For the operation server, write down the operation server's external IP and App Center port, and press encryption.
+Encrypted text is created. Register it for the blog operation server.
+Yes, all other information is called to the App Center and the data is passed.
+This
+
+It's for checking desc-k and string-k.
+I made it so that it can be used separately. Ax
+You can copy and paste like this with control cv.
+oh yes it's so good
+
+This is a tool that can save sprite information.
+like this
+can you check
+this
+
+It's been a while since the image information of the Lineage Award is all sprite. That's the information.
+That determines the speed of the image.
+Oh, so this is a tool to check things like walking speed? yes
+If you can check it, connect this to the DB
+It's stored here, and based on that, I'm making a speed from the source.
+Oh yes
+
+The standard file is the list.spz file extracted with the tool.
+It is a tool that converts such data into a storable form.
+yes very good
+
+And you can check the process information that a specific user is currently using.
+
+Like this, data is transferred from the connector to the server every 10 minutes and registered.
+So, if there is a nuclear suspicious user, you can check with that to see if you are really using it.
+Ah yes, but it's a big deal because I don't know what this is all about haha
+You can see the names of the currently running programs.
+Oh yes yes yes those are the names
+yes i understand
+So, if there is a hack you don't know about, then you have to check it yourself.
+So, if you put it in the connector setting config, the program won't be able to use it.
+
+yes yes
+
+And the data currently used in the game is processed based on empty data.
+
+those data
+These are the data
+Yes Yes, I made this data available to the server.
+You can see it like this
+The fact that bin_ is written in front is prepared so that you can directly check the bin data.
+yes
+
+If the file is updated in live, the file
+After putting it in this folder, if you set it to true here and start the server, the data will be updated.
+Then it is saved to db.
+yes then
+You can check it like this. Empty data information
+Yes, it would be convenient if you report it when adding or adding an item.
+yes yes yes haha
+
+In the case of production, the empty data is processed.
+There must be data in the bin first, and whether or not to write that data is specified here.
+What if the item to be released is not on the server?
+Yes, then if you put the name ID of the item on the server in output_name_id there
+If you can't find it in the bin on the server, it can be replaced with that one.
+So, does this mean that I can make it what I want?
+That's not the case. Priority is given to being in the bin first. If the item specified in the bin is not on the server,
+I made it come out with the item name ID entered there.
+Probability can be specified separately if it is written next to it.
+Aha yes, I understand. If you put the probability in there and set that to true, it will be processed as the probability of being in the div.
+Yes Yes If you set it to false, it will be processed with the probability of being in the bin.
+So you don't have to specify the probability and you can use it in the bin. Originally, that's correct.
+Yes, is that just a real talker? yes
+And when it comes to production, there are limited productions.
+Yes, it is also processed by connecting data to bin.
+If you succeed and the number increases, the information will be entered here.
+So please stop doing that
+Ah yes, you can delete it from the craft_success_count table when initializing.
+Yep, please don't delete what's written here
+I will write a separate description of the DB information.
+yes yes
+Server initialization method
+You can do this in the manager window
+yes
+If you click the NPC confirmation bar like that, the coordinates and information appear in the message window.
+Spawn information is also displayed, and with what ID the spawn information is entered.
+Ahab
+Looking at it, 50631 is this the spawn ID?
+yes you can check like this
+yes yes
+
+And monster information, if data is entered in the bin
+I set the ability of the monsters in the bin to be set automatically.
+Are you talking about level or hp?
+Yes str dex mr er dg These things are also set
+Oh then, is it completely the same as Bonsub? will be almost the same
+So what about skills and attacks?> You have to do the skills yourself
+There is no separate data for the monster skill information in the client.
+What I'm doing now is using the data in the client.
+yes yes
+
+Then I'll write a manual.
+You will use the server name
+red server
+You will use the Telegram ID you will use there.
+I guess I'll have to make one
+Yes, then you can enter @Telelem ID
+over there
+
+I will tell you how to support
+Users agree to the terms and conditions here
+If you agree, you will see this screen
+yes
+
+Then the user presses the sponsor account request button
+
+I got a message on telegram
+yes
+
+Then you need to tell the user the account number to deposit.
+
+This is a request that just came in.
+yes
+
+When you click the Submit button, an input field will appear.
+
+In this way, the account number is sent to the user who is connected. With a message like that
+yes yes
+
+This is how the letter goes to the user and confirms it.
+Then the user will deposit
+yes
+Click send message saying you have deposited 50 million won
+
+Then, you will receive a message that the deposit has been completed through Telegram.
+
+Then, you can directly check your account to make sure that the deposit was successful.
+yes yes
+and then check
+You can do it through the settlement button like this.
+Yep, this is what I did on the web.
+yes
+
+Then you can do it on your mobile phone. Through the operator login I mentioned earlier
+yes yes
+
+The important thing is that the user must be connected to the game.
+Otherwise, it is impossible to proceed
+ah then
+Cleanup can be done
+No, all in-game characters must be logged in to be able to
+Oh yes
+If the operator clicks settlement while not online, the customer is not online.
+It's not supposed to come out
+So even if you are outside, you have to turn on the operator character and go out to be processed?
+
+No, the operator is a separate user.
+Oh yes, I understood. Operators can do it from outside regardless of whether or not they are connected.
+
+Yes, it's comfortable. When the settlement is processed, Ncoin is accumulated like that.
+yes
+
+Coupons can be created and registered on this screen.
+The operator can see the list below, and the general user only shows the input box above.
+
+is created like this
+Oh, then send me the coupon code
+Users register and use it.
+yes
+It goes like this
+Yes, I will have to try this all by myself.
+local too
+Are you connected to Tucla?
+yes
+
+Now when I kill the App Center, I log in right away.
+
+Yes, I log in when I run App Center for the first time.
+You just see the change on the screen.
+Yes, yes, it will be processed at that time. The method is to issue a unique number to the in-game character
+After setting, login is processed based on the character corresponding to the unique number.
+yes
+If it could have failed, I thought it was an error on the Internet
+In that case, enter your account password and character name on the corresponding screen and click the login button.
+
+Approval yn message appears on in-game character
+So when approved, log in
+Oh yes
+
+If you become a login like this
+Cookies are registered in the in-game browser and are used until you log out.
+yes
+
+On the exchange, only traders can see account information.
+
+This information can only be viewed by traders.
+Oh yes, are you just writing and buying each other?
+If you buy 100 million Aden, isn't that 100 million Aden locked or something like this?
+I had four traders talk to each other to proceed.
+Yes, yes, so this is a sensitive part, so the management team added a comment saying that they are not responsible.
+Oh that's right, it can happen like this
+yes
+
+If you look at it now, the web, launcher, and in-game screens are slightly different.
+yes
+Each browser is checked, and each browser is handled separately.
+yes
+
+There is a data room these days, but there isn't one here.
+yes
+It's not even here
+yes
+
+If you look here, they say there is no logout button.
+I made it so that it is processed according to each browser.
+yes yes
+
+This file is on the App Center menu setting page.
+
+If you look at it, I wrote all the explanations there, so please take a look at it.
+yes yes i know
+User items can also be deleted from the web.
+oh
+it's convenient
+
+You can only see things that aren't like that.
+yes yes
+
+Report details are those related to bulletin board reports.
+
+it comes out like this
+yes
+
+If you click on it, you will be taken directly to that page.
+chat is
+It comes out like this
+Neneeng
+It's not an instantaneous reaction, it's every real-time cycle.
+You can do the same with operator commands.
+The results cannot be confirmed here.
+Hahaha yes
+Oh, you can check it like this
+Everything can be done outside
+
+If you are not an operator, it will look like this
+yes
+
+Now, the support system is Ncoin.
+
+yes
+
+If you set the account transfer method to false, it will be the same method as before.
+If set to true, the information written there appears on the sponsor page.
+
+yes yes
+These days, there are many accounts blocked by voice phishing, so it can be used as a virtual account.
+I changed it to my current form
+oh yeah
+If you use your virtual account, you have to change it periodically every time a request comes in.
+It is set up in such a way as to be entered and transmitted.
+aha
+If true, the account information written there can be viewed immediately without request.
+nen
+If you set the date and time like that, it will change to red.
+If it is set to LINOFFICE now, it will be changed by setting it there
+yes yes
+
+And if you specify a domain
+It is possible like this
+If you use a domain
+Should I not worry about the risk of hacking?
+That's not it.
+
+It will be replaced with a domain instead of an IP.
+Anyone who knows how to see modern times can figure it out even if they do that. So
+I said that it is not good for security to use as a website.
+Oh, I see
+I just need to make a website.
+It would be best to have a blog on the home page. Even if it gets blocked, you can do it right away and there will be no damage.
+yes yes
+
+If you use ssl function
+Currently http:// from this
+It can be like this
+What difference does this make?
+
+What is the difference between http:// and https://
+Modern this needs to get a certificate from the authority
+Ah.. post
+
+Now this is a certificate I created myself.
+
+You need to get it from a certification body.
+yes yes
+
+When it doesn't work, it comes out like this
+yes, will it take long?
+Well, I'll just make manuals for DB and data, and I'll stop today.
+yes,. I'm sorry, I've been working since this morning, so... yes
+
+It's done.
+Yes, thank you very much for your hard work today
+
+So today I'll just go in
+Yes, then, are you going to finish training again tomorrow? yes
+They say I have to look after someone else tomorrow. I'll call you when I have time.
+Yes, I will set the time for you, so please work comfortably.
+
+
+
+

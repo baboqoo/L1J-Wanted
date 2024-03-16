@@ -1,0 +1,180 @@
+I'll replace it with a bucket.
+ah yes
+
+Please go to the blog where you set up your connection.
+yes yes
+
+What was it?
+
+Are you going to use it as your telegram ID?
+red server mouth
+long
+do
+
+I'll put it there
+Wait a minute I need to create an ID. Should I do it right now?
+
+If you do, you can change it there.
+yes
+
+Did you get the client update?
+yes yes
+
+Is it up to date?
+yes yes
+
+Please delete that when the server restarts.
+yes
+I'm going to remove the cache leftovers
+Oh yes
+
+it's done
+Oh, are you doing all the updates?
+Let's move it to the barrel
+Huh.. thank you very much
+
+I just made a new connector.
+yes
+
+When connecting to the server after logging in to the connector, the Chrome browser communicates with the server to process whether or not it is accessible.
+So, I made a button processing so that it can be done after the web page has finished loading.
+yes yes
+
+The added thing is that you can set the probability there.
+
+yes
+
+When moving the operating server
+You need to do that with the external IP of the operating server.
+Yes, then, is it not necessary to log in and change the IP as last time?
+what do you mean
+Did you change your router last time?
+No, it's still the same. Oh, I couldn't set the external IP because of that last time.
+Yes, that's why I did it with an internal IP.
+Should I connect from the outside to the operating server?
+Yes, then you need to set that IP as an external IP.
+same here too
+
+Would you like to rent a server?
+I was thinking of buying that server computer, so it's around 200..
+They say 200 won't be that good.
+
+When I was running a server, the fixed expenses that went out like this and that were actually not easy..
+
+Yes, then once you have a server computer, you need to connect to the Internet separately.
+What do you mean when you say you have to be on the Internet separately? Do not use a sharer.
+Oh yes, then check the external IP on Naver
+211.108.129.4 Please put this in
+Boss, then kt is easier? Regardless of that, I don't know how to touch the router you're using now.
+
+You can do it by just changing the router.
+It's not different, kt is still alive
+I'm the only one who wants to use this, so it doesn't matter
+Aha yes, put your IP there
+If you do, you can connect from outside.
+Yes, boss, is me and internet speed important? yes it is important
+Is there a difference between 1 gigabyte and 500 megabytes to turn it into a server computer?
+500 MB seems to be sufficient, but 1 GB would be much better.
+In my case, I am using 500 megabytes because I am in an area where 1 gigabit internet connection is not available.
+1 GB is used. There is not much difference in price.
+Oh, that's right. I'm trying to use a server computer, but do you know what the specifications should be?
+that
+And do I really need to use a workstation? Not really
+These days, computers are so good that you only need enough memory.
+I don't know if the workstation has good specifications if it is 200. But
+I was looking at it as a work because it has two cpus and more than 256 gigabytes of memory.
+I don't know for sure. In the past, many people used it exclusively for server computers, but these days, it's just for gaming.
+Oh... and I'm going to ask you one more question.
+If you try to run two servers
+Can I buy another connector from the boss? We do not provide more than 2 connectors.
+Yes, yes. So, is it possible to order one more? No, because of the resale, the connector is limited to two.
+When you say two, do you mean two local and external connectors? yes
+
+If you cannot use the accessor blog because it is blocked, then we will do it, but we will not make additional ones.
+Ah.. I just tried to run one of them, and I tried to run one of them, and I tried to run one of them.
+dry available? It can be used locally. Instead, there will be nothing to use as a test site.
+Yes haha ​​that's why I asked haha
+Once you know me and
+In the case of a part to be added, if I write down a separate request and send it to you, will you give me a quote? yes
+Write in as much detail as possible and tell us in detail how, when, what item, what NPC situation, etc.
+I can give you an estimate of whether it is possible or not and how much the price will be.
+First of all, how much should I expect to throw a bomb?
+You'd better not throw bombs.
+Still.. I need some support. I also run the operation.. haha
+
+Sponsorship can be set to n points
+Are you talking about selling items with it? yes
+If you look at it, there is something like a hero weapon.
+Yorenger
+Yes, throwing bombs can overload the server. It's because you hit a lot of monsters in one map.
+It's a live server. It's not a server that costs a dime or two, so there's little pressure, but people like us
+Isn't the server open with an expensive computer?
+Yes, then the crowd can go
+So what happens? Various problems such as memory overload or thread overload may occur.
+Ah.. I need to think about this a little more..
+
+There are a lot of NPCs that are being spawned right now.
+yes yes
+
+I also added this modal like live
+modal?
+This one
+Ah hahahaha yes
+This
+I'm setting this
+Aha wow that's really amazing hahaha
+
+I set it to be treated the same as live.
+
+Hahaha yes yes yes
+86400 This is the time. If Stop View is pressed
+So that it reappears after a day in seconds
+Oh yes
+
+It goes in the same way
+yes yes
+
+Any more questions?
+First of all, I'm waiting for the boss update this time.
+yes
+
+Is it the 12th since you bought it?
+It's probably going to be that much.
+Yes yes I will do it until the 8th
+maintenance
+Oh yes thank you so much I'm going on holiday this week so it's perfect
+Yes, and I also added some blocking when entering the web server from foreign IPs or attacks.
+Oh yes yes
+
+Reservation of protection has also been added.
+Oh yes
+There is something you added to me the other day, such as making the queen ant open every day
+And by the time the hunting ground NPC appears and disappears, you made all the users in the hunting ground bounce back to the village.
+Can I tell you that I'm going to request a correction this time?
+It's done, I'm doing the same
+Ah yes yes thank you The table option at the end is
+Is it the map number? Aha ha ha thank you
+Set it up like this
+Aha yes yes it's good haha
+
+Gaho is integrated Oh yes yes I manage the free Gaho event together with Gaho in the pc room yes yes
+
+The requirement is to check when Divirak is caught.
+What is Divirac? The table is locked
+It can be caught once during operation.
+So what about initialization?
+
+You can do this, or if you are connected, you can also reset the server.
+Oh, then, isn't there a separate initialization in the db? It's D.V.
+This is executed when the server is initialized.
+Aha yes thank you
+I can just do this here
+yes
+
+Do you have anything else?
+Yep, I'll test everything this week and check it out and tell you.
+When will you be comfortable next time? 4th, okay, sir, then I'll check it out and tell you by then.
+Alright, so I'm going to continue here for today.
+Yes, thank you for your hard work~! take care
+
+Thank you for your hard work.

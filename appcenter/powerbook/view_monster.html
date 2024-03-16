@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<link rel="stylesheet" href="/css/l1.world.css">
+	<link rel="stylesheet" href="/css/l1.search.css">
+	<link rel="stylesheet" href="/css/powerbook.css">
+	<link rel="stylesheet" href="/css/wiki.css">
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-powerbook">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Powerbook</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div class="wrap-section-top wrap-section-wiki">
+					<div class="wrap-section-searchform">
+						<!-- (s) 파워북 검색 -->
+						<section class="section-searchform">
+							<form id="suggestForm" name="suggestForm" method="get" action="/powerbook/search" onsubmit="return powerbookSearchCheck();">
+								<input type="text" value="{QUERY}" name="query" autocomplete="off" data-name="suggest_input" id="suggestInput" placeholder="Powerbook Search" onKeyup="sub_searchInputKeyup(this, event);">
+								<input type="button" value="X" title="Delete" id="suggest_delete" data-name="suggest_delete" style="display: none;">
+								<input type="button" value="GO" title="Search" data-name="suggest_submit" id="suggestSubmit" onClick="">
+								<div data-name="suggest_wrap" class="suggest_wrap" style="display: none;"><div data-name="suggest_list" class="suggest_list"><div data-name="suggest_scroll"><ul></ul></div></div></div>
+							</form>
+						</section>
+					</div>
+				</div>
+				
+				<div class="section-wiki">
+					<div class="section-wiki">
+						<div class="wiki__h1"><h1>{NAME}</h1></div>
+						<div class="wiki__group">
+							<div class="wiki__body">
+								<p></p>
+								<section class="object object-monster">
+									<header class="object__header"><img class="object__icon" src="/img/monster/ms{ICON}.png" onerror="this.src='/img/shop/noimg.gif';" alt=""><span class="object__name"><a href="/powerbook/search?query={NAME}">{NAME}</a></span></header>
+									<!-- <header class="object__header"><span class="object__name" style="padding-left: 10px;"><a href="/powerbook/search?query={NAME}">{NAME}</a></span></header>-->
+									<article class="object__attribute">
+										<table>
+											<tbody>
+								                <tr><th scope="col">Level</th><td>{LEVEL}</td></tr>
+								                <tr><th scope="col">AC</th><td>{AC}</td></tr>
+								                <tr><th scope="col">HP</th><td>{HP}</td></tr>
+								                <tr><th scope="col">MP</th><td>{MP}</td></tr>
+								                <tr><th scope="col">Magic Defense</th><td>{MR}</td></tr>
+								                <tr><th scope="col">Weak Attributes</th><td>{WEAK_ATTR}</td></tr>
+								                <tr><th scope="col">Size</th><td>{SIZE}</td></tr>
+								                <tr><th scope="col">Drop Items</th><td><div class="drop-item"><div class="drop-item__bundle"><ul class="drop-item__list">{DROP_LIST}</ul></div></div></td></tr>
+								            </tbody>
+								        </table>
+								    </article>
+								</section>
+								<p></p>
+								<footer class="sub_info"><p>※ The contents may differ from in-game content.</p><p>※ For more accurate information, please refer to NCSOFT PowerBook.</p></footer>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/slick.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+ 	<script src="/js/powerbook.js"></script>
+</body>
+</html>

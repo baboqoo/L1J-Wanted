@@ -1,0 +1,449 @@
+@charset "UTF-8";
+.section-service.homecoming-village .village-info dl::after, .section-service.homecoming-village .village-info::after, .section-signature .my-character-list .wrap-items::after, .section-unseal-process .unseal-process::after, .section-unseal-request .box .available-unseal-amount::after, .section-unseal-request .box ol::after, .ui-slidetab .btns::after, .wrap-returnbrave-recommend-content3::after, .wrap-section-beginner .section-magic .article-magic::after, .wrap-section-beginner .section-recommend>article .article-recommend::after, .wrap-section-beginner section>footer .wrap-button::after, .wrap-section-beginner section>footer p::after, .wrap-section-beginner section>header .wrap-helper dl::after, .wrap-section-boss .section-boss .article-tab .tab::after, .wrap-section-hunt .section-hunt .article-tab ul.tab::after, .wrap-section-service .pcbang .flex .panel::after, .wrap-section-service .pcbang .panel-content::after, .wrap-section-service .pcbang .wrap-box ol::after, .wrap-section-service .pcbang.seal .panel-content .panel .inner::after, .wrap-section-service .section-service .useful-info::after, .wrap-section-service .securitybuff-info::after, .wrap-section-unseal .section-service .useful-info::after {content: ''; display: table; clear: both;}
+.page-my .ui-slidetab .btns li, .page-search .ui-slidetab .btns li, .wrap-returnbrave-recommend-content3 .section-returnbrave-recommend-stats header, .wrap-returnbrave-recommend-content3 section header, .wrap-section-beginner .table-bundle {position: relative;}
+.admin_btn {float: right; background: #c69c7c; border-radius: 20px; padding: 7px; width: 100px; color: #fff;}
+.admin_btn:hover {background: #aa8060;}
+.wrap-section-beginner {position: relative; letter-spacing: -1px; background-image: url(/img/guide/sectionbg.jpg); background-size: 1651.6129px 645.16129px; background-position: center 100px; background-repeat: repeat-x;}
+.wrap-section-beginner.class-0::before {content: ''; display: block; width: 100%; height: 270px; position: absolute; top: 155px; left: 0; background-image: url(/img/guide/m-class-0.png); background-size: 610px 270px; background-position: center center; background-repeat: no-repeat;}
+.wrap-section-beginner .quickmenu {position: fixed; right: 0; top: 120px; width: 130px; height: 143px; padding: 16px; border-radius: 8px 0 0 8px; border: 2px solid #c38b61; border-width: 2px 0 2px 2px; background-color: #fff; font-size: 14px;z-index: 100;}
+.wrap-section-beginner .quickmenu.off {right: -130px;}
+.wrap-section-beginner .quickmenu .button-toggle {position: absolute; right: 130px; top: 43px; width: 40px; height: 54px; border-radius: 27px 0 0 27px; background-color: #c38b61; border: 0;}
+.wrap-section-beginner .quickmenu .button-toggle::before {content: ''; display: inline-block; width: 10px; height: 10px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); border: solid #fff; right: 25px!important; border-width: 2px 2px 0 0;}
+.wrap-section-beginner .quickmenu.off .button-toggle::before {-webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg); margin-left: 7px;}
+.wrap-section-beginner .quickmenu a {display: block; text-align: center; border-bottom: 1px solid #e6e6e6; color: #747880; text-decoration: none; padding: 8px 0;}
+.wrap-section-beginner .quickmenu a.on, .wrap-section-beginner .quickmenu a:active, .wrap-section-beginner .quickmenu a:hover {color: #1f1f1f; font-weight: 400;}
+.wrap-section-beginner .quickmenu a:last-child {border-bottom: 0;}
+.wrap-section-beginner .wrap-section-top {height: 420px;}
+.wrap-section-beginner section {padding-bottom: 40px;}
+.wrap-section-beginner section>header {padding: 30px 18px 19px;}
+.wrap-section-beginner section>header h2 {display: inline-block;font-size: 18px;}
+.wrap-section-beginner section>header .icon-helper {position: relative; display: inline-block; width: 22px; height: 22px; border-radius: 50%; vertical-align: middle; margin-top: -3px; margin-left: 4px; background-color: #aa8060; background-image: url(/img/guide/icon-i.png); background-size: 22px 22px; background-position: center center;background-repeat: no-repeat;}
+.wrap-section-beginner section>header .icon-helper.on::before {position: absolute; left: 4px; top: 36px; content: ''; display: inline-block; width: 12px; height: 12px; border: solid #d0beb1; border-width: 0 2px 2px 0; -webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg); background-color: #fff; z-index: 2;}
+.wrap-section-beginner section.section-top>header {text-align: center; padding-top: 0; height: 270px;}
+.wrap-section-beginner section p {line-height: 1.4;}
+.wrap-section-beginner section.section-top>header .copy__subtitle {font-size: 16px; color: #c69c7c;position: relative; padding-top: 40px; padding-bottom: 10px;}
+.wrap-section-beginner section.section-top>header .copy__x {display: inline-block; margin: 0 auto; width: 20px; height: 20px; position: relative;}
+.wrap-section-beginner section.section-top>header .copy__x::after, .wrap-section-beginner section.section-top>header .copy__x::before {content: ''; position: absolute; display: inline-block; width: 20px; height: 20px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); border: solid #c69c7c; left: 0; top: 0;}
+.wrap-section-beginner section.section-top>header .copy__x::before {margin-top: -7px; margin-left: -7px; border-width: 0 1px 0 0;}
+.wrap-section-beginner section.section-top>header .copy__x::after {margin-top: 7px; margin-left: -7px; border-width: 1px 0 0;}
+.wrap-section-beginner section.section-top>header .copy__title {font-size: 34px; color: #886344; margin-top: 5px; margin-bottom: 12px;}
+.wrap-section-beginner section.section-top>header .copy__menulist {font-size: 14px; color: #886344; word-spacing: -1px; margin-bottom: 145px;}
+.wrap-section-beginner section.section-item {position: relative; z-index: 2;}
+.wrap-section-beginner section>footer p {font-size: 13px; color: #959aa2;}
+.wrap-section-beginner section>header .wrap-helper {margin-top: 20px; border: 2px solid #d0beb1; background-color: #fff; padding: 14px 16px; font-size: 13px; color: #747880;}
+.wrap-section-hunt .section-hunt .article-tab {padding-left: 18px; padding-right: 18px; padding-bottom: 30px;}
+.wrap-section-hunt .section-hunt .article-tab ul.tab {display: table; width: 100%; height: 48px;}
+.wrap-section-hunt .section-hunt .article-tab ul.tab li {position: relative; float: left; display: table-cell; width: 25%; height: 48px; text-align: center; border: 1px solid #e1e1e5; border-left-width: 0;}
+.wrap-section-boss .section-boss .article-tab .tab .tab-item:first-child, .wrap-section-hunt .section-hunt .article-tab ul.tab li:first-child {border-left-width: 1px;}
+.wrap-section-hunt .section-hunt .article-tab ul.tab li.on, .wrap-section-hunt .section-hunt .article-tab ul.tab li.slick-current {border-color: #c69c7c; background-color: #c69c7c;}
+.wrap-section-hunt .section-hunt .article-tab ul.tab li a {display: table; width: 100%; height: 100%; padding-top: 14px; vertical-align: middle; color: #747880;}
+.wrap-section-boss .section-boss>header h2, .wrap-section-hunt .section-hunt .article-tab ul.tab li.on a, .wrap-section-hunt .section-hunt .article-tab ul.tab li.slick-current a {color: #fff;}
+.wrap-section-hunt .section-hunt .article-tab ul.tab li.on::after, .wrap-section-hunt .section-hunt .article-tab ul.tab li.slick-current::after {content: ''; display: inline-block; position: absolute; left: calc(50% - 10px); width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #c69c7c;}
+.wrap-section-boss .section-boss .article-boss, .wrap-section-hunt .section-hunt .article-hunt {padding-left: 18px;}
+.wrap-section-beginner .table-bundle .table-bundle-row {overflow-x: auto; -webkit-overflow-scrolling: auto;}
+.wrap-section-beginner .table {table-layout: auto; border-collapse: collapse; text-align: center; font-size: 13px; line-height: 1.5;}
+.wrap-section-beginner .table.table-size-1 { width: calc(100% - 18px); }
+.wrap-section-beginner .table.table-size-2 { width: 462px; }
+.wrap-section-beginner .table.table-size-3 { width: 652px; }
+.wrap-section-beginner .table.table-size-4 { width: 842px; }
+.wrap-section-beginner .table.table-size-5 { width: 1032px; }
+.wrap-section-beginner .table.table-size-6 { width: 1222px; }
+.wrap-section-beginner .table.table-size-7 { width: 1412px; }
+.wrap-section-beginner .table.table-size-8 { width: 1602px; }
+.wrap-section-beginner .table.table-size-9 { width: 1792px; }
+.wrap-section-beginner .table.table-size-10 { width: 1982px; }
+.wrap-section-beginner .table.table-size-11 { width: 2172px; }
+.wrap-section-beginner .table.table-size-12 { width: 2362px; }
+.wrap-section-beginner .table.table-size-13 { width: 2252px; }
+.wrap-section-beginner .table.table-size-14 { width: 2742px; }
+.wrap-section-beginner .table.table-size-15 { width: 2932px; }
+.wrap-section-beginner .table.table-size-16 { width: 3132px; }
+.wrap-section-beginner .table.table-size-17 { width: 3332px; }
+.wrap-section-beginner .table.table-size-18 { width: 3532px; }
+.wrap-section-beginner .table.table-size-19 { width: 3732px; }
+.wrap-section-beginner .table.table-size-20 { width: 3932px; }
+.wrap-section-beginner .table.table-size-21 { width: 4132px; }
+.wrap-section-beginner .table.table-size-22 { width: 4332px; }
+.wrap-section-beginner .table.table-size-23 { width: 4532px; }
+.wrap-section-beginner .table.table-size-24 { width: 4732px; }
+.wrap-section-beginner .table.table-size-25 { width: 4932px; }
+.wrap-section-beginner .table.table-size-26 { width: 5132px; }
+.wrap-section-beginner .table.table-size-27 { width: 5332px; }
+.wrap-section-beginner .table.table-size-28 { width: 5532px; }
+.wrap-section-beginner .table.table-size-29 { width: 5732px; }
+.wrap-section-beginner .table.table-size-30 { width: 5932px; }
+.wrap-section-beginner .table.table-size-31 { width: 6132px; }
+.wrap-section-beginner .table.table-size-32 { width: 6332px; }
+.wrap-section-beginner .table.table-size-33 { width: 6532px; }
+.wrap-section-beginner .table.table-size-34 { width: 6732px; }
+.wrap-section-beginner .table.table-size-35 { width: 6932px; }
+.wrap-section-beginner .table.table-size-36 { width: 7132px; }
+.wrap-section-beginner .table.table-size-37 { width: 7332px; }
+.wrap-section-beginner .table.table-size-38 { width: 7532px; }
+.wrap-section-beginner .table.table-size-39 { width: 7732px; }
+.wrap-section-beginner .table.table-size-40 { width: 7932px; }
+.wrap-section-beginner .table.table-size-41 { width: 8132px; }
+.wrap-section-beginner .table.table-size-42 { width: 8332px; }
+.wrap-section-beginner .table.table-size-43 { width: 8532px; }
+.wrap-section-beginner .table.table-size-44 { width: 8732px; }
+.wrap-section-beginner .table.table-size-45 { width: 8932px; }
+.wrap-section-beginner .table.table-size-46 { width: 9132px; }
+.wrap-section-beginner .table.table-size-47 { width: 9332px; }
+.wrap-section-beginner .table.table-size-48 { width: 9532px; }
+.wrap-section-beginner .table.table-size-49 { width: 9732px; }
+.wrap-section-beginner .table.table-size-50 { width: 9932px; }
+.wrap-section-beginner .table.table-size-51 { width: 10132px; }
+.wrap-section-beginner .table.table-size-52 { width: 10332px; }
+.wrap-section-beginner .table.table-size-53 { width: 10532px; }
+.wrap-section-beginner .table.table-size-54 { width: 10732px; }
+.wrap-section-beginner .table.table-size-55 { width: 10932px; }
+.wrap-section-beginner .table.table-size-56 { width: 11132px; }
+.wrap-section-beginner .table.table-size-57 { width: 11332px; }
+.wrap-section-beginner .table.table-size-58 { width: 11532px; }
+.wrap-section-beginner .table.table-size-59 { width: 11732px; }
+.wrap-section-beginner .table.table-size-60 { width: 11932px; }
+.wrap-section-beginner .table.table-size-61 { width: 12132px; }
+.wrap-section-beginner .table.table-size-62 { width: 12332px; }
+.wrap-section-beginner .table.table-size-63 { width: 12532px; }
+.wrap-section-beginner .table.table-size-64 { width: 12732px; }
+.wrap-section-beginner .table.table-size-65 { width: 12932px; }
+.wrap-section-beginner .table.table-size-66 { width: 13132px; }
+.wrap-section-beginner .table.table-size-67 { width: 13332px; }
+.wrap-section-beginner .table.table-size-68 { width: 13532px; }
+.wrap-section-beginner .table.table-size-69 { width: 13732px; }
+.wrap-section-beginner .table.table-size-70 { width: 13932px; }
+
+.wrap-section-beginner .table .thead+td, .wrap-section-beginner .table .thead+th {padding-left: 82px; width: 272px; border-left: 0!important;}
+.wrap-section-beginner .section-hunt .table-bundle .table-bundle-row .table {display: none; color: #747880; border-top: 2px solid #d0beb1; border-bottom: 1px solid #e5e5e5; background-color: #fff;}
+.wrap-section-beginner .table td, .wrap-section-beginner .table th {width: 190px; height: 60px; padding: 8px 15px; font-weight: 400; line-height: 1.4;}
+.wrap-section-beginner .table th {font-size: 15px;}
+.wrap-section-beginner .table .thead {font-size: 13px!important; position: absolute; display: table; width: 72px;}
+.wrap-section-beginner .table tbody>tr>.thead, .wrap-section-beginner .table thead>tr>.thead {border-left: 0!important;}
+.wrap-section-beginner .table tbody>tr:first-child>td, .wrap-section-beginner .table thead>tr>.thead {border-top: 0!important;}
+.wrap-section-beginner .section-hunt .table-bundle .table-bundle-row .table td, .wrap-section-beginner .section-hunt .table-bundle .table-bundle-row .table th {border-left: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5;}
+.wrap-section-beginner .section-hunt .table-bundle .table-bundle-row .table th {color: #1f1f1f; background-color: #fbf4ee;}
+.wrap-section-beginner .section-hunt .table-bundle .table-bundle-row .table tbody>tr>.thead, .wrap-section-beginner .section-hunt .table-bundle .table-bundle-row .table thead>tr>.thead {color: #1f1f1f; background-color: #f4f5f7;}
+.wrap-section-beginner .table .thead>span {display: table-cell; vertical-align: middle;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row .table .spawn, .wrap-section-beginner .section-hunt .table-bundle .table-bundle-row .table .feature {height: 95px;}
+.wrap-section-beginner .section-hunt .table-bundle .table-bundle-row .table .drop {height: 120px;}
+.wrap-section-beginner .section-magic>article, .wrap-section-beginner .section-recommend>article, .wrap-section-beginner section>footer {padding-left: 18px; padding-right: 18px;}
+.wrap-section-hunt .section-hunt footer {padding-top: 12px;}
+.wrap-section-boss {background-color: #000;background-image: url(/img/guide/boss-bg-m.jpg); background-size: 960px 400px; background-position: center top;background-repeat: no-repeat;}
+.wrap-section-boss .section-boss .article-tab, .wrap-section-service .pcbang .subtext {padding-bottom: 20px;}
+.wrap-section-boss .section-boss .article-tab .tab {width: 100%; height: 60px; margin-bottom: 20px;}
+.wrap-section-boss .section-boss .article-tab .tab .tab-item {position: relative; float: left; width: 7.69231%; height: 60px; text-align: center; border-left-width: 0;}
+.wrap-section-boss .section-boss .article-tab .tab .tab-item a {display: table; width: 100%; height: 48px; padding-top: 14px; vertical-align: middle; font-size: 13px; color: #959aa2; border: 1px solid #27292c; background-color: #000;}
+.wrap-section-boss .section-boss .article-tab .tab .tab-item.on a, .wrap-section-boss .section-boss .article-tab .tab .tab-item.slick-current a {color: #fff; font-weight: 700; border-color: #6c7581; background-color: #6c7581;}
+.wrap-section-boss .section-boss .article-tab .tab .tab-item.on::after, .wrap-section-boss .section-boss .article-tab .tab .tab-item.slick-current::after {content: ''; display: inline-block; position: absolute; left: calc(50% - 10px); width: 0; height: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #6c7581;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row .table {color: #a3a8b2; border-top: 2px solid #6c7581; border-bottom: 1px solid #27292c; background-color: #27292c;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row .table th {border-left: 1px solid #4d5156; border-top: 1px solid #4d5156; color: #fff; background-color: #3d4147;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row .table td {border-left: 1px solid #3a3b3e; border-top: 1px solid #3a3b3e;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row .table .thumbnail {height: 150px; padding-top: 20px; padding-bottom: 20px; text-align: center;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row .table .drop {height: 145px;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row .table tbody>tr>.thead, .wrap-section-beginner .section-boss .table-bundle .table-bundle-row .table thead>tr>.thead {color: #fff; background-color: #1d1e20;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row .table tbody>tr>.thead {border-top: 1px solid #3a3b3e!important;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row .table .thumbnail img.thumb {width: 110px;height: 110px;border-radius: 50%;}
+.wrap-section-beginner .section-recommend {padding-bottom: 0;}
+.wrap-section-beginner .section-recommend>article .copy {text-align: center; padding-bottom: 20px; margin-bottom: 20px; font-size: 15px; color: #959aa2; border-bottom: 1px solid #e6e6e6;}
+.wrap-section-beginner .section-recommend .recommend-card {display: inline-block; float: left; width: calc(100% * .5); text-align: center; overflow: hidden; cursor: pointer;}
+.wrap-section-beginner .section-recommend .recommend-card a {display: block; cursor: pointer;}
+.wrap-section-beginner .section-recommend .recommend-card .recommend-card__thumb {display: block; width: 140px; height: 140px; border-radius: 100%; background-color: #c6cbd2; margin: 0 auto; padding-top: 20px; text-align: center; vertical-align: top;}
+.wrap-section-beginner .section-recommend .recommend-card a:hover .recommend-card__thumb {-webkit-transition: .3s ease-in-out; transition: .3s ease-in-out; background-color: #a4acb9;}
+.wrap-section-beginner .section-recommend .recommend-card .recommend-card__subject {padding-top: 16px; padding-bottom: 11px; font-size: 15px; color: #1f1f1f;}
+.wrap-section-beginner .section-recommend .recommend-card .recommend-card__desc {font-size: 13px; color: #888;}
+.wrap-section-beginner .section-recommend .recommend-card .recommend-card__thumb img {width: 100px; height: 100px; margin: 0 auto;}
+.wrap-section-boss .section-boss .article-tab .tab .slick-arrow {width: 48px; height: 48px;background-color: #3d4147;}
+.wrap-section-boss .section-boss .article-tab .tab .slick-arrow::before {display: inline-block;width: 7px;height: 7px;border: solid #fff;border-width: 0 0 2px 2px;}
+.section-signature .my-character-list .btn-close::before, .wrap-section-boss .section-boss .article-tab .tab .slick-arrow.slick-prev::before, body.ingame .modal-confirm>.btn-close::before {-webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
+.wrap-section-boss .section-boss .article-tab .tab .slick-arrow.slick-next::before {-webkit-transform: rotate(225deg); -ms-transform: rotate(225deg); transform: rotate(225deg);}
+.article-boss .table-bundle-row .table {display:none;}
+.article-boss .table-bundle-row .table.on {display:block;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar {width: 5.2px;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar-thumb {background-color:#3d4147;}
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar-button:start:decrement {display:block; width: 15px; background:url('/img/guide/scrollbar_v2.png') 0px -15px; }
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar-button:end:increment {display:block; width: 15px; background:url('/img/guide/scrollbar_v2.png') -15px -15px; }
+.wrap-section-beginner .section-boss .table-bundle .table-bundle-row::-webkit-scrollbar-track {scrollbar-track-color: #27292c;scrollbar-face-color: #3d4147;scrollbar-shadow-color: #3d4147;}
+
+.article-boss-time .table-bundle-row .table.on {display: block;}
+.wrap-section-boss .section-boss-time>header h2 {color: #fff;}
+.wrap-section-boss .section-boss-time .article-boss-time {padding-left: 18px;}
+.wrap-section-beginner .section-boss-time .table th {width: 200px;}
+.wrap-section-beginner .section-boss-time .table .thead {width: 72px;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table {color: #a3a8b2; border-top: 2px solid #6c7581; border-bottom: 1px solid #27292c; background-color: #27292c;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table tbody>tr>.thead, .wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table thead>tr>.thead {color: #fff; background-color: #1d1e20;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table tbody>tr>.time.thead {height: 238px;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table tbody>tr>.percent.thead {height: 108px;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table tbody>tr>.reward.thead {height: 108px;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table th {border-left: 1px solid #4d5156; border-top: 1px solid #4d5156; color: #fff; background-color: #3d4147;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table td {border-left: 1px solid #3a3b3e; border-top: 1px solid #3a3b3e;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table tbody>tr>.thead {border-top: 1px solid #3a3b3e!important;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row .table .percent {height: 108px;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar {width: 5.2px;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar-thumb {background-color:#3d4147;}
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar-button:start:decrement {display:block; width: 15px; background:url('/img/guide/scrollbar_v2.png') 0px -15px; }
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar-button:end:increment {display:block; width: 15px; background:url('/img/guide/scrollbar_v2.png') -15px -15px; }
+.wrap-section-beginner .section-boss-time .table-bundle .table-bundle-row::-webkit-scrollbar-track {scrollbar-track-color: #27292c;scrollbar-face-color: #3d4147;scrollbar-shadow-color: #3d4147;}
+
+.wrap-section-hunt .section-hunt .wrap-button-bundle {border-top: 1px solid #e6e6e6; margin-top: 30px;}
+.wrap-section-hunt .section-hunt .wrap-button-bundle p.copy {text-align: center; padding: 24px 0 0; font-size: 16px; color: #1f1f1f;}
+.wrap-section-beginner section>footer .wrap-button {margin-top: 20px; text-align: center;}
+.section-unseal-history table td .button.primary, .section-unseal-request table td .button.primary, .wrap-returnbrave-recommend-top5 .section-returnbrave-recommend-top5 header .wrap-button .button.primary, .wrap-section-beginner section>footer .wrap-button .button.primary, .wrap-section-service .section-service .subtext .button.primary, .wrap-section-unseal .section-service .subtext .button.primary, body.ingame .modal-confirm .contents footer.wrap-button .button.primary {color: #fff; border-color: #c69c7c; background: #c69c7c;}
+.wrap-section-hunt .section-hunt .wrap-button-bundle .btn-powerbook {width: 168px;}
+.wrap-section-beginner section>footer .wrap-button .button {padding: 9px 15px; color: #888; border: 1px solid #c7c7cc; outline: 0; border-radius: 100px; text-decoration: none; background-color: transparent;}
+.wrap-section-beginner section>footer .wrap-button .button {display: inline-block; height: 48px; padding-top: 11px; padding-left: 20px; padding-right: 20px; font-size: 16px; line-height: 1.4;}
+.wrap-section-beginner section>footer .wrap-button .button+.button {margin-top: 5px; margin-left: 4px;}
+.wrap-section-beginner section>footer .wrap-button .button:hover {background-color: #aa8060;}
+
+@media (min-width: 640px){
+	.wrap-section-beginner section>article, .wrap-section-beginner section>footer, .wrap-section-beginner section>header {padding-left: 40px;padding-right: 40px;}
+	.wrap-section-beginner section>header {padding-top: 40px;}
+	.wrap-section-hunt .section-hunt>article {padding-left: 0;padding-right: 0;}
+	.wrap-section-hunt .section-hunt>article .article-hunt, .wrap-section-hunt .section-hunt>article .article-tab {padding-left: 40px;}
+	.wrap-section-hunt .section-hunt>article .article-tab {padding-right: 40px;}
+	.wrap-section-beginner .table.table-size-1, .wrap-section-beginner .table.table-size-2, .wrap-section-beginner .table.table-size-3 {width: calc(100% - 40px);}
+	.wrap-section-beginner .table.table-size-1 .thead, .wrap-section-beginner .table.table-size-2 .thead, .wrap-section-beginner .table.table-size-3 .thead {width: 72px;position: static;}
+	.wrap-section-beginner .table.table-size-1 td:not(.thead), .wrap-section-beginner .table.table-size-1 th:not(.thead) {width: 100%;}
+	.wrap-section-beginner .table.table-size-2 td:not(.thead), .wrap-section-beginner .table.table-size-2 th:not(.thead) {width: 50%;}
+	.wrap-section-beginner .table.table-size-3 td:not(.thead), .wrap-section-beginner .table.table-size-3 th:not(.thead) {width: 33.33333%;}
+	.wrap-section-beginner .table.table-size-1 .thead+td, .wrap-section-beginner .table.table-size-1 .thead+th, .wrap-section-beginner .table.table-size-2 .thead+td, .wrap-section-beginner .table.table-size-2 .thead+th, .wrap-section-beginner .table.table-size-3 .thead+td, .wrap-section-beginner .table.table-size-3 .thead+th {padding-left: 10px;}
+	.wrap-section-boss .section-boss>article {padding-left: 0;padding-right: 0;}
+	.wrap-section-boss .section-boss>article .article-boss, .wrap-section-boss .section-boss>article .article-tab {padding-left: 40px;}
+	.wrap-section-boss .section-boss>article .article-tab {padding-right: 40px;}
+	.wrap-section-boss .section-boss-time>article {padding-left: 0; padding-right: 0;}
+	.wrap-section-boss .section-boss-time>article .article-tab {padding-right: 40px;}
+	.wrap-section-boss .section-boss-time>article .article-boss-time, .wrap-section-boss .section-boss-time>article .article-tab {padding-left: 40px;}
+	.wrap-section-beginner .section-boss-time>header {padding-top: 0px;}
+}
+
+@media (min-width: 960px){
+	.wrap-section-beginner {background-size: 2560px 1000px!important; background-position: center 0!important; margin-top: -55px;}
+	.wrap-section-beginner.class-0::before {height: 1000px; position: absolute; top: 0; background-image: url(/img/guide/pc-class-0.png); background-size: 1920px 1000px; background-position: center center; background-repeat: no-repeat;}
+	.wrap-section-beginner .quickmenu {top: 230px;}
+	.wrap-section-beginner .quickmenu .button-toggle {top: 43px;}
+	.wrap-section-beginner .wrap-section-top {height: 520px;}
+	.wrap-section-beginner section {padding-bottom: 60px;}
+	.wrap-section-beginner section.section-top {padding: 0 0 36px;}
+	.wrap-section-beginner section.section-top>header {height: 263px;}
+	.wrap-section-beginner section.section-top>header .copy__subtitle {padding-top: 60px;padding-bottom: 16px;font-size: 18px;}
+	.wrap-section-beginner section.section-top>header .copy__title {font-size: 48px;}
+	.wrap-section-beginner section.section-top>header .copy__menulist {font-size: 15px;}
+	.wrap-section-beginner section header .wrap-helper {display: -webkit-box; display: -ms-flexbox; display: flex; padding: 40px 28px 30px;}
+	.wrap-section-beginner section>article {padding-left: 40px; padding-right: 40px;}
+	.wrap-section-boss .section-boss>article .article-boss, .wrap-section-hunt .section-hunt>article .article-hunt {padding-right: 40px;}
+	.wrap-section-beginner .table.table-size-1, .wrap-section-beginner .table.table-size-2, .wrap-section-beginner .table.table-size-3, .wrap-section-beginner .table.table-size-4, .wrap-section-beginner .table.table-size-5 {width: 100%!important;}
+	.wrap-section-beginner .table.table-size-2 .thead+td, .wrap-section-beginner .table.table-size-2 .thead+th {width: 50%; padding-left: 10px;}
+	.wrap-section-beginner .table.table-size-2 td, .wrap-section-beginner .table.table-size-2 th {width: 50%;padding-left: 15px;}
+	.wrap-section-beginner .table.table-size-3 td, .wrap-section-beginner .table.table-size-3 th {width: 33.33333%; padding-left: 15px;}
+	.wrap-section-beginner .table.table-size-4 td, .wrap-section-beginner .table.table-size-4 th {width: 25%; padding-left: 15px;}
+	.wrap-section-beginner .table.table-size-5 td, .wrap-section-beginner .table.table-size-5 th {width: 20%;padding-left: 15px;}
+	.wrap-section-beginner .table.table-size-4 .thead+td, .wrap-section-beginner .table.table-size-4 .thead+th {width: 25%;padding-left: 10px;}
+	.wrap-section-beginner .table.table-size-1 .thead, .wrap-section-beginner .table.table-size-2 .thead, .wrap-section-beginner .table.table-size-3 .thead, .wrap-section-beginner .table.table-size-4 .thead, .wrap-section-beginner .table.table-size-5 .thead {width: 116px!important;position: static;}
+	.wrap-section-beginner .table.table-size-10, .wrap-section-beginner .table.table-size-11, .wrap-section-beginner .table.table-size-12, .wrap-section-beginner .table.table-size-13, .wrap-section-beginner .table.table-size-14, .wrap-section-beginner .table.table-size-15, .wrap-section-beginner .table.table-size-6, .wrap-section-beginner .table.table-size-7, .wrap-section-beginner .table.table-size-8, .wrap-section-beginner .table.table-size-9 {margin-right: 20px;}
+	.wrap-section-beginner .table.table-size-10 td, .wrap-section-beginner .table.table-size-10 th, .wrap-section-beginner .table.table-size-11 td, .wrap-section-beginner .table.table-size-11 th, .wrap-section-beginner .table.table-size-12 td, .wrap-section-beginner .table.table-size-12 th, .wrap-section-beginner .table.table-size-13 td, .wrap-section-beginner .table.table-size-13 th, .wrap-section-beginner .table.table-size-14 td, .wrap-section-beginner .table.table-size-14 th, .wrap-section-beginner .table.table-size-15 td, .wrap-section-beginner .table.table-size-15 th, .wrap-section-beginner .table.table-size-6 td, .wrap-section-beginner .table.table-size-6 th, .wrap-section-beginner .table.table-size-7 td, .wrap-section-beginner .table.table-size-7 th, .wrap-section-beginner .table.table-size-8 td, .wrap-section-beginner .table.table-size-8 th, .wrap-section-beginner .table.table-size-9 td, .wrap-section-beginner .table.table-size-9 th {width: 190px;}
+	.wrap-section-beginner .table.table-size-10 .thead, .wrap-section-beginner .table.table-size-11 .thead, .wrap-section-beginner .table.table-size-12 .thead, .wrap-section-beginner .table.table-size-13 .thead, .wrap-section-beginner .table.table-size-14 .thead, .wrap-section-beginner .table.table-size-15 .thead, .wrap-section-beginner .table.table-size-6 .thead, .wrap-section-beginner .table.table-size-7 .thead, .wrap-section-beginner .table.table-size-8 .thead, .wrap-section-beginner .table.table-size-9 .thead {width: 116px;}
+	.wrap-section-boss {background-image: url(/img/guide/boss-bg.jpg);background-size: 2560px 700px;background-position: center top;background-repeat: no-repeat;}
+	.wrap-section-boss .section-boss>article .article-tab .tab .tab-item {display: table;height: 48px;}
+	.wrap-section-boss .section-boss>article .article-tab .tab .tab-item a {display: table-cell;padding: 0 4px;}
+	.wrap-section-boss .section-boss>article .article-tab .tab .tab-item.on::after, .wrap-section-boss .section-boss>article .article-tab .tab .tab-item.slick-current::after {bottom: -10px;}
+	.wrap-section-beginner .table.table-size-10 .thead+td, .wrap-section-beginner .table.table-size-10 .thead+th, .wrap-section-beginner .table.table-size-11 .thead+td, .wrap-section-beginner .table.table-size-11 .thead+th, .wrap-section-beginner .table.table-size-12 .thead+td, .wrap-section-beginner .table.table-size-12 .thead+th, .wrap-section-beginner .table.table-size-13 .thead+td, .wrap-section-beginner .table.table-size-13 .thead+th, .wrap-section-beginner .table.table-size-14 .thead+td, .wrap-section-beginner .table.table-size-14 .thead+th, .wrap-section-beginner .table.table-size-15 .thead+td, .wrap-section-beginner .table.table-size-15 .thead+th, .wrap-section-beginner .table.table-size-6 .thead+td, .wrap-section-beginner .table.table-size-6 .thead+th, .wrap-section-beginner .table.table-size-7 .thead+td, .wrap-section-beginner .table.table-size-7 .thead+th, .wrap-section-beginner .table.table-size-8 .thead+td, .wrap-section-beginner .table.table-size-8 .thead+th, .wrap-section-beginner .table.table-size-9 .thead+td, .wrap-section-beginner .table.table-size-9 .thead+th {width: 316px; padding-left: 126px;}
+	.wrap-section-beginner .section-recommend>article {padding-left: 40px;padding-right: 40px;}
+	.wrap-section-beginner .section-recommend>article .copy {padding-bottom: 30px;margin-bottom: 30px;}
+	.wrap-section-beginner .section-recommend .recommend-card {width: 16.6%;}
+	.wrap-section-hunt .section-hunt .wrap-button-bundle p.copy {padding: 40px 0 0;}
+	.wrap-section-beginner .section-recommend>article .copy br, .wrap-section-hunt .section-hunt .wrap-button-bundle p.copy br {display: none;}
+	.wrap-section-beginner section>footer .wrap-button {margin-top: 30px;}
+	.wrap-section-beginner section>footer .wrap-button .button {font-size: 16px; width: 260px;}
+	.wrap-section-hunt .section-hunt .wrap-button-bundle .btn-powerbook {width: 200px;}
+	.wrap-section-beginner .table.table-size-16 .thead+td, .wrap-section-beginner .table.table-size-16 .thead+th, 
+	.wrap-section-beginner .table.table-size-17 .thead+td, .wrap-section-beginner .table.table-size-17 .thead+th, 
+	.wrap-section-beginner .table.table-size-18 .thead+td, .wrap-section-beginner .table.table-size-18 .thead+th, 
+	.wrap-section-beginner .table.table-size-19 .thead+td, .wrap-section-beginner .table.table-size-19 .thead+th, 
+	.wrap-section-beginner .table.table-size-20 .thead+td, .wrap-section-beginner .table.table-size-20 .thead+th, 
+	.wrap-section-beginner .table.table-size-21 .thead+td, .wrap-section-beginner .table.table-size-21 .thead+th, 
+	.wrap-section-beginner .table.table-size-22 .thead+td, .wrap-section-beginner .table.table-size-22 .thead+th, 
+	.wrap-section-beginner .table.table-size-23 .thead+td, .wrap-section-beginner .table.table-size-23 .thead+th, 
+	.wrap-section-beginner .table.table-size-24 .thead+td, .wrap-section-beginner .table.table-size-24 .thead+th, 
+	.wrap-section-beginner .table.table-size-25 .thead+td, .wrap-section-beginner .table.table-size-25 .thead+th, 
+	.wrap-section-beginner .table.table-size-26 .thead+td, .wrap-section-beginner .table.table-size-26 .thead+th, 
+	.wrap-section-beginner .table.table-size-27 .thead+td, .wrap-section-beginner .table.table-size-27 .thead+th, 
+	.wrap-section-beginner .table.table-size-28 .thead+td, .wrap-section-beginner .table.table-size-28 .thead+th, 
+	.wrap-section-beginner .table.table-size-29 .thead+td, .wrap-section-beginner .table.table-size-29 .thead+th, 
+	.wrap-section-beginner .table.table-size-30 .thead+td, .wrap-section-beginner .table.table-size-30 .thead+th, 
+	.wrap-section-beginner .table.table-size-31 .thead+td, .wrap-section-beginner .table.table-size-31 .thead+th, 
+	.wrap-section-beginner .table.table-size-32 .thead+td, .wrap-section-beginner .table.table-size-32 .thead+th, 
+	.wrap-section-beginner .table.table-size-33 .thead+td, .wrap-section-beginner .table.table-size-33 .thead+th, 
+	.wrap-section-beginner .table.table-size-34 .thead+td, .wrap-section-beginner .table.table-size-34 .thead+th, 
+	.wrap-section-beginner .table.table-size-35 .thead+td, .wrap-section-beginner .table.table-size-35 .thead+th, 
+	.wrap-section-beginner .table.table-size-36 .thead+td, .wrap-section-beginner .table.table-size-36 .thead+th, 
+	.wrap-section-beginner .table.table-size-37 .thead+td, .wrap-section-beginner .table.table-size-37 .thead+th, 
+	.wrap-section-beginner .table.table-size-38 .thead+td, .wrap-section-beginner .table.table-size-38 .thead+th, 
+	.wrap-section-beginner .table.table-size-39 .thead+td, .wrap-section-beginner .table.table-size-39 .thead+th, 
+	.wrap-section-beginner .table.table-size-40 .thead+td, .wrap-section-beginner .table.table-size-40 .thead+th, 
+	.wrap-section-beginner .table.table-size-41 .thead+td, .wrap-section-beginner .table.table-size-41 .thead+th, 
+	.wrap-section-beginner .table.table-size-42 .thead+td, .wrap-section-beginner .table.table-size-42 .thead+th, 
+	.wrap-section-beginner .table.table-size-43 .thead+td, .wrap-section-beginner .table.table-size-43 .thead+th, 
+	.wrap-section-beginner .table.table-size-44 .thead+td, .wrap-section-beginner .table.table-size-44 .thead+th, 
+	.wrap-section-beginner .table.table-size-45 .thead+td, .wrap-section-beginner .table.table-size-45 .thead+th, 
+	.wrap-section-beginner .table.table-size-46 .thead+td, .wrap-section-beginner .table.table-size-46 .thead+th, 
+	.wrap-section-beginner .table.table-size-47 .thead+td, .wrap-section-beginner .table.table-size-47 .thead+th, 
+	.wrap-section-beginner .table.table-size-48 .thead+td, .wrap-section-beginner .table.table-size-48 .thead+th, 
+	.wrap-section-beginner .table.table-size-49 .thead+td, .wrap-section-beginner .table.table-size-49 .thead+th, 
+	.wrap-section-beginner .table.table-size-50 .thead+td, .wrap-section-beginner .table.table-size-50 .thead+th, 
+	.wrap-section-beginner .table.table-size-51 .thead+td, .wrap-section-beginner .table.table-size-51 .thead+th, 
+	.wrap-section-beginner .table.table-size-52 .thead+td, .wrap-section-beginner .table.table-size-52 .thead+th, 
+	.wrap-section-beginner .table.table-size-53 .thead+td, .wrap-section-beginner .table.table-size-53 .thead+th, 
+	.wrap-section-beginner .table.table-size-54 .thead+td, .wrap-section-beginner .table.table-size-54 .thead+th, 
+	.wrap-section-beginner .table.table-size-55 .thead+td, .wrap-section-beginner .table.table-size-55 .thead+th, 
+	.wrap-section-beginner .table.table-size-56 .thead+td, .wrap-section-beginner .table.table-size-56 .thead+th, 
+	.wrap-section-beginner .table.table-size-57 .thead+td, .wrap-section-beginner .table.table-size-57 .thead+th, 
+	.wrap-section-beginner .table.table-size-58 .thead+td, .wrap-section-beginner .table.table-size-58 .thead+th, 
+	.wrap-section-beginner .table.table-size-59 .thead+td, .wrap-section-beginner .table.table-size-59 .thead+th,  
+	.wrap-section-beginner .table.table-size-60 .thead+td, .wrap-section-beginner .table.table-size-60 .thead+th,  
+	.wrap-section-beginner .table.table-size-61 .thead+td, .wrap-section-beginner .table.table-size-61 .thead+th,  
+	.wrap-section-beginner .table.table-size-62 .thead+td, .wrap-section-beginner .table.table-size-62 .thead+th,  
+	.wrap-section-beginner .table.table-size-63 .thead+td, .wrap-section-beginner .table.table-size-63 .thead+th,  
+	.wrap-section-beginner .table.table-size-64 .thead+td, .wrap-section-beginner .table.table-size-64 .thead+th,  
+	.wrap-section-beginner .table.table-size-65 .thead+td, .wrap-section-beginner .table.table-size-65 .thead+th,  
+	.wrap-section-beginner .table.table-size-66 .thead+td, .wrap-section-beginner .table.table-size-66 .thead+th,  
+	.wrap-section-beginner .table.table-size-67 .thead+td, .wrap-section-beginner .table.table-size-67 .thead+th,  
+	.wrap-section-beginner .table.table-size-68 .thead+td, .wrap-section-beginner .table.table-size-68 .thead+th,  
+	.wrap-section-beginner .table.table-size-69 .thead+td, .wrap-section-beginner .table.table-size-69 .thead+th,  
+	.wrap-section-beginner .table.table-size-70 .thead+td, .wrap-section-beginner .table.table-size-70 .thead+th {width: 316px; padding-left: 126px;}
+	.wrap-section-boss .section-boss-time>article .article-boss-time {padding-right: 40px;}
+}
+
+@media (min-width: 1340px){
+	.wrap-section-beginner section {width: 1340px; margin-left: auto; margin-right: auto;}
+	.wrap-section-beginner section header .wrap-helper {padding-left: 53px; padding-right: 53px;}
+	.wrap-section-beginner .table.table-size-1, .wrap-section-beginner .table.table-size-2, .wrap-section-beginner .table.table-size-3, .wrap-section-beginner .table.table-size-4, .wrap-section-beginner .table.table-size-5, .wrap-section-beginner .table.table-size-6 {width: 100%!important;}
+	.wrap-section-beginner .table.table-size-2 .thead+td, .wrap-section-beginner .table.table-size-2 .thead+th, .wrap-section-beginner .table.table-size-2 td, .wrap-section-beginner .table.table-size-2 th {width: 50%; padding-left: 15px;}
+	.wrap-section-beginner .table.table-size-3 .thead+td, .wrap-section-beginner .table.table-size-3 .thead+th, .wrap-section-beginner .table.table-size-3 td, .wrap-section-beginner .table.table-size-3 th {width: 33.33333%; padding-left: 15px;}
+	.wrap-section-beginner .table.table-size-4 .thead+td, .wrap-section-beginner .table.table-size-4 .thead+th, .wrap-section-beginner .table.table-size-4 td, .wrap-section-beginner .table.table-size-4 th {width: 25%;padding-left: 15px;}
+	.wrap-section-beginner .table.table-size-5 .thead+td, .wrap-section-beginner .table.table-size-5 .thead+th, .wrap-section-beginner .table.table-size-5 td, .wrap-section-beginner .table.table-size-5 th {width: 20%; padding-left: 15px;}
+	.wrap-section-beginner .table.table-size-1 .thead, .wrap-section-beginner .table.table-size-2 .thead, .wrap-section-beginner .table.table-size-3 .thead, .wrap-section-beginner .table.table-size-4 .thead, .wrap-section-beginner .table.table-size-5 .thead, .wrap-section-beginner .table.table-size-6 .thead {width: 216px!important; position: static;}
+	.wrap-section-beginner .table.table-size-6 .thead+td, .wrap-section-beginner .table.table-size-6 .thead+th, .wrap-section-beginner .table.table-size-6 td, .wrap-section-beginner .table.table-size-6 th {width: 16.66667%; padding-left: 15px;}
+	.wrap-section-beginner .table.table-size-10 .thead, .wrap-section-beginner .table.table-size-11 .thead, .wrap-section-beginner .table.table-size-12 .thead, .wrap-section-beginner .table.table-size-13 .thead, .wrap-section-beginner .table.table-size-14 .thead, .wrap-section-beginner .table.table-size-15 .thead, .wrap-section-beginner .table.table-size-7 .thead, .wrap-section-beginner .table.table-size-8 .thead, .wrap-section-beginner .table.table-size-9 .thead {width: 216px;}
+	.wrap-section-beginner .table.table-size-10 td, .wrap-section-beginner .table.table-size-10 th, .wrap-section-beginner .table.table-size-11 td, .wrap-section-beginner .table.table-size-11 th, .wrap-section-beginner .table.table-size-12 td, .wrap-section-beginner .table.table-size-12 th, .wrap-section-beginner .table.table-size-13 td, .wrap-section-beginner .table.table-size-13 th, .wrap-section-beginner .table.table-size-14 td, .wrap-section-beginner .table.table-size-14 th, .wrap-section-beginner .table.table-size-15 td, .wrap-section-beginner .table.table-size-15 th, .wrap-section-beginner .table.table-size-7 td, .wrap-section-beginner .table.table-size-7 th, .wrap-section-beginner .table.table-size-8 td, .wrap-section-beginner .table.table-size-8 th, .wrap-section-beginner .table.table-size-9 td, .wrap-section-beginner .table.table-size-9 th {width: 190px;}
+	.wrap-section-beginner .table.table-size-10 .thead+td, .wrap-section-beginner .table.table-size-10 .thead+th, .wrap-section-beginner .table.table-size-11 .thead+td, .wrap-section-beginner .table.table-size-11 .thead+th, .wrap-section-beginner .table.table-size-12 .thead+td, .wrap-section-beginner .table.table-size-12 .thead+th, .wrap-section-beginner .table.table-size-13 .thead+td, .wrap-section-beginner .table.table-size-13 .thead+th, .wrap-section-beginner .table.table-size-14 .thead+td, .wrap-section-beginner .table.table-size-14 .thead+th, .wrap-section-beginner .table.table-size-15 .thead+td, .wrap-section-beginner .table.table-size-15 .thead+th, .wrap-section-beginner .table.table-size-7 .thead+td, .wrap-section-beginner .table.table-size-7 .thead+th, .wrap-section-beginner .table.table-size-8 .thead+td, .wrap-section-beginner .table.table-size-8 .thead+th, .wrap-section-beginner .table.table-size-9 .thead+td, .wrap-section-beginner .table.table-size-9 .thead+th {width: 416px; padding-left: 226px;}
+	.wrap-section-beginner .table.table-size-16 .thead, .wrap-section-beginner .table.table-size-17 .thead, 
+	.wrap-section-beginner .table.table-size-18 .thead, .wrap-section-beginner .table.table-size-19 .thead, 
+	.wrap-section-beginner .table.table-size-20 .thead, .wrap-section-beginner .table.table-size-21 .thead, 
+	.wrap-section-beginner .table.table-size-22 .thead, .wrap-section-beginner .table.table-size-23 .thead, 
+	.wrap-section-beginner .table.table-size-24 .thead, .wrap-section-beginner .table.table-size-25 .thead, 
+	.wrap-section-beginner .table.table-size-26 .thead, .wrap-section-beginner .table.table-size-27 .thead, 
+	.wrap-section-beginner .table.table-size-28 .thead, .wrap-section-beginner .table.table-size-29 .thead, 
+	.wrap-section-beginner .table.table-size-30 .thead, .wrap-section-beginner .table.table-size-31 .thead, 
+	.wrap-section-beginner .table.table-size-32 .thead, .wrap-section-beginner .table.table-size-33 .thead, 
+	.wrap-section-beginner .table.table-size-34 .thead, .wrap-section-beginner .table.table-size-35 .thead, 
+	.wrap-section-beginner .table.table-size-36 .thead, .wrap-section-beginner .table.table-size-37 .thead, 
+	.wrap-section-beginner .table.table-size-38 .thead, .wrap-section-beginner .table.table-size-39 .thead, 
+	.wrap-section-beginner .table.table-size-40 .thead, .wrap-section-beginner .table.table-size-41 .thead, 
+	.wrap-section-beginner .table.table-size-42 .thead, .wrap-section-beginner .table.table-size-43 .thead, 
+	.wrap-section-beginner .table.table-size-44 .thead, .wrap-section-beginner .table.table-size-45 .thead, 
+	.wrap-section-beginner .table.table-size-46 .thead, .wrap-section-beginner .table.table-size-47 .thead, 
+	.wrap-section-beginner .table.table-size-48 .thead, .wrap-section-beginner .table.table-size-49 .thead, 
+	.wrap-section-beginner .table.table-size-50 .thead, .wrap-section-beginner .table.table-size-51 .thead, 
+	.wrap-section-beginner .table.table-size-52 .thead, .wrap-section-beginner .table.table-size-53 .thead, 
+	.wrap-section-beginner .table.table-size-54 .thead, .wrap-section-beginner .table.table-size-55 .thead, 
+	.wrap-section-beginner .table.table-size-56 .thead, .wrap-section-beginner .table.table-size-57 .thead, 
+	.wrap-section-beginner .table.table-size-58 .thead, .wrap-section-beginner .table.table-size-59 .thead, 
+	.wrap-section-beginner .table.table-size-60 .thead, .wrap-section-beginner .table.table-size-61 .thead, 
+	.wrap-section-beginner .table.table-size-62 .thead, .wrap-section-beginner .table.table-size-63 .thead, 
+	.wrap-section-beginner .table.table-size-64 .thead, .wrap-section-beginner .table.table-size-65 .thead, 
+	.wrap-section-beginner .table.table-size-66 .thead, .wrap-section-beginner .table.table-size-67 .thead, 
+	.wrap-section-beginner .table.table-size-68 .thead, .wrap-section-beginner .table.table-size-69 .thead, 
+	.wrap-section-beginner .table.table-size-70 .thead {width: 216px;}
+	.wrap-section-beginner .table.table-size-16 td, .wrap-section-beginner .table.table-size-17 th, 
+	.wrap-section-beginner .table.table-size-18 td, .wrap-section-beginner .table.table-size-19 th, 
+	.wrap-section-beginner .table.table-size-20 td, .wrap-section-beginner .table.table-size-21 th, 
+	.wrap-section-beginner .table.table-size-22 td, .wrap-section-beginner .table.table-size-23 th, 
+	.wrap-section-beginner .table.table-size-24 td, .wrap-section-beginner .table.table-size-25 th, 
+	.wrap-section-beginner .table.table-size-26 td, .wrap-section-beginner .table.table-size-27 th, 
+	.wrap-section-beginner .table.table-size-28 td, .wrap-section-beginner .table.table-size-29 th, 
+	.wrap-section-beginner .table.table-size-30 td, .wrap-section-beginner .table.table-size-31 th, 
+	.wrap-section-beginner .table.table-size-32 td, .wrap-section-beginner .table.table-size-33 th, 
+	.wrap-section-beginner .table.table-size-34 td, .wrap-section-beginner .table.table-size-35 th, 
+	.wrap-section-beginner .table.table-size-36 td, .wrap-section-beginner .table.table-size-37 th, 
+	.wrap-section-beginner .table.table-size-38 td, .wrap-section-beginner .table.table-size-39 th, 
+	.wrap-section-beginner .table.table-size-40 td, .wrap-section-beginner .table.table-size-41 th, 
+	.wrap-section-beginner .table.table-size-42 td, .wrap-section-beginner .table.table-size-43 th, 
+	.wrap-section-beginner .table.table-size-44 td, .wrap-section-beginner .table.table-size-45 th, 
+	.wrap-section-beginner .table.table-size-46 td, .wrap-section-beginner .table.table-size-47 th, 
+	.wrap-section-beginner .table.table-size-48 td, .wrap-section-beginner .table.table-size-49 th, 
+	.wrap-section-beginner .table.table-size-50 td, .wrap-section-beginner .table.table-size-50 th, 
+	.wrap-section-beginner .table.table-size-51 td, .wrap-section-beginner .table.table-size-51 th, 
+	.wrap-section-beginner .table.table-size-52 td, .wrap-section-beginner .table.table-size-52 th, 
+	.wrap-section-beginner .table.table-size-53 td, .wrap-section-beginner .table.table-size-53 th, 
+	.wrap-section-beginner .table.table-size-54 td, .wrap-section-beginner .table.table-size-54 th, 
+	.wrap-section-beginner .table.table-size-55 td, .wrap-section-beginner .table.table-size-55 th, 
+	.wrap-section-beginner .table.table-size-56 td, .wrap-section-beginner .table.table-size-56 th, 
+	.wrap-section-beginner .table.table-size-57 td, .wrap-section-beginner .table.table-size-57 th, 
+	.wrap-section-beginner .table.table-size-58 td, .wrap-section-beginner .table.table-size-58 th, 
+	.wrap-section-beginner .table.table-size-59 td, .wrap-section-beginner .table.table-size-59 th, 
+	.wrap-section-beginner .table.table-size-60 td, .wrap-section-beginner .table.table-size-60 th, 
+	.wrap-section-beginner .table.table-size-61 td, .wrap-section-beginner .table.table-size-61 th, 
+	.wrap-section-beginner .table.table-size-62 td, .wrap-section-beginner .table.table-size-62 th, 
+	.wrap-section-beginner .table.table-size-63 td, .wrap-section-beginner .table.table-size-63 th, 
+	.wrap-section-beginner .table.table-size-64 td, .wrap-section-beginner .table.table-size-64 th, 
+	.wrap-section-beginner .table.table-size-65 td, .wrap-section-beginner .table.table-size-65 th, 
+	.wrap-section-beginner .table.table-size-66 td, .wrap-section-beginner .table.table-size-66 th, 
+	.wrap-section-beginner .table.table-size-67 td, .wrap-section-beginner .table.table-size-67 th, 
+	.wrap-section-beginner .table.table-size-68 td, .wrap-section-beginner .table.table-size-68 th, 
+	.wrap-section-beginner .table.table-size-69 td, .wrap-section-beginner .table.table-size-69 th, 
+	.wrap-section-beginner .table.table-size-70 td, .wrap-section-beginner .table.table-size-70 th {width: 200px;}
+	.wrap-section-beginner .table.table-size-16 .thead+td, .wrap-section-beginner .table.table-size-16 .thead+th, 
+	.wrap-section-beginner .table.table-size-17 .thead+td, .wrap-section-beginner .table.table-size-17 .thead+th, 
+	.wrap-section-beginner .table.table-size-18 .thead+td, .wrap-section-beginner .table.table-size-18 .thead+th, 
+	.wrap-section-beginner .table.table-size-19 .thead+td, .wrap-section-beginner .table.table-size-19 .thead+th, 
+	.wrap-section-beginner .table.table-size-20 .thead+td, .wrap-section-beginner .table.table-size-20 .thead+th, 
+	.wrap-section-beginner .table.table-size-21 .thead+td, .wrap-section-beginner .table.table-size-21 .thead+th, 
+	.wrap-section-beginner .table.table-size-22 .thead+td, .wrap-section-beginner .table.table-size-22 .thead+th, 
+	.wrap-section-beginner .table.table-size-23 .thead+td, .wrap-section-beginner .table.table-size-23 .thead+th, 
+	.wrap-section-beginner .table.table-size-24 .thead+td, .wrap-section-beginner .table.table-size-24 .thead+th, 
+	.wrap-section-beginner .table.table-size-25 .thead+td, .wrap-section-beginner .table.table-size-25 .thead+th, 
+	.wrap-section-beginner .table.table-size-26 .thead+td, .wrap-section-beginner .table.table-size-26 .thead+th, 
+	.wrap-section-beginner .table.table-size-27 .thead+td, .wrap-section-beginner .table.table-size-27 .thead+th, 
+	.wrap-section-beginner .table.table-size-28 .thead+td, .wrap-section-beginner .table.table-size-28 .thead+th, 
+	.wrap-section-beginner .table.table-size-29 .thead+td, .wrap-section-beginner .table.table-size-29 .thead+th, 
+	.wrap-section-beginner .table.table-size-30 .thead+td, .wrap-section-beginner .table.table-size-30 .thead+th, 
+	.wrap-section-beginner .table.table-size-31 .thead+td, .wrap-section-beginner .table.table-size-31 .thead+th, 
+	.wrap-section-beginner .table.table-size-32 .thead+td, .wrap-section-beginner .table.table-size-32 .thead+th, 
+	.wrap-section-beginner .table.table-size-33 .thead+td, .wrap-section-beginner .table.table-size-33 .thead+th, 
+	.wrap-section-beginner .table.table-size-34 .thead+td, .wrap-section-beginner .table.table-size-34 .thead+th, 
+	.wrap-section-beginner .table.table-size-35 .thead+td, .wrap-section-beginner .table.table-size-35 .thead+th, 
+	.wrap-section-beginner .table.table-size-36 .thead+td, .wrap-section-beginner .table.table-size-36 .thead+th, 
+	.wrap-section-beginner .table.table-size-37 .thead+td, .wrap-section-beginner .table.table-size-37 .thead+th, 
+	.wrap-section-beginner .table.table-size-38 .thead+td, .wrap-section-beginner .table.table-size-38 .thead+th, 
+	.wrap-section-beginner .table.table-size-39 .thead+td, .wrap-section-beginner .table.table-size-39 .thead+th, 
+	.wrap-section-beginner .table.table-size-40 .thead+td, .wrap-section-beginner .table.table-size-40 .thead+th, 
+	.wrap-section-beginner .table.table-size-41 .thead+td, .wrap-section-beginner .table.table-size-41 .thead+th, 
+	.wrap-section-beginner .table.table-size-42 .thead+td, .wrap-section-beginner .table.table-size-42 .thead+th, 
+	.wrap-section-beginner .table.table-size-43 .thead+td, .wrap-section-beginner .table.table-size-43 .thead+th, 
+	.wrap-section-beginner .table.table-size-44 .thead+td, .wrap-section-beginner .table.table-size-44 .thead+th, 
+	.wrap-section-beginner .table.table-size-45 .thead+td, .wrap-section-beginner .table.table-size-45 .thead+th, 
+	.wrap-section-beginner .table.table-size-46 .thead+td, .wrap-section-beginner .table.table-size-46 .thead+th, 
+	.wrap-section-beginner .table.table-size-47 .thead+td, .wrap-section-beginner .table.table-size-47 .thead+th, 
+	.wrap-section-beginner .table.table-size-48 .thead+td, .wrap-section-beginner .table.table-size-48 .thead+th, 
+	.wrap-section-beginner .table.table-size-49 .thead+td, .wrap-section-beginner .table.table-size-49 .thead+th, 
+	.wrap-section-beginner .table.table-size-50 .thead+td, .wrap-section-beginner .table.table-size-50 .thead+th, 
+	.wrap-section-beginner .table.table-size-51 .thead+td, .wrap-section-beginner .table.table-size-51 .thead+th, 
+	.wrap-section-beginner .table.table-size-52 .thead+td, .wrap-section-beginner .table.table-size-52 .thead+th, 
+	.wrap-section-beginner .table.table-size-53 .thead+td, .wrap-section-beginner .table.table-size-53 .thead+th, 
+	.wrap-section-beginner .table.table-size-54 .thead+td, .wrap-section-beginner .table.table-size-54 .thead+th, 
+	.wrap-section-beginner .table.table-size-55 .thead+td, .wrap-section-beginner .table.table-size-55 .thead+th, 
+	.wrap-section-beginner .table.table-size-56 .thead+td, .wrap-section-beginner .table.table-size-56 .thead+th, 
+	.wrap-section-beginner .table.table-size-57 .thead+td, .wrap-section-beginner .table.table-size-57 .thead+th, 
+	.wrap-section-beginner .table.table-size-58 .thead+td, .wrap-section-beginner .table.table-size-58 .thead+th, 
+	.wrap-section-beginner .table.table-size-59 .thead+td, .wrap-section-beginner .table.table-size-59 .thead+th, 
+	.wrap-section-beginner .table.table-size-60 .thead+td, .wrap-section-beginner .table.table-size-60 .thead+th, 
+	.wrap-section-beginner .table.table-size-61 .thead+td, .wrap-section-beginner .table.table-size-61 .thead+th, 
+	.wrap-section-beginner .table.table-size-62 .thead+td, .wrap-section-beginner .table.table-size-62 .thead+th, 
+	.wrap-section-beginner .table.table-size-63 .thead+td, .wrap-section-beginner .table.table-size-63 .thead+th, 
+	.wrap-section-beginner .table.table-size-64 .thead+td, .wrap-section-beginner .table.table-size-64 .thead+th, 
+	.wrap-section-beginner .table.table-size-65 .thead+td, .wrap-section-beginner .table.table-size-65 .thead+th, 
+	.wrap-section-beginner .table.table-size-66 .thead+td, .wrap-section-beginner .table.table-size-66 .thead+th, 
+	.wrap-section-beginner .table.table-size-67 .thead+td, .wrap-section-beginner .table.table-size-67 .thead+th, 
+	.wrap-section-beginner .table.table-size-68 .thead+td, .wrap-section-beginner .table.table-size-68 .thead+th, 
+	.wrap-section-beginner .table.table-size-69 .thead+td, .wrap-section-beginner .table.table-size-69 .thead+th, 
+	.wrap-section-beginner .table.table-size-70 .thead+td, .wrap-section-beginner .table.table-size-70 .thead+th  {width: 416px; padding-left: 226px;}
+}

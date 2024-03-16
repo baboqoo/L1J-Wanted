@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{SERVER_NAME}</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/error.css">
+</head>
+<body class="pc page-error">
+	<div class="error-container" id="container">
+	    <div class="logo"><a class="logo-link" href="/index"><img src="/img/plaync.png" alt="plaync icon"/></a></div>
+	    <div class="error-contents-wrap">
+		    <header class="error-header"><h1 class="title">{ERROR_MESSAGE}</h1><p class="subcopy">If the same issue persists, please contact customer support for assistance.</p></header>
+		    <div class="error-contents">
+		        <div class="error-btn-wrap">
+		            <button class="btn btn-error btn-error--o btn-back" onclick="history.go(-1);">Previous Page</button>
+		            <a href="javascript:customerLocation();" class="btn btn-error btn-inquiry">Customer Support</a>
+		        </div>
+		        <div class="links"><a href="/index"><span>Home</span></a></div>
+		    </div>
+		</div>
+	    <footer id="footer" class="error-footer-wrap"><p class="copyright">Ⓒ {SERVER_NAME}. All Rights Reserved.</p></footer>
+	</div>
+	
+	<script type="text/javascript">
+	function customerLocation(){
+		var form = document.createElement("form");
+		form.setAttribute('charset', 'UTF-8');
+		form.setAttribute('method', 'POST');
+		form.setAttribute('action', '/customer');
+		
+		var hiddenField_1 = document.createElement('input');
+		hiddenField_1.setAttribute('type', 'hidden');
+		hiddenField_1.setAttribute('name', 'type');
+		hiddenField_1.setAttribute('value', '1');
+		form.appendChild(hiddenField_1);
+		
+		var hiddenField_2 = document.createElement('input');
+		hiddenField_2.setAttribute('type', 'hidden');
+		hiddenField_2.setAttribute('name', 'num');
+		hiddenField_2.setAttribute('value', '0');
+		form.appendChild(hiddenField_2);
+		document.body.appendChild(form);
+		form.submit();
+	}
+</script>
+</body>
+</html>

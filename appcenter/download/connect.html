@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- css -->
+	<link rel="stylesheet" href="/css/community.css">
+	<link rel="stylesheet" type="text/css" href="/css/nccommunity-theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/l1.download.css">
+    
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+.guide_list .btn_download {position: relative; display: block; width: 250px; margin: 0 auto 50px; padding: 20px 0 22px; border-radius: 100px; background-color: #b5bdca; text-align: center; font-size: 16px; line-height: 19px; color: #fff;}
+.guide_list .icon_download {display: inline-block; vertical-align: top; margin: 2px 10px 0 0; width: 17px; height: 16px; background-image: url(/img/icon-download-s.png); background-size: 17px 16px; background-position: center center; background-repeat: no-repeat;}
+.download_area.sub {padding: 52px 40px 50px; border-top: 1px solid #fff;}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-download">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Download</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div class="wrap-section-launcher">
+					<section class="download">
+						<div class="download_area">
+							<div class="download_area_inner">
+								<div class="icon_launcher2"></div>
+								<div class="text_wrap"><h2>{SERVER_NAME} Launcher</h2><p class="desc">You need to download our setup program to install the {SERVER_NAME} Connector in your computer.<br/>After that, when using the launcher for the first time, the Lineage Client will be automatically downloaded.</p><span class="comment">* Windows XP, Windows Vista are not supported.</span></div>
+								<a href="{CONNECT_URL}" id="downloadUrl" class="btn_download" title="Setup"><span class="icon_download"></span>Lineage Warrior Setup Donwload</a>
+								<!--<a href="download/LWSetup.zip" id="downloadUrl" class="btn_download" title="Setup"><span class="icon_download"></span>Lineage Warrior Setup Donwload</a>-->
+							</div>
+						</div>
+					</section>
+					<section>
+						<h3>Connection Error FAQ</h3>
+						<a href="#" class="toggle_bar">Windows Defender</a>
+						<!-- <ul class="guide_list"><li><div class="text"><a href="/download/DefenderController.zip" id="downloadUrl" class="btn_download" download="DefenderController.zip" title="윈도우 디펜더"><span class="icon_download"></span>DefenderControl 다운로드</a></div><div class="text">※ 접속기가 자동 삭제가 된다면 압축해제 후 디펜더 끄기를 눌러주세요.</div></li></ul> -->
+						<ul class="guide_list"><li>
+							<div class="text"></div><div class="text">Sometimes the Windows Defender program gives a false positive for a virus in the Launcher. To avoid this, during the installation of {SERVER_NAME} Launcher an exclusion is added to the windows registry so that this does not happen. If this still happens and Windows Defender removes the Launcher, add an exclusion yourself to the folder where Lineage is installed and run {SERVER_NAME} setup again. To add the folder exclusion do the following:<br><br>
+							※ Select Start.<br>
+						    ※ Open Settings.<br>
+							※ Under Privacy & security, select Virus & threat protection.<br>
+							※ Under Virus & threat protection settings, select Manage settings.<br>
+							※ Under Exclusions, select Add or remove exclusions.<br>
+							※ Select Add an exclusion, and then select from folders.<br>
+							※ Write the folder where you have installed Lineage.<br><br>
+							<img src="/img/library/windowsdefender.png" alt="Windows Defender">
+						</div></li></ul>
+						<a href="#" class="toggle_bar">Microsoft Redistributables error</a>
+						<ul class="guide_list"><li>
+							<div class="text"><a href="download/Microsoft_redist.zip" id="downloadUrl" class="btn_download" target="_blank" title="DLL error"><span class="icon_download"></span>Redistributables Download</a></div>
+							<!--<div class="text">Error message: Cannot find 'libcocos2d.dll'. Please, re-install this application</div><img src="/img/library/libcocos.png" alt="DLL error"></li></ul> -->
+							<div class="text">The Lineage Warrior launcher has a built-in utility to check if the system has already installed the Microsoft redistributables necessary to launch Lineage. If not, they will be downloaded and installed automatically, but if for some reason the Lineage Warrior launcher is not able to perform this action, follow the steps below:<br><br>
+								※ Click the "Redistributables Download" button above this text to download the necessary redistributables (compressed in a zip file)<br>
+								※ Once the file is downloaded, unzip it using your favorite ZIP decompressor.<br>
+								※ Double click on the file "VC_redist.x86.exe" to open the Microsoft installer and follow the steps indicated.<br>
+								※ Double click on the "vcredist_x86" file to open the Microsoft installer and follow the steps indicated.<br>
+								※ Run the Lineage Warrior to enjoy the world of Aden.<br>
+							</li></ul>
+					</section>
+					<div class="wrap-section-driver">
+						<section class="section-rauncher"><a href="https://discord.com/register" target="_blank" class="button" title="Discord">Go to Discord</a><p>Enjoy multiplayer gaming with Discord!</p></section>
+						<section class="section-directx"><a href="https://lineage.plaync.com/" target="_blank" class="button" title="Lineage NC Softg">Official Lineage</a><p>Visit the official Lineage website (NCSoft)</p></section>
+						<section class="section-erl"><a href="/download/memreduct.zip" target="_self" class="button able" id="btn_erl" download="memreduct.zip" title="Memory Optimization">Memory Optimization</a><p>Program for optimizing system memory</p></section>
+					</div>
+					<section class="client_guide">					
+						<h3>Installation Details</h3>
+						<div class="client_area">
+						<div class="logo_wrap lineage">
+							<div class="logo_lineage"></div>
+						</div>
+						<strong class="title">Lineage Remastered Client</strong>
+						<ul class="desc_list">
+							<li>&middot; Update: March 23, 2023</li>
+							<li>&middot; File Size: 11GB</li>
+							<li>&middot; Uninstall Method: Control Panel &gt; Add/Remove Programs &gt; Lineage Warrior</li>
+							<li>&middot; Supported Operating Systems: Windows 7 (Service Pack 1 or above), Windows 8.1, Windows 10</li>
+						</ul>
+						</div>
+						<div class="client_area">
+						<div class="logo_wrap launcher">
+							<div class="logo_launcher"></div>
+						</div>
+						<strong class="title">Lineage Warrior Launcher</strong>
+						<ul class="desc_list">
+							<li>&middot; Update: February 02, 2024</li>
+							<li>&middot; File Size: 27MB</li>
+							<li>&middot; Uninstall Method: Control Panel &gt; Add/Remove Programs &gt; Lineage Warrior</li>
+							<li>&middot; Supported Operating Systems: Windows 7 (Service Pack 1 or above), Windows 8.1, Windows 10</li>
+						</ul>
+						</div>
+						  
+					</section>
+				</div>
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+	<script type="text/javascript">
+	$('.toggle_bar').on('click', function(e){
+		if(!$(this).hasClass('open')){
+			$('.toggle_bar').removeClass('open');
+			$(this).addClass('open');
+		}else{
+			$(this).removeClass('open');
+		}
+		eventStop(event);
+	});
+	</script>
+
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+</body>
+</html>

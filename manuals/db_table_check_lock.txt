@@ -1,0 +1,20 @@
+Check and release db lock
+
+1. checkdb -> queries -> new query
+
+2. SELECT * FROM information_schema.INNODB_LOCK_WAITS;
+Indicates the session currently waiting.
+
+3. SELECT * FROM information_schema.INNODB_LOCKS;
+Shows the current lock information.
+
+4. SELECT * FROM information_schema.INNODB_TRX;
+Shows the status of the transaction holding the lock.
+
+5. SHOW PROCESSLIST;
+Shows all process information.
+
+6. Check if the State has the Waiting for table metadata lock item
+
+7. KILL 255; Unlock by terminating by specifying the process ID
+

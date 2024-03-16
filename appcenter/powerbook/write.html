@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{SERVER_NAME}</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0" />
+
+	<!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/nc-cnb.css" />
+    <link rel="stylesheet" href="/css/l1.main.css">
+    <link rel="stylesheet" href="/css/my_style.css">
+    <link rel="stylesheet" href="/css/jquery.scrollbar.css">
+    
+    <!-- css -->
+	<link rel="stylesheet" href="/css/community.css">
+	<link rel="stylesheet" type="text/css" href="/css/nccommunity-theme.css">
+	<link rel="stylesheet" type="text/css" href="/css/l1.board.css">
+	
+    <!-- js -->
+ 	<script src="/js/jquery-3.3.1.min.js"></script>
+ 	
+ 	<link rel="stylesheet" href="/css/l1.world.css">
+	<link rel="stylesheet" href="/css/l1.search.css">
+	<link rel="stylesheet" href="/css/powerbook.css">
+	<link rel="stylesheet" href="/css/wiki.css">
+ 	
+ 	<!-- include libraries(jQuery, bootstrap) -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<!-- include summernote css/js -->
+	<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/my.summurnote.css">
+	<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+	<script src="/js/summernote-ko-KR.min.js"></script>
+ 	
+ 	<!-- 스크립트 비활성화 유저 리다이렉트 -->
+ 	<noscript><meta http-equiv="Refresh" content="0; URL=http://www.enable-javascript.com/en/" /></noscript>
+</head>
+<style>
+.guide__tit {padding-top: 35px; padding: 20px 15px 8px; font-size: 23px;}
+.tit_area input {width: 100%; padding: 10px 19px; border: 1px solid #eaecef; border-right: none; border-left: none; font-size: 16px;}
+.con_area textarea {width: 100%;padding: 10px; border: none;}
+.note-editor.note-airframe, .note-editor.note-frame{border: none;}
+.attach_addimg {float: left; width: 200px; display: contents;}
+.attach_addimg .fileBtn {position: relative; display: inline-block; width: 100px; height: 40px;}
+.attach_addimg .fileBtn .addimg_btn {color: #fff; background: #ffc4c4; outline: none; cursor: pointer;}
+.attach_addimg input[type="file"] {opacity: 0; position: absolute; width: 0px; height: 0px;}
+.attach_addimg .preview {position: absolute; display: inline-block; padding-left: 20px;}
+.attach_addimg .preview img {width: 60px; height: 60px;}
+.attach_addimg .preview>span {display: none;}
+.attach_addimg .preview img + span {display: inline-block; width: 25px; height: 25px; background: url(/img/close_w25.png) left top no-repeat; margin: 0px 20px 35px 12px; cursor: pointer;}
+.complet {float: right;}
+.complet .btn {background: #fff; border: 1px solid #ddd; width: 100px; font-weight: 700;}
+.complet .btn:hover {border: 1px solid #ffc4c4;}
+.close {float: none; font-size: 15px; font-weight: 500; line-height: 39px; color: #fff; text-shadow: none; filter: alpha(opacity=20); opacity: 1;}
+</style>
+<script type="text/javascript">
+function noBack(){	window.history.forward();	}
+
+window.history.forward();
+function noBack() {
+	window.history.forward();
+}
+
+//전역 스크립트 변수 선언
+const serverName	= '{SERVER_NAME}';
+const suggestEnable	= '{SUGGEST_ENABLE}';
+const getTime		= '{NOW}';
+const cnb		= {CNB};
+const pageCnbType	= {PAGE_CNB_TYPE};
+const pageCnbSubType	= {PAGE_CNB_SUB_TYPE};
+const account		= {USER_DATA};
+</script>
+<body class="page-powerbook">
+	<!-- navi -->
+	<div id="nc-cnb" class="nc-cnb nc-cnb--lineage custom-theme is-top" data-device="pc" data-ncc-device="pc" data-cnb-type="a" data-theme="lineage"></div>
+	
+	<div id="svg-container" style="display: none;"></div>
+	
+	<div id="container" class="container">
+		<!-- page container -->
+		<div class="wrap-header"><header class="header"><h1 class="header-title">Powerbook</h1></header></div>
+		<div class="section-contents">
+			<div class="wrap-contents">
+				<div class="wrap-section-top wrap-section-wiki">
+					<div class="wrap-section-searchform">
+						<!-- (s) 파워북 검색 -->
+						<section class="section-searchform">
+							<form id="suggestForm" name="suggestForm" method="get" action="/powerbook/search" onsubmit="return powerbookSearchCheck();">
+								<input type="text" value="" name="query" autocomplete="off" data-name="suggest_input" id="suggestInput" placeholder="Powerbook Search">
+								<input type="button" value="X" title="Delete" id="suggest_delete" data-name="suggest_delete" style="display: none;">
+								<input type="button" value="GO" title="Search" data-name="suggest_submit" id="suggestSubmit" onClick="">
+								<div data-name="suggest_wrap" class="suggest_wrap" style="display: none;"><div data-name="suggest_list" class="suggest_list"><div data-name="suggest_scroll"><ul></ul></div></div></div>
+							</form>
+						</section>
+					</div>
+				</div>
+				
+				<h2 class="guide__tit">Guide</h2>
+				<div class="section-wiki">
+					<div class="section-wiki">
+						<div class="powerbookFormContainer">
+							<form name="powerbookForm" onsubmit="return false;">
+								<div class="tit_area"><input type="text" name="title" maxlength="50" placeholder="Title" /></div>
+								<div class="con_area"><textarea id="summernote" name="content" style="min-height: 500px;"></textarea></div>
+								<div class="attach_addimg">
+									<div class="fileBtn">
+										<input type="button" class="btn addimg_btn" value="Main Image" onclick="fileLink(1)">
+										<input type="file" name="uploadFile" onchange="loadImg(this)" id="F0"><!-- 실제 파일 -->
+									</div>
+									<!-- 미리보기 -->
+									<div class="preview"><span class="0th"><img src="" id="0th"><span onclick="deleteFile('0')"></span></span></div>
+								</div>
+								<div class="complet"><input type="button" class="btn btn_return" onclick="javascript:history.go(-1);" value="Cancel"><input type="button" class="btn btn_complet" onclick="powerbookInsertCheck();" value="Add"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	
+		<!-- wrap-footer -->
+		<div class="wrap-footer"></div>
+	</div>
+	
+	<!-- popup -->
+	<div id="layer_alert" class="default" style="display:none;"></div>
+	<div class="dimmed" style="display: none;">dimmed</div>
+	
+	<!-- script -->
+	<script src="/js/jquery.scrollbar.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script src="/js/jquery.number.min.js"></script>
+	<script src="/js/slick.min.js"></script>
+	<script src="/js/util.js"></script>
+ 	<script src="/js/init.js"></script>
+ 	<script src="/js/popup.js"></script>
+ 	<script src="/js/storage.js"></script>
+ 	<script src="/js/powerbook.js"></script>
+ 	
+ 	<script src="/js/summernote.js"></script>
+	<script src="/js/addImg.js"></script>
+<script type="text/javascript">
+function powerbookInsertCheck(){
+	if(!powerbookForm.title.value){
+		popupShow('Please enter a title.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);// 팝업창
+		return false;
+	}
+	if(!powerbookForm.content.value){
+		popupShow('Please enter the detail.', '<span class="type2"><a href="javascript:popupClose();" class="close">Close</a></span>', null);
+		return false;
+	}
+	const limitSize = 1 * 1024 * 1024;// 1MB
+	const mainImg = $('#F0').prop('files')[0];
+	if(mainImg != undefined && mainImg.size > limitSize){
+		alert('Please upload an image under 1MB.');
+		return false;
+	}
+	if(maxByteCheck(powerbookForm.content.value, 1)){// 용량 체크
+		var data = new FormData(powerbookForm);
+		$.ajax ({
+			data:			data,
+			type:			'POST',
+			url:			"/define/powerbook/insert",
+			contentType:	false,
+			processData:	false,
+			cache:			false,
+			timeout:		600000,
+			success:function(res){
+				if(res)	location.href='/powerbook';
+				else	location.href='/powerbook/write';
+			}, error: function(request, status, error){
+				alert("ajax Fail");
+			}
+		});
+	}
+	return false;
+}
+</script>
+</body>
+</html>

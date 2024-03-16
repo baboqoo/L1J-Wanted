@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.nc-community-report .list-cause .fe-svg {position: absolute; z-index: 2; top: 13px; right: 0; width: 22px; height: 22px;}
+.nc-community-report .list-cause .fe-svg-check_off {fill: #202020; color: #202020;}
+.nc-community-report .list-cause input[type=radio]:checked+.wrap-icon .fe-svg-check_off {display: none;}
+.nc-community-report .list-cause .fe-svg-check_on {display: none; position: absolute; z-index: 2; top: 13px; right: 0; width: 22px; height: 22px; background-image: url(/img/check_on.svg);}
+.nc-community-report .list-cause input[type=radio]:checked+.wrap-icon .fe-svg-check_on {display: block;}

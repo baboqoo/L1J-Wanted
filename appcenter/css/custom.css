@@ -1,0 +1,91 @@
+@charset "UTF-8";
+.pagination-container {margin: 0 auto; display: table;padding-bottom: 40px;}
+.paginationjs .paginationjs-pages li, .paginationjs .paginationjs-pages li:last-child {border: none;}
+.paginationjs .paginationjs-pages li>a {color: #b5b5b5;}
+.paginationjs .paginationjs-pages li.active>a {background: #fff; color: #1f1f1f; line-height: 28px;}
+#custmContainer {display: block; padding-top: 35px;}
+.custom_comment {border-top: 1px solid #6e7482;padding: 10px;display: flow-root;}
+.custom_comment textarea {width: 100%; height: 100px; padding: 5px 10px; border: 1px solid #d6e0ed; background-color: #eff3f8;}
+.custom_comment .btn_typeA_gray {display: inline-block; zoom: 1; *display: inline; vertical-align: middle; background: url(/img/custom/bg_button.png) no-repeat left top; height: 35px; padding: 0 0 0 17px; background-position: left -42px; cursor: pointer; margin-top: 10px;float: right;}
+.custom_comment .btn_typeA_gray span.btn {display: inline-block; zoom: 1; *display: inline; color: #FFF; font-family: Arial, sans-serif; cursor: pointer; letter-spacing: 0em; background: url(/img/custom/bg_button.png) no-repeat right top; height: 26px; padding: 9px 15px 0 0; font-weight: bold; font-size: 14px; background-position: right -42px;}
+.normalFrontIcon {color: #3c3c3b; font-family: 'Gotham A','Gotham B'; font-weight: 600;}
+.normalContent {padding: 15px 70px 0px 0px; color: #8a8a8a; line-height: 25px; white-space: pre-line; margin-bottom: 10px;}
+.arrowQ {float: right; background: url(/img/custom/arrowQoff.gif) right no-repeat; width: 10px; height: 10px; margin-right: 20px;}
+.arrowQ.selected {background: url(/img/custom/arrowQon.gif) right no-repeat;}
+.detailFaq {display:none;}
+.detailFaq .btns a, .detailFaq .btns button {width: 80px; display: inline-block; background: #8e8e8e; text-align: center; padding: 7px; margin-right: 5px; color: #fff;}
+.detailFaq .btns a:last-child, .detailFaq .btns button:last-child {background: #4d84cc;}
+.detailFaq .faqUpdateForm {margin-top: 15px;}
+.detailFaq .faqTitle {border: 1px solid #ddd; display: block; width: 80%; padding: 10px;}
+.detailFaq .faqContent {width: 80%; height: 100px; margin-top: 10px; border-color: #ddd; padding: 10px; margin-bottom: 10px; line-height: 25px;}
+.btns-add {position: absolute; right: 0;}
+.btns-add button {width: 100px; height: 30px; background: #aa8060; color: #fff;}
+
+.detailFaqAddForm .detail-item {margin-bottom: 20px;}
+.detailFaqAddForm .detail-item label {font-size: 15px; font-weight: 600;}
+.detailFaqAddForm .detail-item .faqTitle, .detailFaqAddForm .detail-item .faqContent {border: 1px solid #ddd; width: 100%; padding: 12px; margin-top: 10px;}
+.detailFaqAddForm .detail-item .faqContent {height: 133px;}
+.detailFaqAddForm .btns {text-align: center;}
+.detailFaqAddForm .btns button {width: 100px; height: 30px; background: #8e8e8e; color: #fff;}
+.detailFaqAddForm .btns button:last-child {background: #4d84cc; margin-left: 10px;}
+
+body.ingame { font-size: 12px;}
+#top_area #search h1 {text-align: center; line-height: 70px; color: #fff;}
+#top_area .welcome .cs_info .agree_txt {color: red;}
+#top_area .welcome .cs_info .agree_txt i {font-size: 16px; font-weight: 600; vertical-align: bottom;}
+.noaccount {padding-top: 100px; text-align: center;}
+
+.wrap_contents_support {max-width: 1260px; margin: auto; padding-bottom: 40px;}
+.wrap_contents_support .support_l {float: left; width: 50%;}
+.wrap_contents_support .support_l strong {color: #fff; font-size: 22px; width: 100%; display: block; background: #457285; height: 100%; line-height: 53px; text-align: center;}
+.wrap_contents_support .support_r {font-size: 16px; font-weight: 600; float: left; width: 50%; text-align: center;}
+.wrap_contents_support .support_r span {color: red; display: block; font-size: 14px;}
+.wrap_contents_support .support_agree {border: 1px solid #ddd; padding: 50px;}
+.wrap_contents_support .support_agree .support_title {display: block; font-size: 22px; color: #457285; text-align: center;}
+.wrap_contents_support .support_agree .support_container {padding-top: 40px; line-height: 27px;}
+.wrap_contents_support .support_agree .support_container .support_agree_tit {color: #457285;}
+.wrap_contents_support .support_agree .support_container #agree_wrap ul {margin-top: 10px; margin-bottom: 10px;}
+.wrap_contents_support .support_agree .support_container #agree_wrap .support_content {border: 1px solid #ddd; padding: 25px; display: flex;}
+.wrap_contents_support .support_agree .support_container #agree_wrap .agree_check_div {padding-top: 20px; position: relative;}
+.wrap_contents_support .support_agree .support_container #agree_wrap .agree_check_div input {position: absolute; top: 27px; cursor: pointer;}
+.wrap_contents_support .support_agree .support_container #agree_wrap .agree_check_div strong {padding-left: 22px; cursor: pointer;}
+.wrap_contents_support .support_agree .support_container #agree_wrap .agree_btns {padding-top: 22px; text-align: center;}
+.wrap_contents_support .support_agree .support_container #agree_wrap .agree_btns button {width: 300px; height: 60px; background: #457285; color: #fff; font-size: 16px; font-weight: 600;}
+
+.wrap_contents_support .support_agree .support_container #support_wrap .point_color {color: #457285;}
+.wrap_contents_support .support_agree .support_container #support_wrap .sub_tit {float: right; color: red;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content {margin-top: 10px; margin-bottom: 10px; font-size: 19px; font-weight: 600;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .support_content {border: 1px solid #ddd; padding: 25px; display: flex;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .support_sub_txt ul {font-size: 12px; color: gray; padding-top: 15px;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .gm_send {padding-top: 30px; padding-left: 15px; font-size: 14px; color: #457285;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .gm_send_div {display: flex;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .gm_send_div input {border: 1px solid #ddd; width: 80%; padding: 12px;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .gm_send_div div {width: 18%; margin-left: 20px; background: #457285;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .gm_send_div button {width: 100%; height: 100%; color: #fff; font-size: 18px;}
+
+.wrap_contents_support .support_agree .support_container #support_wrap.not_profit #not_profit_text {width: 328px;margin: auto;color: #555;}
+.wrap_contents_support .support_agree .support_container #support_wrap.not_profit #not_profit_text h1 {padding-bottom: 20px;}
+.wrap_contents_support .support_agree .support_container #support_wrap.not_profit #not_profit_text h2 {padding-top: 10px; font-size: 16px; font-weight: 600;}
+.wrap_contents_support .support_agree .support_container #support_wrap.not_profit #not_profit_text h3 {text-align: center; padding-top: 30px; font-size: 15px; font-weight: 600;}
+.wrap_contents_support .support_agree .support_container #support_wrap.not_profit #not_profit_text .point {color: red;}
+.wrap_contents_support .support_agree .support_container #support_wrap.not_profit #support_content {text-align: center; padding-top: 50px;}
+.wrap_contents_support .support_agree .support_container #support_wrap.not_profit #support_content button {width: 245px; padding: 10px; background: #aa8060; color: #fff;font-size: 15px;transition: all .3s ease;}
+.wrap_contents_support .support_agree .support_container #support_wrap.not_profit #support_content button:hover {background: #8f613f;}
+
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .support_bank_req {border: 1px solid #ddd; padding: 20px 25px; margin-bottom: 15px; text-align: center;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .support_bank_req .support_bank_req_desc {padding-bottom: 15px;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .support_bank_req .support_bank_req_desc span {color: #457285; font-size: 13px;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .support_bank_req button {background: #457285; color: #fff; padding: 10px 60px;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .gm_send_div div:hover, .wrap_contents_support .support_agree .support_container #support_wrap #support_content .support_bank_req button:hover {background: #375e6e;}
+.wrap_contents_support .support_agree .support_container #support_wrap #support_content .support_bank_req button i {font-size: 26px; vertical-align: top; margin-right: 13px;}
+
+@media (max-width: 1115px){
+	section#content .wrap_contents {max-width: 620px; margin: 0 10px 0 0;}
+	#top_area #search {position: absolute; right: 0; z-index: -1;}
+	#top_area #search h1 {padding-left: 320px;}
+	section#content aside {max-width: 130px;padding-top: 17px !important;}
+}
+@media (max-width: 960px){
+	#custmContainer {padding-top: 0px;}
+	#top_area .welcome {padding-left: 10px;}
+}

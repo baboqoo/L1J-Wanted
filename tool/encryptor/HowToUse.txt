@@ -1,0 +1,18 @@
+######################################################################################
+※ Blog URL Encryption (Internal APPCENTER Integration)
+######################################################################################
+※ The generated encrypted URL is obtained after linking with the in-game information.
+######################################################################################
+※ No need to change the key
+※ Input Example: APP IP: 127.0.0.1 / APP PORT: 8080 / APP URI: /outgame/info
+######################################################################################
+
+1. Run Encryptor.exe
+
+2. Enter APP IP (AppCenter external IP) / APP PORT (AppCenter port number) / APP URI (Calling URI)
+
+3. Click the Encryption button
+
+4. Copy the generated encrypted URL at the bottom
+
+5. Set up the connection kit and register it on the blog.
