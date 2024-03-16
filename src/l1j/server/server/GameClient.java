@@ -72,7 +72,7 @@ public class GameClient implements ConnectionHandler, PacketOutput {
 	}
 	
 	protected void start(SocketChannel socketChannel, SelectorThread selector) throws IOException {
-		System.out.println(String.format("[Attempt to connect] [%s] IP : %s Memory : %d MB", FormatterUtil.get_formatter_time(), _ip, SystemUtil.getUsedMemoryMB()));
+		System.out.println(String.format("[Establishing Connection] [%s] IP : %s Memory : %d MB", FormatterUtil.get_formatter_time(), _ip, SystemUtil.getUsedMemoryMB()));
 		_connection		= new Connection(socketChannel, selector, this);
 		if (Config.SERVER.AUTOMATIC_KICK > 0) {
 			_observer	= new ClientThreadObserver(Config.SERVER.AUTOMATIC_KICK * 60000);// 자동절단까지의시간(단위:ms)

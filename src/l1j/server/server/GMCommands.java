@@ -304,9 +304,11 @@ public class GMCommands {
 				}
 			}
 			Calendar cal = Calendar.getInstance();
-            pc.sendPackets(new S_SystemMessage(String.format("서버시간: %s", formatter.format(cal.getTime()))));
+//AUTO SRM:             pc.sendPackets(new S_SystemMessage(String.format("서버시간: %s", formatter.format(cal.getTime()))));
+            pc.sendPackets(new S_SystemMessage(String.format(S_SystemMessage.getRefText(4) + " %s ", formatter.format(cal.getTime())), true));
 		} catch (Exception e) {
-			pc.sendPackets(new S_SystemMessage(".공성시간 (켄트,오크,윈다,기란,하이,드워,아덴,디아)"));
+//AUTO SRM: 			pc.sendPackets(new S_SystemMessage(".공성시간 (켄트,오크,윈다,기란,하이,드워,아덴,디아)"));
+			pc.sendPackets(new S_SystemMessage(S_SystemMessage.getRefText(5), true));
 		}
 	}*/
 	

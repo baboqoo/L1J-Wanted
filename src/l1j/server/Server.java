@@ -130,14 +130,14 @@ public class Server {
 		sb.append("▶ 인 터 서 버 :  ");
 		*/
 
-		sb.append("> Exp Rate        : ").append(Config.RATE.RATE_XP).append(" %\n");
-		sb.append("> Lawfull Rate    : ").append(Config.RATE.RATE_ALIGNMENT).append(" %p\n");
-		sb.append("> Karma Rate      : ").append(Config.RATE.RATE_KARMA).append(" %p\n");
-		sb.append("> Drop Rate       : ").append(Config.RATE.RATE_DROP_ITEMS).append(" %\n");
-		sb.append("> Adena Rate      : ").append(Config.RATE.RATE_DROP_ADENA).append(" %\n");
+		sb.append("> Exp Rate        : ").append(Config.RATE.RATE_XP).append(" \n");
+		sb.append("> Lawfull Rate    : ").append(Config.RATE.RATE_ALIGNMENT).append(" \n");
+		sb.append("> Karma Rate      : ").append(Config.RATE.RATE_KARMA).append(" \n");
+		sb.append("> Drop Rate       : ").append(Config.RATE.RATE_DROP_ITEMS).append(" \n");
+		sb.append("> Adena Rate      : ").append(Config.RATE.RATE_DROP_ADENA).append(" \n");
 		sb.append("> Chat Level      : ").append(Config.ALT.GLOBAL_CHAT_LEVEL).append("\n");
 		sb.append("> Max Users       : ").append(Config.SERVER.MAX_ONLINE_USERS).append("\n");
-		sb.append("> P K             : ").append(Config.ALT.ALT_NONPVP ? "Enabled" : "Disabled").append("\n");
+		sb.append("> PVP             : ").append(Config.ALT.ALT_NONPVP ? "Enabled" : "Disabled").append("\n");
 		sb.append("> Server Version  : ").append(Config.VERSION.SERVER_NUMBER).append("\n");
 		sb.append("> Linbin version  : ").append(Config.VERSION.CLIENT_VERSION_TO_STRING).append("\n");
 		sb.append("> IP Protect      : ").append(Config.SERVER.IP_PROTECT ? "Used" : "Not used").append("\n");

@@ -186,7 +186,8 @@ public class A_PartyControl extends ProtoHandler {
 			if (!_pc.isInParty()) {
 				return;
 			}
-			L1PcInstance targetPc = L1World.getInstance().getPlayer(name);//pc.sendPackets(new S_SystemMessage("추방 이름 = " + name), true);
+//AUTO SRM: 			L1PcInstance targetPc = L1World.getInstance().getPlayer(name);//pc.sendPackets(new S_SystemMessage("추방 이름 = " + name), true);
+			L1PcInstance targetPc = L1World.getInstance().getPlayer(name);//pc.sendPackets(new S_SystemMessage(S_SystemMessage.getRefText(2) + name, true), true);
 			if (targetPc == null) {
 				_pc.sendPackets(new S_ServerMessage(109, name), true);// %0라는 이름의 사람은 없습니다.
 				return;

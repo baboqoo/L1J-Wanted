@@ -4137,11 +4137,13 @@ public class L1PcInstance extends L1Character implements L1CharacterInfo {
                     getInventory().storeItem(43000, 1);
                     sendPackets(new S_ServerMessage(403, l1item.getName()), true);
                 } else {
-					sendPackets(new S_SystemMessage("환생의 물약 입수에 실패했습니다."), true);
+//AUTO SRM: 					sendPackets(new S_SystemMessage("환생의 물약 입수에 실패했습니다."), true);
+					sendPackets(new S_SystemMessage(S_SystemMessage.getRefText(16), true), true);
                 }
             } catch (Exception e) {
                 _log.log(Level.SEVERE, e.getLocalizedMessage(), e);
-				sendPackets(new S_SystemMessage("환생의 물약 입수에 실패했습니다."), true);
+//AUTO SRM: 				sendPackets(new S_SystemMessage("환생의 물약 입수에 실패했습니다."), true);
+				sendPackets(new S_SystemMessage(S_SystemMessage.getRefText(16), true), true);
             }
         }*/
 

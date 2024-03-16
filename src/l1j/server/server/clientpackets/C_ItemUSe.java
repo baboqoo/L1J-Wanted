@@ -618,7 +618,8 @@ public class C_ItemUSe extends ClientBasePacket {
 			/*	if (pc.getKarma() <= 10000000) {
 					pc.addKarma((int) (+15000 * Config.RATE_KARMA));
 					pc.sendPackets(new S_Karma(pc), true);
-					pc.sendPackets(new S_SystemMessage(pc.getName() + "님의 우호도가 향상되었습니다."), true);
+//AUTO SRM: 					pc.sendPackets(new S_SystemMessage(pc.getName() + "님의 우호도가 향상되었습니다."), true);
+					pc.sendPackets(new S_SystemMessage(pc.getName()  + S_SystemMessage.getRefText(1), true), true);
 					pc.getInventory().removeItem(l1iteminstance, 1);
 				} else*/
 					pc.sendPackets(L1ServerMessage.sm79);
@@ -627,7 +628,8 @@ public class C_ItemUSe extends ClientBasePacket {
 			/*	if (pc.getKarma() >= -10000000) {
 					pc.addKarma((int) (-15000 * Config.RATE_KARMA));
 					pc.sendPackets(new S_Karma(pc), true);
-					pc.sendPackets(new S_SystemMessage(pc.getName() + "님의 우호도가 향상되었습니다."), true);
+//AUTO SRM: 					pc.sendPackets(new S_SystemMessage(pc.getName() + "님의 우호도가 향상되었습니다."), true);
+					pc.sendPackets(new S_SystemMessage(pc.getName()  + S_SystemMessage.getRefText(1), true), true);
 					pc.getInventory().removeItem(l1iteminstance, 1);
 				} else*/
 					pc.sendPackets(L1ServerMessage.sm79);

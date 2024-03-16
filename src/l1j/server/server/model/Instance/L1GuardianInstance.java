@@ -101,7 +101,8 @@ public class L1GuardianInstance extends L1NpcInstance {
 							player.sendPackets(new S_ServerMessage(143, "$755", "$794"), true); // \f1%0이%1를 주었습니다.
 							entitem2 -= 1;
 						} else {
-							player.sendPackets(new S_NpcChatPacket(this, "...열매... 없다... 나중에...", L1ChatConstruct.TYPE_NORMAL), true);
+//AUTO SRM: 							player.sendPackets(new S_NpcChatPacket(this, "...열매... 없다... 나중에...", L1ChatConstruct.TYPE_NORMAL), true);
+							player.sendPackets(new S_NpcChatPacket(this, S_SystemMessage.getRefText(6), L1ChatConstruct.TYPE_NORMAL), true);
 						}
 					} else if (chance <= 40 && chance > 5) {
 						if (entitem3 > 1){
@@ -109,7 +110,8 @@ public class L1GuardianInstance extends L1NpcInstance {
 							player.sendPackets(new S_ServerMessage(143, "$755", "$763"), true); // \f1%0이%1를 주었습니다.
 							entitem3 -= 1;
 						} else {
-							player.sendPackets(new S_NpcChatPacket(this, "너에게 줄... 줄기가... 없다... 나중에 다시... 와라", L1ChatConstruct.TYPE_NORMAL), true);
+//AUTO SRM: 							player.sendPackets(new S_NpcChatPacket(this, "너에게 줄... 줄기가... 없다... 나중에 다시... 와라", L1ChatConstruct.TYPE_NORMAL), true);
+							player.sendPackets(new S_NpcChatPacket(this, S_SystemMessage.getRefText(7), L1ChatConstruct.TYPE_NORMAL), true);
 						}
 					} else if (chance <= 50 && chance > 40) {
 						if (entitem > 1){
@@ -118,7 +120,8 @@ public class L1GuardianInstance extends L1NpcInstance {
 							entitem -= 1;
 						} else {
 							//지금은 줄수 없다.멘트
-							player.sendPackets(new S_NpcChatPacket(this, "껍질... 나중에... 와라... 없어", L1ChatConstruct.TYPE_NORMAL), true);
+//AUTO SRM: 							player.sendPackets(new S_NpcChatPacket(this, "껍질... 나중에... 와라... 없어", L1ChatConstruct.TYPE_NORMAL), true);
+							player.sendPackets(new S_NpcChatPacket(this, S_SystemMessage.getRefText(8), L1ChatConstruct.TYPE_NORMAL), true);
 						}
 					}
 				}
@@ -130,7 +133,8 @@ public class L1GuardianInstance extends L1NpcInstance {
 							player.sendPackets(new S_ServerMessage(143, "$753", "$760" + " (" + 5 + ")"), true); // \f1%0이%1를 주었습니다.
 							entitem -= 1;
 						} else {
-							player.sendPackets(new S_NpcChatPacket(this, "나의 갈기털... 더이상... 나중에... 다시...", L1ChatConstruct.TYPE_NORMAL), true);
+//AUTO SRM: 							player.sendPackets(new S_NpcChatPacket(this, "나의 갈기털... 더이상... 나중에... 다시...", L1ChatConstruct.TYPE_NORMAL), true);
+							player.sendPackets(new S_NpcChatPacket(this, S_SystemMessage.getRefText(9), L1ChatConstruct.TYPE_NORMAL), true);
 						}
 					}
 				}
@@ -142,7 +146,8 @@ public class L1GuardianInstance extends L1NpcInstance {
 							player.sendPackets(new S_ServerMessage(143, "$752", "$769"), true); // \f1%0이%1를 주었습니다.
 							entitem -= 1;
 						} else {
-							player.sendPackets(new S_NpcChatPacket(this, "아프다 이놈아 나중에 다시 와.", L1ChatConstruct.TYPE_NORMAL), true);
+//AUTO SRM: 							player.sendPackets(new S_NpcChatPacket(this, "아프다 이놈아 나중에 다시 와.", L1ChatConstruct.TYPE_NORMAL), true);
+							player.sendPackets(new S_NpcChatPacket(this, S_SystemMessage.getRefText(10), L1ChatConstruct.TYPE_NORMAL), true);
 						}
 					}
 				}

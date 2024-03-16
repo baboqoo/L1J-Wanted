@@ -596,15 +596,20 @@ public class L1MonsterInstance extends L1NpcInstance {
 							if (4 >= random.nextInt(101)) {
 								pc.getInventory().storeItem(810008, 1);
 								if (inventoryItemCount == 0) {
-									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE, "악령의 씨앗이 몸속으로 스며듭니다."), true);
+//AUTO SRM: 									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE, "악령의 씨앗이 몸속으로 스며듭니다."), true);
+									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE,S_SystemMessage.getRefText(11)), true);
 								} else if (inventoryItemCount == 1) {
-									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE, "악령의 씨앗 2개가 생겼습니다. 악령의 기운이 느껴집니다."), true);
+//AUTO SRM: 									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE, "악령의 씨앗 2개가 생겼습니다. 악령의 기운이 느껴집니다."), true);
+									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE,S_SystemMessage.getRefText(12)), true);
 								} else if (inventoryItemCount == 2) {
-									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE, "악령의 씨앗 3개를 생겼습니다. 악령이 말을 걸어옵니다."), true);
+//AUTO SRM: 									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE, "악령의 씨앗 3개를 생겼습니다. 악령이 말을 걸어옵니다."), true);
+									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE,S_SystemMessage.getRefText(13)), true);
 								} else if (inventoryItemCount == 3) {
-									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE, "악령의 씨앗 4개가 생겼습니다. 너무 많으면 악령에 지배 당할 수 있어요."), true);
+//AUTO SRM: 									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE, "악령의 씨앗 4개가 생겼습니다. 너무 많으면 악령에 지배 당할 수 있어요."), true);
+									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE,S_SystemMessage.getRefText(14)), true);
 								} else if (inventoryItemCount >= 4) {
-									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE, "악령의 씨앗이 너무 많이 생겼어요! Tam 샵 에킨스를 만나세요."), true);
+//AUTO SRM: 									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE, "악령의 씨앗이 너무 많이 생겼어요! Tam 샵 에킨스를 만나세요."), true);
+									pc.sendPackets(new S_PacketBox(S_PacketBox.GREEN_MESSAGE,S_SystemMessage.getRefText(15)), true);
 								}
 							}
 						} else {

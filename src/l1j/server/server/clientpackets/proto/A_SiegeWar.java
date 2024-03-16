@@ -94,7 +94,8 @@ public class A_SiegeWar extends ProtoHandler {
 				return;
 			}
 			/*if (clan.getHouseId() > 0) {
- 				player.sendPackets(new S_SystemMessage("아지트가 있는 상태에서는 선전 포고를 할 수 없습니다."), true);				
+//AUTO SRM:  				player.sendPackets(new S_SystemMessage("아지트가 있는 상태에서는 선전 포고를 할 수 없습니다."), true);				
+ 				player.sendPackets(new S_SystemMessage(S_SystemMessage.getRefText(3), true), true);
 				return;
 			}*/
 			
